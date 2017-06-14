@@ -1,0 +1,16 @@
+\\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\bin\Debug\Sigba.exe
+\\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\bin\Debug\Sigba.pdb
+\\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\bin\Debug\Sigba.xml
+\\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\obj\Debug\ResolveAssemblyReference.cache
+\\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\obj\Debug\Sigba.Resources.resources
+\\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\obj\Debug\Sigba.vbproj.GenerateResource.Cache
+\\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\obj\Debug\Sigba.exe
+\\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\obj\Debug\Sigba.xml
+\\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\obj\Debug\Sigba.pdb
+\\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\obj\Debug\Sigba.Login.resources
+\\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\obj\Debug\Sigba.Principal.resources
+\\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\obj\Debug\Sigba.frmGestionUsuarios.resources
+\\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\obj\Debug\Sigba.frmGestionCargos.resources
+\\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\obj\Debug\Sigba.frmEdicionCargo.resources
+\\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\obj\Debug\Sigba.frmRecuperacionClaveEmisor.resources
+\\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\obj\Debug\Sigba.AcercaDe.resources
