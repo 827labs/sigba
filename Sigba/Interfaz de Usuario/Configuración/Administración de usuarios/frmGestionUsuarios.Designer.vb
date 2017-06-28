@@ -23,6 +23,12 @@ Partial Class frmGestionUsuarios
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView
+        Me.Cédula = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.Apellidos = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.Nombres = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.Cargo = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn
         Me.grpFiltro = New System.Windows.Forms.GroupBox
         Me.btnLimpiarFiltros = New System.Windows.Forms.Button
         Me.btnFiltrar = New System.Windows.Forms.Button
@@ -37,12 +43,6 @@ Partial Class frmGestionUsuarios
         Me.btnBuscarCedula = New System.Windows.Forms.Button
         Me.txtBuscaCedula = New System.Windows.Forms.TextBox
         Me.Label2 = New System.Windows.Forms.Label
-        Me.Cédula = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.Apellidos = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.Nombres = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.Cargo = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.grpFiltro.SuspendLayout()
         Me.grpBuscarUsuarios.SuspendLayout()
@@ -59,6 +59,42 @@ Partial Class frmGestionUsuarios
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.Size = New System.Drawing.Size(719, 570)
         Me.DataGridView1.TabIndex = 0
+        '
+        'Cédula
+        '
+        Me.Cédula.HeaderText = "Cédula"
+        Me.Cédula.Name = "Cédula"
+        Me.Cédula.ReadOnly = True
+        '
+        'Apellidos
+        '
+        Me.Apellidos.HeaderText = "Apellidos"
+        Me.Apellidos.Name = "Apellidos"
+        Me.Apellidos.ReadOnly = True
+        '
+        'Nombres
+        '
+        Me.Nombres.HeaderText = "Nombres"
+        Me.Nombres.Name = "Nombres"
+        Me.Nombres.ReadOnly = True
+        '
+        'Cargo
+        '
+        Me.Cargo.HeaderText = "Cargo"
+        Me.Cargo.Name = "Cargo"
+        Me.Cargo.ReadOnly = True
+        '
+        'Column1
+        '
+        Me.Column1.HeaderText = "Teléfono"
+        Me.Column1.Name = "Column1"
+        Me.Column1.ReadOnly = True
+        '
+        'Column2
+        '
+        Me.Column2.HeaderText = "Correo electrónico"
+        Me.Column2.Name = "Column2"
+        Me.Column2.ReadOnly = True
         '
         'grpFiltro
         '
@@ -122,6 +158,7 @@ Partial Class frmGestionUsuarios
         'cboFiltroCargo
         '
         Me.cboFiltroCargo.FormattingEnabled = True
+        Me.cboFiltroCargo.Items.AddRange(New Object() {"Jefe", "Gerente", "Auxiliares", "Caja", "Ejecutivo "})
         Me.cboFiltroCargo.Location = New System.Drawing.Point(10, 38)
         Me.cboFiltroCargo.Name = "cboFiltroCargo"
         Me.cboFiltroCargo.Size = New System.Drawing.Size(168, 21)
@@ -192,42 +229,6 @@ Partial Class frmGestionUsuarios
         Me.Label2.Size = New System.Drawing.Size(101, 13)
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "Cédula de identidad"
-        '
-        'Cédula
-        '
-        Me.Cédula.HeaderText = "Cédula"
-        Me.Cédula.Name = "Cédula"
-        Me.Cédula.ReadOnly = True
-        '
-        'Apellidos
-        '
-        Me.Apellidos.HeaderText = "Apellidos"
-        Me.Apellidos.Name = "Apellidos"
-        Me.Apellidos.ReadOnly = True
-        '
-        'Nombres
-        '
-        Me.Nombres.HeaderText = "Nombres"
-        Me.Nombres.Name = "Nombres"
-        Me.Nombres.ReadOnly = True
-        '
-        'Cargo
-        '
-        Me.Cargo.HeaderText = "Cargo"
-        Me.Cargo.Name = "Cargo"
-        Me.Cargo.ReadOnly = True
-        '
-        'Column1
-        '
-        Me.Column1.HeaderText = "Teléfono"
-        Me.Column1.Name = "Column1"
-        Me.Column1.ReadOnly = True
-        '
-        'Column2
-        '
-        Me.Column2.HeaderText = "Correo electrónico"
-        Me.Column2.Name = "Column2"
-        Me.Column2.ReadOnly = True
         '
         'frmGestionUsuarios
         '

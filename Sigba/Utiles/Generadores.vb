@@ -12,4 +12,15 @@
         Return NumeroAleatorioStr() & NumeroAleatorioStr() & NumeroAleatorioStr() & "-" & NumeroAleatorioStr() & NumeroAleatorioStr() & NumeroAleatorioStr()
     End Function
 
+    Sub RellenarComboBoxAnio(ByRef combo As ComboBox)
+        Dim minimoEdad = 14
+        Dim contador = Date.Today.Year() - minimoEdad
+        Dim objetivo = contador - 120
+
+
+        While contador > objetivo
+            combo.Items.Add(contador)
+            contador -= 1
+        End While
+    End Sub
 End Module

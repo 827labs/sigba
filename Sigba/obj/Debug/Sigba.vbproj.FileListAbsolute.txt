@@ -1,16 +1,79 @@
+C:\Users\user\Desktop\sigba-master-e54446be4d030c5a12ae380cda09f757e023cd14\Sigba\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\user\Desktop\sigba-master-e54446be4d030c5a12ae380cda09f757e023cd14\Sigba\obj\Debug\Sigba.Login.resources
+C:\Users\user\Desktop\sigba-master-e54446be4d030c5a12ae380cda09f757e023cd14\Sigba\obj\Debug\Sigba.AcercaDe.resources
+C:\Users\user\Desktop\sigba-master-e54446be4d030c5a12ae380cda09f757e023cd14\Sigba\obj\Debug\Sigba.frmAgregarCliente.resources
+C:\Users\user\Desktop\sigba-master-e54446be4d030c5a12ae380cda09f757e023cd14\Sigba\obj\Debug\Sigba.frmEdicionCargo.resources
+C:\Users\user\Desktop\sigba-master-e54446be4d030c5a12ae380cda09f757e023cd14\Sigba\obj\Debug\Sigba.frmGestionCargos.resources
+C:\Users\user\Desktop\sigba-master-e54446be4d030c5a12ae380cda09f757e023cd14\Sigba\obj\Debug\Sigba.frmGestionUsuarios.resources
+C:\Users\user\Desktop\sigba-master-e54446be4d030c5a12ae380cda09f757e023cd14\Sigba\obj\Debug\Sigba.frmRecuperacionClaveEmisor.resources
+C:\Users\user\Desktop\sigba-master-e54446be4d030c5a12ae380cda09f757e023cd14\Sigba\obj\Debug\Sigba.Principal.resources
+C:\Users\user\Desktop\sigba-master-e54446be4d030c5a12ae380cda09f757e023cd14\Sigba\obj\Debug\Sigba.Resources.resources
+C:\Users\user\Desktop\sigba-master-e54446be4d030c5a12ae380cda09f757e023cd14\Sigba\obj\Debug\Sigba.vbproj.GenerateResource.Cache
+C:\Users\user\Desktop\sigba-master-e54446be4d030c5a12ae380cda09f757e023cd14\Sigba\bin\Debug\Sigba.exe
+C:\Users\user\Desktop\sigba-master-e54446be4d030c5a12ae380cda09f757e023cd14\Sigba\bin\Debug\Sigba.pdb
+C:\Users\user\Desktop\sigba-master-e54446be4d030c5a12ae380cda09f757e023cd14\Sigba\bin\Debug\Sigba.xml
+C:\Users\user\Desktop\sigba-master-e54446be4d030c5a12ae380cda09f757e023cd14\Sigba\obj\Debug\Sigba.exe
+C:\Users\user\Desktop\sigba-master-e54446be4d030c5a12ae380cda09f757e023cd14\Sigba\obj\Debug\Sigba.xml
+C:\Users\user\Desktop\sigba-master-e54446be4d030c5a12ae380cda09f757e023cd14\Sigba\obj\Debug\Sigba.pdb
+C:\Users\Usuario\Desktop\sigba-master-e54446be4d030c5a12ae380cda09f757e023cd14\Sigba\obj\Debug\Sigba.exe
+C:\Users\Usuario\Desktop\sigba-master-e54446be4d030c5a12ae380cda09f757e023cd14\Sigba\obj\Debug\Sigba.xml
+C:\Users\Usuario\Desktop\sigba-master-e54446be4d030c5a12ae380cda09f757e023cd14\Sigba\obj\Debug\Sigba.pdb
+C:\Users\Usuario\Desktop\sigba-master-e54446be4d030c5a12ae380cda09f757e023cd14\Sigba\bin\Debug\Sigba.exe
+C:\Users\Usuario\Desktop\sigba-master-e54446be4d030c5a12ae380cda09f757e023cd14\Sigba\bin\Debug\Sigba.pdb
+C:\Users\Usuario\Desktop\sigba-master-e54446be4d030c5a12ae380cda09f757e023cd14\Sigba\bin\Debug\Sigba.xml
+C:\Users\Usuario\Desktop\sigba-master-e54446be4d030c5a12ae380cda09f757e023cd14\Sigba\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Usuario\Desktop\sigba-master-e54446be4d030c5a12ae380cda09f757e023cd14\Sigba\obj\Debug\Sigba.Login.resources
+C:\Users\Usuario\Desktop\sigba-master-e54446be4d030c5a12ae380cda09f757e023cd14\Sigba\obj\Debug\Sigba.AcercaDe.resources
+C:\Users\Usuario\Desktop\sigba-master-e54446be4d030c5a12ae380cda09f757e023cd14\Sigba\obj\Debug\Sigba.frmAgregarCliente.resources
+C:\Users\Usuario\Desktop\sigba-master-e54446be4d030c5a12ae380cda09f757e023cd14\Sigba\obj\Debug\Sigba.frmEdicionCargo.resources
+C:\Users\Usuario\Desktop\sigba-master-e54446be4d030c5a12ae380cda09f757e023cd14\Sigba\obj\Debug\Sigba.frmGestionCargos.resources
+C:\Users\Usuario\Desktop\sigba-master-e54446be4d030c5a12ae380cda09f757e023cd14\Sigba\obj\Debug\Sigba.frmGestionUsuarios.resources
+C:\Users\Usuario\Desktop\sigba-master-e54446be4d030c5a12ae380cda09f757e023cd14\Sigba\obj\Debug\Sigba.frmRecuperacionClaveEmisor.resources
+C:\Users\Usuario\Desktop\sigba-master-e54446be4d030c5a12ae380cda09f757e023cd14\Sigba\obj\Debug\Sigba.Principal.resources
+C:\Users\Usuario\Desktop\sigba-master-e54446be4d030c5a12ae380cda09f757e023cd14\Sigba\obj\Debug\Sigba.Resources.resources
+C:\Users\Usuario\Desktop\sigba-master-e54446be4d030c5a12ae380cda09f757e023cd14\Sigba\obj\Debug\Sigba.vbproj.GenerateResource.Cache
+C:\Users\Usuario\Desktop\sigba-master-e54446be4d030c5a12ae380cda09f757e023cd14\Sigba\obj\Debug\Sigba.frmBorrarCliente.resources
+\\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\obj\Debug\Sigba.exe
+\\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\obj\Debug\Sigba.xml
+\\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\obj\Debug\Sigba.pdb
 \\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\bin\Debug\Sigba.exe
 \\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\bin\Debug\Sigba.pdb
 \\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\bin\Debug\Sigba.xml
 \\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\obj\Debug\ResolveAssemblyReference.cache
+\\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\obj\Debug\Sigba.Login.resources
+\\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\obj\Debug\Sigba.AcercaDe.resources
+\\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\obj\Debug\Sigba.frmEdicionCargo.resources
+\\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\obj\Debug\Sigba.frmGestionCargos.resources
+\\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\obj\Debug\Sigba.frmGestionUsuarios.resources
+\\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\obj\Debug\Sigba.frmRecuperacionClaveEmisor.resources
+\\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\obj\Debug\Sigba.Principal.resources
 \\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\obj\Debug\Sigba.Resources.resources
 \\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\obj\Debug\Sigba.vbproj.GenerateResource.Cache
-\\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\obj\Debug\Sigba.exe
-\\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\obj\Debug\Sigba.xml
-\\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\obj\Debug\Sigba.pdb
-\\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\obj\Debug\Sigba.Login.resources
-\\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\obj\Debug\Sigba.Principal.resources
-\\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\obj\Debug\Sigba.frmGestionUsuarios.resources
-\\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\obj\Debug\Sigba.frmGestionCargos.resources
-\\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\obj\Debug\Sigba.frmEdicionCargo.resources
-\\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\obj\Debug\Sigba.frmRecuperacionClaveEmisor.resources
-\\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\obj\Debug\Sigba.AcercaDe.resources
+\\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\obj\Debug\Sigba.frmBajaCliente.resources
+\\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\obj\Debug\Sigba.frmAgregarClienteEmpresa.resources
+\\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\obj\Debug\Sigba.frmAltaClienteEmpresa.resources
+\\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\obj\Debug\Sigba.frmBajaClienteEmpresa.resources
+\\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\obj\Debug\Sigba.frmBusquedaCuentaPorCliente.resources
+\\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\obj\Debug\Sigba.frmHistoricoTransaccionesCuenta.resources
+C:\Users\Usuario\Desktop\Sigba\Sigba\obj\Debug\Sigba.exe
+C:\Users\Usuario\Desktop\Sigba\Sigba\obj\Debug\Sigba.xml
+C:\Users\Usuario\Desktop\Sigba\Sigba\obj\Debug\Sigba.pdb
+C:\Users\Usuario\Desktop\Sigba\Sigba\bin\Debug\Sigba.exe
+C:\Users\Usuario\Desktop\Sigba\Sigba\bin\Debug\Sigba.pdb
+C:\Users\Usuario\Desktop\Sigba\Sigba\bin\Debug\Sigba.xml
+C:\Users\Usuario\Desktop\Sigba\Sigba\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Usuario\Desktop\Sigba\Sigba\obj\Debug\Sigba.Login.resources
+C:\Users\Usuario\Desktop\Sigba\Sigba\obj\Debug\Sigba.AcercaDe.resources
+C:\Users\Usuario\Desktop\Sigba\Sigba\obj\Debug\Sigba.frmAltaClienteEmpresa.resources
+C:\Users\Usuario\Desktop\Sigba\Sigba\obj\Debug\Sigba.frmAgregarClienteEmpresa.resources
+C:\Users\Usuario\Desktop\Sigba\Sigba\obj\Debug\Sigba.frmBajaClienteEmpresa.resources
+C:\Users\Usuario\Desktop\Sigba\Sigba\obj\Debug\Sigba.frmBajaCliente.resources
+C:\Users\Usuario\Desktop\Sigba\Sigba\obj\Debug\Sigba.frmEdicionCargo.resources
+C:\Users\Usuario\Desktop\Sigba\Sigba\obj\Debug\Sigba.frmGestionCargos.resources
+C:\Users\Usuario\Desktop\Sigba\Sigba\obj\Debug\Sigba.frmGestionUsuarios.resources
+C:\Users\Usuario\Desktop\Sigba\Sigba\obj\Debug\Sigba.frmRecuperacionClaveEmisor.resources
+C:\Users\Usuario\Desktop\Sigba\Sigba\obj\Debug\Sigba.frmBusquedaCuentaPorCliente.resources
+C:\Users\Usuario\Desktop\Sigba\Sigba\obj\Debug\Sigba.frmHistoricoTransaccionesCuenta.resources
+C:\Users\Usuario\Desktop\Sigba\Sigba\obj\Debug\Sigba.Principal.resources
+C:\Users\Usuario\Desktop\Sigba\Sigba\obj\Debug\Sigba.Resources.resources
+C:\Users\Usuario\Desktop\Sigba\Sigba\obj\Debug\Sigba.vbproj.GenerateResource.Cache

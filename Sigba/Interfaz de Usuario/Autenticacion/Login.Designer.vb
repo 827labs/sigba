@@ -22,8 +22,9 @@ Partial Class Login
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Login))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox
-        Me.txtCedula = New System.Windows.Forms.MaskedTextBox
+        Me.txtCedula = New System.Windows.Forms.TextBox
         Me.txtClave = New System.Windows.Forms.TextBox
         Me.Label2 = New System.Windows.Forms.Label
         Me.Label1 = New System.Windows.Forms.Label
@@ -47,11 +48,10 @@ Partial Class Login
         '
         'txtCedula
         '
-        Me.txtCedula.Location = New System.Drawing.Point(9, 38)
-        Me.txtCedula.Mask = "9.999.999-9"
+        Me.txtCedula.Location = New System.Drawing.Point(9, 37)
         Me.txtCedula.Name = "txtCedula"
         Me.txtCedula.Size = New System.Drawing.Size(265, 20)
-        Me.txtCedula.TabIndex = 4
+        Me.txtCedula.TabIndex = 3
         '
         'txtClave
         '
@@ -106,8 +106,10 @@ Partial Class Login
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.btnContinuar)
         Me.Controls.Add(Me.GroupBox1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Login"
         Me.ShowIcon = False
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Bienvenido a Sigba"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
@@ -120,7 +122,7 @@ Partial Class Login
     Friend WithEvents btnContinuar As System.Windows.Forms.Button
     Friend WithEvents txtClave As System.Windows.Forms.TextBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents txtCedula As System.Windows.Forms.MaskedTextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents txtCedula As System.Windows.Forms.TextBox
 
 End Class

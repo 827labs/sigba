@@ -23,7 +23,7 @@ Partial Class Principal
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Principal))
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
+        Me.strItems = New System.Windows.Forms.MenuStrip
         Me.CajaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.GestiónDeCajasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.AperturaDeCajaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
@@ -31,7 +31,18 @@ Partial Class Principal
         Me.GestiónDeCajerosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.VerificarTransacciónreciboToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.CuentasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.GestiónToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.AltaDeCuentaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.BajaDeCuentaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.HistóricoDeTransacciónesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.ClientesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.GestiónToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
+        Me.AltaClienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.PersonaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.EmpresaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.BajaClienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.PersonaToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
+        Me.EmpresaToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
         Me.ChequesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.ConfiguraciónToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.AdministraciToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
@@ -40,28 +51,19 @@ Partial Class Principal
         Me.AdministraciónDeCargosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.AyudaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.AcercaDeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox
-        Me.GestiónToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.AltaDeCuentaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.BajaDeCuentaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.HistóricoDeTransacciónesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.BuscarCuentasPoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.GestiónToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.AltaClienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.PersonaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EmpresaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.MenuStrip1.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.picSigba = New System.Windows.Forms.PictureBox
+        Me.strItems.SuspendLayout()
+        CType(Me.picSigba, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'MenuStrip1
+        'strItems
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CajaToolStripMenuItem, Me.CuentasToolStripMenuItem, Me.ClientesToolStripMenuItem, Me.ChequesToolStripMenuItem, Me.ConfiguraciónToolStripMenuItem, Me.AyudaToolStripMenuItem})
-        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
-        Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(919, 24)
-        Me.MenuStrip1.TabIndex = 0
-        Me.MenuStrip1.Text = "MenuStrip1"
+        Me.strItems.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CajaToolStripMenuItem, Me.CuentasToolStripMenuItem, Me.ClientesToolStripMenuItem, Me.ChequesToolStripMenuItem, Me.ConfiguraciónToolStripMenuItem, Me.AyudaToolStripMenuItem})
+        Me.strItems.Location = New System.Drawing.Point(0, 0)
+        Me.strItems.Name = "strItems"
+        Me.strItems.Size = New System.Drawing.Size(919, 24)
+        Me.strItems.TabIndex = 0
+        Me.strItems.Text = "MenuStrip1"
         '
         'CajaToolStripMenuItem
         '
@@ -103,10 +105,35 @@ Partial Class Principal
         '
         'CuentasToolStripMenuItem
         '
-        Me.CuentasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GestiónToolStripMenuItem, Me.HistóricoDeTransacciónesToolStripMenuItem, Me.BuscarCuentasPoToolStripMenuItem})
+        Me.CuentasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GestiónToolStripMenuItem, Me.HistóricoDeTransacciónesToolStripMenuItem})
         Me.CuentasToolStripMenuItem.Name = "CuentasToolStripMenuItem"
         Me.CuentasToolStripMenuItem.Size = New System.Drawing.Size(62, 20)
         Me.CuentasToolStripMenuItem.Text = "Cuentas"
+        '
+        'GestiónToolStripMenuItem
+        '
+        Me.GestiónToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AltaDeCuentaToolStripMenuItem, Me.BajaDeCuentaToolStripMenuItem})
+        Me.GestiónToolStripMenuItem.Name = "GestiónToolStripMenuItem"
+        Me.GestiónToolStripMenuItem.Size = New System.Drawing.Size(273, 22)
+        Me.GestiónToolStripMenuItem.Text = "Gestión"
+        '
+        'AltaDeCuentaToolStripMenuItem
+        '
+        Me.AltaDeCuentaToolStripMenuItem.Name = "AltaDeCuentaToolStripMenuItem"
+        Me.AltaDeCuentaToolStripMenuItem.Size = New System.Drawing.Size(151, 22)
+        Me.AltaDeCuentaToolStripMenuItem.Text = "Alta de cuenta"
+        '
+        'BajaDeCuentaToolStripMenuItem
+        '
+        Me.BajaDeCuentaToolStripMenuItem.Name = "BajaDeCuentaToolStripMenuItem"
+        Me.BajaDeCuentaToolStripMenuItem.Size = New System.Drawing.Size(151, 22)
+        Me.BajaDeCuentaToolStripMenuItem.Text = "Baja de cuenta"
+        '
+        'HistóricoDeTransacciónesToolStripMenuItem
+        '
+        Me.HistóricoDeTransacciónesToolStripMenuItem.Name = "HistóricoDeTransacciónesToolStripMenuItem"
+        Me.HistóricoDeTransacciónesToolStripMenuItem.Size = New System.Drawing.Size(273, 22)
+        Me.HistóricoDeTransacciónesToolStripMenuItem.Text = "Histórico de transacciones por cuenta"
         '
         'ClientesToolStripMenuItem
         '
@@ -114,6 +141,51 @@ Partial Class Principal
         Me.ClientesToolStripMenuItem.Name = "ClientesToolStripMenuItem"
         Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(61, 20)
         Me.ClientesToolStripMenuItem.Text = "Clientes"
+        '
+        'GestiónToolStripMenuItem1
+        '
+        Me.GestiónToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AltaClienteToolStripMenuItem, Me.BajaClienteToolStripMenuItem})
+        Me.GestiónToolStripMenuItem1.Name = "GestiónToolStripMenuItem1"
+        Me.GestiónToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.GestiónToolStripMenuItem1.Text = "Gestión"
+        '
+        'AltaClienteToolStripMenuItem
+        '
+        Me.AltaClienteToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PersonaToolStripMenuItem, Me.EmpresaToolStripMenuItem})
+        Me.AltaClienteToolStripMenuItem.Name = "AltaClienteToolStripMenuItem"
+        Me.AltaClienteToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.AltaClienteToolStripMenuItem.Text = "Alta cliente"
+        '
+        'PersonaToolStripMenuItem
+        '
+        Me.PersonaToolStripMenuItem.Name = "PersonaToolStripMenuItem"
+        Me.PersonaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.PersonaToolStripMenuItem.Text = "Persona"
+        '
+        'EmpresaToolStripMenuItem
+        '
+        Me.EmpresaToolStripMenuItem.Name = "EmpresaToolStripMenuItem"
+        Me.EmpresaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.EmpresaToolStripMenuItem.Text = "Empresa"
+        '
+        'BajaClienteToolStripMenuItem
+        '
+        Me.BajaClienteToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PersonaToolStripMenuItem1, Me.EmpresaToolStripMenuItem1})
+        Me.BajaClienteToolStripMenuItem.Name = "BajaClienteToolStripMenuItem"
+        Me.BajaClienteToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.BajaClienteToolStripMenuItem.Text = "Baja cliente"
+        '
+        'PersonaToolStripMenuItem1
+        '
+        Me.PersonaToolStripMenuItem1.Name = "PersonaToolStripMenuItem1"
+        Me.PersonaToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.PersonaToolStripMenuItem1.Text = "Persona"
+        '
+        'EmpresaToolStripMenuItem1
+        '
+        Me.EmpresaToolStripMenuItem1.Name = "EmpresaToolStripMenuItem1"
+        Me.EmpresaToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.EmpresaToolStripMenuItem1.Text = "Empresa"
         '
         'ChequesToolStripMenuItem
         '
@@ -166,95 +238,40 @@ Partial Class Principal
         Me.AcercaDeToolStripMenuItem.Size = New System.Drawing.Size(135, 22)
         Me.AcercaDeToolStripMenuItem.Text = "Acerca de..."
         '
-        'PictureBox1
+        'picSigba
         '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(0, 25)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(919, 570)
-        Me.PictureBox1.TabIndex = 1
-        Me.PictureBox1.TabStop = False
-        '
-        'GestiónToolStripMenuItem
-        '
-        Me.GestiónToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AltaDeCuentaToolStripMenuItem, Me.BajaDeCuentaToolStripMenuItem})
-        Me.GestiónToolStripMenuItem.Name = "GestiónToolStripMenuItem"
-        Me.GestiónToolStripMenuItem.Size = New System.Drawing.Size(273, 22)
-        Me.GestiónToolStripMenuItem.Text = "Gestión"
-        '
-        'AltaDeCuentaToolStripMenuItem
-        '
-        Me.AltaDeCuentaToolStripMenuItem.Name = "AltaDeCuentaToolStripMenuItem"
-        Me.AltaDeCuentaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.AltaDeCuentaToolStripMenuItem.Text = "Alta de cuenta"
-        '
-        'BajaDeCuentaToolStripMenuItem
-        '
-        Me.BajaDeCuentaToolStripMenuItem.Name = "BajaDeCuentaToolStripMenuItem"
-        Me.BajaDeCuentaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.BajaDeCuentaToolStripMenuItem.Text = "Baja de cuenta"
-        '
-        'HistóricoDeTransacciónesToolStripMenuItem
-        '
-        Me.HistóricoDeTransacciónesToolStripMenuItem.Name = "HistóricoDeTransacciónesToolStripMenuItem"
-        Me.HistóricoDeTransacciónesToolStripMenuItem.Size = New System.Drawing.Size(273, 22)
-        Me.HistóricoDeTransacciónesToolStripMenuItem.Text = "Histótico de transacciones por cuenta"
-        '
-        'BuscarCuentasPoToolStripMenuItem
-        '
-        Me.BuscarCuentasPoToolStripMenuItem.Name = "BuscarCuentasPoToolStripMenuItem"
-        Me.BuscarCuentasPoToolStripMenuItem.Size = New System.Drawing.Size(273, 22)
-        Me.BuscarCuentasPoToolStripMenuItem.Text = "Buscar cuentas por cliente"
-        '
-        'GestiónToolStripMenuItem1
-        '
-        Me.GestiónToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AltaClienteToolStripMenuItem})
-        Me.GestiónToolStripMenuItem1.Name = "GestiónToolStripMenuItem1"
-        Me.GestiónToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
-        Me.GestiónToolStripMenuItem1.Text = "Gestión"
-        '
-        'AltaClienteToolStripMenuItem
-        '
-        Me.AltaClienteToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PersonaToolStripMenuItem, Me.EmpresaToolStripMenuItem})
-        Me.AltaClienteToolStripMenuItem.Name = "AltaClienteToolStripMenuItem"
-        Me.AltaClienteToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.AltaClienteToolStripMenuItem.Text = "Alta cliente"
-        '
-        'PersonaToolStripMenuItem
-        '
-        Me.PersonaToolStripMenuItem.Name = "PersonaToolStripMenuItem"
-        Me.PersonaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.PersonaToolStripMenuItem.Text = "Persona"
-        '
-        'EmpresaToolStripMenuItem
-        '
-        Me.EmpresaToolStripMenuItem.Name = "EmpresaToolStripMenuItem"
-        Me.EmpresaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.EmpresaToolStripMenuItem.Text = "Empresa"
+        Me.picSigba.Image = CType(resources.GetObject("picSigba.Image"), System.Drawing.Image)
+        Me.picSigba.Location = New System.Drawing.Point(0, 25)
+        Me.picSigba.Name = "picSigba"
+        Me.picSigba.Size = New System.Drawing.Size(919, 570)
+        Me.picSigba.TabIndex = 1
+        Me.picSigba.TabStop = False
         '
         'Principal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(919, 594)
-        Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.MenuStrip1)
-        Me.MainMenuStrip = Me.MenuStrip1
+        Me.Controls.Add(Me.picSigba)
+        Me.Controls.Add(Me.strItems)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MainMenuStrip = Me.strItems
         Me.MaximizeBox = False
         Me.MaximumSize = New System.Drawing.Size(935, 633)
         Me.MinimumSize = New System.Drawing.Size(935, 633)
         Me.Name = "Principal"
         Me.ShowIcon = False
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "SIGBA - Banco Republica"
-        Me.MenuStrip1.ResumeLayout(False)
-        Me.MenuStrip1.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.strItems.ResumeLayout(False)
+        Me.strItems.PerformLayout()
+        CType(Me.picSigba, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
+    Friend WithEvents strItems As System.Windows.Forms.MenuStrip
     Friend WithEvents CajaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents GestiónDeCajasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents GestiónDeCajerosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
@@ -264,7 +281,7 @@ Partial Class Principal
     Friend WithEvents ChequesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ConfiguraciónToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents AyudaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents picSigba As System.Windows.Forms.PictureBox
     Friend WithEvents AperturaDeCajaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents CajasAbiertasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents AdministraciToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
@@ -276,9 +293,11 @@ Partial Class Principal
     Friend WithEvents AltaDeCuentaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents BajaDeCuentaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents HistóricoDeTransacciónesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents BuscarCuentasPoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents GestiónToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents AltaClienteToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents PersonaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents EmpresaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents BajaClienteToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents PersonaToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents EmpresaToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
 End Class

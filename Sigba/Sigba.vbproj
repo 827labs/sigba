@@ -83,41 +83,77 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationEvents.vb" />
-    <Compile Include="Autenticacion\Login.vb">
+    <Compile Include="Interfaz de Usuario\Autenticacion\Login.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Autenticacion\Login.Designer.vb">
+    <Compile Include="Interfaz de Usuario\Autenticacion\Login.Designer.vb">
       <DependentUpon>Login.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ayuda\AcercaDe.Designer.vb">
+    <Compile Include="Interfaz de Usuario\Ayuda\AcercaDe.Designer.vb">
       <DependentUpon>AcercaDe.vb</DependentUpon>
     </Compile>
-    <Compile Include="Ayuda\AcercaDe.vb">
+    <Compile Include="Interfaz de Usuario\Ayuda\AcercaDe.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Configuración\Administración de permisos\frmEdicionCargo.Designer.vb">
+    <Compile Include="Interfaz de Usuario\Clientes\Gestión\Alta cliente\Empresa\frmAltaClienteEmpresa.Designer.vb">
+      <DependentUpon>frmAltaClienteEmpresa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz de Usuario\Clientes\Gestión\Alta cliente\Empresa\frmAltaClienteEmpresa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz de Usuario\Clientes\Gestión\Alta cliente\Persona\frmAgregarCliente.Designer.vb">
+      <DependentUpon>frmAgregarCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz de Usuario\Clientes\Gestión\Alta cliente\Persona\frmAgregarCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz de Usuario\Clientes\Gestión\Baja cliente\Empresa\frmBajaClienteEmpresa.Designer.vb">
+      <DependentUpon>frmBajaClienteEmpresa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz de Usuario\Clientes\Gestión\Baja cliente\Empresa\frmBajaClienteEmpresa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz de Usuario\Clientes\Gestión\Baja cliente\Persona\frmBajaCliente.Designer.vb">
+      <DependentUpon>frmBajaCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz de Usuario\Clientes\Gestión\Baja cliente\Persona\frmBajaCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz de Usuario\Configuración\Administración de permisos\frmEdicionCargo.Designer.vb">
       <DependentUpon>frmEdicionCargo.vb</DependentUpon>
     </Compile>
-    <Compile Include="Configuración\Administración de permisos\frmEdicionCargo.vb">
+    <Compile Include="Interfaz de Usuario\Configuración\Administración de permisos\frmEdicionCargo.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Configuración\Administración de permisos\frmGestionCargos.Designer.vb">
+    <Compile Include="Interfaz de Usuario\Configuración\Administración de permisos\frmGestionCargos.Designer.vb">
       <DependentUpon>frmGestionCargos.vb</DependentUpon>
     </Compile>
-    <Compile Include="Configuración\Administración de permisos\frmGestionCargos.vb">
+    <Compile Include="Interfaz de Usuario\Configuración\Administración de permisos\frmGestionCargos.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Configuración\Administración de usuarios\frmGestionUsuarios.Designer.vb">
+    <Compile Include="Interfaz de Usuario\Configuración\Administración de usuarios\frmGestionUsuarios.Designer.vb">
       <DependentUpon>frmGestionUsuarios.vb</DependentUpon>
     </Compile>
-    <Compile Include="Configuración\Administración de usuarios\frmGestionUsuarios.vb">
+    <Compile Include="Interfaz de Usuario\Configuración\Administración de usuarios\frmGestionUsuarios.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Configuración\Administración de usuarios\frmRecuperacionClaveEmisor.Designer.vb">
+    <Compile Include="Interfaz de Usuario\Configuración\Administración de usuarios\frmRecuperacionClaveEmisor.Designer.vb">
       <DependentUpon>frmRecuperacionClaveEmisor.vb</DependentUpon>
     </Compile>
-    <Compile Include="Configuración\Administración de usuarios\frmRecuperacionClaveEmisor.vb">
+    <Compile Include="Interfaz de Usuario\Configuración\Administración de usuarios\frmRecuperacionClaveEmisor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz de Usuario\Cuentas\frmBusquedaCuentaPorCliente.Designer.vb">
+      <DependentUpon>frmBusquedaCuentaPorCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz de Usuario\Cuentas\frmBusquedaCuentaPorCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz de Usuario\Cuentas\Histórico de transacciones por cuenta\frmHistoricoTransaccionesCuenta.Designer.vb">
+      <DependentUpon>frmHistoricoTransaccionesCuenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz de Usuario\Cuentas\Histórico de transacciones por cuenta\frmHistoricoTransaccionesCuenta.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Principal.Designer.vb">
@@ -141,31 +177,57 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Utiles\Constantes.vb" />
     <Compile Include="Utiles\Generadores.vb" />
+    <Compile Include="Utiles\Validadores.vb" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Autenticacion\Login.resx">
+    <EmbeddedResource Include="Interfaz de Usuario\Autenticacion\Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ayuda\AcercaDe.resx">
+    <EmbeddedResource Include="Interfaz de Usuario\Ayuda\AcercaDe.resx">
       <DependentUpon>AcercaDe.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Configuración\Administración de permisos\frmEdicionCargo.resx">
+    <EmbeddedResource Include="Interfaz de Usuario\Clientes\Gestión\Alta cliente\Empresa\frmAltaClienteEmpresa.resx">
+      <DependentUpon>frmAltaClienteEmpresa.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz de Usuario\Clientes\Gestión\Alta cliente\Persona\frmAgregarCliente.resx">
+      <DependentUpon>frmAgregarCliente.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz de Usuario\Clientes\Gestión\Baja cliente\Empresa\frmBajaClienteEmpresa.resx">
+      <DependentUpon>frmBajaClienteEmpresa.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz de Usuario\Clientes\Gestión\Baja cliente\Persona\frmBajaCliente.resx">
+      <DependentUpon>frmBajaCliente.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz de Usuario\Configuración\Administración de permisos\frmEdicionCargo.resx">
       <DependentUpon>frmEdicionCargo.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Configuración\Administración de permisos\frmGestionCargos.resx">
+    <EmbeddedResource Include="Interfaz de Usuario\Configuración\Administración de permisos\frmGestionCargos.resx">
       <DependentUpon>frmGestionCargos.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Configuración\Administración de usuarios\frmGestionUsuarios.resx">
+    <EmbeddedResource Include="Interfaz de Usuario\Configuración\Administración de usuarios\frmGestionUsuarios.resx">
       <DependentUpon>frmGestionUsuarios.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Configuración\Administración de usuarios\frmRecuperacionClaveEmisor.resx">
+    <EmbeddedResource Include="Interfaz de Usuario\Configuración\Administración de usuarios\frmRecuperacionClaveEmisor.resx">
       <DependentUpon>frmRecuperacionClaveEmisor.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz de Usuario\Cuentas\frmBusquedaCuentaPorCliente.resx">
+      <DependentUpon>frmBusquedaCuentaPorCliente.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz de Usuario\Cuentas\Histórico de transacciones por cuenta\frmHistoricoTransaccionesCuenta.resx">
+      <DependentUpon>frmHistoricoTransaccionesCuenta.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Principal.resx">
@@ -212,9 +274,6 @@
       <ProductName>Windows Installer 3.1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Clientes\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
