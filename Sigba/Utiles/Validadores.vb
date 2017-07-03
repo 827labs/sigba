@@ -34,7 +34,7 @@ Module Validadores
         Return (m.Captures.Count <> 0)
     End Function
 
-    Function KeyPressSoloLetras(ByRef e As System.Windows.Forms.KeyPressEventArgs)
+    Sub KeyPressSoloLetras(ByRef e As System.Windows.Forms.KeyPressEventArgs)
         If Char.IsLetter(e.KeyChar) Then
             'IsLetter: Indica si un carácter es una letra
             'e.KeyChar: Caracter que se pulsó en el teclado
@@ -46,9 +46,9 @@ Module Validadores
         Else
             e.Handled = True
         End If
-    End Function
+    End Sub
 
-    Function KeyPressSoloNumeros(ByRef e As System.Windows.Forms.KeyPressEventArgs)
+    Sub KeyPressSoloNumeros(ByRef e As System.Windows.Forms.KeyPressEventArgs)
         If Char.IsDigit(e.KeyChar) Then
             'IsDigit: Indica si un carácter es numérico
             'e.KeyChar: Caracter que se pulsó en el teclado
@@ -59,15 +59,15 @@ Module Validadores
         Else
             e.Handled = True
         End If
-    End Function
+    End Sub
 
-    Function KeyPressLongitudMaxima(ByRef e As System.Windows.Forms.KeyPressEventArgs, ByVal contenidoActual As String, ByVal maximoCaracteres As Integer)
-        If (contenidoActual.Length >= maximoCaracteres) Then
+    Sub KeyPressLongitudMaxima(ByRef e As System.Windows.Forms.KeyPressEventArgs, ByVal contenidoActual As String, ByVal maximoCaracteres As Integer)
+        If (contenidoActual.Length >= maximoCaracteres) And (Char.IsControl(e.KeyChar) = False) Then
             e.Handled = True
         End If
-    End Function
+    End Sub
 
-    Function KeyPressDocumento(ByRef e As System.Windows.Forms.KeyPressEventArgs, ByRef cboTipo As ComboBox, ByRef txtNro As TextBox)
+    Sub KeyPressDocumento(ByRef e As System.Windows.Forms.KeyPressEventArgs, ByRef cboTipo As ComboBox, ByRef txtNro As TextBox)
         ' Si el tipo de documento es Cedula (Item 0), limitamos a solo numeros
         ' y su longitud maxima puede ser de 8 caracteres
         If (cboTipo.SelectedIndex = 0) Then
@@ -78,15 +78,15 @@ Module Validadores
             ' y la longitud maxima se limita a 100 catacteres.
             KeyPressLongitudMaxima(e, txtNro.Text, 100)
         End If
-    End Function
+    End Sub
 
-    Function KeyPressCodigoPostal(ByRef e As System.Windows.Forms.KeyPressEventArgs, ByVal contenidoActual As String)
+    Sub KeyPressCodigoPostal(ByRef e As System.Windows.Forms.KeyPressEventArgs, ByVal contenidoActual As String)
         KeyPressSoloNumeros(e)
         KeyPressLongitudMaxima(e, contenidoActual, 6)
-    End Function
+    End Sub
 
-    Function KeyPressRUT(ByRef e As System.Windows.Forms.KeyPressEventArgs, ByVal contenidoActual As String)
+    Sub KeyPressRUT(ByRef e As System.Windows.Forms.KeyPressEventArgs, ByVal contenidoActual As String)
         KeyPressSoloNumeros(e)
         KeyPressLongitudMaxima(e, contenidoActual, 12)
-    End Function
+    End Sub
 End Module

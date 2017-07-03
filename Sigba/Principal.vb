@@ -53,4 +53,16 @@
     Private Sub HistóricoDeTransacciónesToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles HistóricoDeTransacciónesToolStripMenuItem.Click
         frmBusquedaCuentaPorCliente.Show()
     End Sub
+
+    Private Sub EmitirToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles EmitirToolStripMenuItem.Click
+        frmEmitirLibreta.Show()
+    End Sub
+
+    Private Sub DatosDelBancoToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles DatosDelBancoToolStripMenuItem.Click
+
+    End Sub
+
+    Private Sub AnularToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AnularToolStripMenuItem.Click
+        frmAnularLibreta.Show()
+    End Sub
 End Class

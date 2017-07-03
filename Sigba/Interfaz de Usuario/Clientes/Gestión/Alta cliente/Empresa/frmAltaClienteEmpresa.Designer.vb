@@ -387,9 +387,9 @@ Partial Class frmAltaClienteEmpresa
         Me.lblWeb.AutoSize = True
         Me.lblWeb.Location = New System.Drawing.Point(471, 20)
         Me.lblWeb.Name = "lblWeb"
-        Me.lblWeb.Size = New System.Drawing.Size(162, 13)
+        Me.lblWeb.Size = New System.Drawing.Size(53, 13)
         Me.lblWeb.TabIndex = 33
-        Me.lblWeb.Text = "Sitio Web (antes, escriba http://)"
+        Me.lblWeb.Text = "Sitio Web"
         '
         'txtContactoSitioWeb
         '
@@ -397,6 +397,7 @@ Partial Class frmAltaClienteEmpresa
         Me.txtContactoSitioWeb.Name = "txtContactoSitioWeb"
         Me.txtContactoSitioWeb.Size = New System.Drawing.Size(274, 20)
         Me.txtContactoSitioWeb.TabIndex = 15
+        Me.txtContactoSitioWeb.Text = "https://"
         '
         'lblEmail
         '
@@ -1618,7 +1619,7 @@ Partial Class frmAltaClienteEmpresa
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(809, 515)
+        Me.ClientSize = New System.Drawing.Size(797, 515)
         Me.Controls.Add(Me.btnAtras)
         Me.Controls.Add(Me.btnLimpiar)
         Me.Controls.Add(Me.btnSiguiente)

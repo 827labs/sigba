@@ -96,6 +96,18 @@
     <Compile Include="Interfaz de Usuario\Ayuda\AcercaDe.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Interfaz de Usuario\Cheques\Libretas\frmAnularLibreta.Designer.vb">
+      <DependentUpon>frmAnularLibreta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz de Usuario\Cheques\Libretas\frmAnularLibreta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz de Usuario\Cheques\Libretas\frmEmitirLibreta.Designer.vb">
+      <DependentUpon>frmEmitirLibreta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz de Usuario\Cheques\Libretas\frmEmitirLibreta.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Interfaz de Usuario\Clientes\Gestión\Alta cliente\Empresa\frmAltaClienteEmpresa.Designer.vb">
       <DependentUpon>frmAltaClienteEmpresa.vb</DependentUpon>
     </Compile>
@@ -144,6 +156,12 @@
     <Compile Include="Interfaz de Usuario\Configuración\Administración de usuarios\frmRecuperacionClaveEmisor.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Interfaz de Usuario\Configuración\frmDatosBanco.Designer.vb">
+      <DependentUpon>frmDatosBanco.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz de Usuario\Configuración\frmDatosBanco.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Interfaz de Usuario\Cuentas\frmBusquedaCuentaPorCliente.Designer.vb">
       <DependentUpon>frmBusquedaCuentaPorCliente.vb</DependentUpon>
     </Compile>
@@ -190,6 +208,14 @@
       <DependentUpon>AcercaDe.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz de Usuario\Cheques\Libretas\frmAnularLibreta.resx">
+      <DependentUpon>frmAnularLibreta.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz de Usuario\Cheques\Libretas\frmEmitirLibreta.resx">
+      <DependentUpon>frmEmitirLibreta.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Interfaz de Usuario\Clientes\Gestión\Alta cliente\Empresa\frmAltaClienteEmpresa.resx">
       <DependentUpon>frmAltaClienteEmpresa.vb</DependentUpon>
       <SubType>Designer</SubType>
@@ -220,6 +246,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaz de Usuario\Configuración\Administración de usuarios\frmRecuperacionClaveEmisor.resx">
       <DependentUpon>frmRecuperacionClaveEmisor.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz de Usuario\Configuración\frmDatosBanco.resx">
+      <DependentUpon>frmDatosBanco.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaz de Usuario\Cuentas\frmBusquedaCuentaPorCliente.resx">

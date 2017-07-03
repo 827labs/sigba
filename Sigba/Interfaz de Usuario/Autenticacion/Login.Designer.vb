@@ -29,8 +29,13 @@ Partial Class Login
         Me.Label2 = New System.Windows.Forms.Label
         Me.Label1 = New System.Windows.Forms.Label
         Me.btnContinuar = New System.Windows.Forms.Button
-        Me.Label3 = New System.Windows.Forms.Label
+        Me.picSideImageLogin = New System.Windows.Forms.PictureBox
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox
+        Me.lblVersion = New System.Windows.Forms.Label
+        Me.lnklblOlvidoContrasena = New System.Windows.Forms.LinkLabel
         Me.GroupBox1.SuspendLayout()
+        CType(Me.picSideImageLogin, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox1
@@ -39,7 +44,7 @@ Partial Class Login
         Me.GroupBox1.Controls.Add(Me.txtClave)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 83)
+        Me.GroupBox1.Location = New System.Drawing.Point(272, 99)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(280, 115)
         Me.GroupBox1.TabIndex = 0
@@ -81,38 +86,72 @@ Partial Class Login
         '
         'btnContinuar
         '
-        Me.btnContinuar.Location = New System.Drawing.Point(208, 204)
+        Me.btnContinuar.Location = New System.Drawing.Point(468, 220)
         Me.btnContinuar.Name = "btnContinuar"
         Me.btnContinuar.Size = New System.Drawing.Size(84, 30)
         Me.btnContinuar.TabIndex = 1
         Me.btnContinuar.Text = "Continuar"
         Me.btnContinuar.UseVisualStyleBackColor = True
         '
-        'Label3
+        'picSideImageLogin
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(109, 29)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(80, 25)
-        Me.Label3.TabIndex = 2
-        Me.Label3.Text = "SIGBA"
+        Me.picSideImageLogin.Image = CType(resources.GetObject("picSideImageLogin.Image"), System.Drawing.Image)
+        Me.picSideImageLogin.Location = New System.Drawing.Point(1, 1)
+        Me.picSideImageLogin.Name = "picSideImageLogin"
+        Me.picSideImageLogin.Size = New System.Drawing.Size(257, 375)
+        Me.picSideImageLogin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picSideImageLogin.TabIndex = 3
+        Me.picSideImageLogin.TabStop = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
+        Me.PictureBox2.Location = New System.Drawing.Point(286, 24)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(257, 60)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox2.TabIndex = 4
+        Me.PictureBox2.TabStop = False
+        '
+        'lblVersion
+        '
+        Me.lblVersion.AutoSize = True
+        Me.lblVersion.Location = New System.Drawing.Point(269, 351)
+        Me.lblVersion.Name = "lblVersion"
+        Me.lblVersion.Size = New System.Drawing.Size(231, 13)
+        Me.lblVersion.TabIndex = 5
+        Me.lblVersion.Text = "Sistema Informatico de Gestión Bancaria v1.0.0"
+        '
+        'lnklblOlvidoContrasena
+        '
+        Me.lnklblOlvidoContrasena.AutoSize = True
+        Me.lnklblOlvidoContrasena.Location = New System.Drawing.Point(272, 227)
+        Me.lnklblOlvidoContrasena.Name = "lnklblOlvidoContrasena"
+        Me.lnklblOlvidoContrasena.Size = New System.Drawing.Size(131, 13)
+        Me.lnklblOlvidoContrasena.TabIndex = 6
+        Me.lnklblOlvidoContrasena.TabStop = True
+        Me.lnklblOlvidoContrasena.Text = "¿Olvidaste tu contraseña?"
         '
         'Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(304, 250)
-        Me.Controls.Add(Me.Label3)
+        Me.ClientSize = New System.Drawing.Size(572, 373)
+        Me.Controls.Add(Me.lnklblOlvidoContrasena)
+        Me.Controls.Add(Me.lblVersion)
+        Me.Controls.Add(Me.PictureBox2)
+        Me.Controls.Add(Me.picSideImageLogin)
         Me.Controls.Add(Me.btnContinuar)
         Me.Controls.Add(Me.GroupBox1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Login"
         Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Bienvenido a Sigba"
+        Me.Text = "Ingreso a Sigba"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        CType(Me.picSideImageLogin, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -122,7 +161,10 @@ Partial Class Login
     Friend WithEvents btnContinuar As System.Windows.Forms.Button
     Friend WithEvents txtClave As System.Windows.Forms.TextBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents txtCedula As System.Windows.Forms.TextBox
+    Friend WithEvents picSideImageLogin As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
+    Friend WithEvents lblVersion As System.Windows.Forms.Label
+    Friend WithEvents lnklblOlvidoContrasena As System.Windows.Forms.LinkLabel
 
 End Class

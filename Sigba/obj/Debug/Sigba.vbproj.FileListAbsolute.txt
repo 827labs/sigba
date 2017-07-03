@@ -77,3 +77,6 @@ C:\Users\Usuario\Desktop\Sigba\Sigba\obj\Debug\Sigba.frmHistoricoTransaccionesCu
 C:\Users\Usuario\Desktop\Sigba\Sigba\obj\Debug\Sigba.Principal.resources
 C:\Users\Usuario\Desktop\Sigba\Sigba\obj\Debug\Sigba.Resources.resources
 C:\Users\Usuario\Desktop\Sigba\Sigba\obj\Debug\Sigba.vbproj.GenerateResource.Cache
+\\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\obj\Debug\Sigba.frmEmitirLibreta.resources
+\\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\obj\Debug\Sigba.frmDatosBanco.resources
+\\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\obj\Debug\Sigba.frmAnularLibreta.resources
