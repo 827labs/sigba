@@ -14,10 +14,12 @@
             cboNumCuenta.Items.Add("CC UYU 045-018925-2 - Franco Correa - UYU 2814,28")
             cboNumCuenta.Items.Add("CC USD 045-018925-2 - Franco Correa - USD 75,31")
             cboNumCuenta.SelectedIndex = 0
+            txtSerieLibreta.Text = "001"
+            txtNroLibreta.Text = "45189252-001"
         End If
     End Sub
 
-    Private Sub txtCantCheques_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtCantCheques.KeyPress
+    Private Sub KPSoloNumeros(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtCantCheques.KeyPress, txtNroLibreta.KeyPress, txtSerieLibreta.KeyPress
         Validadores.KeyPressSoloNumeros(e)
     End Sub
 

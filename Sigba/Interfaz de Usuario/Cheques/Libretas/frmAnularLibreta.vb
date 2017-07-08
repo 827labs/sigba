@@ -25,7 +25,7 @@
         lblCliente.Text = Me.clienteEjemplo
     End Sub
 
-    Private Sub txtNumLibreta_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtNumLibreta.KeyPress
+    Private Sub KPSoloNumeros(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtNumLibreta.KeyPress, txtSerieLibreta.KeyPress
         Validadores.KeyPressSoloNumeros(e)
     End Sub
 End Class

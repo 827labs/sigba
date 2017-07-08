@@ -59,10 +59,28 @@
     End Sub
 
     Private Sub DatosDelBancoToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles DatosDelBancoToolStripMenuItem.Click
-
+        frmDatosBanco.Show()
     End Sub
 
     Private Sub AnularToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AnularToolStripMenuItem.Click
         frmAnularLibreta.Show()
+    End Sub
+
+    Private Sub AperturaDeCajaToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AperturaDeCajaToolStripMenuItem.Click
+        frmAperturaCaja.Show()
+    End Sub
+
+    Private Sub CajasAbiertasToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CajasAbiertasToolStripMenuItem.Click
+        frmCierreCaja.Show()
+    End Sub
+
+    Private Sub AltaDeCuentaToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AltaDeCuentaToolStripMenuItem.Click
+        frmNuevaCuenta.Show()
+    End Sub
+
+    Private Sub BajaDeCuentaToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BajaDeCuentaToolStripMenuItem.Click
+        Dim form = New frmBusquedaCuentaPorCliente()
+        form.SetearTipoBusquedaCuenta(frmBusquedaCuentaPorCliente.TipoBusquedaCuenta.Baja)
+        form.Show()
     End Sub
 End Class

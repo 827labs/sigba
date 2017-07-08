@@ -83,6 +83,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Interfaz de Usuario\Autenticacion\frmOlvidoClave.Designer.vb">
+      <DependentUpon>frmOlvidoClave.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz de Usuario\Autenticacion\frmOlvidoClave.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Interfaz de Usuario\Autenticacion\Login.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +100,18 @@
       <DependentUpon>AcercaDe.vb</DependentUpon>
     </Compile>
     <Compile Include="Interfaz de Usuario\Ayuda\AcercaDe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz de Usuario\Caja\Gestión de cajas\frmAperturaCaja.Designer.vb">
+      <DependentUpon>frmAperturaCaja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz de Usuario\Caja\Gestión de cajas\frmAperturaCaja.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz de Usuario\Caja\Gestión de cajas\frmCierreCaja.Designer.vb">
+      <DependentUpon>frmCierreCaja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz de Usuario\Caja\Gestión de cajas\frmCierreCaja.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Interfaz de Usuario\Cheques\Libretas\frmAnularLibreta.Designer.vb">
@@ -168,6 +186,18 @@
     <Compile Include="Interfaz de Usuario\Cuentas\frmBusquedaCuentaPorCliente.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Interfaz de Usuario\Cuentas\Gestión\frmBajaCuenta.Designer.vb">
+      <DependentUpon>frmBajaCuenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz de Usuario\Cuentas\Gestión\frmBajaCuenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz de Usuario\Cuentas\Gestión\frmNuevaCuenta.Designer.vb">
+      <DependentUpon>frmNuevaCuenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz de Usuario\Cuentas\Gestión\frmNuevaCuenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Interfaz de Usuario\Cuentas\Histórico de transacciones por cuenta\frmHistoricoTransaccionesCuenta.Designer.vb">
       <DependentUpon>frmHistoricoTransaccionesCuenta.vb</DependentUpon>
     </Compile>
@@ -200,12 +230,24 @@
     <Compile Include="Utiles\Validadores.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Interfaz de Usuario\Autenticacion\frmOlvidoClave.resx">
+      <DependentUpon>frmOlvidoClave.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Interfaz de Usuario\Autenticacion\Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaz de Usuario\Ayuda\AcercaDe.resx">
       <DependentUpon>AcercaDe.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz de Usuario\Caja\Gestión de cajas\frmAperturaCaja.resx">
+      <DependentUpon>frmAperturaCaja.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz de Usuario\Caja\Gestión de cajas\frmCierreCaja.resx">
+      <DependentUpon>frmCierreCaja.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaz de Usuario\Cheques\Libretas\frmAnularLibreta.resx">
@@ -254,6 +296,14 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaz de Usuario\Cuentas\frmBusquedaCuentaPorCliente.resx">
       <DependentUpon>frmBusquedaCuentaPorCliente.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz de Usuario\Cuentas\Gestión\frmBajaCuenta.resx">
+      <DependentUpon>frmBajaCuenta.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz de Usuario\Cuentas\Gestión\frmNuevaCuenta.resx">
+      <DependentUpon>frmNuevaCuenta.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaz de Usuario\Cuentas\Histórico de transacciones por cuenta\frmHistoricoTransaccionesCuenta.resx">

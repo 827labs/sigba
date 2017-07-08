@@ -32,23 +32,10 @@
         ' KeyPress es el evento que se maneja cuando el usuario presiona un tecla que produce un caracter
         ' que se puede escribir
         txtCedula.MaxLength = 8          'el textbox tendrá 8 caracteres como máximo
+        Validadores.KeyPressSoloNumeros(e)
+    End Sub
 
-        If Char.IsDigit(e.KeyChar) Then
-
-            'Char: Digito
-            'IsDigit: Indica si un carácter es numérico
-            'e.KeyChar: Caracter que se pulsó en el teclado
-
-
-            e.Handled = False 'Le dice al evento que no se tomó la acción adecuada
-        ElseIf Char.IsControl(e.KeyChar) Then
-
-            e.Handled = False 'Le dice al evento que no se tomó la acción adecuada
-
-        Else
-
-            e.Handled = True 'Le dice al evento que se tomó la acción adecuada
-        End If
-
+    Private Sub lnklblOlvidoContrasena_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles lnklblOlvidoContrasena.LinkClicked
+        frmOlvidoClave.Show()
     End Sub
 End Class

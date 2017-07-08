@@ -94,7 +94,7 @@ Partial Class Principal
         '
         Me.CajasAbiertasToolStripMenuItem.Name = "CajasAbiertasToolStripMenuItem"
         Me.CajasAbiertasToolStripMenuItem.Size = New System.Drawing.Size(160, 22)
-        Me.CajasAbiertasToolStripMenuItem.Text = "Cajas abiertas"
+        Me.CajasAbiertasToolStripMenuItem.Text = "Cierre de caja"
         '
         'GestiónDeCajerosToolStripMenuItem
         '
@@ -125,13 +125,13 @@ Partial Class Principal
         'AltaDeCuentaToolStripMenuItem
         '
         Me.AltaDeCuentaToolStripMenuItem.Name = "AltaDeCuentaToolStripMenuItem"
-        Me.AltaDeCuentaToolStripMenuItem.Size = New System.Drawing.Size(151, 22)
+        Me.AltaDeCuentaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.AltaDeCuentaToolStripMenuItem.Text = "Alta de cuenta"
         '
         'BajaDeCuentaToolStripMenuItem
         '
         Me.BajaDeCuentaToolStripMenuItem.Name = "BajaDeCuentaToolStripMenuItem"
-        Me.BajaDeCuentaToolStripMenuItem.Size = New System.Drawing.Size(151, 22)
+        Me.BajaDeCuentaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.BajaDeCuentaToolStripMenuItem.Text = "Baja de cuenta"
         '
         'HistóricoDeTransacciónesToolStripMenuItem
@@ -209,13 +209,13 @@ Partial Class Principal
         'EmitirToolStripMenuItem
         '
         Me.EmitirToolStripMenuItem.Name = "EmitirToolStripMenuItem"
-        Me.EmitirToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.EmitirToolStripMenuItem.Size = New System.Drawing.Size(109, 22)
         Me.EmitirToolStripMenuItem.Text = "Emitir"
         '
         'AnularToolStripMenuItem
         '
         Me.AnularToolStripMenuItem.Name = "AnularToolStripMenuItem"
-        Me.AnularToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.AnularToolStripMenuItem.Size = New System.Drawing.Size(109, 22)
         Me.AnularToolStripMenuItem.Text = "Anular"
         '
         'DepósitoToolStripMenuItem

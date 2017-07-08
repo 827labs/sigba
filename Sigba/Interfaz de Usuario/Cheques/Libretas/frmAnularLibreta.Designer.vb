@@ -23,8 +23,10 @@ Partial Class frmAnularLibreta
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox
-        Me.txtNumLibreta = New System.Windows.Forms.TextBox
+        Me.Label2 = New System.Windows.Forms.Label
+        Me.txtSerieLibreta = New System.Windows.Forms.TextBox
         Me.Label1 = New System.Windows.Forms.Label
+        Me.txtNumLibreta = New System.Windows.Forms.TextBox
         Me.lblCliente = New System.Windows.Forms.Label
         Me.btnAnular = New System.Windows.Forms.Button
         Me.GroupBox1.SuspendLayout()
@@ -32,6 +34,8 @@ Partial Class frmAnularLibreta
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.Label2)
+        Me.GroupBox1.Controls.Add(Me.txtSerieLibreta)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.txtNumLibreta)
         Me.GroupBox1.Location = New System.Drawing.Point(13, 13)
@@ -41,21 +45,37 @@ Partial Class frmAnularLibreta
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Anular libreta por numero"
         '
-        'txtNumLibreta
+        'Label2
         '
-        Me.txtNumLibreta.Location = New System.Drawing.Point(9, 36)
-        Me.txtNumLibreta.Name = "txtNumLibreta"
-        Me.txtNumLibreta.Size = New System.Drawing.Size(202, 20)
-        Me.txtNumLibreta.TabIndex = 0
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(5, 20)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(31, 13)
+        Me.Label2.TabIndex = 3
+        Me.Label2.Text = "Serie"
+        '
+        'txtSerieLibreta
+        '
+        Me.txtSerieLibreta.Location = New System.Drawing.Point(8, 36)
+        Me.txtSerieLibreta.Name = "txtSerieLibreta"
+        Me.txtSerieLibreta.Size = New System.Drawing.Size(56, 20)
+        Me.txtSerieLibreta.TabIndex = 0
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(6, 20)
+        Me.Label1.Location = New System.Drawing.Point(65, 20)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(78, 13)
+        Me.Label1.Size = New System.Drawing.Size(44, 13)
         Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Num. de libreta"
+        Me.Label1.Text = "Número"
+        '
+        'txtNumLibreta
+        '
+        Me.txtNumLibreta.Location = New System.Drawing.Point(68, 36)
+        Me.txtNumLibreta.Name = "txtNumLibreta"
+        Me.txtNumLibreta.Size = New System.Drawing.Size(143, 20)
+        Me.txtNumLibreta.TabIndex = 1
         '
         'lblCliente
         '
@@ -98,4 +118,6 @@ Partial Class frmAnularLibreta
     Friend WithEvents txtNumLibreta As System.Windows.Forms.TextBox
     Friend WithEvents lblCliente As System.Windows.Forms.Label
     Friend WithEvents btnAnular As System.Windows.Forms.Button
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents txtSerieLibreta As System.Windows.Forms.TextBox
 End Class

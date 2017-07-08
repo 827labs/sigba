@@ -40,6 +40,8 @@ Partial Class frmEmitirLibreta
         Me.Label2 = New System.Windows.Forms.Label
         Me.Button1 = New System.Windows.Forms.Button
         Me.btnCancelar = New System.Windows.Forms.Button
+        Me.txtSerieLibreta = New System.Windows.Forms.TextBox
+        Me.Label4 = New System.Windows.Forms.Label
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.grpDocumento.SuspendLayout()
@@ -161,6 +163,8 @@ Partial Class frmEmitirLibreta
         '
         'GroupBox3
         '
+        Me.GroupBox3.Controls.Add(Me.txtSerieLibreta)
+        Me.GroupBox3.Controls.Add(Me.Label4)
         Me.GroupBox3.Controls.Add(Me.txtCantCheques)
         Me.GroupBox3.Controls.Add(Me.Label3)
         Me.GroupBox3.Controls.Add(Me.txtNroLibreta)
@@ -193,16 +197,16 @@ Partial Class frmEmitirLibreta
         '
         Me.txtNroLibreta.Cursor = System.Windows.Forms.Cursors.No
         Me.txtNroLibreta.Enabled = False
-        Me.txtNroLibreta.Location = New System.Drawing.Point(9, 35)
+        Me.txtNroLibreta.Location = New System.Drawing.Point(63, 35)
         Me.txtNroLibreta.Name = "txtNroLibreta"
-        Me.txtNroLibreta.Size = New System.Drawing.Size(212, 20)
+        Me.txtNroLibreta.Size = New System.Drawing.Size(158, 20)
         Me.txtNroLibreta.TabIndex = 5
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.Label2.Location = New System.Drawing.Point(6, 20)
+        Me.Label2.Location = New System.Drawing.Point(60, 19)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(44, 13)
         Me.Label2.TabIndex = 26
@@ -225,6 +229,25 @@ Partial Class frmEmitirLibreta
         Me.btnCancelar.TabIndex = 3
         Me.btnCancelar.Text = "Cancelar"
         Me.btnCancelar.UseVisualStyleBackColor = True
+        '
+        'txtSerieLibreta
+        '
+        Me.txtSerieLibreta.Cursor = System.Windows.Forms.Cursors.No
+        Me.txtSerieLibreta.Enabled = False
+        Me.txtSerieLibreta.Location = New System.Drawing.Point(9, 35)
+        Me.txtSerieLibreta.Name = "txtSerieLibreta"
+        Me.txtSerieLibreta.Size = New System.Drawing.Size(48, 20)
+        Me.txtSerieLibreta.TabIndex = 27
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
+        Me.Label4.Location = New System.Drawing.Point(6, 19)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(31, 13)
+        Me.Label4.TabIndex = 28
+        Me.Label4.Text = "Serie"
         '
         'frmEmitirLibreta
         '
@@ -265,4 +288,6 @@ Partial Class frmEmitirLibreta
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents btnCancelar As System.Windows.Forms.Button
+    Friend WithEvents txtSerieLibreta As System.Windows.Forms.TextBox
+    Friend WithEvents Label4 As System.Windows.Forms.Label
 End Class
