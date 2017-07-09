@@ -47,6 +47,7 @@ Partial Class frmBusquedaCuentaPorCliente
         Me.Label1 = New System.Windows.Forms.Label
         Me.Label2 = New System.Windows.Forms.Label
         Me.Label3 = New System.Windows.Forms.Label
+        Me.lblMotivoAux = New System.Windows.Forms.Label
         Me.GroupBox2.SuspendLayout()
         CType(Me.dgvCuentas, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControl.SuspendLayout()
@@ -134,7 +135,7 @@ Partial Class frmBusquedaCuentaPorCliente
         Me.dgvCuentas.AllowUserToDeleteRows = False
         Me.dgvCuentas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvCuentas.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.numCuenta, Me.saldoCuenta, Me.ultTransaccion})
-        Me.dgvCuentas.Location = New System.Drawing.Point(12, 164)
+        Me.dgvCuentas.Location = New System.Drawing.Point(12, 194)
         Me.dgvCuentas.Name = "dgvCuentas"
         Me.dgvCuentas.ReadOnly = True
         Me.dgvCuentas.Size = New System.Drawing.Size(375, 208)
@@ -160,7 +161,7 @@ Partial Class frmBusquedaCuentaPorCliente
         '
         'btnBuscar
         '
-        Me.btnBuscar.Location = New System.Drawing.Point(298, 122)
+        Me.btnBuscar.Location = New System.Drawing.Point(298, 152)
         Me.btnBuscar.Name = "btnBuscar"
         Me.btnBuscar.Size = New System.Drawing.Size(91, 23)
         Me.btnBuscar.TabIndex = 87
@@ -171,7 +172,7 @@ Partial Class frmBusquedaCuentaPorCliente
         '
         Me.TabControl.Controls.Add(Me.tabPersona)
         Me.TabControl.Controls.Add(Me.tabEmpresa)
-        Me.TabControl.Location = New System.Drawing.Point(12, 12)
+        Me.TabControl.Location = New System.Drawing.Point(12, 42)
         Me.TabControl.Name = "TabControl"
         Me.TabControl.SelectedIndex = 0
         Me.TabControl.Size = New System.Drawing.Size(381, 108)
@@ -285,11 +286,21 @@ Partial Class frmBusquedaCuentaPorCliente
         Me.Label3.TabIndex = 24
         Me.Label3.Text = "Número"
         '
+        'lblMotivoAux
+        '
+        Me.lblMotivoAux.AutoSize = True
+        Me.lblMotivoAux.Location = New System.Drawing.Point(12, 13)
+        Me.lblMotivoAux.Name = "lblMotivoAux"
+        Me.lblMotivoAux.Size = New System.Drawing.Size(120, 13)
+        Me.lblMotivoAux.TabIndex = 89
+        Me.lblMotivoAux.Text = "Seleccione una cuenta."
+        '
         'frmBusquedaCuentaPorCliente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(399, 384)
+        Me.ClientSize = New System.Drawing.Size(399, 414)
+        Me.Controls.Add(Me.lblMotivoAux)
         Me.Controls.Add(Me.TabControl)
         Me.Controls.Add(Me.btnBuscar)
         Me.Controls.Add(Me.dgvCuentas)
@@ -299,7 +310,7 @@ Partial Class frmBusquedaCuentaPorCliente
         Me.Name = "frmBusquedaCuentaPorCliente"
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Buscar cuenta por cliente - Personas"
+        Me.Text = "Buscar cuenta por cliente"
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         CType(Me.dgvCuentas, System.ComponentModel.ISupportInitialize).EndInit()
@@ -309,6 +320,7 @@ Partial Class frmBusquedaCuentaPorCliente
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
@@ -335,4 +347,5 @@ Partial Class frmBusquedaCuentaPorCliente
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents lblMotivoAux As System.Windows.Forms.Label
 End Class

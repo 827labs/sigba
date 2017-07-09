@@ -7,7 +7,7 @@
 
     Private Sub btnCancelar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancelar.Click
         Principal.Show() 'Al dar click en el botón cancelar, se aparece la ventana principal
-        Me.Hide() 'Y esta ventana (Agregar CLiente) se cierra
+        Me.Close() 'Y esta ventana (Agregar CLiente) se cierra
     End Sub
 
     Private Sub frmAgregarCliente_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load

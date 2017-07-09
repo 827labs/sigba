@@ -211,6 +211,7 @@ Partial Class frmNuevaCuenta
         '
         'cboTipoCuenta
         '
+        Me.cboTipoCuenta.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboTipoCuenta.FormattingEnabled = True
         Me.cboTipoCuenta.Items.AddRange(New Object() {"Cuenta de Ahorro (CA)", "Cuenta Corriente (CC)"})
         Me.cboTipoCuenta.Location = New System.Drawing.Point(13, 172)
@@ -220,8 +221,9 @@ Partial Class frmNuevaCuenta
         '
         'cboSucursal
         '
+        Me.cboSucursal.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboSucursal.FormattingEnabled = True
-        Me.cboSucursal.Items.AddRange(New Object() {"Cuenta de Ahorro (CA)", "Cuenta Corriente (CC)"})
+        Me.cboSucursal.Items.AddRange(New Object() {"001 - Casa Central", "002 - Sucursal X"})
         Me.cboSucursal.Location = New System.Drawing.Point(13, 217)
         Me.cboSucursal.Name = "cboSucursal"
         Me.cboSucursal.Size = New System.Drawing.Size(154, 21)
@@ -238,6 +240,7 @@ Partial Class frmNuevaCuenta
         '
         'cboUsoFormas
         '
+        Me.cboUsoFormas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboUsoFormas.FormattingEnabled = True
         Me.cboUsoFormas.Items.AddRange(New Object() {"No Aplica", "Indistinta", "Conjunta"})
         Me.cboUsoFormas.Location = New System.Drawing.Point(173, 217)

@@ -89,4 +89,13 @@ Module Validadores
         KeyPressSoloNumeros(e)
         KeyPressLongitudMaxima(e, contenidoActual, 12)
     End Sub
+
+    Sub KeyPressTxtFecha(ByRef e As System.Windows.Forms.KeyPressEventArgs, ByVal txtFecha As TextBox)
+        If Char.IsControl(e.KeyChar) = False Then
+            If (txtFecha.TextLength = 2 Or txtFecha.TextLength = 5) Then
+                txtFecha.Text = txtFecha.Text & "/"
+                txtFecha.SelectionStart = txtFecha.TextLength + 1
+            End If
+        End If
+    End Sub
 End Module

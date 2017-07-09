@@ -1,14 +1,38 @@
 ﻿Public Class frmBusquedaCuentaPorCliente
 
-    Dim tipoBusqueda As TipoBusquedaCuenta = tipoBusquedaCuenta.Visualizacion
+    Dim tipoBusqueda As TipoBusquedaCuenta = TipoBusquedaCuenta.Visualizacion
+    Dim notificable As Action(Of String)
 
     Public Enum TipoBusquedaCuenta
         Visualizacion = 0
         Baja = 1
+        DebitoAutomatico = 2
+        Notificable = 3
     End Enum
 
     Public Sub SetearTipoBusquedaCuenta(ByVal tipo As TipoBusquedaCuenta)
         Me.tipoBusqueda = tipo
+        Dim textoAuxiliar As String
+
+        Select Case tipo
+            Case TipoBusquedaCuenta.Visualizacion
+                textoAuxiliar = "Seleccione una cuenta para ver los movimientos recientes."
+            Case TipoBusquedaCuenta.Baja
+                textoAuxiliar = "Seleccione una cuenta para dar de baja."
+            Case TipoBusquedaCuenta.DebitoAutomatico
+                textoAuxiliar = "Seleccione una cuenta para ver sus débitos automáticos."
+            Case Else
+                textoAuxiliar = "Seleccione una cuenta para continuar."
+        End Select
+
+        lblMotivoAux.Text = textoAuxiliar
+    End Sub
+
+    Public Sub SetearNotificable(ByVal noti As Action(Of String))
+        ' El notificable sirve para avisarle a una ventana padre
+        ' en caso de ser necesario, que el usuario ha seleccionado una cuenta
+        Me.notificable = noti
+        Me.SetearTipoBusquedaCuenta(TipoBusquedaCuenta.Notificable)
     End Sub
 
     Private Function FormularioEsValido() As Boolean
@@ -49,8 +73,8 @@
         dgvCuentas.Rows.Clear()
 
         If FormularioEsValido() = True Then
-            dgvCuentas.Rows.Add("CA UYU 045-048325-2", "UYU 827,00", "02/12/2016")
-            dgvCuentas.Rows.Add("CA USD 045-048325-2", "USD 751,30", "31/12/2016")
+            dgvCuentas.Rows.Add("CA UYU 012-345678-9", "UYU 827,00", "02/12/2016")
+            dgvCuentas.Rows.Add("CA USD 012-345678-9", "USD 751,30", "31/12/2016")
         End If
 
         InicializarFormulario()
@@ -61,6 +85,13 @@
             frmHistoricoTransaccionesCuenta.Show()
         ElseIf Me.tipoBusqueda = TipoBusquedaCuenta.Baja Then
             frmBajaCuenta.Show()
+        ElseIf Me.tipoBusqueda = TipoBusquedaCuenta.DebitoAutomatico Then
+            frmDebitoAutomatico.Show()
+        ElseIf Me.tipoBusqueda = TipoBusquedaCuenta.Notificable Then
+            If Not (Me.notificable Is Nothing) Then
+                Me.notificable("CA UYU 012-345678-9")
+                Me.Close()
+            End If
         End If
     End Sub
 

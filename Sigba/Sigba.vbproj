@@ -114,6 +114,12 @@
     <Compile Include="Interfaz de Usuario\Caja\Gestión de cajas\frmCierreCaja.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Interfaz de Usuario\Cheques\frmCobrarCheque.Designer.vb">
+      <DependentUpon>frmCobrarCheque.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz de Usuario\Cheques\frmCobrarCheque.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Interfaz de Usuario\Cheques\Libretas\frmAnularLibreta.Designer.vb">
       <DependentUpon>frmAnularLibreta.vb</DependentUpon>
     </Compile>
@@ -174,16 +180,52 @@
     <Compile Include="Interfaz de Usuario\Configuración\Administración de usuarios\frmRecuperacionClaveEmisor.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Interfaz de Usuario\Configuración\Auditoría\frmAuditoria.Designer.vb">
+      <DependentUpon>frmAuditoria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz de Usuario\Configuración\Auditoría\frmAuditoria.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Interfaz de Usuario\Configuración\frmDatosBanco.Designer.vb">
       <DependentUpon>frmDatosBanco.vb</DependentUpon>
     </Compile>
     <Compile Include="Interfaz de Usuario\Configuración\frmDatosBanco.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Interfaz de Usuario\Cuentas\Débito Automático\frmDetalleDebitoAutomatico.Designer.vb">
+      <DependentUpon>frmDetalleDebitoAutomatico.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz de Usuario\Cuentas\Débito Automático\frmDetalleDebitoAutomatico.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz de Usuario\Cuentas\Débito Automático\frmNuevoDebitoAutomatico.Designer.vb">
+      <DependentUpon>frmNuevoDebitoAutomatico.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz de Usuario\Cuentas\Débito Automático\frmNuevoDebitoAutomatico.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Interfaz de Usuario\Cuentas\frmBusquedaCuentaPorCliente.Designer.vb">
       <DependentUpon>frmBusquedaCuentaPorCliente.vb</DependentUpon>
     </Compile>
     <Compile Include="Interfaz de Usuario\Cuentas\frmBusquedaCuentaPorCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz de Usuario\Cuentas\Débito Automático\frmDebitoAutomatico.Designer.vb">
+      <DependentUpon>frmDebitoAutomatico.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz de Usuario\Cuentas\Débito Automático\frmDebitoAutomatico.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz de Usuario\Cuentas\frmDepositoCuenta.Designer.vb">
+      <DependentUpon>frmDepositoCuenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz de Usuario\Cuentas\frmDepositoCuenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz de Usuario\Cuentas\frmRetiroCuenta.Designer.vb">
+      <DependentUpon>frmRetiroCuenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz de Usuario\Cuentas\frmRetiroCuenta.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Interfaz de Usuario\Cuentas\Gestión\frmBajaCuenta.Designer.vb">
@@ -250,6 +292,10 @@
       <DependentUpon>frmCierreCaja.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz de Usuario\Cheques\frmCobrarCheque.resx">
+      <DependentUpon>frmCobrarCheque.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Interfaz de Usuario\Cheques\Libretas\frmAnularLibreta.resx">
       <DependentUpon>frmAnularLibreta.vb</DependentUpon>
       <SubType>Designer</SubType>
@@ -290,12 +336,36 @@
       <DependentUpon>frmRecuperacionClaveEmisor.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz de Usuario\Configuración\Auditoría\frmAuditoria.resx">
+      <DependentUpon>frmAuditoria.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Interfaz de Usuario\Configuración\frmDatosBanco.resx">
       <DependentUpon>frmDatosBanco.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz de Usuario\Cuentas\Débito Automático\frmDebitoAutomatico.resx">
+      <DependentUpon>frmDebitoAutomatico.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz de Usuario\Cuentas\Débito Automático\frmDetalleDebitoAutomatico.resx">
+      <DependentUpon>frmDetalleDebitoAutomatico.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz de Usuario\Cuentas\Débito Automático\frmNuevoDebitoAutomatico.resx">
+      <DependentUpon>frmNuevoDebitoAutomatico.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Interfaz de Usuario\Cuentas\frmBusquedaCuentaPorCliente.resx">
       <DependentUpon>frmBusquedaCuentaPorCliente.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz de Usuario\Cuentas\frmDepositoCuenta.resx">
+      <DependentUpon>frmDepositoCuenta.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz de Usuario\Cuentas\frmRetiroCuenta.resx">
+      <DependentUpon>frmRetiroCuenta.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaz de Usuario\Cuentas\Gestión\frmBajaCuenta.resx">

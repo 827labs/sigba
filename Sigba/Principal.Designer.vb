@@ -35,6 +35,10 @@ Partial Class Principal
         Me.AltaDeCuentaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.BajaDeCuentaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.HistóricoDeTransacciónesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.DébitosAutomáticosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.DepósitoEnCuentaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.RetiroDeCuentaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.TransferenciaEntreCuentasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.ClientesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.GestiónToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
         Me.AltaClienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
@@ -54,6 +58,7 @@ Partial Class Principal
         Me.RecuperacionDeContraseToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.AdministraciónDeCargosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.DatosDelBancoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.AuditoriaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.AyudaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.AcercaDeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.picSigba = New System.Windows.Forms.PictureBox
@@ -110,7 +115,7 @@ Partial Class Principal
         '
         'CuentasToolStripMenuItem
         '
-        Me.CuentasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GestiónToolStripMenuItem, Me.HistóricoDeTransacciónesToolStripMenuItem})
+        Me.CuentasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GestiónToolStripMenuItem, Me.HistóricoDeTransacciónesToolStripMenuItem, Me.DébitosAutomáticosToolStripMenuItem, Me.DepósitoEnCuentaToolStripMenuItem, Me.RetiroDeCuentaToolStripMenuItem, Me.TransferenciaEntreCuentasToolStripMenuItem})
         Me.CuentasToolStripMenuItem.Name = "CuentasToolStripMenuItem"
         Me.CuentasToolStripMenuItem.Size = New System.Drawing.Size(62, 20)
         Me.CuentasToolStripMenuItem.Text = "Cuentas"
@@ -125,13 +130,13 @@ Partial Class Principal
         'AltaDeCuentaToolStripMenuItem
         '
         Me.AltaDeCuentaToolStripMenuItem.Name = "AltaDeCuentaToolStripMenuItem"
-        Me.AltaDeCuentaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.AltaDeCuentaToolStripMenuItem.Size = New System.Drawing.Size(151, 22)
         Me.AltaDeCuentaToolStripMenuItem.Text = "Alta de cuenta"
         '
         'BajaDeCuentaToolStripMenuItem
         '
         Me.BajaDeCuentaToolStripMenuItem.Name = "BajaDeCuentaToolStripMenuItem"
-        Me.BajaDeCuentaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.BajaDeCuentaToolStripMenuItem.Size = New System.Drawing.Size(151, 22)
         Me.BajaDeCuentaToolStripMenuItem.Text = "Baja de cuenta"
         '
         'HistóricoDeTransacciónesToolStripMenuItem
@@ -139,6 +144,30 @@ Partial Class Principal
         Me.HistóricoDeTransacciónesToolStripMenuItem.Name = "HistóricoDeTransacciónesToolStripMenuItem"
         Me.HistóricoDeTransacciónesToolStripMenuItem.Size = New System.Drawing.Size(273, 22)
         Me.HistóricoDeTransacciónesToolStripMenuItem.Text = "Histórico de transacciones por cuenta"
+        '
+        'DébitosAutomáticosToolStripMenuItem
+        '
+        Me.DébitosAutomáticosToolStripMenuItem.Name = "DébitosAutomáticosToolStripMenuItem"
+        Me.DébitosAutomáticosToolStripMenuItem.Size = New System.Drawing.Size(273, 22)
+        Me.DébitosAutomáticosToolStripMenuItem.Text = "Débitos automáticos"
+        '
+        'DepósitoEnCuentaToolStripMenuItem
+        '
+        Me.DepósitoEnCuentaToolStripMenuItem.Name = "DepósitoEnCuentaToolStripMenuItem"
+        Me.DepósitoEnCuentaToolStripMenuItem.Size = New System.Drawing.Size(273, 22)
+        Me.DepósitoEnCuentaToolStripMenuItem.Text = "Depósito en cuenta"
+        '
+        'RetiroDeCuentaToolStripMenuItem
+        '
+        Me.RetiroDeCuentaToolStripMenuItem.Name = "RetiroDeCuentaToolStripMenuItem"
+        Me.RetiroDeCuentaToolStripMenuItem.Size = New System.Drawing.Size(273, 22)
+        Me.RetiroDeCuentaToolStripMenuItem.Text = "Retiro de cuenta"
+        '
+        'TransferenciaEntreCuentasToolStripMenuItem
+        '
+        Me.TransferenciaEntreCuentasToolStripMenuItem.Name = "TransferenciaEntreCuentasToolStripMenuItem"
+        Me.TransferenciaEntreCuentasToolStripMenuItem.Size = New System.Drawing.Size(273, 22)
+        Me.TransferenciaEntreCuentasToolStripMenuItem.Text = "Transferencia entre cuentas"
         '
         'ClientesToolStripMenuItem
         '
@@ -226,7 +255,7 @@ Partial Class Principal
         '
         'ConfiguraciónToolStripMenuItem
         '
-        Me.ConfiguraciónToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AdministraciToolStripMenuItem, Me.AdministraciónDeCargosToolStripMenuItem, Me.DatosDelBancoToolStripMenuItem})
+        Me.ConfiguraciónToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AdministraciToolStripMenuItem, Me.AdministraciónDeCargosToolStripMenuItem, Me.DatosDelBancoToolStripMenuItem, Me.AuditoriaToolStripMenuItem})
         Me.ConfiguraciónToolStripMenuItem.Name = "ConfiguraciónToolStripMenuItem"
         Me.ConfiguraciónToolStripMenuItem.Size = New System.Drawing.Size(95, 20)
         Me.ConfiguraciónToolStripMenuItem.Text = "Configuración"
@@ -261,6 +290,12 @@ Partial Class Principal
         Me.DatosDelBancoToolStripMenuItem.Name = "DatosDelBancoToolStripMenuItem"
         Me.DatosDelBancoToolStripMenuItem.Size = New System.Drawing.Size(218, 22)
         Me.DatosDelBancoToolStripMenuItem.Text = "Datos del banco"
+        '
+        'AuditoriaToolStripMenuItem
+        '
+        Me.AuditoriaToolStripMenuItem.Name = "AuditoriaToolStripMenuItem"
+        Me.AuditoriaToolStripMenuItem.Size = New System.Drawing.Size(218, 22)
+        Me.AuditoriaToolStripMenuItem.Text = "Auditoría"
         '
         'AyudaToolStripMenuItem
         '
@@ -300,7 +335,7 @@ Partial Class Principal
         Me.ShowIcon = False
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "SIGBA - Banco Republica"
+        Me.Text = "Sistema Informático de Gestión Bancaria"
         Me.strItems.ResumeLayout(False)
         Me.strItems.PerformLayout()
         CType(Me.picSigba, System.ComponentModel.ISupportInitialize).EndInit()
@@ -342,4 +377,9 @@ Partial Class Principal
     Friend WithEvents AnularToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents DepósitoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents DatosDelBancoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents DébitosAutomáticosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents DepósitoEnCuentaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents RetiroDeCuentaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents TransferenciaEntreCuentasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents AuditoriaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

@@ -83,4 +83,26 @@
         form.SetearTipoBusquedaCuenta(frmBusquedaCuentaPorCliente.TipoBusquedaCuenta.Baja)
         form.Show()
     End Sub
+
+    Private Sub CobrarChequeToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles DepósitoToolStripMenuItem.Click
+        frmCobrarCheque.Show()
+    End Sub
+
+    Private Sub AuditoriaToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AuditoriaToolStripMenuItem.Click
+        frmAuditoria.Show()
+    End Sub
+
+    Private Sub DébitosAutomáticosToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles DébitosAutomáticosToolStripMenuItem.Click
+        Dim form = New frmBusquedaCuentaPorCliente()
+        form.SetearTipoBusquedaCuenta(frmBusquedaCuentaPorCliente.TipoBusquedaCuenta.DebitoAutomatico)
+        form.Show()
+    End Sub
+
+    Private Sub RetiroDeCuentaToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RetiroDeCuentaToolStripMenuItem.Click
+        frmRetiroCuenta.Show()
+    End Sub
+
+    Private Sub DepósitoEnCuentaToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles DepósitoEnCuentaToolStripMenuItem.Click
+        frmDepositoCuenta.Show()
+    End Sub
 End Class
