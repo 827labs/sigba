@@ -105,4 +105,8 @@
     Private Sub DepósitoEnCuentaToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles DepósitoEnCuentaToolStripMenuItem.Click
         frmDepositoCuenta.Show()
     End Sub
+
+    Private Sub TransferenciaEntreCuentasToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TransferenciaEntreCuentasToolStripMenuItem.Click
+        frmTransferenciaCuentas.Show()
+    End Sub
 End Class

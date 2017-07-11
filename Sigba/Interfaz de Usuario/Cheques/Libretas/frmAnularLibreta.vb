@@ -2,7 +2,7 @@
     Dim clienteEjemplo = "12345678 - PEREZ, JUAN"
 
     Private Function FormularioEsValido()
-        Dim condicion = txtNumLibreta.Text <> ""
+        Dim condicion = txtNumLibreta.Text <> "" And Val(txtNumLibreta.Text) <> 0 And Val(txtSerieLibreta.Text) <> 0
         If condicion = False Then
             MessageBox.Show("Compruebe los campos")
         End If

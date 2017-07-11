@@ -22,11 +22,12 @@ Partial Class frmOlvidoClave
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmOlvidoClave))
         Me.Label1 = New System.Windows.Forms.Label
-        Me.TextBox1 = New System.Windows.Forms.TextBox
-        Me.TextBox2 = New System.Windows.Forms.TextBox
+        Me.txtCodigoAcceso = New System.Windows.Forms.TextBox
+        Me.txtNuevaClave = New System.Windows.Forms.TextBox
         Me.Label2 = New System.Windows.Forms.Label
-        Me.Button1 = New System.Windows.Forms.Button
+        Me.btnContinuar = New System.Windows.Forms.Button
         Me.Label3 = New System.Windows.Forms.Label
         Me.SuspendLayout()
         '
@@ -40,20 +41,20 @@ Partial Class frmOlvidoClave
         Me.Label1.Text = "Solicita un código de recuperación a tu supervisor directo" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "e ingresalo en el sig" & _
             "uiente campo:"
         '
-        'TextBox1
+        'txtCodigoAcceso
         '
-        Me.TextBox1.Location = New System.Drawing.Point(17, 84)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(275, 20)
-        Me.TextBox1.TabIndex = 1
+        Me.txtCodigoAcceso.Location = New System.Drawing.Point(17, 84)
+        Me.txtCodigoAcceso.Name = "txtCodigoAcceso"
+        Me.txtCodigoAcceso.Size = New System.Drawing.Size(275, 20)
+        Me.txtCodigoAcceso.TabIndex = 1
         '
-        'TextBox2
+        'txtNuevaClave
         '
-        Me.TextBox2.Location = New System.Drawing.Point(17, 143)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TextBox2.Size = New System.Drawing.Size(275, 20)
-        Me.TextBox2.TabIndex = 3
+        Me.txtNuevaClave.Location = New System.Drawing.Point(17, 143)
+        Me.txtNuevaClave.Name = "txtNuevaClave"
+        Me.txtNuevaClave.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txtNuevaClave.Size = New System.Drawing.Size(275, 20)
+        Me.txtNuevaClave.TabIndex = 3
         '
         'Label2
         '
@@ -64,14 +65,14 @@ Partial Class frmOlvidoClave
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Ahora, escoge una nueva clave de acceso e ingresala" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "en el siguiente campo:"
         '
-        'Button1
+        'btnContinuar
         '
-        Me.Button1.Location = New System.Drawing.Point(146, 170)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(145, 23)
-        Me.Button1.TabIndex = 4
-        Me.Button1.Text = "Cambiar clave y continuar"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnContinuar.Location = New System.Drawing.Point(146, 170)
+        Me.btnContinuar.Name = "btnContinuar"
+        Me.btnContinuar.Size = New System.Drawing.Size(145, 23)
+        Me.btnContinuar.TabIndex = 4
+        Me.btnContinuar.Text = "Cambiar clave y continuar"
+        Me.btnContinuar.UseVisualStyleBackColor = True
         '
         'Label3
         '
@@ -89,12 +90,16 @@ Partial Class frmOlvidoClave
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(304, 203)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.btnContinuar)
+        Me.Controls.Add(Me.txtNuevaClave)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtCodigoAcceso)
         Me.Controls.Add(Me.Label1)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "frmOlvidoClave"
         Me.Text = "Recuperación de clave"
         Me.ResumeLayout(False)
@@ -102,9 +107,9 @@ Partial Class frmOlvidoClave
 
     End Sub
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents txtCodigoAcceso As System.Windows.Forms.TextBox
+    Friend WithEvents txtNuevaClave As System.Windows.Forms.TextBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents btnContinuar As System.Windows.Forms.Button
     Friend WithEvents Label3 As System.Windows.Forms.Label
 End Class

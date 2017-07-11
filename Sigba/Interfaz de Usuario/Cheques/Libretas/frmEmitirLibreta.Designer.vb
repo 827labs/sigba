@@ -22,6 +22,7 @@ Partial Class frmEmitirLibreta
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmEmitirLibreta))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox
         Me.GroupBox2 = New System.Windows.Forms.GroupBox
         Me.cboNumCuenta = New System.Windows.Forms.ComboBox
@@ -34,14 +35,14 @@ Partial Class frmEmitirLibreta
         Me.lblTipoDoc = New System.Windows.Forms.Label
         Me.lblNroDocumento = New System.Windows.Forms.Label
         Me.GroupBox3 = New System.Windows.Forms.GroupBox
+        Me.txtSerieLibreta = New System.Windows.Forms.TextBox
+        Me.Label4 = New System.Windows.Forms.Label
         Me.txtCantCheques = New System.Windows.Forms.TextBox
         Me.Label3 = New System.Windows.Forms.Label
         Me.txtNroLibreta = New System.Windows.Forms.TextBox
         Me.Label2 = New System.Windows.Forms.Label
-        Me.Button1 = New System.Windows.Forms.Button
+        Me.btnEmitir = New System.Windows.Forms.Button
         Me.btnCancelar = New System.Windows.Forms.Button
-        Me.txtSerieLibreta = New System.Windows.Forms.TextBox
-        Me.Label4 = New System.Windows.Forms.Label
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.grpDocumento.SuspendLayout()
@@ -176,12 +177,31 @@ Partial Class frmEmitirLibreta
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Datos de la libreta"
         '
+        'txtSerieLibreta
+        '
+        Me.txtSerieLibreta.Cursor = System.Windows.Forms.Cursors.No
+        Me.txtSerieLibreta.Enabled = False
+        Me.txtSerieLibreta.Location = New System.Drawing.Point(9, 35)
+        Me.txtSerieLibreta.Name = "txtSerieLibreta"
+        Me.txtSerieLibreta.Size = New System.Drawing.Size(48, 20)
+        Me.txtSerieLibreta.TabIndex = 5
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
+        Me.Label4.Location = New System.Drawing.Point(6, 19)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(31, 13)
+        Me.Label4.TabIndex = 28
+        Me.Label4.Text = "Serie"
+        '
         'txtCantCheques
         '
         Me.txtCantCheques.Location = New System.Drawing.Point(227, 35)
         Me.txtCantCheques.Name = "txtCantCheques"
         Me.txtCantCheques.Size = New System.Drawing.Size(129, 20)
-        Me.txtCantCheques.TabIndex = 6
+        Me.txtCantCheques.TabIndex = 7
         '
         'Label3
         '
@@ -200,7 +220,7 @@ Partial Class frmEmitirLibreta
         Me.txtNroLibreta.Location = New System.Drawing.Point(63, 35)
         Me.txtNroLibreta.Name = "txtNroLibreta"
         Me.txtNroLibreta.Size = New System.Drawing.Size(158, 20)
-        Me.txtNroLibreta.TabIndex = 5
+        Me.txtNroLibreta.TabIndex = 6
         '
         'Label2
         '
@@ -212,42 +232,23 @@ Partial Class frmEmitirLibreta
         Me.Label2.TabIndex = 26
         Me.Label2.Text = "Número"
         '
-        'Button1
+        'btnEmitir
         '
-        Me.Button1.Location = New System.Drawing.Point(309, 244)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 2
-        Me.Button1.Text = "Emitir"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnEmitir.Location = New System.Drawing.Point(309, 244)
+        Me.btnEmitir.Name = "btnEmitir"
+        Me.btnEmitir.Size = New System.Drawing.Size(75, 23)
+        Me.btnEmitir.TabIndex = 8
+        Me.btnEmitir.Text = "Emitir"
+        Me.btnEmitir.UseVisualStyleBackColor = True
         '
         'btnCancelar
         '
         Me.btnCancelar.Location = New System.Drawing.Point(228, 244)
         Me.btnCancelar.Name = "btnCancelar"
         Me.btnCancelar.Size = New System.Drawing.Size(75, 23)
-        Me.btnCancelar.TabIndex = 3
+        Me.btnCancelar.TabIndex = 9
         Me.btnCancelar.Text = "Cancelar"
         Me.btnCancelar.UseVisualStyleBackColor = True
-        '
-        'txtSerieLibreta
-        '
-        Me.txtSerieLibreta.Cursor = System.Windows.Forms.Cursors.No
-        Me.txtSerieLibreta.Enabled = False
-        Me.txtSerieLibreta.Location = New System.Drawing.Point(9, 35)
-        Me.txtSerieLibreta.Name = "txtSerieLibreta"
-        Me.txtSerieLibreta.Size = New System.Drawing.Size(48, 20)
-        Me.txtSerieLibreta.TabIndex = 27
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.Label4.Location = New System.Drawing.Point(6, 19)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(31, 13)
-        Me.Label4.TabIndex = 28
-        Me.Label4.Text = "Serie"
         '
         'frmEmitirLibreta
         '
@@ -255,9 +256,12 @@ Partial Class frmEmitirLibreta
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(398, 278)
         Me.Controls.Add(Me.btnCancelar)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnEmitir)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
         Me.Name = "frmEmitirLibreta"
         Me.Text = "Emitir Libreta"
         Me.GroupBox1.ResumeLayout(False)
@@ -286,7 +290,7 @@ Partial Class frmEmitirLibreta
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents txtCantCheques As System.Windows.Forms.TextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents btnEmitir As System.Windows.Forms.Button
     Friend WithEvents btnCancelar As System.Windows.Forms.Button
     Friend WithEvents txtSerieLibreta As System.Windows.Forms.TextBox
     Friend WithEvents Label4 As System.Windows.Forms.Label

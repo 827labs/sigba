@@ -92,3 +92,4 @@ C:\Users\Usuario\Desktop\Sigba\Sigba\obj\Debug\Sigba.vbproj.GenerateResource.Cac
 \\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\obj\Debug\Sigba.frmNuevoDebitoAutomatico.resources
 \\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\obj\Debug\Sigba.frmDepositoCuenta.resources
 \\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\obj\Debug\Sigba.frmRetiroCuenta.resources
+\\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\obj\Debug\Sigba.frmTransferenciaCuentas.resources

@@ -22,6 +22,7 @@ Partial Class frmAnularLibreta
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmAnularLibreta))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox
         Me.Label2 = New System.Windows.Forms.Label
         Me.txtSerieLibreta = New System.Windows.Forms.TextBox
@@ -105,6 +106,9 @@ Partial Class frmAnularLibreta
         Me.Controls.Add(Me.btnAnular)
         Me.Controls.Add(Me.lblCliente)
         Me.Controls.Add(Me.GroupBox1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
         Me.Name = "frmAnularLibreta"
         Me.Text = "Anular Libreta"
         Me.GroupBox1.ResumeLayout(False)

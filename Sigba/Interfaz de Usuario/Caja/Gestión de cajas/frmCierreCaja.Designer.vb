@@ -22,6 +22,7 @@ Partial Class frmCierreCaja
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmCierreCaja))
         Me.btnCancelar = New System.Windows.Forms.Button
         Me.btnConfirmar = New System.Windows.Forms.Button
         Me.txtSaldoUSD = New System.Windows.Forms.TextBox
@@ -207,6 +208,9 @@ Partial Class frmCierreCaja
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.txtSucursal)
         Me.Controls.Add(Me.Label1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
         Me.Name = "frmCierreCaja"
         Me.Text = "Cierre de Caja"
         Me.ResumeLayout(False)

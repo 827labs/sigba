@@ -22,6 +22,7 @@ Partial Class frmBajaCuenta
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmBajaCuenta))
         Me.Label1 = New System.Windows.Forms.Label
         Me.lblCuenta = New System.Windows.Forms.Label
         Me.lblTitular = New System.Windows.Forms.Label
@@ -135,6 +136,9 @@ Partial Class frmBajaCuenta
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.lblCuenta)
         Me.Controls.Add(Me.Label1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
         Me.Name = "frmBajaCuenta"
         Me.Text = "Baja de cuenta"
         Me.GroupBox1.ResumeLayout(False)

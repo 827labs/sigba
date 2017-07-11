@@ -26,4 +26,23 @@
     Private Sub btnCancelar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancelar.Click
         Me.Close()
     End Sub
+
+    Private Sub btnEmitir_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEmitir.Click
+        If (cboPaisDocCliente.Text <> "" _
+            And cboTipoDocCliente.Text <> "" _
+            And txtNroDocCliente.Text <> "" _
+            And cboNumCuenta.Text <> "" _
+            And txtSerieLibreta.Text <> "" _
+            And txtNroLibreta.Text <> "" _
+            And txtCantCheques.Text <> "" _
+            And Val(txtCantCheques.Text) <> 0 _
+        ) Then
+            If MessageBox.Show("¿Confirma la emisión de la libreta?", "Confirmar", MessageBoxButtons.YesNo) = Windows.Forms.DialogResult.Yes Then
+                MessageBox.Show("Libreta emitida exitosamente")
+                Me.Close()
+            End If
+        Else
+            MessageBox.Show("Compruebe los campos")
+        End If
+    End Sub
 End Class

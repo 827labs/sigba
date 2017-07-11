@@ -274,7 +274,9 @@ Partial Class frmNuevoDebitoAutomatico
         Me.Controls.Add(Me.lblEmpresa)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
         Me.Name = "frmNuevoDebitoAutomatico"
         Me.Text = "Nuevo Débito Automático"
         Me.ResumeLayout(False)

@@ -17,4 +17,16 @@
     Private Sub SetearNumeroCuenta(ByVal cuenta As String)
         txtCuentaBeneficiario.Text = cuenta
     End Sub
+
+    Private Sub btnConfirmar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnConfirmar.Click
+        If (txtCuentaBeneficiario.Text <> "" And txtMontoCantidad.Text <> "" And Val(txtMontoCantidad.Text) > 0 And cboMonto.Text <> "") Then
+            Dim decision = MessageBox.Show("¿Desea confirmar esta depósito?", "Confirmar", MessageBoxButtons.YesNo)
+            If decision = Windows.Forms.DialogResult.Yes Then
+                MessageBox.Show("La depósito se ha confirmado exitosamente.")
+                Me.Close()
+            End If
+        Else
+            MessageBox.Show("Complete todos los campos para continuar")
+        End If
+    End Sub
 End Class

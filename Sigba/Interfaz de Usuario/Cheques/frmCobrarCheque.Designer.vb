@@ -22,6 +22,7 @@ Partial Class frmCobrarCheque
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmCobrarCheque))
         Me.Label1 = New System.Windows.Forms.Label
         Me.cboTipoCheque = New System.Windows.Forms.ComboBox
         Me.cboTipoCobro = New System.Windows.Forms.ComboBox
@@ -51,7 +52,7 @@ Partial Class frmCobrarCheque
         Me.rboEmitidoOtro = New System.Windows.Forms.RadioButton
         Me.Label12 = New System.Windows.Forms.Label
         Me.btnProcesar = New System.Windows.Forms.Button
-        Me.Button2 = New System.Windows.Forms.Button
+        Me.btnCancelar = New System.Windows.Forms.Button
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -73,7 +74,7 @@ Partial Class frmCobrarCheque
         Me.cboTipoCheque.Location = New System.Drawing.Point(16, 69)
         Me.cboTipoCheque.Name = "cboTipoCheque"
         Me.cboTipoCheque.Size = New System.Drawing.Size(121, 21)
-        Me.cboTipoCheque.TabIndex = 1
+        Me.cboTipoCheque.TabIndex = 6
         '
         'cboTipoCobro
         '
@@ -83,7 +84,7 @@ Partial Class frmCobrarCheque
         Me.cboTipoCobro.Location = New System.Drawing.Point(143, 69)
         Me.cboTipoCobro.Name = "cboTipoCobro"
         Me.cboTipoCobro.Size = New System.Drawing.Size(121, 21)
-        Me.cboTipoCobro.TabIndex = 3
+        Me.cboTipoCobro.TabIndex = 7
         '
         'Label2
         '
@@ -117,14 +118,14 @@ Partial Class frmCobrarCheque
         Me.cboPaisDoc.Location = New System.Drawing.Point(9, 33)
         Me.cboPaisDoc.Name = "cboPaisDoc"
         Me.cboPaisDoc.Size = New System.Drawing.Size(129, 21)
-        Me.cboPaisDoc.TabIndex = 5
+        Me.cboPaisDoc.TabIndex = 3
         '
         'txtNroDoc
         '
         Me.txtNroDoc.Location = New System.Drawing.Point(221, 34)
         Me.txtNroDoc.Name = "txtNroDoc"
         Me.txtNroDoc.Size = New System.Drawing.Size(129, 20)
-        Me.txtNroDoc.TabIndex = 7
+        Me.txtNroDoc.TabIndex = 5
         '
         'cboTipoDoc
         '
@@ -134,7 +135,7 @@ Partial Class frmCobrarCheque
         Me.cboTipoDoc.Location = New System.Drawing.Point(144, 33)
         Me.cboTipoDoc.Name = "cboTipoDoc"
         Me.cboTipoDoc.Size = New System.Drawing.Size(71, 21)
-        Me.cboTipoDoc.TabIndex = 6
+        Me.cboTipoDoc.TabIndex = 4
         '
         'Label5
         '
@@ -172,7 +173,7 @@ Partial Class frmCobrarCheque
         Me.txtFechaEmision.Mask = "99/99/9999"
         Me.txtFechaEmision.Name = "txtFechaEmision"
         Me.txtFechaEmision.Size = New System.Drawing.Size(121, 20)
-        Me.txtFechaEmision.TabIndex = 86
+        Me.txtFechaEmision.TabIndex = 8
         '
         'Label3
         '
@@ -199,14 +200,14 @@ Partial Class frmCobrarCheque
         Me.txtFechaCobro.Mask = "99/99/9999"
         Me.txtFechaCobro.Name = "txtFechaCobro"
         Me.txtFechaCobro.Size = New System.Drawing.Size(121, 20)
-        Me.txtFechaCobro.TabIndex = 88
+        Me.txtFechaCobro.TabIndex = 9
         '
         'txtNumLibreta
         '
         Me.txtNumLibreta.Location = New System.Drawing.Point(273, 156)
         Me.txtNumLibreta.Name = "txtNumLibreta"
         Me.txtNumLibreta.Size = New System.Drawing.Size(110, 20)
-        Me.txtNumLibreta.TabIndex = 90
+        Me.txtNumLibreta.TabIndex = 12
         '
         'Label8
         '
@@ -236,14 +237,14 @@ Partial Class frmCobrarCheque
         Me.cboMontoMoneda.Location = New System.Drawing.Point(7, 18)
         Me.cboMontoMoneda.Name = "cboMontoMoneda"
         Me.cboMontoMoneda.Size = New System.Drawing.Size(129, 21)
-        Me.cboMontoMoneda.TabIndex = 94
+        Me.cboMontoMoneda.TabIndex = 10
         '
         'txtMontoCantidad
         '
         Me.txtMontoCantidad.Location = New System.Drawing.Point(142, 19)
         Me.txtMontoCantidad.Name = "txtMontoCantidad"
         Me.txtMontoCantidad.Size = New System.Drawing.Size(100, 20)
-        Me.txtMontoCantidad.TabIndex = 93
+        Me.txtMontoCantidad.TabIndex = 11
         '
         'Label9
         '
@@ -259,7 +260,7 @@ Partial Class frmCobrarCheque
         Me.txtNumSerie.Location = New System.Drawing.Point(389, 156)
         Me.txtNumSerie.Name = "txtNumSerie"
         Me.txtNumSerie.Size = New System.Drawing.Size(74, 20)
-        Me.txtNumSerie.TabIndex = 93
+        Me.txtNumSerie.TabIndex = 13
         '
         'Label10
         '
@@ -275,7 +276,7 @@ Partial Class frmCobrarCheque
         Me.txtNumCheque.Location = New System.Drawing.Point(469, 155)
         Me.txtNumCheque.Name = "txtNumCheque"
         Me.txtNumCheque.Size = New System.Drawing.Size(161, 20)
-        Me.txtNumCheque.TabIndex = 95
+        Me.txtNumCheque.TabIndex = 14
         '
         'Label11
         '
@@ -294,7 +295,7 @@ Partial Class frmCobrarCheque
         Me.rboEmitidoEste.Location = New System.Drawing.Point(469, 19)
         Me.rboEmitidoEste.Name = "rboEmitidoEste"
         Me.rboEmitidoEste.Size = New System.Drawing.Size(79, 17)
-        Me.rboEmitidoEste.TabIndex = 98
+        Me.rboEmitidoEste.TabIndex = 1
         Me.rboEmitidoEste.TabStop = True
         Me.rboEmitidoEste.Text = "Este banco"
         Me.rboEmitidoEste.UseVisualStyleBackColor = True
@@ -305,7 +306,7 @@ Partial Class frmCobrarCheque
         Me.rboEmitidoOtro.Location = New System.Drawing.Point(554, 19)
         Me.rboEmitidoOtro.Name = "rboEmitidoOtro"
         Me.rboEmitidoOtro.Size = New System.Drawing.Size(78, 17)
-        Me.rboEmitidoOtro.TabIndex = 99
+        Me.rboEmitidoOtro.TabIndex = 2
         Me.rboEmitidoOtro.TabStop = True
         Me.rboEmitidoOtro.Text = "Otro banco"
         Me.rboEmitidoOtro.UseVisualStyleBackColor = True
@@ -325,25 +326,25 @@ Partial Class frmCobrarCheque
         Me.btnProcesar.Location = New System.Drawing.Point(516, 182)
         Me.btnProcesar.Name = "btnProcesar"
         Me.btnProcesar.Size = New System.Drawing.Size(113, 24)
-        Me.btnProcesar.TabIndex = 101
+        Me.btnProcesar.TabIndex = 15
         Me.btnProcesar.Text = "Procesar cobro"
         Me.btnProcesar.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btnCancelar
         '
-        Me.Button2.Location = New System.Drawing.Point(435, 182)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 102
-        Me.Button2.Text = "Cancelar"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnCancelar.Location = New System.Drawing.Point(435, 182)
+        Me.btnCancelar.Name = "btnCancelar"
+        Me.btnCancelar.Size = New System.Drawing.Size(75, 23)
+        Me.btnCancelar.TabIndex = 16
+        Me.btnCancelar.Text = "Cancelar"
+        Me.btnCancelar.UseVisualStyleBackColor = True
         '
         'frmCobrarCheque
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(642, 213)
-        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.btnCancelar)
         Me.Controls.Add(Me.btnProcesar)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.rboEmitidoOtro)
@@ -365,6 +366,9 @@ Partial Class frmCobrarCheque
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.cboTipoCheque)
         Me.Controls.Add(Me.Label1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
         Me.Name = "frmCobrarCheque"
         Me.Text = "Cobrar cheque"
         Me.GroupBox2.ResumeLayout(False)
@@ -404,5 +408,5 @@ Partial Class frmCobrarCheque
     Friend WithEvents rboEmitidoOtro As System.Windows.Forms.RadioButton
     Friend WithEvents Label12 As System.Windows.Forms.Label
     Friend WithEvents btnProcesar As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents btnCancelar As System.Windows.Forms.Button
 End Class

@@ -22,6 +22,7 @@ Partial Class frmHistoricoTransaccionesCuenta
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmHistoricoTransaccionesCuenta))
         Me.Label1 = New System.Windows.Forms.Label
         Me.Label2 = New System.Windows.Forms.Label
         Me.dgvTransacciones = New System.Windows.Forms.DataGridView
@@ -48,11 +49,11 @@ Partial Class frmHistoricoTransaccionesCuenta
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(13, 26)
+        Me.Label2.Location = New System.Drawing.Point(12, 26)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(110, 16)
+        Me.Label2.Size = New System.Drawing.Size(158, 16)
         Me.Label2.TabIndex = 1
-        Me.Label2.Text = "123-456789-0"
+        Me.Label2.Text = "CA UYU 123-456789-0"
         '
         'dgvTransacciones
         '
@@ -116,6 +117,8 @@ Partial Class frmHistoricoTransaccionesCuenta
         Me.Controls.Add(Me.dgvTransacciones)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "frmHistoricoTransaccionesCuenta"
         Me.Text = "Histórico de transacciones por cuenta"

@@ -328,7 +328,6 @@ Partial Class Principal
         Me.Controls.Add(Me.strItems)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.strItems
-        Me.MaximizeBox = False
         Me.MaximumSize = New System.Drawing.Size(935, 633)
         Me.MinimumSize = New System.Drawing.Size(935, 633)
         Me.Name = "Principal"

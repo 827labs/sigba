@@ -85,6 +85,7 @@ Partial Class frmRecuperacionClaveEmisor
         Me.Controls.Add(Me.btnGenerar)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txtCedulaUsuario)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximizeBox = False
         Me.MaximumSize = New System.Drawing.Size(313, 222)
         Me.MinimizeBox = False

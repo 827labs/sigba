@@ -28,16 +28,16 @@ Partial Class frmDetalleDebitoAutomatico
         Me.Label3 = New System.Windows.Forms.Label
         Me.Label4 = New System.Windows.Forms.Label
         Me.GroupBox1 = New System.Windows.Forms.GroupBox
+        Me.dgvTransacciones = New System.Windows.Forms.DataGridView
+        Me.asunto = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.fecha = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.hora = New System.Windows.Forms.DataGridViewTextBoxColumn
         Me.lblDiaCobro = New System.Windows.Forms.Label
         Me.lblCtaCredito = New System.Windows.Forms.Label
         Me.lblCtaDebito = New System.Windows.Forms.Label
         Me.lblEmpresa = New System.Windows.Forms.Label
         Me.lblMonto = New System.Windows.Forms.Label
         Me.Label10 = New System.Windows.Forms.Label
-        Me.dgvTransacciones = New System.Windows.Forms.DataGridView
-        Me.asunto = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.fecha = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.hora = New System.Windows.Forms.DataGridViewTextBoxColumn
         Me.btnEliminar = New System.Windows.Forms.Button
         Me.GroupBox1.SuspendLayout()
         CType(Me.dgvTransacciones, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -88,6 +88,36 @@ Partial Class frmDetalleDebitoAutomatico
         Me.GroupBox1.TabIndex = 4
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Últimas transsaciónes"
+        '
+        'dgvTransacciones
+        '
+        Me.dgvTransacciones.AllowUserToAddRows = False
+        Me.dgvTransacciones.AllowUserToDeleteRows = False
+        Me.dgvTransacciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvTransacciones.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.asunto, Me.fecha, Me.hora})
+        Me.dgvTransacciones.Location = New System.Drawing.Point(7, 20)
+        Me.dgvTransacciones.Name = "dgvTransacciones"
+        Me.dgvTransacciones.ReadOnly = True
+        Me.dgvTransacciones.Size = New System.Drawing.Size(349, 148)
+        Me.dgvTransacciones.TabIndex = 0
+        '
+        'asunto
+        '
+        Me.asunto.HeaderText = "Asunto"
+        Me.asunto.Name = "asunto"
+        Me.asunto.ReadOnly = True
+        '
+        'fecha
+        '
+        Me.fecha.HeaderText = "Fecha"
+        Me.fecha.Name = "fecha"
+        Me.fecha.ReadOnly = True
+        '
+        'hora
+        '
+        Me.hora.HeaderText = "Estado"
+        Me.hora.Name = "hora"
+        Me.hora.ReadOnly = True
         '
         'lblDiaCobro
         '
@@ -148,36 +178,6 @@ Partial Class frmDetalleDebitoAutomatico
         Me.Label10.TabIndex = 9
         Me.Label10.Text = "Monto:"
         '
-        'dgvTransacciones
-        '
-        Me.dgvTransacciones.AllowUserToAddRows = False
-        Me.dgvTransacciones.AllowUserToDeleteRows = False
-        Me.dgvTransacciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvTransacciones.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.asunto, Me.fecha, Me.hora})
-        Me.dgvTransacciones.Location = New System.Drawing.Point(7, 20)
-        Me.dgvTransacciones.Name = "dgvTransacciones"
-        Me.dgvTransacciones.ReadOnly = True
-        Me.dgvTransacciones.Size = New System.Drawing.Size(349, 148)
-        Me.dgvTransacciones.TabIndex = 0
-        '
-        'asunto
-        '
-        Me.asunto.HeaderText = "Asunto"
-        Me.asunto.Name = "asunto"
-        Me.asunto.ReadOnly = True
-        '
-        'fecha
-        '
-        Me.fecha.HeaderText = "Fecha"
-        Me.fecha.Name = "fecha"
-        Me.fecha.ReadOnly = True
-        '
-        'hora
-        '
-        Me.hora.HeaderText = "Estado"
-        Me.hora.Name = "hora"
-        Me.hora.ReadOnly = True
-        '
         'btnEliminar
         '
         Me.btnEliminar.Location = New System.Drawing.Point(292, 13)
@@ -204,7 +204,9 @@ Partial Class frmDetalleDebitoAutomatico
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
         Me.Name = "frmDetalleDebitoAutomatico"
         Me.Text = "Detalle de débito automatico"
         Me.GroupBox1.ResumeLayout(False)

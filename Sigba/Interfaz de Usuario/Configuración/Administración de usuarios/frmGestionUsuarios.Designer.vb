@@ -22,7 +22,8 @@ Partial Class frmGestionUsuarios
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmGestionUsuarios))
+        Me.dgvUsuarios = New System.Windows.Forms.DataGridView
         Me.Cédula = New System.Windows.Forms.DataGridViewTextBoxColumn
         Me.Apellidos = New System.Windows.Forms.DataGridViewTextBoxColumn
         Me.Nombres = New System.Windows.Forms.DataGridViewTextBoxColumn
@@ -43,22 +44,22 @@ Partial Class frmGestionUsuarios
         Me.btnBuscarCedula = New System.Windows.Forms.Button
         Me.txtBuscaCedula = New System.Windows.Forms.TextBox
         Me.Label2 = New System.Windows.Forms.Label
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvUsuarios, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.grpFiltro.SuspendLayout()
         Me.grpBuscarUsuarios.SuspendLayout()
         Me.SuspendLayout()
         '
-        'DataGridView1
+        'dgvUsuarios
         '
-        Me.DataGridView1.AllowUserToAddRows = False
-        Me.DataGridView1.AllowUserToDeleteRows = False
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Cédula, Me.Apellidos, Me.Nombres, Me.Cargo, Me.Column1, Me.Column2})
-        Me.DataGridView1.Location = New System.Drawing.Point(202, 12)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.ReadOnly = True
-        Me.DataGridView1.Size = New System.Drawing.Size(719, 570)
-        Me.DataGridView1.TabIndex = 0
+        Me.dgvUsuarios.AllowUserToAddRows = False
+        Me.dgvUsuarios.AllowUserToDeleteRows = False
+        Me.dgvUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvUsuarios.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Cédula, Me.Apellidos, Me.Nombres, Me.Cargo, Me.Column1, Me.Column2})
+        Me.dgvUsuarios.Location = New System.Drawing.Point(202, 12)
+        Me.dgvUsuarios.Name = "dgvUsuarios"
+        Me.dgvUsuarios.ReadOnly = True
+        Me.dgvUsuarios.Size = New System.Drawing.Size(719, 570)
+        Me.dgvUsuarios.TabIndex = 0
         '
         'Cédula
         '
@@ -237,10 +238,14 @@ Partial Class frmGestionUsuarios
         Me.ClientSize = New System.Drawing.Size(933, 594)
         Me.Controls.Add(Me.grpBuscarUsuarios)
         Me.Controls.Add(Me.grpFiltro)
-        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.dgvUsuarios)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "frmGestionUsuarios"
         Me.Text = "Gestión de usuarios"
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvUsuarios, System.ComponentModel.ISupportInitialize).EndInit()
         Me.grpFiltro.ResumeLayout(False)
         Me.grpFiltro.PerformLayout()
         Me.grpBuscarUsuarios.ResumeLayout(False)
@@ -248,7 +253,7 @@ Partial Class frmGestionUsuarios
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
+    Friend WithEvents dgvUsuarios As System.Windows.Forms.DataGridView
     Friend WithEvents grpFiltro As System.Windows.Forms.GroupBox
     Friend WithEvents cboFiltroCargo As System.Windows.Forms.ComboBox
     Friend WithEvents Label1 As System.Windows.Forms.Label

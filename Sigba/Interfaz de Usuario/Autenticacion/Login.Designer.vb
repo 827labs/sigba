@@ -98,7 +98,7 @@ Partial Class Login
         Me.picSideImageLogin.Image = CType(resources.GetObject("picSideImageLogin.Image"), System.Drawing.Image)
         Me.picSideImageLogin.Location = New System.Drawing.Point(1, 1)
         Me.picSideImageLogin.Name = "picSideImageLogin"
-        Me.picSideImageLogin.Size = New System.Drawing.Size(257, 375)
+        Me.picSideImageLogin.Size = New System.Drawing.Size(247, 373)
         Me.picSideImageLogin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picSideImageLogin.TabIndex = 3
         Me.picSideImageLogin.TabStop = False
@@ -143,6 +143,7 @@ Partial Class Login
         Me.Controls.Add(Me.picSideImageLogin)
         Me.Controls.Add(Me.btnContinuar)
         Me.Controls.Add(Me.GroupBox1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Login"
         Me.ShowIcon = False

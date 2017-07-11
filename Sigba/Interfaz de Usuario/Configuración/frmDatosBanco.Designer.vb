@@ -29,44 +29,44 @@ Partial Class frmDatosBanco
         Me.picLogoBanco = New System.Windows.Forms.PictureBox
         Me.grpDatosEmpresa = New System.Windows.Forms.GroupBox
         Me.Label15 = New System.Windows.Forms.Label
-        Me.TextBox14 = New System.Windows.Forms.TextBox
+        Me.txtSitioWeb = New System.Windows.Forms.TextBox
         Me.Label14 = New System.Windows.Forms.Label
-        Me.TextBox13 = New System.Windows.Forms.TextBox
+        Me.txtTelefono = New System.Windows.Forms.TextBox
         Me.Label4 = New System.Windows.Forms.Label
-        Me.TextBox4 = New System.Windows.Forms.TextBox
+        Me.txtCasaCentral = New System.Windows.Forms.TextBox
         Me.Label3 = New System.Windows.Forms.Label
-        Me.TextBox3 = New System.Windows.Forms.TextBox
+        Me.txtRUT = New System.Windows.Forms.TextBox
         Me.Label2 = New System.Windows.Forms.Label
-        Me.TextBox2 = New System.Windows.Forms.TextBox
+        Me.txtRazonSocial = New System.Windows.Forms.TextBox
         Me.Label1 = New System.Windows.Forms.Label
-        Me.TextBox1 = New System.Windows.Forms.TextBox
+        Me.txtNombreFantasia = New System.Windows.Forms.TextBox
         Me.GroupBox2 = New System.Windows.Forms.GroupBox
         Me.GroupBox5 = New System.Windows.Forms.GroupBox
         Me.Label6 = New System.Windows.Forms.Label
-        Me.TextBox6 = New System.Windows.Forms.TextBox
+        Me.txtLimRetDiarioIslaUYU = New System.Windows.Forms.TextBox
         Me.Label9 = New System.Windows.Forms.Label
-        Me.TextBox8 = New System.Windows.Forms.TextBox
+        Me.txtLimRetDiarioIslaUSD = New System.Windows.Forms.TextBox
         Me.GroupBox3 = New System.Windows.Forms.GroupBox
         Me.Label8 = New System.Windows.Forms.Label
-        Me.TextBox5 = New System.Windows.Forms.TextBox
+        Me.txtLimRetDiarioDependenciasUYU = New System.Windows.Forms.TextBox
         Me.Label7 = New System.Windows.Forms.Label
-        Me.TextBox7 = New System.Windows.Forms.TextBox
+        Me.txtLimRetDiarioDependenciasUSD = New System.Windows.Forms.TextBox
         Me.Label5 = New System.Windows.Forms.Label
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox
+        Me.chkCCPersonas = New System.Windows.Forms.CheckBox
         Me.GroupBox4 = New System.Windows.Forms.GroupBox
         Me.GroupBox6 = New System.Windows.Forms.GroupBox
         Me.GroupBox8 = New System.Windows.Forms.GroupBox
         Me.Label12 = New System.Windows.Forms.Label
-        Me.TextBox11 = New System.Windows.Forms.TextBox
+        Me.txtMaximoDepCajaUYU = New System.Windows.Forms.TextBox
         Me.Label13 = New System.Windows.Forms.Label
-        Me.TextBox12 = New System.Windows.Forms.TextBox
+        Me.txtMaximoDepCajaUSD = New System.Windows.Forms.TextBox
         Me.GroupBox7 = New System.Windows.Forms.GroupBox
         Me.Label10 = New System.Windows.Forms.Label
-        Me.TextBox9 = New System.Windows.Forms.TextBox
+        Me.txtMinimoDepCajaUYU = New System.Windows.Forms.TextBox
         Me.Label11 = New System.Windows.Forms.Label
-        Me.TextBox10 = New System.Windows.Forms.TextBox
-        Me.Button1 = New System.Windows.Forms.Button
-        Me.Button2 = New System.Windows.Forms.Button
+        Me.txtMinimoDepCajaUSD = New System.Windows.Forms.TextBox
+        Me.btnAceptar = New System.Windows.Forms.Button
+        Me.btnCancelar = New System.Windows.Forms.Button
         Me.GroupBox1.SuspendLayout()
         CType(Me.picLogoBanco, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.grpDatosEmpresa.SuspendLayout()
@@ -122,17 +122,17 @@ Partial Class frmDatosBanco
         'grpDatosEmpresa
         '
         Me.grpDatosEmpresa.Controls.Add(Me.Label15)
-        Me.grpDatosEmpresa.Controls.Add(Me.TextBox14)
+        Me.grpDatosEmpresa.Controls.Add(Me.txtSitioWeb)
         Me.grpDatosEmpresa.Controls.Add(Me.Label14)
-        Me.grpDatosEmpresa.Controls.Add(Me.TextBox13)
+        Me.grpDatosEmpresa.Controls.Add(Me.txtTelefono)
         Me.grpDatosEmpresa.Controls.Add(Me.Label4)
-        Me.grpDatosEmpresa.Controls.Add(Me.TextBox4)
+        Me.grpDatosEmpresa.Controls.Add(Me.txtCasaCentral)
         Me.grpDatosEmpresa.Controls.Add(Me.Label3)
-        Me.grpDatosEmpresa.Controls.Add(Me.TextBox3)
+        Me.grpDatosEmpresa.Controls.Add(Me.txtRUT)
         Me.grpDatosEmpresa.Controls.Add(Me.Label2)
-        Me.grpDatosEmpresa.Controls.Add(Me.TextBox2)
+        Me.grpDatosEmpresa.Controls.Add(Me.txtRazonSocial)
         Me.grpDatosEmpresa.Controls.Add(Me.Label1)
-        Me.grpDatosEmpresa.Controls.Add(Me.TextBox1)
+        Me.grpDatosEmpresa.Controls.Add(Me.txtNombreFantasia)
         Me.grpDatosEmpresa.Location = New System.Drawing.Point(12, 125)
         Me.grpDatosEmpresa.Name = "grpDatosEmpresa"
         Me.grpDatosEmpresa.Size = New System.Drawing.Size(360, 295)
@@ -150,12 +150,12 @@ Partial Class frmDatosBanco
         Me.Label15.TabIndex = 11
         Me.Label15.Text = "Sitio web"
         '
-        'TextBox14
+        'txtSitioWeb
         '
-        Me.TextBox14.Location = New System.Drawing.Point(9, 249)
-        Me.TextBox14.Name = "TextBox14"
-        Me.TextBox14.Size = New System.Drawing.Size(345, 20)
-        Me.TextBox14.TabIndex = 10
+        Me.txtSitioWeb.Location = New System.Drawing.Point(9, 249)
+        Me.txtSitioWeb.Name = "txtSitioWeb"
+        Me.txtSitioWeb.Size = New System.Drawing.Size(345, 20)
+        Me.txtSitioWeb.TabIndex = 10
         '
         'Label14
         '
@@ -167,12 +167,12 @@ Partial Class frmDatosBanco
         Me.Label14.TabIndex = 9
         Me.Label14.Text = "Número de teléfono"
         '
-        'TextBox13
+        'txtTelefono
         '
-        Me.TextBox13.Location = New System.Drawing.Point(9, 208)
-        Me.TextBox13.Name = "TextBox13"
-        Me.TextBox13.Size = New System.Drawing.Size(345, 20)
-        Me.TextBox13.TabIndex = 8
+        Me.txtTelefono.Location = New System.Drawing.Point(9, 208)
+        Me.txtTelefono.Name = "txtTelefono"
+        Me.txtTelefono.Size = New System.Drawing.Size(345, 20)
+        Me.txtTelefono.TabIndex = 8
         '
         'Label4
         '
@@ -184,12 +184,12 @@ Partial Class frmDatosBanco
         Me.Label4.TabIndex = 7
         Me.Label4.Text = "Dirección Casa Central"
         '
-        'TextBox4
+        'txtCasaCentral
         '
-        Me.TextBox4.Location = New System.Drawing.Point(9, 166)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(345, 20)
-        Me.TextBox4.TabIndex = 6
+        Me.txtCasaCentral.Location = New System.Drawing.Point(9, 166)
+        Me.txtCasaCentral.Name = "txtCasaCentral"
+        Me.txtCasaCentral.Size = New System.Drawing.Size(345, 20)
+        Me.txtCasaCentral.TabIndex = 6
         '
         'Label3
         '
@@ -201,12 +201,12 @@ Partial Class frmDatosBanco
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "RUT"
         '
-        'TextBox3
+        'txtRUT
         '
-        Me.TextBox3.Location = New System.Drawing.Point(9, 123)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(345, 20)
-        Me.TextBox3.TabIndex = 4
+        Me.txtRUT.Location = New System.Drawing.Point(9, 123)
+        Me.txtRUT.Name = "txtRUT"
+        Me.txtRUT.Size = New System.Drawing.Size(345, 20)
+        Me.txtRUT.TabIndex = 4
         '
         'Label2
         '
@@ -218,12 +218,12 @@ Partial Class frmDatosBanco
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "Razón Social"
         '
-        'TextBox2
+        'txtRazonSocial
         '
-        Me.TextBox2.Location = New System.Drawing.Point(9, 80)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(345, 20)
-        Me.TextBox2.TabIndex = 2
+        Me.txtRazonSocial.Location = New System.Drawing.Point(9, 80)
+        Me.txtRazonSocial.Name = "txtRazonSocial"
+        Me.txtRazonSocial.Size = New System.Drawing.Size(345, 20)
+        Me.txtRazonSocial.TabIndex = 2
         '
         'Label1
         '
@@ -235,12 +235,12 @@ Partial Class frmDatosBanco
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Nombre fantasia"
         '
-        'TextBox1
+        'txtNombreFantasia
         '
-        Me.TextBox1.Location = New System.Drawing.Point(9, 37)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(345, 20)
-        Me.TextBox1.TabIndex = 0
+        Me.txtNombreFantasia.Location = New System.Drawing.Point(9, 37)
+        Me.txtNombreFantasia.Name = "txtNombreFantasia"
+        Me.txtNombreFantasia.Size = New System.Drawing.Size(345, 20)
+        Me.txtNombreFantasia.TabIndex = 0
         '
         'GroupBox2
         '
@@ -257,9 +257,9 @@ Partial Class frmDatosBanco
         'GroupBox5
         '
         Me.GroupBox5.Controls.Add(Me.Label6)
-        Me.GroupBox5.Controls.Add(Me.TextBox6)
+        Me.GroupBox5.Controls.Add(Me.txtLimRetDiarioIslaUYU)
         Me.GroupBox5.Controls.Add(Me.Label9)
-        Me.GroupBox5.Controls.Add(Me.TextBox8)
+        Me.GroupBox5.Controls.Add(Me.txtLimRetDiarioIslaUSD)
         Me.GroupBox5.Location = New System.Drawing.Point(6, 97)
         Me.GroupBox5.Name = "GroupBox5"
         Me.GroupBox5.Size = New System.Drawing.Size(296, 72)
@@ -277,12 +277,12 @@ Partial Class frmDatosBanco
         Me.Label6.TabIndex = 14
         Me.Label6.Text = "USD"
         '
-        'TextBox6
+        'txtLimRetDiarioIslaUYU
         '
-        Me.TextBox6.Location = New System.Drawing.Point(42, 17)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(248, 20)
-        Me.TextBox6.TabIndex = 8
+        Me.txtLimRetDiarioIslaUYU.Location = New System.Drawing.Point(42, 17)
+        Me.txtLimRetDiarioIslaUYU.Name = "txtLimRetDiarioIslaUYU"
+        Me.txtLimRetDiarioIslaUYU.Size = New System.Drawing.Size(248, 20)
+        Me.txtLimRetDiarioIslaUYU.TabIndex = 8
         '
         'Label9
         '
@@ -294,19 +294,19 @@ Partial Class frmDatosBanco
         Me.Label9.TabIndex = 12
         Me.Label9.Text = "UYU"
         '
-        'TextBox8
+        'txtLimRetDiarioIslaUSD
         '
-        Me.TextBox8.Location = New System.Drawing.Point(42, 43)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(248, 20)
-        Me.TextBox8.TabIndex = 13
+        Me.txtLimRetDiarioIslaUSD.Location = New System.Drawing.Point(42, 43)
+        Me.txtLimRetDiarioIslaUSD.Name = "txtLimRetDiarioIslaUSD"
+        Me.txtLimRetDiarioIslaUSD.Size = New System.Drawing.Size(248, 20)
+        Me.txtLimRetDiarioIslaUSD.TabIndex = 13
         '
         'GroupBox3
         '
         Me.GroupBox3.Controls.Add(Me.Label8)
-        Me.GroupBox3.Controls.Add(Me.TextBox5)
+        Me.GroupBox3.Controls.Add(Me.txtLimRetDiarioDependenciasUYU)
         Me.GroupBox3.Controls.Add(Me.Label7)
-        Me.GroupBox3.Controls.Add(Me.TextBox7)
+        Me.GroupBox3.Controls.Add(Me.txtLimRetDiarioDependenciasUSD)
         Me.GroupBox3.Location = New System.Drawing.Point(6, 19)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(296, 72)
@@ -324,12 +324,12 @@ Partial Class frmDatosBanco
         Me.Label8.TabIndex = 14
         Me.Label8.Text = "USD"
         '
-        'TextBox5
+        'txtLimRetDiarioDependenciasUYU
         '
-        Me.TextBox5.Location = New System.Drawing.Point(42, 17)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(248, 20)
-        Me.TextBox5.TabIndex = 8
+        Me.txtLimRetDiarioDependenciasUYU.Location = New System.Drawing.Point(42, 17)
+        Me.txtLimRetDiarioDependenciasUYU.Name = "txtLimRetDiarioDependenciasUYU"
+        Me.txtLimRetDiarioDependenciasUYU.Size = New System.Drawing.Size(248, 20)
+        Me.txtLimRetDiarioDependenciasUYU.TabIndex = 8
         '
         'Label7
         '
@@ -341,12 +341,12 @@ Partial Class frmDatosBanco
         Me.Label7.TabIndex = 12
         Me.Label7.Text = "UYU"
         '
-        'TextBox7
+        'txtLimRetDiarioDependenciasUSD
         '
-        Me.TextBox7.Location = New System.Drawing.Point(42, 43)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(248, 20)
-        Me.TextBox7.TabIndex = 13
+        Me.txtLimRetDiarioDependenciasUSD.Location = New System.Drawing.Point(42, 43)
+        Me.txtLimRetDiarioDependenciasUSD.Name = "txtLimRetDiarioDependenciasUSD"
+        Me.txtLimRetDiarioDependenciasUSD.Size = New System.Drawing.Size(248, 20)
+        Me.txtLimRetDiarioDependenciasUSD.TabIndex = 13
         '
         'Label5
         '
@@ -357,19 +357,19 @@ Partial Class frmDatosBanco
         Me.Label5.Size = New System.Drawing.Size(0, 13)
         Me.Label5.TabIndex = 9
         '
-        'CheckBox1
+        'chkCCPersonas
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(8, 19)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(265, 17)
-        Me.CheckBox1.TabIndex = 0
-        Me.CheckBox1.Text = "Permitir apertura de cuentas corrientes a personas."
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.chkCCPersonas.AutoSize = True
+        Me.chkCCPersonas.Location = New System.Drawing.Point(8, 19)
+        Me.chkCCPersonas.Name = "chkCCPersonas"
+        Me.chkCCPersonas.Size = New System.Drawing.Size(265, 17)
+        Me.chkCCPersonas.TabIndex = 0
+        Me.chkCCPersonas.Text = "Permitir apertura de cuentas corrientes a personas."
+        Me.chkCCPersonas.UseVisualStyleBackColor = True
         '
         'GroupBox4
         '
-        Me.GroupBox4.Controls.Add(Me.CheckBox1)
+        Me.GroupBox4.Controls.Add(Me.chkCCPersonas)
         Me.GroupBox4.Location = New System.Drawing.Point(378, 196)
         Me.GroupBox4.Name = "GroupBox4"
         Me.GroupBox4.Size = New System.Drawing.Size(308, 49)
@@ -391,9 +391,9 @@ Partial Class frmDatosBanco
         'GroupBox8
         '
         Me.GroupBox8.Controls.Add(Me.Label12)
-        Me.GroupBox8.Controls.Add(Me.TextBox11)
+        Me.GroupBox8.Controls.Add(Me.txtMaximoDepCajaUYU)
         Me.GroupBox8.Controls.Add(Me.Label13)
-        Me.GroupBox8.Controls.Add(Me.TextBox12)
+        Me.GroupBox8.Controls.Add(Me.txtMaximoDepCajaUSD)
         Me.GroupBox8.Location = New System.Drawing.Point(6, 90)
         Me.GroupBox8.Name = "GroupBox8"
         Me.GroupBox8.Size = New System.Drawing.Size(296, 72)
@@ -411,12 +411,12 @@ Partial Class frmDatosBanco
         Me.Label12.TabIndex = 14
         Me.Label12.Text = "USD"
         '
-        'TextBox11
+        'txtMaximoDepCajaUYU
         '
-        Me.TextBox11.Location = New System.Drawing.Point(42, 17)
-        Me.TextBox11.Name = "TextBox11"
-        Me.TextBox11.Size = New System.Drawing.Size(248, 20)
-        Me.TextBox11.TabIndex = 8
+        Me.txtMaximoDepCajaUYU.Location = New System.Drawing.Point(42, 17)
+        Me.txtMaximoDepCajaUYU.Name = "txtMaximoDepCajaUYU"
+        Me.txtMaximoDepCajaUYU.Size = New System.Drawing.Size(248, 20)
+        Me.txtMaximoDepCajaUYU.TabIndex = 8
         '
         'Label13
         '
@@ -428,19 +428,19 @@ Partial Class frmDatosBanco
         Me.Label13.TabIndex = 12
         Me.Label13.Text = "UYU"
         '
-        'TextBox12
+        'txtMaximoDepCajaUSD
         '
-        Me.TextBox12.Location = New System.Drawing.Point(42, 43)
-        Me.TextBox12.Name = "TextBox12"
-        Me.TextBox12.Size = New System.Drawing.Size(248, 20)
-        Me.TextBox12.TabIndex = 13
+        Me.txtMaximoDepCajaUSD.Location = New System.Drawing.Point(42, 43)
+        Me.txtMaximoDepCajaUSD.Name = "txtMaximoDepCajaUSD"
+        Me.txtMaximoDepCajaUSD.Size = New System.Drawing.Size(248, 20)
+        Me.txtMaximoDepCajaUSD.TabIndex = 13
         '
         'GroupBox7
         '
         Me.GroupBox7.Controls.Add(Me.Label10)
-        Me.GroupBox7.Controls.Add(Me.TextBox9)
+        Me.GroupBox7.Controls.Add(Me.txtMinimoDepCajaUYU)
         Me.GroupBox7.Controls.Add(Me.Label11)
-        Me.GroupBox7.Controls.Add(Me.TextBox10)
+        Me.GroupBox7.Controls.Add(Me.txtMinimoDepCajaUSD)
         Me.GroupBox7.Location = New System.Drawing.Point(6, 16)
         Me.GroupBox7.Name = "GroupBox7"
         Me.GroupBox7.Size = New System.Drawing.Size(296, 72)
@@ -458,12 +458,12 @@ Partial Class frmDatosBanco
         Me.Label10.TabIndex = 14
         Me.Label10.Text = "USD"
         '
-        'TextBox9
+        'txtMinimoDepCajaUYU
         '
-        Me.TextBox9.Location = New System.Drawing.Point(42, 17)
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(248, 20)
-        Me.TextBox9.TabIndex = 8
+        Me.txtMinimoDepCajaUYU.Location = New System.Drawing.Point(42, 17)
+        Me.txtMinimoDepCajaUYU.Name = "txtMinimoDepCajaUYU"
+        Me.txtMinimoDepCajaUYU.Size = New System.Drawing.Size(248, 20)
+        Me.txtMinimoDepCajaUYU.TabIndex = 8
         '
         'Label11
         '
@@ -475,44 +475,47 @@ Partial Class frmDatosBanco
         Me.Label11.TabIndex = 12
         Me.Label11.Text = "UYU"
         '
-        'TextBox10
+        'txtMinimoDepCajaUSD
         '
-        Me.TextBox10.Location = New System.Drawing.Point(42, 43)
-        Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(248, 20)
-        Me.TextBox10.TabIndex = 13
+        Me.txtMinimoDepCajaUSD.Location = New System.Drawing.Point(42, 43)
+        Me.txtMinimoDepCajaUSD.Name = "txtMinimoDepCajaUSD"
+        Me.txtMinimoDepCajaUSD.Size = New System.Drawing.Size(248, 20)
+        Me.txtMinimoDepCajaUSD.TabIndex = 13
         '
-        'Button1
+        'btnAceptar
         '
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(610, 427)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 5
-        Me.Button1.Text = "Aceptar"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnAceptar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAceptar.Location = New System.Drawing.Point(610, 427)
+        Me.btnAceptar.Name = "btnAceptar"
+        Me.btnAceptar.Size = New System.Drawing.Size(75, 23)
+        Me.btnAceptar.TabIndex = 5
+        Me.btnAceptar.Text = "Aceptar"
+        Me.btnAceptar.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btnCancelar
         '
-        Me.Button2.Location = New System.Drawing.Point(529, 427)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 6
-        Me.Button2.Text = "Cancelar"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnCancelar.Location = New System.Drawing.Point(529, 427)
+        Me.btnCancelar.Name = "btnCancelar"
+        Me.btnCancelar.Size = New System.Drawing.Size(75, 23)
+        Me.btnCancelar.TabIndex = 6
+        Me.btnCancelar.Text = "Cancelar"
+        Me.btnCancelar.UseVisualStyleBackColor = True
         '
         'frmDatosBanco
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(698, 457)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnCancelar)
+        Me.Controls.Add(Me.btnAceptar)
         Me.Controls.Add(Me.GroupBox6)
         Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.grpDatosEmpresa)
         Me.Controls.Add(Me.GroupBox1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
         Me.Name = "frmDatosBanco"
         Me.Text = "Configuración de los datos del banco"
         Me.GroupBox1.ResumeLayout(False)
@@ -542,42 +545,42 @@ Partial Class frmDatosBanco
     Friend WithEvents btnSeleccionarNuevoLogo As System.Windows.Forms.Button
     Friend WithEvents grpDatosEmpresa As System.Windows.Forms.GroupBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents txtRazonSocial As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents txtNombreFantasia As System.Windows.Forms.TextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
+    Friend WithEvents txtRUT As System.Windows.Forms.TextBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
+    Friend WithEvents txtCasaCentral As System.Windows.Forms.TextBox
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
     Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
+    Friend WithEvents txtLimRetDiarioDependenciasUYU As System.Windows.Forms.TextBox
     Friend WithEvents GroupBox5 As System.Windows.Forms.GroupBox
     Friend WithEvents Label6 As System.Windows.Forms.Label
-    Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
+    Friend WithEvents txtLimRetDiarioIslaUYU As System.Windows.Forms.TextBox
     Friend WithEvents Label9 As System.Windows.Forms.Label
-    Friend WithEvents TextBox8 As System.Windows.Forms.TextBox
+    Friend WithEvents txtLimRetDiarioIslaUSD As System.Windows.Forms.TextBox
     Friend WithEvents GroupBox3 As System.Windows.Forms.GroupBox
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents Label7 As System.Windows.Forms.Label
-    Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
-    Friend WithEvents CheckBox1 As System.Windows.Forms.CheckBox
+    Friend WithEvents txtLimRetDiarioDependenciasUSD As System.Windows.Forms.TextBox
+    Friend WithEvents chkCCPersonas As System.Windows.Forms.CheckBox
     Friend WithEvents GroupBox4 As System.Windows.Forms.GroupBox
     Friend WithEvents GroupBox6 As System.Windows.Forms.GroupBox
     Friend WithEvents GroupBox8 As System.Windows.Forms.GroupBox
     Friend WithEvents Label12 As System.Windows.Forms.Label
-    Friend WithEvents TextBox11 As System.Windows.Forms.TextBox
+    Friend WithEvents txtMaximoDepCajaUYU As System.Windows.Forms.TextBox
     Friend WithEvents Label13 As System.Windows.Forms.Label
-    Friend WithEvents TextBox12 As System.Windows.Forms.TextBox
+    Friend WithEvents txtMaximoDepCajaUSD As System.Windows.Forms.TextBox
     Friend WithEvents GroupBox7 As System.Windows.Forms.GroupBox
     Friend WithEvents Label10 As System.Windows.Forms.Label
-    Friend WithEvents TextBox9 As System.Windows.Forms.TextBox
+    Friend WithEvents txtMinimoDepCajaUYU As System.Windows.Forms.TextBox
     Friend WithEvents Label11 As System.Windows.Forms.Label
-    Friend WithEvents TextBox10 As System.Windows.Forms.TextBox
+    Friend WithEvents txtMinimoDepCajaUSD As System.Windows.Forms.TextBox
     Friend WithEvents Label15 As System.Windows.Forms.Label
-    Friend WithEvents TextBox14 As System.Windows.Forms.TextBox
+    Friend WithEvents txtSitioWeb As System.Windows.Forms.TextBox
     Friend WithEvents Label14 As System.Windows.Forms.Label
-    Friend WithEvents TextBox13 As System.Windows.Forms.TextBox
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents txtTelefono As System.Windows.Forms.TextBox
+    Friend WithEvents btnAceptar As System.Windows.Forms.Button
+    Friend WithEvents btnCancelar As System.Windows.Forms.Button
 End Class

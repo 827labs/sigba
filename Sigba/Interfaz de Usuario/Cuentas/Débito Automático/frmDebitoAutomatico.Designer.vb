@@ -25,12 +25,12 @@ Partial Class frmDebitoAutomatico
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmDebitoAutomatico))
         Me.Label1 = New System.Windows.Forms.Label
         Me.dgvDebitos = New System.Windows.Forms.DataGridView
-        Me.btnNueva = New System.Windows.Forms.Button
         Me.empresa = New System.Windows.Forms.DataGridViewTextBoxColumn
         Me.cuentaDeposito = New System.Windows.Forms.DataGridViewTextBoxColumn
         Me.monto = New System.Windows.Forms.DataGridViewTextBoxColumn
         Me.fecha = New System.Windows.Forms.DataGridViewTextBoxColumn
         Me.estadoUlt = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.btnNueva = New System.Windows.Forms.Button
         CType(Me.dgvDebitos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -55,15 +55,6 @@ Partial Class frmDebitoAutomatico
         Me.dgvDebitos.ReadOnly = True
         Me.dgvDebitos.Size = New System.Drawing.Size(647, 304)
         Me.dgvDebitos.TabIndex = 1
-        '
-        'btnNueva
-        '
-        Me.btnNueva.Location = New System.Drawing.Point(587, 9)
-        Me.btnNueva.Name = "btnNueva"
-        Me.btnNueva.Size = New System.Drawing.Size(75, 23)
-        Me.btnNueva.TabIndex = 2
-        Me.btnNueva.Text = "Nueva"
-        Me.btnNueva.UseVisualStyleBackColor = True
         '
         'empresa
         '
@@ -95,6 +86,15 @@ Partial Class frmDebitoAutomatico
         Me.estadoUlt.Name = "estadoUlt"
         Me.estadoUlt.ReadOnly = True
         '
+        'btnNueva
+        '
+        Me.btnNueva.Location = New System.Drawing.Point(587, 9)
+        Me.btnNueva.Name = "btnNueva"
+        Me.btnNueva.Size = New System.Drawing.Size(75, 23)
+        Me.btnNueva.TabIndex = 2
+        Me.btnNueva.Text = "Nueva"
+        Me.btnNueva.UseVisualStyleBackColor = True
+        '
         'frmDebitoAutomatico
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -103,7 +103,9 @@ Partial Class frmDebitoAutomatico
         Me.Controls.Add(Me.btnNueva)
         Me.Controls.Add(Me.dgvDebitos)
         Me.Controls.Add(Me.Label1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
         Me.Name = "frmDebitoAutomatico"
         Me.Text = "Débito Automático"
         CType(Me.dgvDebitos, System.ComponentModel.ISupportInitialize).EndInit()
