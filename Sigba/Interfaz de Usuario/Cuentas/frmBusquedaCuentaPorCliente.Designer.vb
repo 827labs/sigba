@@ -304,6 +304,7 @@ Partial Class frmBusquedaCuentaPorCliente
         Me.Controls.Add(Me.TabControl)
         Me.Controls.Add(Me.btnBuscar)
         Me.Controls.Add(Me.dgvCuentas)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False

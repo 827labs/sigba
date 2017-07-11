@@ -38,4 +38,9 @@
     Private Sub lnklblOlvidoContrasena_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles lnklblOlvidoContrasena.LinkClicked
         frmOlvidoClave.Show()
     End Sub
+
+    Private Sub btnCajero_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCajero.Click
+        frmATMBienvenido.Show()
+        Me.Hide()
+    End Sub
 End Class

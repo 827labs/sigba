@@ -24,21 +24,21 @@ Partial Class frmTransferenciaCuentas
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmTransferenciaCuentas))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox
-        Me.txtCuentaOrigen = New System.Windows.Forms.TextBox
-        Me.btnBuscarCuentaOrigen = New System.Windows.Forms.Button
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.Label2 = New System.Windows.Forms.Label
         Me.lblSaldoCuentaOrigen = New System.Windows.Forms.Label
         Me.lblTitularCtaOrigen = New System.Windows.Forms.Label
+        Me.Label2 = New System.Windows.Forms.Label
+        Me.Label1 = New System.Windows.Forms.Label
+        Me.btnBuscarCuentaOrigen = New System.Windows.Forms.Button
+        Me.txtCuentaOrigen = New System.Windows.Forms.TextBox
         Me.GroupBox2 = New System.Windows.Forms.GroupBox
         Me.lblTitularCtaDestino = New System.Windows.Forms.Label
         Me.Label8 = New System.Windows.Forms.Label
         Me.btnBuscarCuentaDestino = New System.Windows.Forms.Button
         Me.txtCuentaDestino = New System.Windows.Forms.TextBox
         Me.GroupBox3 = New System.Windows.Forms.GroupBox
-        Me.Label3 = New System.Windows.Forms.Label
-        Me.cboMontoMoneda = New System.Windows.Forms.ComboBox
         Me.txtMontoCantidad = New System.Windows.Forms.TextBox
+        Me.cboMontoMoneda = New System.Windows.Forms.ComboBox
+        Me.Label3 = New System.Windows.Forms.Label
         Me.Label4 = New System.Windows.Forms.Label
         Me.btnTransferir = New System.Windows.Forms.Button
         Me.btnCancelar = New System.Windows.Forms.Button
@@ -62,40 +62,6 @@ Partial Class frmTransferenciaCuentas
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Cuenta de origen"
         '
-        'txtCuentaOrigen
-        '
-        Me.txtCuentaOrigen.Location = New System.Drawing.Point(6, 19)
-        Me.txtCuentaOrigen.Name = "txtCuentaOrigen"
-        Me.txtCuentaOrigen.Size = New System.Drawing.Size(189, 20)
-        Me.txtCuentaOrigen.TabIndex = 0
-        '
-        'btnBuscarCuentaOrigen
-        '
-        Me.btnBuscarCuentaOrigen.Location = New System.Drawing.Point(200, 18)
-        Me.btnBuscarCuentaOrigen.Name = "btnBuscarCuentaOrigen"
-        Me.btnBuscarCuentaOrigen.Size = New System.Drawing.Size(53, 23)
-        Me.btnBuscarCuentaOrigen.TabIndex = 1
-        Me.btnBuscarCuentaOrigen.Text = "Buscar"
-        Me.btnBuscarCuentaOrigen.UseVisualStyleBackColor = True
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(3, 46)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(39, 13)
-        Me.Label1.TabIndex = 2
-        Me.Label1.Text = "Titular:"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(3, 62)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(87, 13)
-        Me.Label2.TabIndex = 3
-        Me.Label2.Text = "Saldo disponible:"
-        '
         'lblSaldoCuentaOrigen
         '
         Me.lblSaldoCuentaOrigen.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -115,6 +81,40 @@ Partial Class frmTransferenciaCuentas
         Me.lblTitularCtaOrigen.TabIndex = 4
         Me.lblTitularCtaOrigen.Text = "APELLIDO, NOMBRE"
         Me.lblTitularCtaOrigen.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(3, 62)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(87, 13)
+        Me.Label2.TabIndex = 3
+        Me.Label2.Text = "Saldo disponible:"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(3, 46)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(39, 13)
+        Me.Label1.TabIndex = 2
+        Me.Label1.Text = "Titular:"
+        '
+        'btnBuscarCuentaOrigen
+        '
+        Me.btnBuscarCuentaOrigen.Location = New System.Drawing.Point(200, 18)
+        Me.btnBuscarCuentaOrigen.Name = "btnBuscarCuentaOrigen"
+        Me.btnBuscarCuentaOrigen.Size = New System.Drawing.Size(53, 23)
+        Me.btnBuscarCuentaOrigen.TabIndex = 1
+        Me.btnBuscarCuentaOrigen.Text = "Buscar"
+        Me.btnBuscarCuentaOrigen.UseVisualStyleBackColor = True
+        '
+        'txtCuentaOrigen
+        '
+        Me.txtCuentaOrigen.Location = New System.Drawing.Point(6, 19)
+        Me.txtCuentaOrigen.Name = "txtCuentaOrigen"
+        Me.txtCuentaOrigen.Size = New System.Drawing.Size(189, 20)
+        Me.txtCuentaOrigen.TabIndex = 0
         '
         'GroupBox2
         '
@@ -176,14 +176,12 @@ Partial Class frmTransferenciaCuentas
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Detalles de la transferencia"
         '
-        'Label3
+        'txtMontoCantidad
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(6, 19)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(37, 13)
-        Me.Label3.TabIndex = 0
-        Me.Label3.Text = "Monto"
+        Me.txtMontoCantidad.Location = New System.Drawing.Point(73, 36)
+        Me.txtMontoCantidad.Name = "txtMontoCantidad"
+        Me.txtMontoCantidad.Size = New System.Drawing.Size(180, 20)
+        Me.txtMontoCantidad.TabIndex = 5
         '
         'cboMontoMoneda
         '
@@ -195,12 +193,14 @@ Partial Class frmTransferenciaCuentas
         Me.cboMontoMoneda.Size = New System.Drawing.Size(58, 21)
         Me.cboMontoMoneda.TabIndex = 4
         '
-        'txtMontoCantidad
+        'Label3
         '
-        Me.txtMontoCantidad.Location = New System.Drawing.Point(73, 36)
-        Me.txtMontoCantidad.Name = "txtMontoCantidad"
-        Me.txtMontoCantidad.Size = New System.Drawing.Size(180, 20)
-        Me.txtMontoCantidad.TabIndex = 5
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(6, 19)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(37, 13)
+        Me.Label3.TabIndex = 0
+        Me.Label3.Text = "Monto"
         '
         'Label4
         '
@@ -242,6 +242,7 @@ Partial Class frmTransferenciaCuentas
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "frmTransferenciaCuentas"

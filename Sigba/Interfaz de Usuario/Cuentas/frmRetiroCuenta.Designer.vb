@@ -116,7 +116,9 @@ Partial Class frmRetiroCuenta
         Me.Controls.Add(Me.btnBuscarCuenta)
         Me.Controls.Add(Me.txtCuentaBeneficiario)
         Me.Controls.Add(Me.Label1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
         Me.Name = "frmRetiroCuenta"
         Me.Text = "Retiro de cuenta"
         Me.ResumeLayout(False)
