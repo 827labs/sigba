@@ -100,3 +100,4 @@ C:\Users\Usuario\Desktop\Sigba\Sigba\obj\Debug\Sigba.vbproj.GenerateResource.Cac
 \\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\obj\Debug\Sigba.frmATMRetiro.resources
 \\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\obj\Debug\Sigba.frmATMDeposito.resources
 \\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\obj\Debug\Sigba.frmATMConsulta.resources
+\\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\obj\Debug\Sigba.frmATMTransferencia.resources

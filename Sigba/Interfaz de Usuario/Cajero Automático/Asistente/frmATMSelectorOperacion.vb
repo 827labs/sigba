@@ -24,4 +24,9 @@
         Dim form = New frmATMConsulta()
         form.Show()
     End Sub
+
+    Private Sub btnTransferencia_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnTransferencia.Click
+        Dim form = New frmATMTransferencia()
+        form.Show()
+    End Sub
 End Class
