@@ -114,10 +114,46 @@
     <Compile Include="Interfaz de Usuario\Caja\Gestión de cajas\frmCierreCaja.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Interfaz de Usuario\Cajero Automático\frmATMBienvenido.Designer.vb">
+    <Compile Include="Interfaz de Usuario\Cajero Automático\Asistente\frmATMBienvenido.Designer.vb">
       <DependentUpon>frmATMBienvenido.vb</DependentUpon>
     </Compile>
-    <Compile Include="Interfaz de Usuario\Cajero Automático\frmATMBienvenido.vb">
+    <Compile Include="Interfaz de Usuario\Cajero Automático\Asistente\frmATMBienvenido.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz de Usuario\Cajero Automático\Asistente\frmATMSelectorCuenta.Designer.vb">
+      <DependentUpon>frmATMSelectorCuenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz de Usuario\Cajero Automático\Asistente\frmATMSelectorCuenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz de Usuario\Cajero Automático\Asistente\frmATMSelectorOperacion.Designer.vb">
+      <DependentUpon>frmATMSelectorOperacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz de Usuario\Cajero Automático\Asistente\frmATMSelectorOperacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz de Usuario\Cajero Automático\Asistente\frmATMSolicitarPin.Designer.vb">
+      <DependentUpon>frmATMSolicitarPin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz de Usuario\Cajero Automático\Asistente\frmATMSolicitarPin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz de Usuario\Cajero Automático\Transacciones\frmATMConsulta.Designer.vb">
+      <DependentUpon>frmATMConsulta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz de Usuario\Cajero Automático\Transacciones\frmATMConsulta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz de Usuario\Cajero Automático\Transacciones\frmATMDeposito.Designer.vb">
+      <DependentUpon>frmATMDeposito.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz de Usuario\Cajero Automático\Transacciones\frmATMDeposito.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz de Usuario\Cajero Automático\Transacciones\frmATMRetiro.Designer.vb">
+      <DependentUpon>frmATMRetiro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz de Usuario\Cajero Automático\Transacciones\frmATMRetiro.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Interfaz de Usuario\Cheques\frmCobrarCheque.Designer.vb">
@@ -306,8 +342,32 @@
       <DependentUpon>frmCierreCaja.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Interfaz de Usuario\Cajero Automático\frmATMBienvenido.resx">
+    <EmbeddedResource Include="Interfaz de Usuario\Cajero Automático\Asistente\frmATMBienvenido.resx">
       <DependentUpon>frmATMBienvenido.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz de Usuario\Cajero Automático\Asistente\frmATMSelectorCuenta.resx">
+      <DependentUpon>frmATMSelectorCuenta.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz de Usuario\Cajero Automático\Asistente\frmATMSelectorOperacion.resx">
+      <DependentUpon>frmATMSelectorOperacion.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz de Usuario\Cajero Automático\Asistente\frmATMSolicitarPin.resx">
+      <DependentUpon>frmATMSolicitarPin.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz de Usuario\Cajero Automático\Transacciones\frmATMConsulta.resx">
+      <DependentUpon>frmATMConsulta.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz de Usuario\Cajero Automático\Transacciones\frmATMDeposito.resx">
+      <DependentUpon>frmATMDeposito.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz de Usuario\Cajero Automático\Transacciones\frmATMRetiro.resx">
+      <DependentUpon>frmATMRetiro.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaz de Usuario\Cheques\frmCobrarCheque.resx">

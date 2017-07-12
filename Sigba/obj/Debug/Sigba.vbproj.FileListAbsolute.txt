@@ -94,3 +94,9 @@ C:\Users\Usuario\Desktop\Sigba\Sigba\obj\Debug\Sigba.vbproj.GenerateResource.Cac
 \\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\obj\Debug\Sigba.frmRetiroCuenta.resources
 \\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\obj\Debug\Sigba.frmTransferenciaCuentas.resources
 \\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\obj\Debug\Sigba.frmATMBienvenido.resources
+\\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\obj\Debug\Sigba.frmATMSolicitarPin.resources
+\\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\obj\Debug\Sigba.frmATMSelectorCuenta.resources
+\\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\obj\Debug\Sigba.frmATMSelectorOperacion.resources
+\\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\obj\Debug\Sigba.frmATMRetiro.resources
+\\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\obj\Debug\Sigba.frmATMDeposito.resources
+\\Mac\Home\Documents\Visual Studio 2008\Projects\Sigba\Sigba\obj\Debug\Sigba.frmATMConsulta.resources
