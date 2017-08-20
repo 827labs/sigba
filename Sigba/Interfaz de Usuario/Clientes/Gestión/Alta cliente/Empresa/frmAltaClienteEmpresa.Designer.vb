@@ -1625,6 +1625,7 @@ Partial Class frmAltaClienteEmpresa
         Me.Controls.Add(Me.btnSiguiente)
         Me.Controls.Add(Me.tabControl)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MinimizeBox = False
         Me.Name = "frmAltaClienteEmpresa"
         Me.Text = "Alta cliente - Empresas"
         Me.grpDatosEmpresa.ResumeLayout(False)

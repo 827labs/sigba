@@ -131,9 +131,6 @@
         Validadores.KeyPressSoloNumeros(e)
     End Sub
 
-    'Falta validar documento, código postal y el RUT y también
-    'el documento en la página de participación societaria
-
     Private Sub txtParSoc1Nombre_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtParSoc1Nombre.KeyPress
         Validadores.KeyPressSoloLetras(e)
     End Sub
@@ -258,4 +255,5 @@
     Private Sub txtDomicilioEmpresaCodPostal_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtDomicilioEmpresaCodPostal.KeyPress
         Validadores.KeyPressCodigoPostal(e, txtDomicilioEmpresaCodPostal.Text)
     End Sub
+
 End Class

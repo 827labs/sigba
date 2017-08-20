@@ -156,6 +156,7 @@ Partial Class frmDatosBanco
         Me.txtSitioWeb.Name = "txtSitioWeb"
         Me.txtSitioWeb.Size = New System.Drawing.Size(345, 20)
         Me.txtSitioWeb.TabIndex = 10
+        Me.txtSitioWeb.Text = "https://"
         '
         'Label14
         '

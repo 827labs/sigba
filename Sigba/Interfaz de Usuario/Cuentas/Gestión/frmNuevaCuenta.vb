@@ -21,4 +21,17 @@
             MessageBox.Show("Complete todos los campos para continuar")
         End If
     End Sub
+
+    Private Sub cboTipoDoc_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles cboTipoDoc.KeyPress
+
+    End Sub
+
+    Private Sub txtNroDoc_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtNroDoc.KeyPress
+        If cboTipoDoc.SelectedIndex = 0 Then
+            txtNroDoc.MaxLength = 8
+            Validadores.KeyPressSoloNumeros(e)
+        Else
+            txtNroDoc.MaxLength = 100
+        End If
+    End Sub
 End Class

@@ -3,6 +3,7 @@
     Private Sub frmCobrarCheque_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         cboPaisDoc.Items.AddRange(Constantes.Paises())
         cboPaisDoc.SelectedIndex = 187
+        cboTipoDoc.SelectedIndex = 0
     End Sub
 
     Private Sub txtNroDoc_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtNroDoc.KeyPress

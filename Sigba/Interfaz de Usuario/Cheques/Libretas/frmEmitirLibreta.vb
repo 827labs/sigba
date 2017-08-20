@@ -3,6 +3,7 @@
     Private Sub EmitirLibreta_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         cboPaisDocCliente.Items.AddRange(Constantes.Paises())
         cboPaisDocCliente.SelectedIndex = 187
+        cboTipoDocCliente.SelectedIndex = 0
     End Sub
 
     Private Sub txtNroDocCliente_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtNroDocCliente.KeyPress

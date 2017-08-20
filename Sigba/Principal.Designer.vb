@@ -28,8 +28,6 @@ Partial Class Principal
         Me.GestiónDeCajasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.AperturaDeCajaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.CajasAbiertasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.GestiónDeCajerosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.VerificarTransacciónreciboToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.CuentasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.GestiónToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.AltaDeCuentaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
@@ -77,7 +75,7 @@ Partial Class Principal
         '
         'CajaToolStripMenuItem
         '
-        Me.CajaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GestiónDeCajasToolStripMenuItem, Me.GestiónDeCajerosToolStripMenuItem, Me.VerificarTransacciónreciboToolStripMenuItem})
+        Me.CajaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GestiónDeCajasToolStripMenuItem})
         Me.CajaToolStripMenuItem.Name = "CajaToolStripMenuItem"
         Me.CajaToolStripMenuItem.Size = New System.Drawing.Size(42, 20)
         Me.CajaToolStripMenuItem.Text = "Caja"
@@ -86,7 +84,7 @@ Partial Class Principal
         '
         Me.GestiónDeCajasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AperturaDeCajaToolStripMenuItem, Me.CajasAbiertasToolStripMenuItem})
         Me.GestiónDeCajasToolStripMenuItem.Name = "GestiónDeCajasToolStripMenuItem"
-        Me.GestiónDeCajasToolStripMenuItem.Size = New System.Drawing.Size(218, 22)
+        Me.GestiónDeCajasToolStripMenuItem.Size = New System.Drawing.Size(159, 22)
         Me.GestiónDeCajasToolStripMenuItem.Text = "Gestión de cajas"
         '
         'AperturaDeCajaToolStripMenuItem
@@ -100,18 +98,6 @@ Partial Class Principal
         Me.CajasAbiertasToolStripMenuItem.Name = "CajasAbiertasToolStripMenuItem"
         Me.CajasAbiertasToolStripMenuItem.Size = New System.Drawing.Size(160, 22)
         Me.CajasAbiertasToolStripMenuItem.Text = "Cierre de caja"
-        '
-        'GestiónDeCajerosToolStripMenuItem
-        '
-        Me.GestiónDeCajerosToolStripMenuItem.Name = "GestiónDeCajerosToolStripMenuItem"
-        Me.GestiónDeCajerosToolStripMenuItem.Size = New System.Drawing.Size(218, 22)
-        Me.GestiónDeCajerosToolStripMenuItem.Text = "Gestión de cajeros"
-        '
-        'VerificarTransacciónreciboToolStripMenuItem
-        '
-        Me.VerificarTransacciónreciboToolStripMenuItem.Name = "VerificarTransacciónreciboToolStripMenuItem"
-        Me.VerificarTransacciónreciboToolStripMenuItem.Size = New System.Drawing.Size(218, 22)
-        Me.VerificarTransacciónreciboToolStripMenuItem.Text = "Verificar transacción/recibo"
         '
         'CuentasToolStripMenuItem
         '
@@ -130,13 +116,13 @@ Partial Class Principal
         'AltaDeCuentaToolStripMenuItem
         '
         Me.AltaDeCuentaToolStripMenuItem.Name = "AltaDeCuentaToolStripMenuItem"
-        Me.AltaDeCuentaToolStripMenuItem.Size = New System.Drawing.Size(151, 22)
+        Me.AltaDeCuentaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.AltaDeCuentaToolStripMenuItem.Text = "Alta de cuenta"
         '
         'BajaDeCuentaToolStripMenuItem
         '
         Me.BajaDeCuentaToolStripMenuItem.Name = "BajaDeCuentaToolStripMenuItem"
-        Me.BajaDeCuentaToolStripMenuItem.Size = New System.Drawing.Size(151, 22)
+        Me.BajaDeCuentaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.BajaDeCuentaToolStripMenuItem.Text = "Baja de cuenta"
         '
         'HistóricoDeTransacciónesToolStripMenuItem
@@ -345,8 +331,6 @@ Partial Class Principal
     Friend WithEvents strItems As System.Windows.Forms.MenuStrip
     Friend WithEvents CajaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents GestiónDeCajasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents GestiónDeCajerosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents VerificarTransacciónreciboToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents CuentasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ClientesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ChequesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem

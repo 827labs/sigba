@@ -15,4 +15,8 @@
     Private Sub KPSoloNumeros(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtMontoCantidad.KeyPress, txtDiaCobro.KeyPress, txtTelContactoEmpresa.KeyPress
         Validadores.KeyPressSoloNumeros(e)
     End Sub
+
+    Private Sub txtDiaCobro_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtDiaCobro.TextChanged
+        txtDiaCobro.MaxLength = 2
+    End Sub
 End Class

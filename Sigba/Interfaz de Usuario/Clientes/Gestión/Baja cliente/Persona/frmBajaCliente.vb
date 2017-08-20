@@ -14,4 +14,18 @@
             ' Para hacer: dar de baja el usuario.
         End If
     End Sub
+
+    Private Sub txtNroDoc_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtNroDoc.KeyPress
+        If cboTipoDoc.SelectedIndex = 0 Then
+            txtNroDoc.MaxLength = 8
+            Validadores.KeyPressSoloNumeros(e)
+        Else
+            txtNroDoc.MaxLength = 100
+        End If
+    End Sub
+
+    Private Sub frmBajaCliente_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        cboPaisDoc.SelectedIndex = 187
+        cboTipoDoc.SelectedIndex = 0
+    End Sub
 End Class
