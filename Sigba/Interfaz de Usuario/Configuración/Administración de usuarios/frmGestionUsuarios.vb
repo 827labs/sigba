@@ -32,7 +32,7 @@
             MessageBox.Show("Ingrese un número de cédula para buscar.", "Formulario inválido")
         End If
 
-        ' TODO: Realizar busqueda
+        Usuarios.ListarUsuarios(dgvUsuarios, Val(txtBuscaCedula.Text))
     End Sub
 
     Private Sub txtBuscaCedula_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtBuscaCedula.KeyPress
@@ -56,5 +56,7 @@
     Private Sub frmGestionUsuarios_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         cboFiltroCargo.SelectedIndex = 0
         cboFiltroCargo.DropDownStyle = ComboBoxStyle.DropDownList
+
+        Usuarios.ListarUsuarios(dgvUsuarios)
     End Sub
 End Class

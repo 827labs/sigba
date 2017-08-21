@@ -24,12 +24,6 @@ Partial Class frmGestionUsuarios
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmGestionUsuarios))
         Me.dgvUsuarios = New System.Windows.Forms.DataGridView
-        Me.Cédula = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.Apellidos = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.Nombres = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.Cargo = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn
         Me.grpFiltro = New System.Windows.Forms.GroupBox
         Me.btnLimpiarFiltros = New System.Windows.Forms.Button
         Me.btnFiltrar = New System.Windows.Forms.Button
@@ -54,48 +48,11 @@ Partial Class frmGestionUsuarios
         Me.dgvUsuarios.AllowUserToAddRows = False
         Me.dgvUsuarios.AllowUserToDeleteRows = False
         Me.dgvUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvUsuarios.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Cédula, Me.Apellidos, Me.Nombres, Me.Cargo, Me.Column1, Me.Column2})
         Me.dgvUsuarios.Location = New System.Drawing.Point(202, 12)
         Me.dgvUsuarios.Name = "dgvUsuarios"
         Me.dgvUsuarios.ReadOnly = True
         Me.dgvUsuarios.Size = New System.Drawing.Size(719, 570)
         Me.dgvUsuarios.TabIndex = 0
-        '
-        'Cédula
-        '
-        Me.Cédula.HeaderText = "Cédula"
-        Me.Cédula.Name = "Cédula"
-        Me.Cédula.ReadOnly = True
-        '
-        'Apellidos
-        '
-        Me.Apellidos.HeaderText = "Apellidos"
-        Me.Apellidos.Name = "Apellidos"
-        Me.Apellidos.ReadOnly = True
-        '
-        'Nombres
-        '
-        Me.Nombres.HeaderText = "Nombres"
-        Me.Nombres.Name = "Nombres"
-        Me.Nombres.ReadOnly = True
-        '
-        'Cargo
-        '
-        Me.Cargo.HeaderText = "Cargo"
-        Me.Cargo.Name = "Cargo"
-        Me.Cargo.ReadOnly = True
-        '
-        'Column1
-        '
-        Me.Column1.HeaderText = "Teléfono"
-        Me.Column1.Name = "Column1"
-        Me.Column1.ReadOnly = True
-        '
-        'Column2
-        '
-        Me.Column2.HeaderText = "Correo electrónico"
-        Me.Column2.Name = "Column2"
-        Me.Column2.ReadOnly = True
         '
         'grpFiltro
         '
@@ -268,10 +225,4 @@ Partial Class frmGestionUsuarios
     Friend WithEvents btnBuscarCedula As System.Windows.Forms.Button
     Friend WithEvents txtBuscaCedula As System.Windows.Forms.TextBox
     Friend WithEvents btnLimpiarCedula As System.Windows.Forms.Button
-    Friend WithEvents Cédula As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Apellidos As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Nombres As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Cargo As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Column1 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Column2 As System.Windows.Forms.DataGridViewTextBoxColumn
 End Class
