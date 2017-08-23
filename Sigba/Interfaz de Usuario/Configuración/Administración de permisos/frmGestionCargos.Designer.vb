@@ -27,9 +27,6 @@ Partial Class frmGestionCargos
         Me.dgvCargos = New System.Windows.Forms.DataGridView
         Me.btnNuevo = New System.Windows.Forms.Button
         Me.Label1 = New System.Windows.Forms.Label
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn
         CType(Me.dgvCargos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -38,7 +35,6 @@ Partial Class frmGestionCargos
         Me.dgvCargos.AllowUserToAddRows = False
         Me.dgvCargos.AllowUserToDeleteRows = False
         Me.dgvCargos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvCargos.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3})
         Me.dgvCargos.Location = New System.Drawing.Point(13, 43)
         Me.dgvCargos.Name = "dgvCargos"
         Me.dgvCargos.ReadOnly = True
@@ -64,24 +60,6 @@ Partial Class frmGestionCargos
         Me.Label1.Text = "Haga doble click en un cargo para editarlo/eliminarlo o click en 'Nuevo' para cre" & _
             "ar uno."
         '
-        'Column1
-        '
-        Me.Column1.HeaderText = "Nombre"
-        Me.Column1.Name = "Column1"
-        Me.Column1.ReadOnly = True
-        '
-        'Column2
-        '
-        Me.Column2.HeaderText = "Cantidad de permisos"
-        Me.Column2.Name = "Column2"
-        Me.Column2.ReadOnly = True
-        '
-        'Column3
-        '
-        Me.Column3.HeaderText = "Cantidad de usuarios"
-        Me.Column3.Name = "Column3"
-        Me.Column3.ReadOnly = True
-        '
         'frmGestionCargos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -104,7 +82,4 @@ Partial Class frmGestionCargos
     Friend WithEvents dgvCargos As System.Windows.Forms.DataGridView
     Friend WithEvents btnNuevo As System.Windows.Forms.Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Column1 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Column2 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Column3 As System.Windows.Forms.DataGridViewTextBoxColumn
 End Class

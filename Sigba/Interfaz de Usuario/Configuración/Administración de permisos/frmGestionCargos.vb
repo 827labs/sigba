@@ -5,8 +5,7 @@
     End Sub
 
     Private Sub frmGestionCargos_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-        dgvCargos.Rows.Add("Gerente", "47", "2", "Ninguno")
-        dgvCargos.Rows.Add("Auxiliar", "21", "0", "Ninguno")
+        Cargos.ListarCargos(dgvCargos)
     End Sub
 
     Private Sub dgvCargos_CellDoubleClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgvCargos.CellDoubleClick

@@ -303,6 +303,7 @@
     <Compile Include="Modelos\Funcionalidad.vb" />
     <Compile Include="Modelos\Usuario.vb" />
     <Compile Include="Persistencia\Auditoria.vb" />
+    <Compile Include="Persistencia\Cargos.vb" />
     <Compile Include="Persistencia\ConexionBaseDatos.vb" />
     <Compile Include="Persistencia\Usuarios.vb" />
     <Compile Include="Principal.Designer.vb">
