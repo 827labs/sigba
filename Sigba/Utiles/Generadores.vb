@@ -9,7 +9,7 @@
 
 
     Function CodigoRecuperacionAleatorio()
-        Return NumeroAleatorioStr() & NumeroAleatorioStr() & NumeroAleatorioStr() & "-" & NumeroAleatorioStr() & NumeroAleatorioStr() & NumeroAleatorioStr()
+        Return NumeroAleatorioStr() & NumeroAleatorioStr() & NumeroAleatorioStr() & NumeroAleatorioStr() & NumeroAleatorioStr() & NumeroAleatorioStr()
     End Function
 
     Sub RellenarComboBoxAnio(ByRef combo As ComboBox)

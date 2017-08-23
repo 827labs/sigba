@@ -29,7 +29,7 @@ Partial Class frmAperturaCaja
         Me.Label2 = New System.Windows.Forms.Label
         Me.txtCajero = New System.Windows.Forms.TextBox
         Me.Label3 = New System.Windows.Forms.Label
-        Me.txtNombreCajera = New System.Windows.Forms.TextBox
+        Me.txtEmailCajero = New System.Windows.Forms.TextBox
         Me.txtSaldoUYU = New System.Windows.Forms.TextBox
         Me.Label4 = New System.Windows.Forms.Label
         Me.txtFecha = New System.Windows.Forms.TextBox
@@ -90,13 +90,13 @@ Partial Class frmAperturaCaja
         Me.Label3.TabIndex = 4
         Me.Label3.Text = "Cajero"
         '
-        'txtNombreCajera
+        'txtEmailCajero
         '
-        Me.txtNombreCajera.Enabled = False
-        Me.txtNombreCajera.Location = New System.Drawing.Point(202, 30)
-        Me.txtNombreCajera.Name = "txtNombreCajera"
-        Me.txtNombreCajera.Size = New System.Drawing.Size(165, 20)
-        Me.txtNombreCajera.TabIndex = 4
+        Me.txtEmailCajero.Enabled = False
+        Me.txtEmailCajero.Location = New System.Drawing.Point(202, 30)
+        Me.txtEmailCajero.Name = "txtEmailCajero"
+        Me.txtEmailCajero.Size = New System.Drawing.Size(165, 20)
+        Me.txtEmailCajero.TabIndex = 4
         '
         'txtSaldoUYU
         '
@@ -169,7 +169,7 @@ Partial Class frmAperturaCaja
         'btnConfirmar
         '
         Me.btnConfirmar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnConfirmar.Location = New System.Drawing.Point(292, 111)
+        Me.btnConfirmar.Location = New System.Drawing.Point(293, 111)
         Me.btnConfirmar.Name = "btnConfirmar"
         Me.btnConfirmar.Size = New System.Drawing.Size(75, 23)
         Me.btnConfirmar.TabIndex = 9
@@ -179,7 +179,7 @@ Partial Class frmAperturaCaja
         'btnCancelar
         '
         Me.btnCancelar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.btnCancelar.Location = New System.Drawing.Point(211, 111)
+        Me.btnCancelar.Location = New System.Drawing.Point(212, 111)
         Me.btnCancelar.Name = "btnCancelar"
         Me.btnCancelar.Size = New System.Drawing.Size(75, 23)
         Me.btnCancelar.TabIndex = 10
@@ -190,7 +190,7 @@ Partial Class frmAperturaCaja
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(379, 142)
+        Me.ClientSize = New System.Drawing.Size(378, 142)
         Me.Controls.Add(Me.btnCancelar)
         Me.Controls.Add(Me.btnConfirmar)
         Me.Controls.Add(Me.txtSaldoUSD)
@@ -201,7 +201,7 @@ Partial Class frmAperturaCaja
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.txtSaldoUYU)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.txtNombreCajera)
+        Me.Controls.Add(Me.txtEmailCajero)
         Me.Controls.Add(Me.txtCajero)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.txtCaja)
@@ -223,7 +223,7 @@ Partial Class frmAperturaCaja
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents txtCajero As System.Windows.Forms.TextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents txtNombreCajera As System.Windows.Forms.TextBox
+    Friend WithEvents txtEmailCajero As System.Windows.Forms.TextBox
     Friend WithEvents txtSaldoUYU As System.Windows.Forms.TextBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents txtFecha As System.Windows.Forms.TextBox

@@ -24,11 +24,6 @@ Partial Class frmAuditoria
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmAuditoria))
         Me.dgvAcciones = New System.Windows.Forms.DataGridView
-        Me.usuario = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.accion = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.fecha = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.hora = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.extra = New System.Windows.Forms.DataGridViewTextBoxColumn
         Me.GroupBox1 = New System.Windows.Forms.GroupBox
         Me.txtFechaHasta = New System.Windows.Forms.TextBox
         Me.txtFechaDesde = New System.Windows.Forms.TextBox
@@ -49,42 +44,11 @@ Partial Class frmAuditoria
         Me.dgvAcciones.AllowUserToAddRows = False
         Me.dgvAcciones.AllowUserToDeleteRows = False
         Me.dgvAcciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvAcciones.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.usuario, Me.accion, Me.fecha, Me.hora, Me.extra})
         Me.dgvAcciones.Location = New System.Drawing.Point(211, 12)
         Me.dgvAcciones.Name = "dgvAcciones"
         Me.dgvAcciones.ReadOnly = True
         Me.dgvAcciones.Size = New System.Drawing.Size(559, 420)
         Me.dgvAcciones.TabIndex = 0
-        '
-        'usuario
-        '
-        Me.usuario.HeaderText = "Usuario"
-        Me.usuario.Name = "usuario"
-        Me.usuario.ReadOnly = True
-        '
-        'accion
-        '
-        Me.accion.HeaderText = "Acción"
-        Me.accion.Name = "accion"
-        Me.accion.ReadOnly = True
-        '
-        'fecha
-        '
-        Me.fecha.HeaderText = "Fecha"
-        Me.fecha.Name = "fecha"
-        Me.fecha.ReadOnly = True
-        '
-        'hora
-        '
-        Me.hora.HeaderText = "Hora"
-        Me.hora.Name = "hora"
-        Me.hora.ReadOnly = True
-        '
-        'extra
-        '
-        Me.extra.HeaderText = "Datos extra"
-        Me.extra.Name = "extra"
-        Me.extra.ReadOnly = True
         '
         'GroupBox1
         '
@@ -207,11 +171,6 @@ Partial Class frmAuditoria
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
     Friend WithEvents btnFiltrarUsuario As System.Windows.Forms.Button
     Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents usuario As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents accion As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents fecha As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents hora As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents extra As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents txtCedula As System.Windows.Forms.TextBox
     Friend WithEvents txtFechaHasta As System.Windows.Forms.TextBox
     Friend WithEvents txtFechaDesde As System.Windows.Forms.TextBox

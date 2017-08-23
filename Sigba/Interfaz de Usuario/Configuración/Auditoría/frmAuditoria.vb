@@ -11,6 +11,7 @@
     Private Sub frmAuditoria_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         txtFechaDesde.Text = Generadores.StringFechaActual()
         txtFechaHasta.Text = Generadores.StringFechaActual()
+        Auditoria.ObtenerRegistros(dgvAcciones)
     End Sub
 
     Private Sub txtCedula_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtCedula.KeyPress

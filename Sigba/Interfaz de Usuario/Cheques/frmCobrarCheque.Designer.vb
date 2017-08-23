@@ -48,9 +48,6 @@ Partial Class frmCobrarCheque
         Me.Label10 = New System.Windows.Forms.Label
         Me.txtNumCheque = New System.Windows.Forms.TextBox
         Me.Label11 = New System.Windows.Forms.Label
-        Me.rboEmitidoEste = New System.Windows.Forms.RadioButton
-        Me.rboEmitidoOtro = New System.Windows.Forms.RadioButton
-        Me.Label12 = New System.Windows.Forms.Label
         Me.btnProcesar = New System.Windows.Forms.Button
         Me.btnCancelar = New System.Windows.Forms.Button
         Me.GroupBox2.SuspendLayout()
@@ -288,38 +285,6 @@ Partial Class frmCobrarCheque
         Me.Label11.TabIndex = 97
         Me.Label11.Text = "Cobro de cheques"
         '
-        'rboEmitidoEste
-        '
-        Me.rboEmitidoEste.AutoSize = True
-        Me.rboEmitidoEste.Checked = True
-        Me.rboEmitidoEste.Location = New System.Drawing.Point(469, 19)
-        Me.rboEmitidoEste.Name = "rboEmitidoEste"
-        Me.rboEmitidoEste.Size = New System.Drawing.Size(79, 17)
-        Me.rboEmitidoEste.TabIndex = 1
-        Me.rboEmitidoEste.TabStop = True
-        Me.rboEmitidoEste.Text = "Este banco"
-        Me.rboEmitidoEste.UseVisualStyleBackColor = True
-        '
-        'rboEmitidoOtro
-        '
-        Me.rboEmitidoOtro.AutoSize = True
-        Me.rboEmitidoOtro.Location = New System.Drawing.Point(554, 19)
-        Me.rboEmitidoOtro.Name = "rboEmitidoOtro"
-        Me.rboEmitidoOtro.Size = New System.Drawing.Size(78, 17)
-        Me.rboEmitidoOtro.TabIndex = 2
-        Me.rboEmitidoOtro.TabStop = True
-        Me.rboEmitidoOtro.Text = "Otro banco"
-        Me.rboEmitidoOtro.UseVisualStyleBackColor = True
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(401, 21)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(62, 13)
-        Me.Label12.TabIndex = 100
-        Me.Label12.Text = "Emitido por:"
-        '
         'btnProcesar
         '
         Me.btnProcesar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -346,9 +311,6 @@ Partial Class frmCobrarCheque
         Me.ClientSize = New System.Drawing.Size(642, 213)
         Me.Controls.Add(Me.btnCancelar)
         Me.Controls.Add(Me.btnProcesar)
-        Me.Controls.Add(Me.Label12)
-        Me.Controls.Add(Me.rboEmitidoOtro)
-        Me.Controls.Add(Me.rboEmitidoEste)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.txtNumCheque)
@@ -404,9 +366,6 @@ Partial Class frmCobrarCheque
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents txtNumCheque As System.Windows.Forms.TextBox
     Friend WithEvents Label11 As System.Windows.Forms.Label
-    Friend WithEvents rboEmitidoEste As System.Windows.Forms.RadioButton
-    Friend WithEvents rboEmitidoOtro As System.Windows.Forms.RadioButton
-    Friend WithEvents Label12 As System.Windows.Forms.Label
     Friend WithEvents btnProcesar As System.Windows.Forms.Button
     Friend WithEvents btnCancelar As System.Windows.Forms.Button
 End Class

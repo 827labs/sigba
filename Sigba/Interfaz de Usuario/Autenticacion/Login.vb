@@ -11,8 +11,11 @@ Public Class Login
 
     Private Sub btnContinuar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnContinuar.Click
         If Usuarios.ValidarUsuario(txtCedula.Text, txtClave.Text) Then
+            Autenticacion.usuario = Val(txtCedula.Text)
             MostrarPrincipal()
+            Auditoria.RegistrarAccion(Funcionalidad.IngresoAlSistema)
         Else
+            Auditoria.RegistrarAccion(Funcionalidad.ErrorDeAcceso, String.Format("cedula={0}", txtCedula.Text))
             MessageBox.Show("Credenciales incorrectas", "Error de acceso")
         End If
     End Sub
