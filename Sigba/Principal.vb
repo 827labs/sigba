@@ -109,4 +109,8 @@
     Private Sub TransferenciaEntreCuentasToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TransferenciaEntreCuentasToolStripMenuItem.Click
         frmTransferenciaCuentas.Show()
     End Sub
+
+    Private Sub IngresarUsuarioToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles IngresarUsuarioToolStripMenuItem.Click
+        frmNuevoUsuario.Show()
+    End Sub
 End Class

@@ -1,6 +1,22 @@
 ﻿Imports System.Data.Odbc
 
 Module Usuarios
+    Public Function CrearUsuario(ByVal cedula As Integer, ByVal correo As String, ByVal nombres As String, ByVal apellidos As String) As Integer
+        Dim cx = ConexionBaseDatos.ObtenerActual()
+        Dim cm As New OdbcCommand
+        Dim codInicial = Generadores.CodigoRecuperacionAleatorio()
+        cm.Connection = cx
+        cm.CommandText = String.Format("INSERT INTO usuario (numdocu, claveu, emailu, codrecuperacionu, nombre, apellido) VALUES ({0}, '{1}', '{2}', {3}, '{4}', '{5}')", cedula, codInicial, correo, codInicial, nombres, apellidos)
+
+        Try
+            cm.ExecuteNonQuery()
+            Return codInicial
+        Catch ex As Exception
+            Mensajes.ErrorSimple("Error al crear el usuario. Detalles: " & ex.Message)
+            Return False
+        End Try
+    End Function
+
     Public Function ValidarUsuario(ByVal cedula As String, ByVal clave As String) As Boolean
         Dim usuario = New Usuario(cedula)
 

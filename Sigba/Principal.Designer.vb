@@ -60,6 +60,7 @@ Partial Class Principal
         Me.AyudaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.AcercaDeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.picSigba = New System.Windows.Forms.PictureBox
+        Me.IngresarUsuarioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.strItems.SuspendLayout()
         CType(Me.picSigba, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -116,13 +117,13 @@ Partial Class Principal
         'AltaDeCuentaToolStripMenuItem
         '
         Me.AltaDeCuentaToolStripMenuItem.Name = "AltaDeCuentaToolStripMenuItem"
-        Me.AltaDeCuentaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.AltaDeCuentaToolStripMenuItem.Size = New System.Drawing.Size(151, 22)
         Me.AltaDeCuentaToolStripMenuItem.Text = "Alta de cuenta"
         '
         'BajaDeCuentaToolStripMenuItem
         '
         Me.BajaDeCuentaToolStripMenuItem.Name = "BajaDeCuentaToolStripMenuItem"
-        Me.BajaDeCuentaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.BajaDeCuentaToolStripMenuItem.Size = New System.Drawing.Size(151, 22)
         Me.BajaDeCuentaToolStripMenuItem.Text = "Baja de cuenta"
         '
         'HistóricoDeTransacciónesToolStripMenuItem
@@ -248,7 +249,7 @@ Partial Class Principal
         '
         'AdministraciToolStripMenuItem
         '
-        Me.AdministraciToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GestionarUsuariosToolStripMenuItem, Me.RecuperacionDeContraseToolStripMenuItem})
+        Me.AdministraciToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GestionarUsuariosToolStripMenuItem, Me.IngresarUsuarioToolStripMenuItem, Me.RecuperacionDeContraseToolStripMenuItem})
         Me.AdministraciToolStripMenuItem.Name = "AdministraciToolStripMenuItem"
         Me.AdministraciToolStripMenuItem.Size = New System.Drawing.Size(218, 22)
         Me.AdministraciToolStripMenuItem.Text = "Administración de usuarios"
@@ -304,6 +305,12 @@ Partial Class Principal
         Me.picSigba.Size = New System.Drawing.Size(919, 570)
         Me.picSigba.TabIndex = 1
         Me.picSigba.TabStop = False
+        '
+        'IngresarUsuarioToolStripMenuItem
+        '
+        Me.IngresarUsuarioToolStripMenuItem.Name = "IngresarUsuarioToolStripMenuItem"
+        Me.IngresarUsuarioToolStripMenuItem.Size = New System.Drawing.Size(223, 22)
+        Me.IngresarUsuarioToolStripMenuItem.Text = "Ingresar Usuario"
         '
         'Principal
         '
@@ -365,4 +372,5 @@ Partial Class Principal
     Friend WithEvents RetiroDeCuentaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents TransferenciaEntreCuentasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents AuditoriaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents IngresarUsuarioToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class
