@@ -12,10 +12,10 @@ Module Usuarios
         Dim ds As New DataSet
 
         cm.Connection = ConexionBaseDatos.ObtenerActual()
-        cm.CommandText = "SELECT numdocu, emailu FROM usuario"
+        cm.CommandText = "SELECT numdocu, emailu, apellido, nombre FROM usuario"
 
         If cedula <> 0 Then
-            cm.CommandText = String.Format("SELECT numdocu, emailu FROM usuario WHERE numdocu={0}", cedula)
+            cm.CommandText += String.Format(" WHERE numdocu={0}", cedula)
         End If
 
         Dim da = New OdbcDataAdapter(cm)
@@ -29,6 +29,8 @@ Module Usuarios
             .RowHeadersVisible = False
             .Columns(0).HeaderCell.Value = "Cédula"
             .Columns(1).HeaderCell.Value = "Correo electrónico"
+            .Columns(2).HeaderCell.Value = "Apellidos"
+            .Columns(3).HeaderCell.Value = "Nombres"
         End With
     End Sub
 End Module
