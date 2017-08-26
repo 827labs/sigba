@@ -7,7 +7,8 @@
         txtCajero.Enabled = False
 
         Dim cajero = New Usuario(Autenticacion.usuario)
-        txtEmailCajero.Text = cajero.EmailU
+
+        txtEmailCajero.Text = String.Format("{0}, {1}", cajero.Apellido, cajero.Nombre)
     End Sub
 
     Private Sub KPSoloNumeros(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtSaldoUSD.KeyPress, txtSaldoUYU.KeyPress, txtSucursal.KeyPress, txtCaja.KeyPress, txtCajero.KeyPress

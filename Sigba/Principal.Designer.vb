@@ -53,14 +53,15 @@ Partial Class Principal
         Me.ConfiguraciónToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.AdministraciToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.GestionarUsuariosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.IngresarUsuarioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.RecuperacionDeContraseToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.AdministraciónDeCargosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.DatosDelBancoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.AuditoriaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.AdministracíToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.AyudaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.AcercaDeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.picSigba = New System.Windows.Forms.PictureBox
-        Me.IngresarUsuarioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.strItems.SuspendLayout()
         CType(Me.picSigba, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -242,7 +243,7 @@ Partial Class Principal
         '
         'ConfiguraciónToolStripMenuItem
         '
-        Me.ConfiguraciónToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AdministraciToolStripMenuItem, Me.AdministraciónDeCargosToolStripMenuItem, Me.DatosDelBancoToolStripMenuItem, Me.AuditoriaToolStripMenuItem})
+        Me.ConfiguraciónToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AdministraciToolStripMenuItem, Me.AdministraciónDeCargosToolStripMenuItem, Me.DatosDelBancoToolStripMenuItem, Me.AuditoriaToolStripMenuItem, Me.AdministracíToolStripMenuItem})
         Me.ConfiguraciónToolStripMenuItem.Name = "ConfiguraciónToolStripMenuItem"
         Me.ConfiguraciónToolStripMenuItem.Size = New System.Drawing.Size(95, 20)
         Me.ConfiguraciónToolStripMenuItem.Text = "Configuración"
@@ -251,7 +252,7 @@ Partial Class Principal
         '
         Me.AdministraciToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GestionarUsuariosToolStripMenuItem, Me.IngresarUsuarioToolStripMenuItem, Me.RecuperacionDeContraseToolStripMenuItem})
         Me.AdministraciToolStripMenuItem.Name = "AdministraciToolStripMenuItem"
-        Me.AdministraciToolStripMenuItem.Size = New System.Drawing.Size(218, 22)
+        Me.AdministraciToolStripMenuItem.Size = New System.Drawing.Size(229, 22)
         Me.AdministraciToolStripMenuItem.Text = "Administración de usuarios"
         '
         'GestionarUsuariosToolStripMenuItem
@@ -259,6 +260,12 @@ Partial Class Principal
         Me.GestionarUsuariosToolStripMenuItem.Name = "GestionarUsuariosToolStripMenuItem"
         Me.GestionarUsuariosToolStripMenuItem.Size = New System.Drawing.Size(223, 22)
         Me.GestionarUsuariosToolStripMenuItem.Text = "Gestionar usuarios"
+        '
+        'IngresarUsuarioToolStripMenuItem
+        '
+        Me.IngresarUsuarioToolStripMenuItem.Name = "IngresarUsuarioToolStripMenuItem"
+        Me.IngresarUsuarioToolStripMenuItem.Size = New System.Drawing.Size(223, 22)
+        Me.IngresarUsuarioToolStripMenuItem.Text = "Ingresar Usuario"
         '
         'RecuperacionDeContraseToolStripMenuItem
         '
@@ -269,20 +276,26 @@ Partial Class Principal
         'AdministraciónDeCargosToolStripMenuItem
         '
         Me.AdministraciónDeCargosToolStripMenuItem.Name = "AdministraciónDeCargosToolStripMenuItem"
-        Me.AdministraciónDeCargosToolStripMenuItem.Size = New System.Drawing.Size(218, 22)
+        Me.AdministraciónDeCargosToolStripMenuItem.Size = New System.Drawing.Size(229, 22)
         Me.AdministraciónDeCargosToolStripMenuItem.Text = "Administración de cargos"
         '
         'DatosDelBancoToolStripMenuItem
         '
         Me.DatosDelBancoToolStripMenuItem.Name = "DatosDelBancoToolStripMenuItem"
-        Me.DatosDelBancoToolStripMenuItem.Size = New System.Drawing.Size(218, 22)
+        Me.DatosDelBancoToolStripMenuItem.Size = New System.Drawing.Size(229, 22)
         Me.DatosDelBancoToolStripMenuItem.Text = "Datos del banco"
         '
         'AuditoriaToolStripMenuItem
         '
         Me.AuditoriaToolStripMenuItem.Name = "AuditoriaToolStripMenuItem"
-        Me.AuditoriaToolStripMenuItem.Size = New System.Drawing.Size(218, 22)
+        Me.AuditoriaToolStripMenuItem.Size = New System.Drawing.Size(229, 22)
         Me.AuditoriaToolStripMenuItem.Text = "Auditoría"
+        '
+        'AdministracíToolStripMenuItem
+        '
+        Me.AdministracíToolStripMenuItem.Name = "AdministracíToolStripMenuItem"
+        Me.AdministracíToolStripMenuItem.Size = New System.Drawing.Size(229, 22)
+        Me.AdministracíToolStripMenuItem.Text = "Administración de Sucursales"
         '
         'AyudaToolStripMenuItem
         '
@@ -305,12 +318,6 @@ Partial Class Principal
         Me.picSigba.Size = New System.Drawing.Size(919, 570)
         Me.picSigba.TabIndex = 1
         Me.picSigba.TabStop = False
-        '
-        'IngresarUsuarioToolStripMenuItem
-        '
-        Me.IngresarUsuarioToolStripMenuItem.Name = "IngresarUsuarioToolStripMenuItem"
-        Me.IngresarUsuarioToolStripMenuItem.Size = New System.Drawing.Size(223, 22)
-        Me.IngresarUsuarioToolStripMenuItem.Text = "Ingresar Usuario"
         '
         'Principal
         '
@@ -373,4 +380,5 @@ Partial Class Principal
     Friend WithEvents TransferenciaEntreCuentasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents AuditoriaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents IngresarUsuarioToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents AdministracíToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

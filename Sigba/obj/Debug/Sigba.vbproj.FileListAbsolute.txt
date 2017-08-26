@@ -240,3 +240,5 @@ Z:\Code\sigba\Sigba\obj\Debug\Sigba.Principal.resources
 Z:\Code\sigba\Sigba\obj\Debug\Sigba.Resources.resources
 Z:\Code\sigba\Sigba\obj\Debug\Sigba.vbproj.GenerateResource.Cache
 Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmNuevoUsuario.resources
+Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmListaSucursales.resources
+Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmEditarSucursal.resources

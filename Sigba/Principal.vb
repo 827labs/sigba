@@ -113,4 +113,8 @@
     Private Sub IngresarUsuarioToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles IngresarUsuarioToolStripMenuItem.Click
         frmNuevoUsuario.Show()
     End Sub
+
+    Private Sub AdministracíToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AdministracíToolStripMenuItem.Click
+        frmListaSucursales.Show()
+    End Sub
 End Class

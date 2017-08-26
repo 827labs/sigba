@@ -216,6 +216,18 @@
     <Compile Include="Interfaz de Usuario\Configuración\Administración de permisos\frmGestionCargos.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Interfaz de Usuario\Configuración\Administración de sucursales\frmEditarSucursal.Designer.vb">
+      <DependentUpon>frmEditarSucursal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz de Usuario\Configuración\Administración de sucursales\frmEditarSucursal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz de Usuario\Configuración\Administración de sucursales\frmListaSucursales.Designer.vb">
+      <DependentUpon>frmListaSucursales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz de Usuario\Configuración\Administración de sucursales\frmListaSucursales.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Interfaz de Usuario\Configuración\Administración de usuarios\frmGestionUsuarios.Designer.vb">
       <DependentUpon>frmGestionUsuarios.vb</DependentUpon>
     </Compile>
@@ -307,10 +319,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Modelos\Funcionalidad.vb" />
+    <Compile Include="Modelos\Sucursal.vb" />
     <Compile Include="Modelos\Usuario.vb" />
     <Compile Include="Persistencia\Auditoria.vb" />
     <Compile Include="Persistencia\Cargos.vb" />
     <Compile Include="Persistencia\ConexionBaseDatos.vb" />
+    <Compile Include="Persistencia\Sucursales.vb" />
     <Compile Include="Persistencia\Usuarios.vb" />
     <Compile Include="Principal.Designer.vb">
       <DependentUpon>Principal.vb</DependentUpon>
@@ -428,6 +442,14 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaz de Usuario\Configuración\Administración de permisos\frmGestionCargos.resx">
       <DependentUpon>frmGestionCargos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz de Usuario\Configuración\Administración de sucursales\frmEditarSucursal.resx">
+      <DependentUpon>frmEditarSucursal.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz de Usuario\Configuración\Administración de sucursales\frmListaSucursales.resx">
+      <DependentUpon>frmListaSucursales.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaz de Usuario\Configuración\Administración de usuarios\frmGestionUsuarios.resx">
