@@ -1,7 +1,9 @@
 ﻿Imports System.Data.Odbc
 
-Public Module ConexionBaseDatos
-    Function ObtenerActual() As OdbcConnection
+Public Class ConexionBaseDatos
+    Shared cxCompartida As OdbcConnection
+
+    Private Shared Function CrearNuevaConexion() As OdbcConnection
         Dim cx As New OdbcConnection
 
         cx.ConnectionString = "FileDsn=C:\sigba.dsn;UID=informix;PWD=informix"
@@ -14,5 +16,19 @@ Public Module ConexionBaseDatos
 
         Return cx
     End Function
-End Module
+
+    Shared Function ObtenerActual() As OdbcConnection
+        ' Si la conexión nunca fue abierta (Is Nothing) o no está abierta (.Open)
+        ' la voy a crear de nuevo o abrirla respectivamente antes de retornarla.
+        If (cxCompartida Is Nothing) Then
+            cxCompartida = CrearNuevaConexion()
+        End If
+
+        If (cxCompartida.State <> ConnectionState.Open) Then
+            cxCompartida.Open()
+        End If
+
+        Return cxCompartida
+    End Function
+End Class
 

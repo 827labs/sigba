@@ -43,10 +43,6 @@ Partial Class frmNuevaCuenta
         Me.Label2 = New System.Windows.Forms.Label
         Me.cboUsoFormas = New System.Windows.Forms.ComboBox
         Me.Label3 = New System.Windows.Forms.Label
-        Me.GroupBox4 = New System.Windows.Forms.GroupBox
-        Me.rdoCajerosNo = New System.Windows.Forms.RadioButton
-        Me.rdoCajerosSi = New System.Windows.Forms.RadioButton
-        Me.Label4 = New System.Windows.Forms.Label
         Me.btnConfirmar = New System.Windows.Forms.Button
         Me.btnCancelar = New System.Windows.Forms.Button
         Me.TabControl.SuspendLayout()
@@ -55,7 +51,6 @@ Partial Class frmNuevaCuenta
         Me.tabEmpresa.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
-        Me.GroupBox4.SuspendLayout()
         Me.SuspendLayout()
         '
         'TabControl
@@ -257,54 +252,10 @@ Partial Class frmNuevaCuenta
         Me.Label3.TabIndex = 95
         Me.Label3.Text = "Uso de firmas"
         '
-        'GroupBox4
-        '
-        Me.GroupBox4.Controls.Add(Me.rdoCajerosNo)
-        Me.GroupBox4.Controls.Add(Me.rdoCajerosSi)
-        Me.GroupBox4.Controls.Add(Me.Label4)
-        Me.GroupBox4.Location = New System.Drawing.Point(13, 248)
-        Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(392, 72)
-        Me.GroupBox4.TabIndex = 97
-        Me.GroupBox4.TabStop = False
-        Me.GroupBox4.Text = "Cajeros automaticos y automatismos"
-        '
-        'rdoCajerosNo
-        '
-        Me.rdoCajerosNo.AutoSize = True
-        Me.rdoCajerosNo.Location = New System.Drawing.Point(318, 42)
-        Me.rdoCajerosNo.Name = "rdoCajerosNo"
-        Me.rdoCajerosNo.Size = New System.Drawing.Size(39, 17)
-        Me.rdoCajerosNo.TabIndex = 2
-        Me.rdoCajerosNo.Text = "No"
-        Me.rdoCajerosNo.UseVisualStyleBackColor = True
-        '
-        'rdoCajerosSi
-        '
-        Me.rdoCajerosSi.AutoSize = True
-        Me.rdoCajerosSi.Checked = True
-        Me.rdoCajerosSi.Location = New System.Drawing.Point(318, 19)
-        Me.rdoCajerosSi.Name = "rdoCajerosSi"
-        Me.rdoCajerosSi.Size = New System.Drawing.Size(34, 17)
-        Me.rdoCajerosSi.TabIndex = 1
-        Me.rdoCajerosSi.TabStop = True
-        Me.rdoCajerosSi.Text = "Si"
-        Me.rdoCajerosSi.UseVisualStyleBackColor = True
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(7, 20)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(273, 26)
-        Me.Label4.TabIndex = 0
-        Me.Label4.Text = "¿Habilitar manejo de la cuenta por cajeros automaticos y" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "terminales de autoservi" & _
-            "cio?"
-        '
         'btnConfirmar
         '
         Me.btnConfirmar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnConfirmar.Location = New System.Drawing.Point(219, 330)
+        Me.btnConfirmar.Location = New System.Drawing.Point(219, 253)
         Me.btnConfirmar.Name = "btnConfirmar"
         Me.btnConfirmar.Size = New System.Drawing.Size(186, 26)
         Me.btnConfirmar.TabIndex = 98
@@ -313,7 +264,7 @@ Partial Class frmNuevaCuenta
         '
         'btnCancelar
         '
-        Me.btnCancelar.Location = New System.Drawing.Point(146, 330)
+        Me.btnCancelar.Location = New System.Drawing.Point(146, 253)
         Me.btnCancelar.Name = "btnCancelar"
         Me.btnCancelar.Size = New System.Drawing.Size(67, 26)
         Me.btnCancelar.TabIndex = 99
@@ -324,10 +275,9 @@ Partial Class frmNuevaCuenta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(416, 368)
+        Me.ClientSize = New System.Drawing.Size(416, 290)
         Me.Controls.Add(Me.btnCancelar)
         Me.Controls.Add(Me.btnConfirmar)
-        Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.cboUsoFormas)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.cboSucursal)
@@ -348,8 +298,6 @@ Partial Class frmNuevaCuenta
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.GroupBox3.ResumeLayout(False)
-        Me.GroupBox4.ResumeLayout(False)
-        Me.GroupBox4.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -374,10 +322,6 @@ Partial Class frmNuevaCuenta
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents cboUsoFormas As System.Windows.Forms.ComboBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents GroupBox4 As System.Windows.Forms.GroupBox
-    Friend WithEvents rdoCajerosNo As System.Windows.Forms.RadioButton
-    Friend WithEvents rdoCajerosSi As System.Windows.Forms.RadioButton
-    Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents btnConfirmar As System.Windows.Forms.Button
     Friend WithEvents btnCancelar As System.Windows.Forms.Button
 End Class
