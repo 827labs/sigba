@@ -318,6 +318,7 @@
     <Compile Include="Interfaz de Usuario\Cuentas\Histórico de transacciones por cuenta\frmHistoricoTransaccionesCuenta.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Modelos\Cliente.vb" />
     <Compile Include="Modelos\Funcionalidad.vb" />
     <Compile Include="Modelos\Sucursal.vb" />
     <Compile Include="Modelos\Usuario.vb" />

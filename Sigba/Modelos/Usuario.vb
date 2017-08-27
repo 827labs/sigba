@@ -47,6 +47,14 @@ Public Class Usuario
         Return Me.Suspendido.Length > 0
     End Function
 
+    Public Function EsFuncionario() As Boolean
+        Dim cx = ConexionBaseDatos.ObtenerActual()
+        Dim cm = New OdbcCommand("SELECT COUNT(*) cargos FROM ejerce WHERE numdocu=" & Me.NumDocU, cx)
+        Dim cantCargos = cm.ExecuteScalar()
+
+        Return cantCargos <> "0"
+    End Function
+
     Public Function ActualizarCodRecuperacion(ByVal nuevoCodigoRecuperacion As Integer) As Boolean
         Dim cx = ConexionBaseDatos.ObtenerActual()
         Dim cm = New OdbcCommand
