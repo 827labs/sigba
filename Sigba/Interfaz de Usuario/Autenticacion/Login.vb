@@ -16,7 +16,7 @@ Public Class Login
             Auditoria.RegistrarAccion(Funcionalidad.IngresoAlSistema)
         Else
             Auditoria.RegistrarAccion(Funcionalidad.ErrorDeAcceso, String.Format("cedula={0}", txtCedula.Text))
-            MessageBox.Show("Credenciales incorrectas", "Error de acceso")
+            MessageBox.Show("No se pudo validar el usuario", "Error de acceso")
         End If
     End Sub
 

@@ -7,12 +7,13 @@ Public Class Usuario
     Public ClaveU As String
     Public CodRecuperacionU As Integer
     Public EmailU As String
+    Public Suspendido As String
 
     Public Sub New(ByVal cedula As String)
         Dim cx = ConexionBaseDatos.ObtenerActual()
         Dim cm = New OdbcCommand
         cm.Connection = cx
-        cm.CommandText = String.Format("SELECT NVL(nombre, '') nom, NVL(apellido, '') ape, numdocu, claveu, emailu, NVL(codrecuperacionu, 0) codrec from usuario WHERE numdocu={0}", cedula)
+        cm.CommandText = String.Format("SELECT NVL(nombre, '') nom, NVL(apellido, '') ape, numdocu, claveu, emailu, NVL(codrecuperacionu, 0) codrec, NVL(suspendido, '') sus from usuario WHERE numdocu={0}", cedula)
         Dim lector = cm.ExecuteReader()
 
         Dim existe = False
@@ -25,7 +26,12 @@ Public Class Usuario
             Me.ClaveU = lector("claveu")
             Me.CodRecuperacionU = lector("codrec")
             Me.EmailU = lector("emailu")
+            Me.Suspendido = lector("sus")
         End While
+
+        If Me.EstaSuspendido() Then
+            Mensajes.ErrorSimple(String.Format("El usuario {0} ({1} {2}) fué suspendido el dia {3}.", Me.NumDocU, Me.Nombre, Me.Apellido, Me.Suspendido))
+        End If
 
         If Not existe Then
             Mensajes.Simple(String.Format("El usuario con cédula {0} no existe.", cedula))
@@ -35,6 +41,10 @@ Public Class Usuario
     Public Function EsValido() As Boolean
         ' Retorna True si un usuario ha sido seteado en la instancia
         Return Me.NumDocU > 0
+    End Function
+
+    Public Function EstaSuspendido() As Boolean
+        Return Me.Suspendido.Length > 0
     End Function
 
     Public Function ActualizarCodRecuperacion(ByVal nuevoCodigoRecuperacion As Integer) As Boolean

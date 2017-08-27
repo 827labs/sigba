@@ -1,6 +1,7 @@
 ﻿Imports System.Data.Odbc
 
 Module Usuarios
+
     Public Function CrearUsuario(ByVal cedula As Integer, ByVal correo As String, ByVal nombres As String, ByVal apellidos As String) As Integer
         Dim cx = ConexionBaseDatos.ObtenerActual()
         Dim cm As New OdbcCommand
@@ -20,7 +21,7 @@ Module Usuarios
     Public Function ValidarUsuario(ByVal cedula As String, ByVal clave As String) As Boolean
         Dim usuario = New Usuario(cedula)
 
-        Return usuario.ClaveU = clave
+        Return usuario.ClaveU = clave And Not usuario.EstaSuspendido()
     End Function
 
     Sub ListarUsuarios(ByRef dgv As DataGridView, Optional ByVal cedula As Integer = 0)
