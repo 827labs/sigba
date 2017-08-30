@@ -12,5 +12,4 @@
 
         Return (respuesta = DialogResult.Yes)
     End Function
-
 End Module

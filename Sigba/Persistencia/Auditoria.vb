@@ -29,7 +29,7 @@ Module Auditoria
         cm.Connection = cx
 
         Dim fecha = DateTime.Now()
-        Dim fechaStr = fecha.ToString("dd-MM-yyyy")
+        Dim fechaStr = fecha.ToString("MM/dd/yyyy")
         Dim horaStr = fecha.ToString("HH:mm")
         Dim cedulaUsuario = Autenticacion.usuario
 
