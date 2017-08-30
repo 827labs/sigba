@@ -7,7 +7,7 @@ Module Auditoria
         Dim cm = New OdbcCommand
         cm.Connection = cx
 
-        cm.CommandText = "SELECT idreg, nombre, numdocu, fecha, datosextra FROM registroaccion ORDER BY idreg DESC"
+        cm.CommandText = "SELECT idreg, nombre, numdocu, fecha, hora, datosextra FROM registroaccion ORDER BY idreg DESC"
         Dim da = New OdbcDataAdapter(cm)
         Dim ds = New DataSet
         da.Fill(ds, "registroaccion")
@@ -19,7 +19,8 @@ Module Auditoria
             .Columns(1).HeaderCell.Value = "Funcionalidad"
             .Columns(2).HeaderCell.Value = "Usuario"
             .Columns(3).HeaderCell.Value = "Fecha"
-            .Columns(4).HeaderCell.Value = "Datos extra"
+            .Columns(4).HeaderCell.Value = "Hora"
+            .Columns(5).HeaderCell.Value = "Datos extra"
         End With
     End Sub
 
