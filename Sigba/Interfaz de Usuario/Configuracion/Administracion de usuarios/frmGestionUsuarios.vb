@@ -59,4 +59,8 @@
 
         Usuarios.ListarUsuarios(dgvUsuarios)
     End Sub
+
+    Private Sub btnNuevoUsuario_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnNuevoUsuario.Click
+        frmNuevoUsuario.Show()
+    End Sub
 End Class

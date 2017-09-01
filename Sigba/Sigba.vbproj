@@ -324,6 +324,7 @@
     <Compile Include="Modelos\Usuario.vb" />
     <Compile Include="Persistencia\Auditoria.vb" />
     <Compile Include="Persistencia\Cargos.vb" />
+    <Compile Include="Persistencia\Clientes.vb" />
     <Compile Include="Persistencia\ConexionBaseDatos.vb" />
     <Compile Include="Persistencia\Sucursales.vb" />
     <Compile Include="Persistencia\Usuarios.vb" />

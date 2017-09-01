@@ -117,4 +117,18 @@
     Private Sub AdministracíToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AdministracíToolStripMenuItem.Click
         frmListaSucursales.Show()
     End Sub
+
+    Private Sub Principal_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Dim usuario = New Usuario(Autenticacion.usuario)
+        lblStatusUsuario.Text = String.Format("CI: {2} ({0} {1}) - {3}", usuario.Nombre, usuario.Apellido, usuario.NumDocU, usuario.EmailU)
+
+        Dim cargo = usuario.Cargo()
+        lblCargo.Text = cargo
+
+        Select Case cargo
+            Case "Auxiliar de caja"
+                ConfiguraciónToolStripMenuItem.Visible = False
+                ClientesToolStripMenuItem.Visible = False
+        End Select
+    End Sub
 End Class

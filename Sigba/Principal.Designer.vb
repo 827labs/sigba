@@ -62,8 +62,12 @@ Partial Class Principal
         Me.AyudaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.AcercaDeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.picSigba = New System.Windows.Forms.PictureBox
+        Me.StatusStrip1 = New System.Windows.Forms.StatusStrip
+        Me.lblStatusUsuario = New System.Windows.Forms.ToolStripStatusLabel
+        Me.lblCargo = New System.Windows.Forms.Label
         Me.strItems.SuspendLayout()
         CType(Me.picSigba, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.StatusStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'strItems
@@ -168,7 +172,7 @@ Partial Class Principal
         '
         Me.GestiónToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AltaClienteToolStripMenuItem, Me.BajaClienteToolStripMenuItem})
         Me.GestiónToolStripMenuItem1.Name = "GestiónToolStripMenuItem1"
-        Me.GestiónToolStripMenuItem1.Size = New System.Drawing.Size(114, 22)
+        Me.GestiónToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
         Me.GestiónToolStripMenuItem1.Text = "Gestión"
         '
         'AltaClienteToolStripMenuItem
@@ -319,11 +323,37 @@ Partial Class Principal
         Me.picSigba.TabIndex = 1
         Me.picSigba.TabStop = False
         '
+        'StatusStrip1
+        '
+        Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.lblStatusUsuario})
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 572)
+        Me.StatusStrip1.Name = "StatusStrip1"
+        Me.StatusStrip1.Size = New System.Drawing.Size(919, 22)
+        Me.StatusStrip1.TabIndex = 2
+        Me.StatusStrip1.Text = "StatusStrip1"
+        '
+        'lblStatusUsuario
+        '
+        Me.lblStatusUsuario.Name = "lblStatusUsuario"
+        Me.lblStatusUsuario.Size = New System.Drawing.Size(133, 17)
+        Me.lblStatusUsuario.Text = "Información del usuario"
+        '
+        'lblCargo
+        '
+        Me.lblCargo.Location = New System.Drawing.Point(655, 572)
+        Me.lblCargo.Name = "lblCargo"
+        Me.lblCargo.Size = New System.Drawing.Size(252, 23)
+        Me.lblCargo.TabIndex = 3
+        Me.lblCargo.Text = "Cargo"
+        Me.lblCargo.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
         'Principal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(919, 594)
+        Me.Controls.Add(Me.lblCargo)
+        Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.picSigba)
         Me.Controls.Add(Me.strItems)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -338,6 +368,8 @@ Partial Class Principal
         Me.strItems.ResumeLayout(False)
         Me.strItems.PerformLayout()
         CType(Me.picSigba, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.StatusStrip1.ResumeLayout(False)
+        Me.StatusStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -381,4 +413,7 @@ Partial Class Principal
     Friend WithEvents AuditoriaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents IngresarUsuarioToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents AdministracíToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents StatusStrip1 As System.Windows.Forms.StatusStrip
+    Friend WithEvents lblStatusUsuario As System.Windows.Forms.ToolStripStatusLabel
+    Friend WithEvents lblCargo As System.Windows.Forms.Label
 End Class

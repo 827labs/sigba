@@ -3,25 +3,40 @@
 Public Class ConexionBaseDatos
     Shared cxCompartida As OdbcConnection
 
-    Private Shared Function CrearNuevaConexion() As OdbcConnection
+    Private Shared Function CrearNuevaConexion(ByVal usuario As String, ByVal clave As String) As OdbcConnection
         Dim cx As New OdbcConnection
 
-        cx.ConnectionString = "FileDsn=C:\sigba.dsn;UID=informix;PWD=informix"
+        If usuario = "informix" And Autenticacion.usuario <> Nothing Then
+            usuario = Autenticacion.usuario
+            clave = Autenticacion.clave
+        End If
+
+        If usuario <> "informix" Then
+            usuario = "S" + usuario
+        End If
+
+        'cx.ConnectionString = String.Format("FileDsn=C:\sigba.dsn;UID={0};PWD={1}", usuario, clave)
+
+        If Desarrollo.ModoDesarrolloActivado() Then
+            cx.ConnectionString = "FileDsn=C:\sigba.dsn;UID=informix;PWD=informix"
+        Else
+            cx.ConnectionString = "FileDsn=C:\sigba.dsn;UID=fcorrea;PWD=50199908"
+        End If
 
         Try
             cx.Open()
         Catch ex As Exception
-            MessageBox.Show("Ocurrió un error al intentarnos conectar con la base de datos.", "Error de datos")
+            Mensajes.ErrorSimple("Ocurrió un error al intentarnos conectar con la base de datos.")
         End Try
 
         Return cx
     End Function
 
-    Shared Function ObtenerActual() As OdbcConnection
+    Shared Function ObtenerActual(Optional ByVal usuario As String = "informix", Optional ByVal clave As String = "informix") As OdbcConnection
         ' Si la conexión nunca fue abierta (Is Nothing) o no está abierta (.Open)
         ' la voy a crear de nuevo o abrirla respectivamente antes de retornarla.
         If (cxCompartida Is Nothing) Then
-            cxCompartida = CrearNuevaConexion()
+            cxCompartida = CrearNuevaConexion(usuario, clave)
         End If
 
         If (cxCompartida.State <> ConnectionState.Open) Then

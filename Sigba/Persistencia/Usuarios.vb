@@ -19,9 +19,19 @@ Module Usuarios
     End Function
 
     Public Function ValidarUsuario(ByVal cedula As String, ByVal clave As String) As Boolean
+        Autenticacion.usuario = cedula
+        Autenticacion.clave = clave
         Dim usuario = New Usuario(cedula)
 
-        Return usuario.ClaveU = clave And (Not usuario.EstaSuspendido()) And usuario.EsFuncionario()
+        Dim Condicion = usuario.ClaveU = clave And (Not usuario.EstaSuspendido()) And usuario.EsFuncionario()
+
+        If Condicion = False Then
+            Autenticacion.usuario = Nothing
+            Autenticacion.clave = Nothing
+        End If
+
+        Return Condicion
+
     End Function
 
     Sub ListarUsuarios(ByRef dgv As DataGridView, Optional ByVal cedula As Integer = 0)

@@ -10,8 +10,12 @@ Public Class Login
     End Sub
 
     Private Sub btnContinuar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnContinuar.Click
+        If txtCedula.Text = "" Or txtClave.Text = "" Then
+            Mensajes.ErrorSimple("Complete todos los campos")
+        End If
         If Usuarios.ValidarUsuario(txtCedula.Text, txtClave.Text) Then
             Autenticacion.usuario = Val(txtCedula.Text)
+            Autenticacion.clave = Val(txtClave.Text)
             MostrarPrincipal()
             Auditoria.RegistrarAccion(Funcionalidad.IngresoAlSistema)
         Else

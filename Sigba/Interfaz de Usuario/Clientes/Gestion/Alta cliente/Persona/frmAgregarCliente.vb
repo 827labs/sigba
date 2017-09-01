@@ -7,7 +7,7 @@
 
     Private Sub btnCancelar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancelar.Click
         Principal.Show() 'Al dar click en el botón cancelar, se aparece la ventana principal
-        Me.Close() 'Y esta ventana (Agregar CLiente) se cierra
+        Me.Close() 'Y esta ventana (Agregar Cliente) se cierra
     End Sub
 
     Private Sub frmAgregarCliente_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
@@ -23,16 +23,31 @@
         ' Rellenar el ComboBox de Año dinamicamente
         Generadores.RellenarComboBoxAnio(cboAnoNaci)
 
-        cboPaisNaci.SelectedIndex = 187 'Al entrar a la ventana aparece por defecto el iten numero 187 (que sería el de Uruguay) en el combobox
-        cboPaisDoc.SelectedIndex = 187
-        cboPaisRes.SelectedIndex = 187
-        cboPaisDocCony.SelectedIndex = 187
+        Limpiar()
         
         ' Deshabilitar form del conyuge por default
         CambiarHabilitacionModuloConyuge(False)
+
+        If Desarrollo.ModoDesarrolloActivado() Then
+            AutoCompletarFormDesarrollo()
+        End If
     End Sub
 
-    Private Sub btnNuevo_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnNuevo.Click
+    Private Sub AutoCompletarFormDesarrollo()
+        txtNombre1.Text = "Juan"
+        txtNombre2.Text = ""
+
+        txtCalleDom.Text = "Andes"
+        txtNroDom.Text = "1234"
+        txtCiudadNac.Text = "Montevideo"
+        txtCodigoPos.Text = "19000"
+        txtTelefonoFijo.Text = "29056969"
+        txtBlockDom.Text = ""
+        txtAptoDom.Text = ""
+        txtAclaracionDom.Text = ""
+    End Sub
+
+    Private Sub Limpiar()
         'Borra el contenido de los TextBox
         txtApellido1.Clear()
         txtApellido2.Clear()
@@ -70,10 +85,22 @@
         cboPaisDocCony.SelectedIndex = 187
     End Sub
 
+    Private Sub btnNuevo_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnNuevo.Click
+        Limpiar()
+    End Sub
+
     Private Sub btnIngresar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnIngresar.Click
         If Validadores.EsEmailValido(txtMail.Text) = False Then
             MessageBox.Show("Verifique los datos")
         End If
+
+        InsertarCliente()
+    End Sub
+
+    Private Sub InsertarCliente()
+
+        Dim idCliente = Clientes.AltaCliente(txtCalleDom.Text, txtLocalidadRes.Text, Val(txtCodigoPos.Text), Val(txtNroDom.Text), txtTelefonoFijo.Text, txtBlockDom.Text, txtAptoDom.Text, txtAclaracionDom.Text)
+        Mensajes.Simple(String.Format("El ID del cliente recien creado es: {0}", idCliente))
     End Sub
 
 

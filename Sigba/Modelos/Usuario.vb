@@ -71,4 +71,11 @@ Public Class Usuario
         End Try
 
     End Function
+
+    Public Function Cargo() As String
+        Dim cx = ConexionBaseDatos.ObtenerActual()
+        Dim cm = New OdbcCommand("select FIRST 1 c.nombre from cargo as c INNER JOIN ejerce as e ON e.idcargo = c.idcargo where e.numdocu=" & Me.NumDocU, cx)
+
+        Return cm.ExecuteScalar()
+    End Function
 End Class

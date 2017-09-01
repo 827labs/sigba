@@ -38,6 +38,7 @@ Partial Class frmGestionUsuarios
         Me.btnBuscarCedula = New System.Windows.Forms.Button
         Me.txtBuscaCedula = New System.Windows.Forms.TextBox
         Me.Label2 = New System.Windows.Forms.Label
+        Me.btnNuevoUsuario = New System.Windows.Forms.Button
         CType(Me.dgvUsuarios, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.grpFiltro.SuspendLayout()
         Me.grpBuscarUsuarios.SuspendLayout()
@@ -116,7 +117,7 @@ Partial Class frmGestionUsuarios
         'cboFiltroCargo
         '
         Me.cboFiltroCargo.FormattingEnabled = True
-        Me.cboFiltroCargo.Items.AddRange(New Object() {"Jefe", "Gerente", "Auxiliares", "Caja", "Ejecutivo "})
+        Me.cboFiltroCargo.Items.AddRange(New Object() {"Administrador", "Gerente", "Ejecutivo ", "Auxiliares"})
         Me.cboFiltroCargo.Location = New System.Drawing.Point(10, 38)
         Me.cboFiltroCargo.Name = "cboFiltroCargo"
         Me.cboFiltroCargo.Size = New System.Drawing.Size(168, 21)
@@ -188,11 +189,22 @@ Partial Class frmGestionUsuarios
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "Cédula de identidad"
         '
+        'btnNuevoUsuario
+        '
+        Me.btnNuevoUsuario.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnNuevoUsuario.Location = New System.Drawing.Point(12, 313)
+        Me.btnNuevoUsuario.Name = "btnNuevoUsuario"
+        Me.btnNuevoUsuario.Size = New System.Drawing.Size(184, 31)
+        Me.btnNuevoUsuario.TabIndex = 3
+        Me.btnNuevoUsuario.Text = "Nuevo Usuario"
+        Me.btnNuevoUsuario.UseVisualStyleBackColor = True
+        '
         'frmGestionUsuarios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(933, 594)
+        Me.Controls.Add(Me.btnNuevoUsuario)
         Me.Controls.Add(Me.grpBuscarUsuarios)
         Me.Controls.Add(Me.grpFiltro)
         Me.Controls.Add(Me.dgvUsuarios)
@@ -225,4 +237,5 @@ Partial Class frmGestionUsuarios
     Friend WithEvents btnBuscarCedula As System.Windows.Forms.Button
     Friend WithEvents txtBuscaCedula As System.Windows.Forms.TextBox
     Friend WithEvents btnLimpiarCedula As System.Windows.Forms.Button
+    Friend WithEvents btnNuevoUsuario As System.Windows.Forms.Button
 End Class
