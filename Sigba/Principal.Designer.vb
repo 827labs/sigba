@@ -29,7 +29,7 @@ Partial Class Principal
         Me.AperturaDeCajaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.CajasAbiertasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.CuentasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.GestiónToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.GestiónCuentasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.AltaDeCuentaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.BajaDeCuentaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.HistóricoDeTransacciónesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
@@ -49,7 +49,7 @@ Partial Class Principal
         Me.LibretasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.EmitirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.AnularToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.DepósitoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.CobrarChequeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.ConfiguraciónToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.AdministraciToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.GestionarUsuariosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
@@ -107,28 +107,28 @@ Partial Class Principal
         '
         'CuentasToolStripMenuItem
         '
-        Me.CuentasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GestiónToolStripMenuItem, Me.HistóricoDeTransacciónesToolStripMenuItem, Me.DébitosAutomáticosToolStripMenuItem, Me.DepósitoEnCuentaToolStripMenuItem, Me.RetiroDeCuentaToolStripMenuItem, Me.TransferenciaEntreCuentasToolStripMenuItem})
+        Me.CuentasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GestiónCuentasToolStripMenuItem, Me.HistóricoDeTransacciónesToolStripMenuItem, Me.DébitosAutomáticosToolStripMenuItem, Me.DepósitoEnCuentaToolStripMenuItem, Me.RetiroDeCuentaToolStripMenuItem, Me.TransferenciaEntreCuentasToolStripMenuItem})
         Me.CuentasToolStripMenuItem.Name = "CuentasToolStripMenuItem"
         Me.CuentasToolStripMenuItem.Size = New System.Drawing.Size(62, 20)
         Me.CuentasToolStripMenuItem.Text = "Cuentas"
         '
-        'GestiónToolStripMenuItem
+        'GestiónCuentasToolStripMenuItem
         '
-        Me.GestiónToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AltaDeCuentaToolStripMenuItem, Me.BajaDeCuentaToolStripMenuItem})
-        Me.GestiónToolStripMenuItem.Name = "GestiónToolStripMenuItem"
-        Me.GestiónToolStripMenuItem.Size = New System.Drawing.Size(273, 22)
-        Me.GestiónToolStripMenuItem.Text = "Gestión"
+        Me.GestiónCuentasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AltaDeCuentaToolStripMenuItem, Me.BajaDeCuentaToolStripMenuItem})
+        Me.GestiónCuentasToolStripMenuItem.Name = "GestiónCuentasToolStripMenuItem"
+        Me.GestiónCuentasToolStripMenuItem.Size = New System.Drawing.Size(273, 22)
+        Me.GestiónCuentasToolStripMenuItem.Text = "Gestión"
         '
         'AltaDeCuentaToolStripMenuItem
         '
         Me.AltaDeCuentaToolStripMenuItem.Name = "AltaDeCuentaToolStripMenuItem"
-        Me.AltaDeCuentaToolStripMenuItem.Size = New System.Drawing.Size(151, 22)
+        Me.AltaDeCuentaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.AltaDeCuentaToolStripMenuItem.Text = "Alta de cuenta"
         '
         'BajaDeCuentaToolStripMenuItem
         '
         Me.BajaDeCuentaToolStripMenuItem.Name = "BajaDeCuentaToolStripMenuItem"
-        Me.BajaDeCuentaToolStripMenuItem.Size = New System.Drawing.Size(151, 22)
+        Me.BajaDeCuentaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.BajaDeCuentaToolStripMenuItem.Text = "Baja de cuenta"
         '
         'HistóricoDeTransacciónesToolStripMenuItem
@@ -179,7 +179,7 @@ Partial Class Principal
         '
         Me.AltaClienteToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PersonaToolStripMenuItem, Me.EmpresaToolStripMenuItem})
         Me.AltaClienteToolStripMenuItem.Name = "AltaClienteToolStripMenuItem"
-        Me.AltaClienteToolStripMenuItem.Size = New System.Drawing.Size(134, 22)
+        Me.AltaClienteToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.AltaClienteToolStripMenuItem.Text = "Alta cliente"
         '
         'PersonaToolStripMenuItem
@@ -198,7 +198,7 @@ Partial Class Principal
         '
         Me.BajaClienteToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PersonaToolStripMenuItem1, Me.EmpresaToolStripMenuItem1})
         Me.BajaClienteToolStripMenuItem.Name = "BajaClienteToolStripMenuItem"
-        Me.BajaClienteToolStripMenuItem.Size = New System.Drawing.Size(134, 22)
+        Me.BajaClienteToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.BajaClienteToolStripMenuItem.Text = "Baja cliente"
         '
         'PersonaToolStripMenuItem1
@@ -215,7 +215,7 @@ Partial Class Principal
         '
         'ChequesToolStripMenuItem
         '
-        Me.ChequesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LibretasToolStripMenuItem, Me.DepósitoToolStripMenuItem})
+        Me.ChequesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LibretasToolStripMenuItem, Me.CobrarChequeToolStripMenuItem})
         Me.ChequesToolStripMenuItem.Name = "ChequesToolStripMenuItem"
         Me.ChequesToolStripMenuItem.Size = New System.Drawing.Size(65, 20)
         Me.ChequesToolStripMenuItem.Text = "Cheques"
@@ -230,20 +230,20 @@ Partial Class Principal
         'EmitirToolStripMenuItem
         '
         Me.EmitirToolStripMenuItem.Name = "EmitirToolStripMenuItem"
-        Me.EmitirToolStripMenuItem.Size = New System.Drawing.Size(109, 22)
+        Me.EmitirToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.EmitirToolStripMenuItem.Text = "Emitir"
         '
         'AnularToolStripMenuItem
         '
         Me.AnularToolStripMenuItem.Name = "AnularToolStripMenuItem"
-        Me.AnularToolStripMenuItem.Size = New System.Drawing.Size(109, 22)
+        Me.AnularToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.AnularToolStripMenuItem.Text = "Anular"
         '
-        'DepósitoToolStripMenuItem
+        'CobrarChequeToolStripMenuItem
         '
-        Me.DepósitoToolStripMenuItem.Name = "DepósitoToolStripMenuItem"
-        Me.DepósitoToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.DepósitoToolStripMenuItem.Text = "Cobrar cheque"
+        Me.CobrarChequeToolStripMenuItem.Name = "CobrarChequeToolStripMenuItem"
+        Me.CobrarChequeToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.CobrarChequeToolStripMenuItem.Text = "Cobrar cheque"
         '
         'ConfiguraciónToolStripMenuItem
         '
@@ -390,7 +390,7 @@ Partial Class Principal
     Friend WithEvents RecuperacionDeContraseToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents AdministraciónDeCargosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents AcercaDeToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents GestiónToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents GestiónCuentasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents AltaDeCuentaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents BajaDeCuentaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents HistóricoDeTransacciónesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
@@ -404,7 +404,7 @@ Partial Class Principal
     Friend WithEvents LibretasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents EmitirToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents AnularToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents DepósitoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents CobrarChequeToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents DatosDelBancoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents DébitosAutomáticosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents DepósitoEnCuentaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem

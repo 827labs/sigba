@@ -24,17 +24,18 @@ Partial Class frmNuevoUsuario
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmNuevoUsuario))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.txtNombres = New System.Windows.Forms.TextBox
-        Me.txtApellidos = New System.Windows.Forms.TextBox
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.txtCedula = New System.Windows.Forms.TextBox
-        Me.Label3 = New System.Windows.Forms.Label
         Me.txtCorreo = New System.Windows.Forms.TextBox
         Me.Label4 = New System.Windows.Forms.Label
+        Me.txtCedula = New System.Windows.Forms.TextBox
+        Me.Label3 = New System.Windows.Forms.Label
+        Me.txtApellidos = New System.Windows.Forms.TextBox
+        Me.Label2 = New System.Windows.Forms.Label
+        Me.txtNombres = New System.Windows.Forms.TextBox
+        Me.Label1 = New System.Windows.Forms.Label
         Me.btnIngresar = New System.Windows.Forms.Button
         Me.btnLimpiar = New System.Windows.Forms.Button
         Me.Label5 = New System.Windows.Forms.Label
+        Me.Label6 = New System.Windows.Forms.Label
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -54,37 +55,21 @@ Partial Class frmNuevoUsuario
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         '
-        'Label1
+        'txtCorreo
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(7, 20)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(49, 13)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Nombres"
+        Me.txtCorreo.Location = New System.Drawing.Point(153, 83)
+        Me.txtCorreo.Name = "txtCorreo"
+        Me.txtCorreo.Size = New System.Drawing.Size(137, 20)
+        Me.txtCorreo.TabIndex = 7
         '
-        'txtNombres
+        'Label4
         '
-        Me.txtNombres.Location = New System.Drawing.Point(10, 37)
-        Me.txtNombres.Name = "txtNombres"
-        Me.txtNombres.Size = New System.Drawing.Size(137, 20)
-        Me.txtNombres.TabIndex = 1
-        '
-        'txtApellidos
-        '
-        Me.txtApellidos.Location = New System.Drawing.Point(153, 37)
-        Me.txtApellidos.Name = "txtApellidos"
-        Me.txtApellidos.Size = New System.Drawing.Size(137, 20)
-        Me.txtApellidos.TabIndex = 3
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(150, 20)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(49, 13)
-        Me.Label2.TabIndex = 2
-        Me.Label2.Text = "Apellidos"
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(150, 66)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(93, 13)
+        Me.Label4.TabIndex = 6
+        Me.Label4.Text = "Correo electrónico"
         '
         'txtCedula
         '
@@ -102,26 +87,42 @@ Partial Class frmNuevoUsuario
         Me.Label3.TabIndex = 4
         Me.Label3.Text = "Número de cédula"
         '
-        'txtCorreo
+        'txtApellidos
         '
-        Me.txtCorreo.Location = New System.Drawing.Point(153, 83)
-        Me.txtCorreo.Name = "txtCorreo"
-        Me.txtCorreo.Size = New System.Drawing.Size(137, 20)
-        Me.txtCorreo.TabIndex = 7
+        Me.txtApellidos.Location = New System.Drawing.Point(153, 37)
+        Me.txtApellidos.Name = "txtApellidos"
+        Me.txtApellidos.Size = New System.Drawing.Size(137, 20)
+        Me.txtApellidos.TabIndex = 3
         '
-        'Label4
+        'Label2
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(150, 66)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(93, 13)
-        Me.Label4.TabIndex = 6
-        Me.Label4.Text = "Correo electrónico"
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(150, 20)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(49, 13)
+        Me.Label2.TabIndex = 2
+        Me.Label2.Text = "Apellidos"
+        '
+        'txtNombres
+        '
+        Me.txtNombres.Location = New System.Drawing.Point(10, 37)
+        Me.txtNombres.Name = "txtNombres"
+        Me.txtNombres.Size = New System.Drawing.Size(137, 20)
+        Me.txtNombres.TabIndex = 1
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(7, 20)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(49, 13)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Nombres"
         '
         'btnIngresar
         '
         Me.btnIngresar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnIngresar.Location = New System.Drawing.Point(236, 168)
+        Me.btnIngresar.Location = New System.Drawing.Point(237, 200)
         Me.btnIngresar.Name = "btnIngresar"
         Me.btnIngresar.Size = New System.Drawing.Size(75, 23)
         Me.btnIngresar.TabIndex = 1
@@ -130,7 +131,7 @@ Partial Class frmNuevoUsuario
         '
         'btnLimpiar
         '
-        Me.btnLimpiar.Location = New System.Drawing.Point(155, 168)
+        Me.btnLimpiar.Location = New System.Drawing.Point(156, 200)
         Me.btnLimpiar.Name = "btnLimpiar"
         Me.btnLimpiar.Size = New System.Drawing.Size(75, 23)
         Me.btnLimpiar.TabIndex = 2
@@ -147,11 +148,22 @@ Partial Class frmNuevoUsuario
         Me.Label5.TabIndex = 8
         Me.Label5.Text = "Ingresar usuario"
         '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(11, 166)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(294, 26)
+        Me.Label6.TabIndex = 9
+        Me.Label6.Text = "Generaremos un código de 6 digitos para que el usuario cree" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "su propia clave de a" & _
+            "cceso."
+        '
         'frmNuevoUsuario
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(327, 200)
+        Me.ClientSize = New System.Drawing.Size(327, 230)
+        Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.btnLimpiar)
         Me.Controls.Add(Me.btnIngresar)
@@ -179,4 +191,5 @@ Partial Class frmNuevoUsuario
     Friend WithEvents btnIngresar As System.Windows.Forms.Button
     Friend WithEvents btnLimpiar As System.Windows.Forms.Button
     Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents Label6 As System.Windows.Forms.Label
 End Class

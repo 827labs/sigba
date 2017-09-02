@@ -84,7 +84,7 @@
         form.Show()
     End Sub
 
-    Private Sub CobrarChequeToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles DepósitoToolStripMenuItem.Click
+    Private Sub CobrarChequeToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CobrarChequeToolStripMenuItem.Click
         frmCobrarCheque.Show()
     End Sub
 
@@ -126,9 +126,27 @@
         lblCargo.Text = cargo
 
         Select Case cargo
-            Case "Auxiliar de caja"
+            Case Autenticacion.RolAuxiliar
                 ConfiguraciónToolStripMenuItem.Visible = False
                 ClientesToolStripMenuItem.Visible = False
+                GestiónCuentasToolStripMenuItem.Visible = False
+                DébitosAutomáticosToolStripMenuItem.Visible = False
+                LibretasToolStripMenuItem.Visible = False
+
+            Case Autenticacion.RolEjecutivo
+                ConfiguraciónToolStripMenuItem.Visible = False
+                CobrarChequeToolStripMenuItem.Visible = False
+                CajaToolStripMenuItem.Visible = False
+                DepósitoEnCuentaToolStripMenuItem.Visible = False
+                RetiroDeCuentaToolStripMenuItem.Visible = False
+
+            Case Autenticacion.RolGerente
+                CajaToolStripMenuItem.Visible = False
+                GestiónCuentasToolStripMenuItem.Visible = False
+                DébitosAutomáticosToolStripMenuItem.Visible = False
+                DepósitoEnCuentaToolStripMenuItem.Visible = False
+                RetiroDeCuentaToolStripMenuItem.Visible = False
+                ChequesToolStripMenuItem.Visible = False
         End Select
     End Sub
 End Class
