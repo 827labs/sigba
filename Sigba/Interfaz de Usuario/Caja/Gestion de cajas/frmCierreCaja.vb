@@ -82,6 +82,7 @@
         Mensajes.Simple("La caja se cerró correctamente. Numero de cierre: " & est.IdE)
 
         caj.CerrarCaja()
+        Auditoria.RegistrarAccion("Cierre de caja", String.Format("caja={0};saldouyu={1};saldousd={2}", txtCaja.Text, txtSaldoUYU.Text, txtSaldoUSD.Text))
 
         Me.Close()
     End Sub

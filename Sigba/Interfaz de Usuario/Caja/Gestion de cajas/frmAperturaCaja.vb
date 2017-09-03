@@ -59,6 +59,8 @@
         caj.Abierta = est.IdE
         caj.Actualizar()
 
+        Auditoria.RegistrarAccion("Apertura de caja", String.Format("caja={0};saldouyu={1};saldousd={2}", txtCaja.Text, txtSaldoUYU.Text, txtSaldoUSD.Text))
+
         Me.Close()
     End Sub
 

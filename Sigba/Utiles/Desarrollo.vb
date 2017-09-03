@@ -5,7 +5,6 @@
     ' productividad a la hora del desarrollo del mismo.
     Dim modoDesarrollo As Boolean = False
 
-
     Function ModoDesarrolloActivado() As Boolean
         Return modoDesarrollo
     End Function

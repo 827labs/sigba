@@ -105,9 +105,9 @@
     Private Sub btnIngresar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnIngresar.Click
         If Validadores.EsEmailValido(txtMail.Text) = False Then
             MessageBox.Show("Verifique los datos")
+        Else
+            InsertarCliente()
         End If
-
-        InsertarCliente()
     End Sub
 
     Private Sub InsertarCliente()

@@ -15,6 +15,7 @@ Public Class ConexionBaseDatos
             usuario = "S" + usuario
         End If
 
+        ' Pospuesto por falta de información
         'cx.ConnectionString = String.Format("FileDsn=C:\sigba.dsn;UID={0};PWD={1}", usuario, clave)
 
         If Desarrollo.ModoDesarrolloActivado() Then
@@ -26,7 +27,8 @@ Public Class ConexionBaseDatos
         Try
             cx.Open()
         Catch ex As Exception
-            Mensajes.ErrorSimple("Ocurrió un error al intentarnos conectar con la base de datos.")
+            Mensajes.ErrorSimple("Ocurrió un error al intentarnos conectar con la base de datos. Asegurese de tiene conexión, que el archivo DSN esté presente en C:\sigba.dsn y que el mismo esté bien configurado.")
+            Application.Exit()
         End Try
 
         Return cx

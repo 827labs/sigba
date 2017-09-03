@@ -7,10 +7,15 @@ Module Clientes
         ' Insertar cliente
         Dim sql = String.Format("INSERT INTO cliente (calledirc, ciudadc, codpostalc, nrodirc, telefonoc, blockdirc," & If(ApDirC <> "", "apdirc,", "") & "aclaraciondirc) VALUES ('{0}', '{1}', '{2}', {3}, '{4}', '{5}', " & If(ApDirC <> "", "{6},", "") & "'{7}');", CalleDirC, CiudadC, CodPostalC, NroDirC, TelefonoC, BlockDirC, ApDirC, AclaracionDirC)
         Dim cm = New OdbcCommand(sql, cx)
-        cm.ExecuteNonQuery()
+
+        Try
+            cm.ExecuteNonQuery()
+        Catch ex As Exception
+            Return 0
+        End Try
 
         ' Obtener ID del cliente recien creado
-        Dim cmr = New OdbcCommand("SELECT LAST 1 id FROM cliente", cx)
+        Dim cmr = New OdbcCommand(String.Format("SELECT MAX(id) FROM cliente WHERE telefonoc={0}", TelefonoC), cx)
         Return cmr.ExecuteScalar()
     End Function
 End Module
