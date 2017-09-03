@@ -36,12 +36,25 @@
     Private Sub AutoCompletarFormDesarrollo()
         txtNombre1.Text = "Juan"
         txtNombre2.Text = ""
+        txtApellido1.Text = "Perez"
+        txtApellido2.Text = "Rodriguez"
+        cboSexo.SelectedIndex = 1
+        cboEstadoCivil.SelectedIndex = 1
+        txtNroDoc.Text = "87654321"
+        cboDiaNaci.SelectedIndex = 4
+        cboMesNaci.SelectedIndex = 3
+        cboAnoNaci.SelectedIndex = 40
+        cboPaisNaci.SelectedIndex = 187
+        txtCiudadNac.Text = "Montevideo"
 
+        txtLocalidadRes.Text = "Montevideo"
+        txtRegionRes.Text = "Montevideo"
         txtCalleDom.Text = "Andes"
         txtNroDom.Text = "1234"
         txtCiudadNac.Text = "Montevideo"
         txtCodigoPos.Text = "19000"
         txtTelefonoFijo.Text = "29056969"
+        txtCelular.Text = "098891892"
         txtBlockDom.Text = ""
         txtAptoDom.Text = ""
         txtAclaracionDom.Text = ""
@@ -99,7 +112,7 @@
 
     Private Sub InsertarCliente()
 
-        Dim idCliente = Clientes.AltaCliente(txtCalleDom.Text, txtLocalidadRes.Text, Val(txtCodigoPos.Text), Val(txtNroDom.Text), txtTelefonoFijo.Text, txtBlockDom.Text, txtAptoDom.Text, txtAclaracionDom.Text)
+        Dim idCliente = Clientes.AltaCliente(txtCalleDom.Text, txtLocalidadRes.Text, txtCodigoPos.Text, txtNroDom.Text, txtTelefonoFijo.Text, txtBlockDom.Text, txtAptoDom.Text, txtAclaracionDom.Text)
         Mensajes.Simple(String.Format("El ID del cliente recien creado es: {0}", idCliente))
     End Sub
 

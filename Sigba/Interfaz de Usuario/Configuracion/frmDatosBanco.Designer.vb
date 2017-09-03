@@ -67,6 +67,7 @@ Partial Class frmDatosBanco
         Me.txtMinimoDepCajaUSD = New System.Windows.Forms.TextBox
         Me.btnAceptar = New System.Windows.Forms.Button
         Me.btnCancelar = New System.Windows.Forms.Button
+        Me.abrirArchivo = New System.Windows.Forms.OpenFileDialog
         Me.GroupBox1.SuspendLayout()
         CType(Me.picLogoBanco, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.grpDatosEmpresa.SuspendLayout()
@@ -502,6 +503,10 @@ Partial Class frmDatosBanco
         Me.btnCancelar.Text = "Cancelar"
         Me.btnCancelar.UseVisualStyleBackColor = True
         '
+        'abrirArchivo
+        '
+        Me.abrirArchivo.FileName = "logo"
+        '
         'frmDatosBanco
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -584,4 +589,5 @@ Partial Class frmDatosBanco
     Friend WithEvents txtTelefono As System.Windows.Forms.TextBox
     Friend WithEvents btnAceptar As System.Windows.Forms.Button
     Friend WithEvents btnCancelar As System.Windows.Forms.Button
+    Friend WithEvents abrirArchivo As System.Windows.Forms.OpenFileDialog
 End Class

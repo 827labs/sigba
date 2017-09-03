@@ -318,6 +318,7 @@
     <Compile Include="Interfaz de Usuario\Cuentas\Historico de transacciones por cuenta\frmHistoricoTransaccionesCuenta.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Modelos\Banco.vb" />
     <Compile Include="Modelos\Cliente.vb" />
     <Compile Include="Modelos\Funcionalidad.vb" />
     <Compile Include="Modelos\Sucursal.vb" />
@@ -355,6 +356,7 @@
     <Compile Include="Utiles\Funcionalidades.vb" />
     <Compile Include="Utiles\Generadores.vb" />
     <Compile Include="Utiles\Mensajes.vb" />
+    <Compile Include="Utiles\Utilidades.vb" />
     <Compile Include="Utiles\Validadores.vb" />
   </ItemGroup>
   <ItemGroup>
