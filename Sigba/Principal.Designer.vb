@@ -122,13 +122,13 @@ Partial Class Principal
         'AltaDeCuentaToolStripMenuItem
         '
         Me.AltaDeCuentaToolStripMenuItem.Name = "AltaDeCuentaToolStripMenuItem"
-        Me.AltaDeCuentaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.AltaDeCuentaToolStripMenuItem.Size = New System.Drawing.Size(151, 22)
         Me.AltaDeCuentaToolStripMenuItem.Text = "Alta de cuenta"
         '
         'BajaDeCuentaToolStripMenuItem
         '
         Me.BajaDeCuentaToolStripMenuItem.Name = "BajaDeCuentaToolStripMenuItem"
-        Me.BajaDeCuentaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.BajaDeCuentaToolStripMenuItem.Size = New System.Drawing.Size(151, 22)
         Me.BajaDeCuentaToolStripMenuItem.Text = "Baja de cuenta"
         '
         'HistóricoDeTransacciónesToolStripMenuItem
@@ -172,14 +172,14 @@ Partial Class Principal
         '
         Me.GestiónToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AltaClienteToolStripMenuItem, Me.BajaClienteToolStripMenuItem})
         Me.GestiónToolStripMenuItem1.Name = "GestiónToolStripMenuItem1"
-        Me.GestiónToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.GestiónToolStripMenuItem1.Size = New System.Drawing.Size(114, 22)
         Me.GestiónToolStripMenuItem1.Text = "Gestión"
         '
         'AltaClienteToolStripMenuItem
         '
         Me.AltaClienteToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PersonaToolStripMenuItem, Me.EmpresaToolStripMenuItem})
         Me.AltaClienteToolStripMenuItem.Name = "AltaClienteToolStripMenuItem"
-        Me.AltaClienteToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.AltaClienteToolStripMenuItem.Size = New System.Drawing.Size(134, 22)
         Me.AltaClienteToolStripMenuItem.Text = "Alta cliente"
         '
         'PersonaToolStripMenuItem
@@ -198,7 +198,7 @@ Partial Class Principal
         '
         Me.BajaClienteToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PersonaToolStripMenuItem1, Me.EmpresaToolStripMenuItem1})
         Me.BajaClienteToolStripMenuItem.Name = "BajaClienteToolStripMenuItem"
-        Me.BajaClienteToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.BajaClienteToolStripMenuItem.Size = New System.Drawing.Size(134, 22)
         Me.BajaClienteToolStripMenuItem.Text = "Baja cliente"
         '
         'PersonaToolStripMenuItem1
@@ -230,13 +230,13 @@ Partial Class Principal
         'EmitirToolStripMenuItem
         '
         Me.EmitirToolStripMenuItem.Name = "EmitirToolStripMenuItem"
-        Me.EmitirToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.EmitirToolStripMenuItem.Size = New System.Drawing.Size(109, 22)
         Me.EmitirToolStripMenuItem.Text = "Emitir"
         '
         'AnularToolStripMenuItem
         '
         Me.AnularToolStripMenuItem.Name = "AnularToolStripMenuItem"
-        Me.AnularToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.AnularToolStripMenuItem.Size = New System.Drawing.Size(109, 22)
         Me.AnularToolStripMenuItem.Text = "Anular"
         '
         'CobrarChequeToolStripMenuItem

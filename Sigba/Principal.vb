@@ -149,4 +149,5 @@
                 ChequesToolStripMenuItem.Visible = False
         End Select
     End Sub
+
 End Class

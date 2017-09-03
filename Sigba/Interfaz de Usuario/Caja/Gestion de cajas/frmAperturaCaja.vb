@@ -20,6 +20,66 @@
     End Sub
 
     Private Sub btnConfirmar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnConfirmar.Click
+        ' Chequear que la sucursal exista y que la caja pertenezca a la sucursal indicada
+        Dim suc = New Sucursal(txtSucursal.Text)
+        Dim caj = New Caja(txtCaja.Text)
 
+        If caj.Abierta <> Nothing Then
+            Mensajes.ErrorSimple("La caja ya está abierta.")
+            Return
+        End If
+
+        If suc.EsValido() = False Or caj.EsValido() = False Then
+            Mensajes.ErrorSimple("La caja o sucursal indicada es invalida.")
+            Return
+        End If
+
+        If Not (caj.NumSuc = suc.NumSuc) Then
+            Mensajes.ErrorSimple("La caja no coincide con la sucursal.")
+            Return
+        End If
+
+        If Not (txtSaldoUYU.Text <> "" And txtSaldoUSD.Text <> "") Then
+            Mensajes.ErrorSimple("Complete los campos faltantes.")
+            Return
+        End If
+
+        Dim est = New Estado()
+
+        est.SaldoUSD = txtSaldoUSD.Text
+        est.SaldoUYU = txtSaldoUYU.Text
+        est.NumCaja = caj.Num
+        est.Tipo = "APERTURA"
+        est.Fecha = Date.Today.ToString("MM/dd/yyyy")
+
+        est.Guardar()
+
+        Mensajes.Simple("La caja se abrió correctamente. Numero de apertura: " & est.IdE)
+
+        caj.Abierta = est.IdE
+        caj.Actualizar()
+
+        Me.Close()
+    End Sub
+
+    Private Sub txtSucursal_Leave(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtSucursal.Leave
+        Dim suc = New Sucursal(Val(txtSucursal.Text))
+        If suc.EsValido() Then
+            lblSucursal.Text = suc.NumSuc & " - " & suc.NombreSuc
+            txtCaja.Enabled = True
+        Else
+            txtCaja.Enabled = False
+            txtSucursal.Focus()
+            txtSucursal.Clear()
+        End If
+    End Sub
+
+    Private Sub txtCaja_Leave(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtCaja.Leave
+        Dim cajaActual = New Caja(Val(txtCaja.Text))
+        If Not (cajaActual.EsValido() And cajaActual.NumSuc = Val(txtSucursal.Text)) Then
+            Mensajes.ErrorSimple("La caja no existe o no pertenece a esta sucursal")
+            txtCaja.Focus()
+            txtCaja.Clear()
+        End If
     End Sub
 End Class

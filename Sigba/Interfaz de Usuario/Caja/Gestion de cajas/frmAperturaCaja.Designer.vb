@@ -40,6 +40,7 @@ Partial Class frmAperturaCaja
         Me.Label5 = New System.Windows.Forms.Label
         Me.btnConfirmar = New System.Windows.Forms.Button
         Me.btnCancelar = New System.Windows.Forms.Button
+        Me.lblSucursal = New System.Windows.Forms.Label
         Me.SuspendLayout()
         '
         'Label1
@@ -186,11 +187,21 @@ Partial Class frmAperturaCaja
         Me.btnCancelar.Text = "Cancelar"
         Me.btnCancelar.UseVisualStyleBackColor = True
         '
+        'lblSucursal
+        '
+        Me.lblSucursal.AutoSize = True
+        Me.lblSucursal.Location = New System.Drawing.Point(14, 117)
+        Me.lblSucursal.Name = "lblSucursal"
+        Me.lblSucursal.Size = New System.Drawing.Size(37, 13)
+        Me.lblSucursal.TabIndex = 16
+        Me.lblSucursal.Text = "----------"
+        '
         'frmAperturaCaja
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(378, 142)
+        Me.Controls.Add(Me.lblSucursal)
         Me.Controls.Add(Me.btnCancelar)
         Me.Controls.Add(Me.btnConfirmar)
         Me.Controls.Add(Me.txtSaldoUSD)
@@ -234,4 +245,5 @@ Partial Class frmAperturaCaja
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents btnConfirmar As System.Windows.Forms.Button
     Friend WithEvents btnCancelar As System.Windows.Forms.Button
+    Friend WithEvents lblSucursal As System.Windows.Forms.Label
 End Class

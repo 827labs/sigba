@@ -319,7 +319,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Modelos\Banco.vb" />
+    <Compile Include="Modelos\Caja.vb" />
     <Compile Include="Modelos\Cliente.vb" />
+    <Compile Include="Modelos\Estado.vb" />
     <Compile Include="Modelos\Funcionalidad.vb" />
     <Compile Include="Modelos\Sucursal.vb" />
     <Compile Include="Modelos\Usuario.vb" />
