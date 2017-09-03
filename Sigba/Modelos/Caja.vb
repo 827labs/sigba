@@ -64,4 +64,17 @@ Public Class Caja
             Return Me.Insertar()
         End If
     End Function
+
+    Public Function CerrarCaja() As Boolean
+        Dim cx = ConexionBaseDatos.ObtenerActual
+        Dim cm = New OdbcCommand("UPDATE caja SET abierta=NULL WHERE num=" & Num, cx)
+
+        Try
+            cm.ExecuteNonQuery()
+            Return True
+        Catch ex As Exception
+            Mensajes.ErrorSimple("No se pudo cerrar la caja. Error: " & ex.Message)
+            Return False
+        End Try
+    End Function
 End Class

@@ -40,6 +40,7 @@ Partial Class frmCierreCaja
         Me.Label2 = New System.Windows.Forms.Label
         Me.txtSucursal = New System.Windows.Forms.TextBox
         Me.Label1 = New System.Windows.Forms.Label
+        Me.lblSucursal = New System.Windows.Forms.Label
         Me.SuspendLayout()
         '
         'btnCancelar
@@ -140,6 +141,7 @@ Partial Class frmCierreCaja
         '
         'txtCajero
         '
+        Me.txtCajero.Enabled = False
         Me.txtCajero.Location = New System.Drawing.Point(113, 29)
         Me.txtCajero.Name = "txtCajero"
         Me.txtCajero.Size = New System.Drawing.Size(78, 20)
@@ -186,11 +188,21 @@ Partial Class frmCierreCaja
         Me.Label1.TabIndex = 16
         Me.Label1.Text = "Sucursal"
         '
+        'lblSucursal
+        '
+        Me.lblSucursal.AutoSize = True
+        Me.lblSucursal.Location = New System.Drawing.Point(11, 119)
+        Me.lblSucursal.Name = "lblSucursal"
+        Me.lblSucursal.Size = New System.Drawing.Size(25, 13)
+        Me.lblSucursal.TabIndex = 33
+        Me.lblSucursal.Text = "------"
+        '
         'frmCierreCaja
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(372, 140)
+        Me.Controls.Add(Me.lblSucursal)
         Me.Controls.Add(Me.btnCancelar)
         Me.Controls.Add(Me.btnConfirmar)
         Me.Controls.Add(Me.txtSaldoUSD)
@@ -234,4 +246,5 @@ Partial Class frmCierreCaja
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents txtSucursal As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents lblSucursal As System.Windows.Forms.Label
 End Class
