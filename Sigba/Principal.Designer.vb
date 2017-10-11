@@ -54,7 +54,6 @@ Partial Class Principal
         Me.AdministraciToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.GestionarUsuariosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.IngresarUsuarioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.RecuperacionDeContraseToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.AdministraciónDeCargosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.DatosDelBancoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.AuditoriaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
@@ -254,7 +253,7 @@ Partial Class Principal
         '
         'AdministraciToolStripMenuItem
         '
-        Me.AdministraciToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GestionarUsuariosToolStripMenuItem, Me.IngresarUsuarioToolStripMenuItem, Me.RecuperacionDeContraseToolStripMenuItem})
+        Me.AdministraciToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GestionarUsuariosToolStripMenuItem, Me.IngresarUsuarioToolStripMenuItem})
         Me.AdministraciToolStripMenuItem.Name = "AdministraciToolStripMenuItem"
         Me.AdministraciToolStripMenuItem.Size = New System.Drawing.Size(229, 22)
         Me.AdministraciToolStripMenuItem.Text = "Administración de usuarios"
@@ -262,20 +261,14 @@ Partial Class Principal
         'GestionarUsuariosToolStripMenuItem
         '
         Me.GestionarUsuariosToolStripMenuItem.Name = "GestionarUsuariosToolStripMenuItem"
-        Me.GestionarUsuariosToolStripMenuItem.Size = New System.Drawing.Size(223, 22)
+        Me.GestionarUsuariosToolStripMenuItem.Size = New System.Drawing.Size(171, 22)
         Me.GestionarUsuariosToolStripMenuItem.Text = "Gestionar usuarios"
         '
         'IngresarUsuarioToolStripMenuItem
         '
         Me.IngresarUsuarioToolStripMenuItem.Name = "IngresarUsuarioToolStripMenuItem"
-        Me.IngresarUsuarioToolStripMenuItem.Size = New System.Drawing.Size(223, 22)
+        Me.IngresarUsuarioToolStripMenuItem.Size = New System.Drawing.Size(171, 22)
         Me.IngresarUsuarioToolStripMenuItem.Text = "Ingresar Usuario"
-        '
-        'RecuperacionDeContraseToolStripMenuItem
-        '
-        Me.RecuperacionDeContraseToolStripMenuItem.Name = "RecuperacionDeContraseToolStripMenuItem"
-        Me.RecuperacionDeContraseToolStripMenuItem.Size = New System.Drawing.Size(223, 22)
-        Me.RecuperacionDeContraseToolStripMenuItem.Text = "Recuperación de contraseña"
         '
         'AdministraciónDeCargosToolStripMenuItem
         '
@@ -387,7 +380,6 @@ Partial Class Principal
     Friend WithEvents CajasAbiertasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents AdministraciToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents GestionarUsuariosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents RecuperacionDeContraseToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents AdministraciónDeCargosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents AcercaDeToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents GestiónCuentasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem

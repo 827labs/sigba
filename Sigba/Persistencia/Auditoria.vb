@@ -32,10 +32,11 @@ Module Auditoria
         Dim fecha = DateTime.Now()
         Dim fechaStr = fecha.ToString("MM/dd/yyyy")
         Dim horaStr = fecha.ToString("HH:mm")
-        Dim cedulaUsuario = Autenticacion.usuario
+        Dim nomUsuario = Autenticacion.usuario
 
-        If cedulaUsuario > 0 Then
-            cm.CommandText = String.Format("INSERT INTO registroaccion (nombre, numdocu, fecha, hora, datosextra) VALUES ('{0}', {1}, '{2}', '{3}', '{4}')", nombreAccion, cedulaUsuario, fechaStr, horaStr, datosExtra)
+        If nomUsuario <> "" Then
+            Dim usu = New Usuario(nomUsuario)
+            cm.CommandText = String.Format("INSERT INTO registroaccion (nombre, numdocu, fecha, hora, datosextra) VALUES ('{0}', {1}, '{2}', '{3}', '{4}')", nombreAccion, usu.NumDocU, fechaStr, horaStr, datosExtra)
         Else
             cm.CommandText = String.Format("INSERT INTO registroaccion (nombre, fecha, hora, datosextra) VALUES ('{0}', '{1}', '{2}', '{3}')", nombreAccion, fechaStr, horaStr, datosExtra)
         End If

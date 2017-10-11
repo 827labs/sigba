@@ -240,12 +240,6 @@
     <Compile Include="Interfaz de Usuario\Configuracion\Administracion de usuarios\frmNuevoUsuario.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Interfaz de Usuario\Configuracion\Administracion de usuarios\frmRecuperacionClaveEmisor.Designer.vb">
-      <DependentUpon>frmRecuperacionClaveEmisor.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Interfaz de Usuario\Configuracion\Administracion de usuarios\frmRecuperacionClaveEmisor.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Interfaz de Usuario\Configuracion\Auditoria\frmAuditoria.Designer.vb">
       <DependentUpon>frmAuditoria.vb</DependentUpon>
     </Compile>
@@ -464,10 +458,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaz de Usuario\Configuracion\Administracion de usuarios\frmNuevoUsuario.resx">
       <DependentUpon>frmNuevoUsuario.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Interfaz de Usuario\Configuracion\Administracion de usuarios\frmRecuperacionClaveEmisor.resx">
-      <DependentUpon>frmRecuperacionClaveEmisor.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaz de Usuario\Configuracion\Auditoria\frmAuditoria.resx">

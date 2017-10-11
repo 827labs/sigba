@@ -6,28 +6,12 @@ Public Class ConexionBaseDatos
     Private Shared Function CrearNuevaConexion(ByVal usuario As String, ByVal clave As String) As OdbcConnection
         Dim cx As New OdbcConnection
 
-        If usuario = "informix" And Autenticacion.usuario <> Nothing Then
-            usuario = Autenticacion.usuario
-            clave = Autenticacion.clave
-        End If
-
-        If usuario <> "informix" Then
-            usuario = "S" + usuario
-        End If
-
-        ' Pospuesto por falta de información
-        'cx.ConnectionString = String.Format("FileDsn=C:\sigba.dsn;UID={0};PWD={1}", usuario, clave)
-
-        If Desarrollo.ModoDesarrolloActivado() Then
-            cx.ConnectionString = "FileDsn=C:\sigba.dsn;UID=informix;PWD=informix"
-        Else
-            cx.ConnectionString = "FileDsn=C:\sigba.dsn;UID=fcorrea;PWD=50199908"
-        End If
+        cx.ConnectionString = String.Format("FileDsn=C:\sigba.dsn;UID={0};PWD={1}", usuario, clave)
 
         Try
             cx.Open()
         Catch ex As Exception
-            Mensajes.ErrorSimple("Ocurrió un error al intentarnos conectar con la base de datos. Asegurese de tiene conexión, que el archivo DSN esté presente en C:\sigba.dsn y que el mismo esté bien configurado.")
+            Mensajes.ErrorSimple(String.Format("Ocurrió un error al intentarnos conectar con la base de datos. Asegurese de tiene conexión, que el archivo DSN esté presente en C:\sigba.dsn y que el mismo esté bien configurado. Error: {0}", ex.Message))
             Application.Exit()
         End Try
 

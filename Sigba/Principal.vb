@@ -18,10 +18,6 @@
         frmGestionCargos.Show()
     End Sub
 
-    Private Sub RecuperacionDeContraseToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RecuperacionDeContraseToolStripMenuItem.Click
-        frmRecuperacionClaveEmisor.Show()
-    End Sub
-
     Private Sub AcercaDeToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AcercaDeToolStripMenuItem.Click
         AcercaDe.Show()
     End Sub

@@ -1,5 +1,5 @@
 ﻿Class Autenticacion
-    Public Shared usuario As Integer
+    Public Shared usuario As String
     Public Shared clave As String
 
     Public Shared RolAdminstrador = "Administrador"

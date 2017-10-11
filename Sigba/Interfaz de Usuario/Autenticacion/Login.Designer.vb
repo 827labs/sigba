@@ -24,7 +24,7 @@ Partial Class Login
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Login))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox
-        Me.txtCedula = New System.Windows.Forms.TextBox
+        Me.txtUsuario = New System.Windows.Forms.TextBox
         Me.txtClave = New System.Windows.Forms.TextBox
         Me.Label2 = New System.Windows.Forms.Label
         Me.Label1 = New System.Windows.Forms.Label
@@ -32,7 +32,6 @@ Partial Class Login
         Me.picSideImageLogin = New System.Windows.Forms.PictureBox
         Me.PictureBox2 = New System.Windows.Forms.PictureBox
         Me.lblVersion = New System.Windows.Forms.Label
-        Me.lnklblOlvidoContrasena = New System.Windows.Forms.LinkLabel
         Me.btnCajero = New System.Windows.Forms.Button
         Me.GroupBox1.SuspendLayout()
         CType(Me.picSideImageLogin, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -41,7 +40,7 @@ Partial Class Login
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.txtCedula)
+        Me.GroupBox1.Controls.Add(Me.txtUsuario)
         Me.GroupBox1.Controls.Add(Me.txtClave)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
@@ -52,12 +51,12 @@ Partial Class Login
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Ingreso al sistema"
         '
-        'txtCedula
+        'txtUsuario
         '
-        Me.txtCedula.Location = New System.Drawing.Point(9, 37)
-        Me.txtCedula.Name = "txtCedula"
-        Me.txtCedula.Size = New System.Drawing.Size(265, 20)
-        Me.txtCedula.TabIndex = 3
+        Me.txtUsuario.Location = New System.Drawing.Point(9, 37)
+        Me.txtUsuario.Name = "txtUsuario"
+        Me.txtUsuario.Size = New System.Drawing.Size(265, 20)
+        Me.txtUsuario.TabIndex = 3
         '
         'txtClave
         '
@@ -81,9 +80,9 @@ Partial Class Login
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(6, 21)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(97, 13)
+        Me.Label1.Size = New System.Drawing.Size(99, 13)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Número de cédula:"
+        Me.Label1.Text = "Nombre de usuario:"
         '
         'btnContinuar
         '
@@ -123,16 +122,6 @@ Partial Class Login
         Me.lblVersion.TabIndex = 5
         Me.lblVersion.Text = "Sistema Informatico de Gestión Bancaria v1.0.0"
         '
-        'lnklblOlvidoContrasena
-        '
-        Me.lnklblOlvidoContrasena.AutoSize = True
-        Me.lnklblOlvidoContrasena.Location = New System.Drawing.Point(272, 227)
-        Me.lnklblOlvidoContrasena.Name = "lnklblOlvidoContrasena"
-        Me.lnklblOlvidoContrasena.Size = New System.Drawing.Size(131, 13)
-        Me.lnklblOlvidoContrasena.TabIndex = 6
-        Me.lnklblOlvidoContrasena.TabStop = True
-        Me.lnklblOlvidoContrasena.Text = "¿Olvidaste tu contraseña?"
-        '
         'btnCajero
         '
         Me.btnCajero.Location = New System.Drawing.Point(272, 325)
@@ -148,7 +137,6 @@ Partial Class Login
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(572, 373)
         Me.Controls.Add(Me.btnCajero)
-        Me.Controls.Add(Me.lnklblOlvidoContrasena)
         Me.Controls.Add(Me.lblVersion)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.picSideImageLogin)
@@ -173,11 +161,10 @@ Partial Class Login
     Friend WithEvents btnContinuar As System.Windows.Forms.Button
     Friend WithEvents txtClave As System.Windows.Forms.TextBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents txtCedula As System.Windows.Forms.TextBox
+    Friend WithEvents txtUsuario As System.Windows.Forms.TextBox
     Friend WithEvents picSideImageLogin As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
     Friend WithEvents lblVersion As System.Windows.Forms.Label
-    Friend WithEvents lnklblOlvidoContrasena As System.Windows.Forms.LinkLabel
     Friend WithEvents btnCajero As System.Windows.Forms.Button
 
 End Class

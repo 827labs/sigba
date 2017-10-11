@@ -10,28 +10,26 @@ Public Class Login
     End Sub
 
     Private Sub btnContinuar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnContinuar.Click
-        If txtCedula.Text = "" Or txtClave.Text = "" Then
+        If txtUsuario.Text = "" Or txtClave.Text = "" Then
             Mensajes.ErrorSimple("Complete todos los campos")
         End If
-        If Usuarios.ValidarUsuario(txtCedula.Text, txtClave.Text) Then
-            Autenticacion.usuario = Val(txtCedula.Text)
-            Autenticacion.clave = Val(txtClave.Text)
+        If Usuarios.ValidarUsuario(txtUsuario.Text, txtClave.Text) Then
             MostrarPrincipal()
             Auditoria.RegistrarAccion(Funcionalidad.IngresoAlSistema)
         Else
-            Auditoria.RegistrarAccion(Funcionalidad.ErrorDeAcceso, String.Format("cedula={0}", txtCedula.Text))
+            Auditoria.RegistrarAccion(Funcionalidad.ErrorDeAcceso, String.Format("cedula={0}", txtUsuario.Text))
             MessageBox.Show("No se pudo validar el usuario", "Error de acceso")
         End If
     End Sub
 
-    Private Sub txtCedula_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtCedula.KeyPress
+    Private Sub txtCedula_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtUsuario.KeyPress
         ' KeyPress es el evento que se maneja cuando el usuario presiona un tecla que produce un caracter
         ' que se puede escribir
-        txtCedula.MaxLength = 8          'el textbox tendrá 8 caracteres como máximo
+        txtUsuario.MaxLength = 8          'el textbox tendrá 8 caracteres como máximo
         Validadores.KeyPressSoloNumeros(e)
     End Sub
 
-    Private Sub lnklblOlvidoContrasena_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles lnklblOlvidoContrasena.LinkClicked
+    Private Sub lnklblOlvidoContrasena_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs)
         frmOlvidoClave.Show()
     End Sub
 
@@ -42,8 +40,8 @@ Public Class Login
 
     Private Sub Login_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         If (Me.CompletarLogin) Then
-            txtCedula.Text = "12345678"
-            txtClave.Text = "12345678"
+            txtUsuario.Text = "informix"
+            txtClave.Text = "informix"
         End If
     End Sub
 End Class
