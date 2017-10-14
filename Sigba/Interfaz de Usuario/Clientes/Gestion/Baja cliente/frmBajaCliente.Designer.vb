@@ -37,13 +37,13 @@ Partial Class frmBajaCliente
         Me.lblNombreEmpresa = New System.Windows.Forms.Label
         Me.txtRUT = New System.Windows.Forms.TextBox
         Me.Label1 = New System.Windows.Forms.Label
-        Me.TabControl1 = New System.Windows.Forms.TabControl
+        Me.tabTipoCliente = New System.Windows.Forms.TabControl
         Me.TabPage1 = New System.Windows.Forms.TabPage
         Me.TabPage2 = New System.Windows.Forms.TabPage
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
-        Me.TabControl1.SuspendLayout()
+        Me.tabTipoCliente.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
         Me.SuspendLayout()
@@ -188,15 +188,15 @@ Partial Class frmBajaCliente
         Me.Label1.TabIndex = 24
         Me.Label1.Text = "RUT"
         '
-        'TabControl1
+        'tabTipoCliente
         '
-        Me.TabControl1.Controls.Add(Me.TabPage1)
-        Me.TabControl1.Controls.Add(Me.TabPage2)
-        Me.TabControl1.Location = New System.Drawing.Point(12, 6)
-        Me.TabControl1.Name = "TabControl1"
-        Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(360, 107)
-        Me.TabControl1.TabIndex = 88
+        Me.tabTipoCliente.Controls.Add(Me.TabPage1)
+        Me.tabTipoCliente.Controls.Add(Me.TabPage2)
+        Me.tabTipoCliente.Location = New System.Drawing.Point(12, 6)
+        Me.tabTipoCliente.Name = "tabTipoCliente"
+        Me.tabTipoCliente.SelectedIndex = 0
+        Me.tabTipoCliente.Size = New System.Drawing.Size(360, 107)
+        Me.tabTipoCliente.TabIndex = 88
         '
         'TabPage1
         '
@@ -225,7 +225,7 @@ Partial Class frmBajaCliente
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(384, 294)
-        Me.Controls.Add(Me.TabControl1)
+        Me.Controls.Add(Me.tabTipoCliente)
         Me.Controls.Add(Me.btnContinuar)
         Me.Controls.Add(Me.GroupBox1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -238,7 +238,7 @@ Partial Class frmBajaCliente
         Me.GroupBox1.PerformLayout()
         Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox3.PerformLayout()
-        Me.TabControl1.ResumeLayout(False)
+        Me.tabTipoCliente.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
         Me.TabPage2.ResumeLayout(False)
         Me.ResumeLayout(False)
@@ -258,7 +258,7 @@ Partial Class frmBajaCliente
     Friend WithEvents lblNombreEmpresa As System.Windows.Forms.Label
     Friend WithEvents txtRUT As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents TabControl1 As System.Windows.Forms.TabControl
+    Friend WithEvents tabTipoCliente As System.Windows.Forms.TabControl
     Friend WithEvents TabPage1 As System.Windows.Forms.TabPage
     Friend WithEvents TabPage2 As System.Windows.Forms.TabPage
 End Class

@@ -1,17 +1,26 @@
 ﻿Public Class frmBajaCliente
     Private Function ValidarFormulario() As Boolean
-        Dim condicion = cboPaisDoc.SelectedIndex <> 0 And cboTipoDoc.SelectedIndex <> 0 And txtNroDoc.Text <> "" And txtRazonBaja.Text <> ""
+        Dim condicionPersona = cboPaisDoc.SelectedIndex <> 0 And cboTipoDoc.Text <> "" And txtNroDoc.Text <> ""
+        Dim condicionEmpresa = txtRUT.Text <> ""
+        Dim condicionGeneral = txtRazonBaja.Text <> ""
 
-        If condicion = False Then
+        Dim condicionACumplir = If(tabTipoCliente.SelectedIndex = 0, condicionEmpresa, condicionPersona)
+
+        If Not (condicionACumplir And condicionGeneral) Then
             MessageBox.Show("Por favor, complete todos los campos del formulario.")
         End If
 
-        Return condicion
+        Return condicionACumplir And condicionGeneral
     End Function
 
     Private Sub btnContinuar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnContinuar.Click
+        Dim idC = If(tabTipoCliente.SelectedIndex = 0, txtRUT.Text, txtNroDoc.Text)
+        Dim tipoC = If(tabTipoCliente.SelectedIndex = 0, TipoCliente.Empresa, TipoCliente.Persona)
+        Dim idCliente = Clientes.ObtenerIdCliente(idC, tipoC)
         If ValidarFormulario() Then
-            ' Para hacer: dar de baja el usuario.
+            If (Clientes.DarBajaCliente(idCliente, txtRazonBaja.Text)) Then
+                Mensajes.Simple("Cliente dado de baja con éxito")
+            End If
         End If
     End Sub
 

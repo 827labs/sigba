@@ -12,7 +12,13 @@ Module Personas
             cm.ExecuteNonQuery()
             Return True
         Catch ex As Exception
-            Mensajes.ErrorSimple(ex.Message)
+            If (ModoDesarrolloActivado()) Then
+                Mensajes.ErrorSimple(ex.Message)
+            End If
+
+            If ex.Message.Contains("UNIQUE INDEX") Then
+                Mensajes.ErrorSimple("El número de cédula que ingresó ya existe.")
+            End If
             Return False
         End Try
     End Function
