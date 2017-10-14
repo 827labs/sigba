@@ -192,16 +192,10 @@
     <Compile Include="Interfaz de Usuario\Clientes\Gestion\Alta cliente\Persona\frmAgregarCliente.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Interfaz de Usuario\Clientes\Gestion\Baja cliente\Empresa\frmBajaClienteEmpresa.Designer.vb">
-      <DependentUpon>frmBajaClienteEmpresa.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Interfaz de Usuario\Clientes\Gestion\Baja cliente\Empresa\frmBajaClienteEmpresa.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Interfaz de Usuario\Clientes\Gestion\Baja cliente\Persona\frmBajaCliente.Designer.vb">
+    <Compile Include="Interfaz de Usuario\Clientes\Gestion\Baja cliente\frmBajaCliente.Designer.vb">
       <DependentUpon>frmBajaCliente.vb</DependentUpon>
     </Compile>
-    <Compile Include="Interfaz de Usuario\Clientes\Gestion\Baja cliente\Persona\frmBajaCliente.vb">
+    <Compile Include="Interfaz de Usuario\Clientes\Gestion\Baja cliente\frmBajaCliente.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Interfaz de Usuario\Configuracion\Administracion de permisos\frmEdicionCargo.Designer.vb">
@@ -323,6 +317,7 @@
     <Compile Include="Persistencia\Cargos.vb" />
     <Compile Include="Persistencia\Clientes.vb" />
     <Compile Include="Persistencia\ConexionBaseDatos.vb" />
+    <Compile Include="Persistencia\Personas.vb" />
     <Compile Include="Persistencia\Sucursales.vb" />
     <Compile Include="Persistencia\Usuarios.vb" />
     <Compile Include="Principal.Designer.vb">
@@ -428,11 +423,7 @@
       <DependentUpon>frmAgregarCliente.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Interfaz de Usuario\Clientes\Gestion\Baja cliente\Empresa\frmBajaClienteEmpresa.resx">
-      <DependentUpon>frmBajaClienteEmpresa.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Interfaz de Usuario\Clientes\Gestion\Baja cliente\Persona\frmBajaCliente.resx">
+    <EmbeddedResource Include="Interfaz de Usuario\Clientes\Gestion\Baja cliente\frmBajaCliente.resx">
       <DependentUpon>frmBajaCliente.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>

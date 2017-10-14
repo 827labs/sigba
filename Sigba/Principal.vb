@@ -26,24 +26,16 @@
         frmAgregarClienteEmpresa.Show()
     End Sub
 
-    Private Sub BajaToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        frmBajaCliente.Show()
-    End Sub
-
     Private Sub PersonaToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PersonaToolStripMenuItem.Click
         frmAgregarClienteEmpresa.Show()
     End Sub
 
-    Private Sub PersonaToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PersonaToolStripMenuItem1.Click
+    Private Sub PersonaToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         frmBajaCliente.Show()
     End Sub
 
     Private Sub EmpresaToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles EmpresaToolStripMenuItem.Click
         frmAltaClienteEmpresa.Show()
-    End Sub
-
-    Private Sub EmpresaToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles EmpresaToolStripMenuItem1.Click
-        frmBajaClienteEmpresa.Show()
     End Sub
 
     Private Sub HistóricoDeTransacciónesToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles HistóricoDeTransacciónesToolStripMenuItem.Click
@@ -146,4 +138,7 @@
         End Select
     End Sub
 
+    Private Sub BajaClienteToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BajaClienteToolStripMenuItem.Click
+        frmBajaCliente.Show()
+    End Sub
 End Class

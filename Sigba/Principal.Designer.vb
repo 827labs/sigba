@@ -43,8 +43,6 @@ Partial Class Principal
         Me.PersonaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.EmpresaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.BajaClienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.PersonaToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.EmpresaToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
         Me.ChequesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.LibretasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.EmitirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
@@ -171,7 +169,7 @@ Partial Class Principal
         '
         Me.GestiónToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AltaClienteToolStripMenuItem, Me.BajaClienteToolStripMenuItem})
         Me.GestiónToolStripMenuItem1.Name = "GestiónToolStripMenuItem1"
-        Me.GestiónToolStripMenuItem1.Size = New System.Drawing.Size(114, 22)
+        Me.GestiónToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
         Me.GestiónToolStripMenuItem1.Text = "Gestión"
         '
         'AltaClienteToolStripMenuItem
@@ -195,22 +193,9 @@ Partial Class Principal
         '
         'BajaClienteToolStripMenuItem
         '
-        Me.BajaClienteToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PersonaToolStripMenuItem1, Me.EmpresaToolStripMenuItem1})
         Me.BajaClienteToolStripMenuItem.Name = "BajaClienteToolStripMenuItem"
-        Me.BajaClienteToolStripMenuItem.Size = New System.Drawing.Size(134, 22)
+        Me.BajaClienteToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.BajaClienteToolStripMenuItem.Text = "Baja cliente"
-        '
-        'PersonaToolStripMenuItem1
-        '
-        Me.PersonaToolStripMenuItem1.Name = "PersonaToolStripMenuItem1"
-        Me.PersonaToolStripMenuItem1.Size = New System.Drawing.Size(119, 22)
-        Me.PersonaToolStripMenuItem1.Text = "Persona"
-        '
-        'EmpresaToolStripMenuItem1
-        '
-        Me.EmpresaToolStripMenuItem1.Name = "EmpresaToolStripMenuItem1"
-        Me.EmpresaToolStripMenuItem1.Size = New System.Drawing.Size(119, 22)
-        Me.EmpresaToolStripMenuItem1.Text = "Empresa"
         '
         'ChequesToolStripMenuItem
         '
@@ -391,8 +376,6 @@ Partial Class Principal
     Friend WithEvents PersonaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents EmpresaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents BajaClienteToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents PersonaToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents EmpresaToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents LibretasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents EmitirToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents AnularToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem

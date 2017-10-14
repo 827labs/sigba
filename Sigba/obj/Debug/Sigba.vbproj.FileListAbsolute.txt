@@ -218,7 +218,6 @@ Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmAnularLibreta.resources
 Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmEmitirLibreta.resources
 Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmAltaClienteEmpresa.resources
 Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmAgregarClienteEmpresa.resources
-Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmBajaClienteEmpresa.resources
 Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmBajaCliente.resources
 Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmEdicionCargo.resources
 Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmGestionCargos.resources

@@ -103,17 +103,22 @@
     End Sub
 
     Private Sub btnIngresar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnIngresar.Click
-        If Validadores.EsEmailValido(txtMail.Text) = False Then
-            MessageBox.Show("Verifique los datos")
-        Else
-            InsertarCliente()
-        End If
+        InsertarCliente()
     End Sub
 
     Private Sub InsertarCliente()
+        Dim apellidoCliente = txtApellido1.Text & " " & txtApellido2.Text
+        Dim nombreCliente = txtNombre1.Text & " " & txtNombre2.Text
+        Dim fechaNacimiento = New Date(Val(cboAnoNaci.Text), cboMesNaci.SelectedIndex, Val(cboDiaNaci.Text))
+        Dim sexoCliente = If(cboSexo.Text = "Masculino", "F", "M")
 
         Dim idCliente = Clientes.AltaCliente(txtCalleDom.Text, txtLocalidadRes.Text, txtCodigoPos.Text, txtNroDom.Text, txtTelefonoFijo.Text, txtBlockDom.Text, txtAptoDom.Text, txtAclaracionDom.Text)
-        Mensajes.Simple(String.Format("El ID del cliente recien creado es: {0}", idCliente))
+        Dim pudoCrearPersona = Personas.AltaPersona(apellidoCliente, txtCiudadNac.Text, fechaNacimiento, txtMail.Text, idCliente, nombreCliente, txtNroDocCony.Text, txtNroDoc.Text, cboPaisDocCony.Text, cboPaisDoc.Text, cboPaisNaci.Text, sexoCliente, cboTipoDocCony.Text, cboTipoDoc.Text)
+
+        If (pudoCrearPersona) Then
+            Mensajes.Simple("Cliente creado con éxito.")
+            Me.Close()
+        End If
     End Sub
 
 
