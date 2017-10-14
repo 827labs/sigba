@@ -29,10 +29,6 @@ Public Class Login
         Validadores.KeyPressSoloNumeros(e)
     End Sub
 
-    Private Sub lnklblOlvidoContrasena_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs)
-        frmOlvidoClave.Show()
-    End Sub
-
     Private Sub btnCajero_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCajero.Click
         frmATMBienvenido.Show()
         Me.Hide()

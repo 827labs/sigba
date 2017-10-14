@@ -200,7 +200,6 @@ Z:\Code\sigba\Sigba\bin\Debug\Sigba.exe
 Z:\Code\sigba\Sigba\bin\Debug\Sigba.pdb
 Z:\Code\sigba\Sigba\bin\Debug\Sigba.xml
 Z:\Code\sigba\Sigba\obj\Debug\ResolveAssemblyReference.cache
-Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmOlvidoClave.resources
 Z:\Code\sigba\Sigba\obj\Debug\Sigba.Login.resources
 Z:\Code\sigba\Sigba\obj\Debug\Sigba.AcercaDe.resources
 Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmAperturaCaja.resources
