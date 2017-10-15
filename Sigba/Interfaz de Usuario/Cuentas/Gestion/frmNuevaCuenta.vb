@@ -1,10 +1,6 @@
 ﻿Public Class frmNuevaCuenta
 
     Private Sub frmNuevaCuenta_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        cboPaisDoc.Items.AddRange(Constantes.Paises())
-        cboPaisDoc.SelectedIndex = 187
-        cboTipoDoc.SelectedIndex = 0
-
         ' Rellenar combo con las sucursales
         Sucursales.ObtenerSucursalesCombo(cboSucursal)
     End Sub
@@ -26,16 +22,29 @@
         End If
     End Sub
 
-    Private Sub cboTipoDoc_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles cboTipoDoc.KeyPress
+    Private Sub txtNroDoc_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtNroDoc.TextChanged, txtRUT.TextChanged
+        Try
+            Dim tipoCliente = If(tabTipoCliente.SelectedIndex = 0, Clientes.TipoCliente.Persona, Clientes.TipoCliente.Empresa)
+            Dim pkTextField = If(tipoCliente = Clientes.TipoCliente.Persona, txtNroDoc, txtRUT)
+            Dim idCliente = Clientes.ObtenerIdCliente(pkTextField.Text, tipoCliente)
+
+            If (idCliente <> 0) Then
+                txtClienteEncontrado.Text = idCliente
+            Else
+                txtClienteEncontrado.Text = ""
+            End If
+        Catch ex As Exception
+            If ModoDesarrolloActivado() Then
+                txtClienteEncontrado.Text = "Error: " & ex.Message
+            Else
+                txtClienteEncontrado.Text = "Escriba un número de documento o RUT en el campo"
+            End If
+        End Try
+
 
     End Sub
 
-    Private Sub txtNroDoc_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtNroDoc.KeyPress
-        If cboTipoDoc.SelectedIndex = 0 Then
-            txtNroDoc.MaxLength = 8
-            Validadores.KeyPressSoloNumeros(e)
-        Else
-            txtNroDoc.MaxLength = 100
-        End If
+    Private Sub txtRUT_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtRUT.KeyPress
+        Validadores.KeyPressRUT(e, txtRUT.Text)
     End Sub
 End Class

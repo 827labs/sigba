@@ -24,11 +24,11 @@ Module Clientes
         Return cmr.ExecuteScalar()
     End Function
 
-    Public Function ObtenerIdCliente(ByVal pk As Integer, ByVal tipo As TipoCliente) As Integer
+    Public Function ObtenerIdCliente(ByVal pk As String, ByVal tipo As TipoCliente) As Integer
         Dim cx = ConexionBaseDatos.ObtenerActual()
         Dim tabla = If(tipo = TipoCliente.Persona, "persona", "empresa")
         Dim clavePk = If(tipo = TipoCliente.Persona, "numdocp", "rut")
-        Dim cm = New OdbcCommand(String.Format("SELECT FIRST 1 id FROM {0} WHERE {1}={2}", tabla, clavePk, pk), cx)
+        Dim cm = New OdbcCommand(String.Format("SELECT FIRST 1 id FROM {0} WHERE {1}='{2}'", tabla, clavePk, pk), cx)
 
         Return cm.ExecuteScalar()
     End Function
