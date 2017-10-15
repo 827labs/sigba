@@ -21,4 +21,22 @@ Module Movimientos
             .Columns(5).HeaderCell.Value = "Saldo Actual"
         End With
     End Sub
+
+
+
+    Public Function EfectuarTransferencia(ByVal cuentaOrigenCompleto As String, ByVal cuentaDestinoCompleto As String, ByVal moneda As String, ByVal monto As Decimal) As Boolean
+        Dim cx = ConexionBaseDatos.ObtenerActual()
+
+        Dim monedaCuentaOrigen = cuentaOrigenCompleto.Split(" ")(1)
+        Dim monedaCuentaDestino = cuentaDestinoCompleto.Split(" ")(1)
+
+        Dim idCuentaOrigen = cuentaOrigenCompleto.Split(" ")(2)
+        Dim idCuentaDestino = cuentaDestinoCompleto.Split(" ")(2)
+
+        ' Obtener saldo actual de la cuenta de origen
+        Dim saldoOrigen = (New OdbcCommand(String.Format("SELECT saldo FROM cuenta WHERE idcuenta={0}", idCuentaOrigen), cx)).ExecuteScalar()
+        Dim saldoDestino = (New OdbcCommand(String.Format("SELECT saldo FROM cuenta WHERE idcuenta={0}", idCuentaDestino), cx)).ExecuteScalar()
+        Mensajes.Simple(saldoOrigen)
+        Mensajes.Simple(saldoDestino)
+    End Function
 End Module

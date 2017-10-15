@@ -26,6 +26,7 @@ Module Cuentas
 
         Try
             cm.ExecuteNonQuery()
+            RegistrarAccion("Baja cuenta", String.Format("idcuenta={0}", idCuenta))
             Return True
         Catch ex As Exception
             Mensajes.ErrorSimple(ex.Message)
@@ -58,6 +59,16 @@ Module Cuentas
         Dim tipoCliente = ObtenerTipoCliente(idCliente)
 
         Return ObtenerNombreCliente(idCliente, tipoCliente)
+    End Function
+
+    Public Function ObtenerSaldoCuenta(ByVal nroCuentaCompleto As String) As String
+        Dim cx = ConexionBaseDatos.ObtenerActual()
+        Dim nroCuentaSplitteado = nroCuentaCompleto.Split(" ")
+        Dim nroCuenta = nroCuentaSplitteado(2)
+
+        Dim cm = New OdbcCommand(String.Format("SELECT moneda || ' ' ||  saldo from cuenta where idcuenta={0}", nroCuenta), cx)
+
+        Return cm.ExecuteScalar()
     End Function
 
 End Module

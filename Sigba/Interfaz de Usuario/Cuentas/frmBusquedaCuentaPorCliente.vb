@@ -68,6 +68,7 @@
             Dim tipoCuenta = If(TabControl.SelectedIndex = 0, Clientes.TipoCliente.Persona, Clientes.TipoCliente.Empresa)
             Dim pkTextField = If(tipoCuenta = TipoCliente.Persona, txtNroDoc, txtRUT)
             Dim idCliente = Clientes.ObtenerIdCliente(pkTextField.Text, tipoCuenta)
+
             ' Rellenar DGV
             Cuentas.BuscarCuentasDGV(idCliente, dgvCuentas)
         End If
