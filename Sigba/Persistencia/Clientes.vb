@@ -6,7 +6,7 @@ Module Clientes
         Empresa = 1
     End Enum
 
-    Public Function AltaCliente(ByVal CalleDirC As String, ByVal CiudadC As String, ByVal CodPostalC As String, ByVal NroDirC As String, ByVal TelefonoC As String, ByVal BlockDirC As String, ByVal ApDirC As String, ByVal AclaracionDirC As String) As String
+    Public Function AltaCliente(ByVal CalleDirC As String, ByVal CiudadC As String, ByVal CodPostalC As String, ByVal NroDirC As String, ByVal TelefonoC As String, ByVal BlockDirC As String, ByVal ApDirC As String, ByVal AclaracionDirC As String) As Integer
         Dim cx = ConexionBaseDatos.ObtenerActual()
 
         ' Insertar cliente
