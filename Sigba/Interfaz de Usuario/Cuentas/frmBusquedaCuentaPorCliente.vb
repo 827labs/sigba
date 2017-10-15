@@ -37,16 +37,10 @@
 
     Private Function FormularioEsValido() As Boolean
         Dim condicion = ( _
-            cboPaisDoc.Text <> "" _
-            And cboTipoDoc.Text <> "" _
-            And txtNroDoc.Text <> "" _
+            txtNroDoc.Text <> "" _
         ) Or ( _
             txtRUT.Text <> "" _
         )
-
-        If cboTipoDoc.SelectedIndex = 0 And txtRUT.Text = "" Then
-            condicion = condicion And txtNroDoc.TextLength = 8
-        End If
 
         If condicion = False Then
             MessageBox.Show("Complete los campos para realizar la búsqueda.")
@@ -56,8 +50,6 @@
     End Function
 
     Private Sub InicializarFormulario()
-        cboPaisDoc.SelectedIndex = 187
-        cboTipoDoc.SelectedIndex = 0
         txtNroDoc.Clear()
     End Sub
 
@@ -65,31 +57,38 @@
         InicializarFormulario()
     End Sub
 
-    Private Sub txtNroDoc_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtNroDoc.KeyPress
-        Validadores.KeyPressDocumento(e, cboTipoDoc, txtNroDoc)
-    End Sub
-
     Private Sub btnBuscar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnBuscar.Click
-        dgvCuentas.Rows.Clear()
+        Try
+            dgvCuentas.Rows.Clear()
+        Catch ex As Exception
+
+        End Try
 
         If FormularioEsValido() = True Then
-            dgvCuentas.Rows.Add("CA UYU 012-345678-9", "UYU 827,00", "02/12/2016")
-            dgvCuentas.Rows.Add("CA USD 012-345678-9", "USD 751,30", "31/12/2016")
+            Dim tipoCuenta = If(TabControl.SelectedIndex = 0, Clientes.TipoCliente.Persona, Clientes.TipoCliente.Empresa)
+            Dim pkTextField = If(tipoCuenta = TipoCliente.Persona, txtNroDoc, txtRUT)
+            Dim idCliente = Clientes.ObtenerIdCliente(pkTextField.Text, tipoCuenta)
+            ' Rellenar DGV
+            Cuentas.BuscarCuentasDGV(idCliente, dgvCuentas)
         End If
 
         InicializarFormulario()
     End Sub
 
     Private Sub dgvCuentas_CellClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgvCuentas.CellClick
+        Dim nroCuenta = dgvCuentas.Rows(e.RowIndex).Cells(0).Value
+
         If Me.tipoBusqueda = TipoBusquedaCuenta.Visualizacion Then
-            frmHistoricoTransaccionesCuenta.Show()
+            Dim frmHistorico = New frmHistoricoTransaccionesCuenta()
+            frmHistorico.Show()
+            frmHistorico.SetearNroCuenta(nroCuenta)
         ElseIf Me.tipoBusqueda = TipoBusquedaCuenta.Baja Then
             frmBajaCuenta.Show()
         ElseIf Me.tipoBusqueda = TipoBusquedaCuenta.DebitoAutomatico Then
             frmDebitoAutomatico.Show()
         ElseIf Me.tipoBusqueda = TipoBusquedaCuenta.Notificable Then
             If Not (Me.notificable Is Nothing) Then
-                Me.notificable("CA UYU 012-345678-9")
+                Me.notificable(nroCuenta)
                 Me.Close()
             End If
         End If
@@ -98,4 +97,5 @@
     Private Sub txtRUT_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtRUT.KeyPress
         Validadores.KeyPressRUT(e, txtRUT.Text)
     End Sub
+
 End Class

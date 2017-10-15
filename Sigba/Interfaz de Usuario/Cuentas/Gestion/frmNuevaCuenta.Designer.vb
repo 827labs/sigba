@@ -42,6 +42,8 @@ Partial Class frmNuevaCuenta
         Me.btnConfirmar = New System.Windows.Forms.Button
         Me.btnCancelar = New System.Windows.Forms.Button
         Me.txtClienteEncontrado = New System.Windows.Forms.Label
+        Me.cboMoneda = New System.Windows.Forms.ComboBox
+        Me.Label4 = New System.Windows.Forms.Label
         Me.tabTipoCliente.SuspendLayout()
         Me.tabPersona.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -161,10 +163,10 @@ Partial Class frmNuevaCuenta
         '
         Me.cboTipoCuenta.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboTipoCuenta.FormattingEnabled = True
-        Me.cboTipoCuenta.Items.AddRange(New Object() {"Cuenta de Ahorro (CA)", "Cuenta Corriente (CC)"})
+        Me.cboTipoCuenta.Items.AddRange(New Object() {"CA - Caja de Ahorro", "CC - Cuenta Corriente"})
         Me.cboTipoCuenta.Location = New System.Drawing.Point(13, 195)
         Me.cboTipoCuenta.Name = "cboTipoCuenta"
-        Me.cboTipoCuenta.Size = New System.Drawing.Size(392, 21)
+        Me.cboTipoCuenta.Size = New System.Drawing.Size(249, 21)
         Me.cboTipoCuenta.TabIndex = 92
         '
         'cboSucursal
@@ -233,11 +235,32 @@ Partial Class frmNuevaCuenta
         Me.txtClienteEncontrado.TabIndex = 100
         Me.txtClienteEncontrado.Text = "Cliente"
         '
+        'cboMoneda
+        '
+        Me.cboMoneda.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboMoneda.FormattingEnabled = True
+        Me.cboMoneda.Items.AddRange(New Object() {"UYU", "USD"})
+        Me.cboMoneda.Location = New System.Drawing.Point(268, 195)
+        Me.cboMoneda.Name = "cboMoneda"
+        Me.cboMoneda.Size = New System.Drawing.Size(137, 21)
+        Me.cboMoneda.TabIndex = 102
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(265, 178)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(46, 13)
+        Me.Label4.TabIndex = 101
+        Me.Label4.Text = "Moneda"
+        '
         'frmNuevaCuenta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(416, 313)
+        Me.Controls.Add(Me.cboMoneda)
+        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.txtClienteEncontrado)
         Me.Controls.Add(Me.btnCancelar)
         Me.Controls.Add(Me.btnConfirmar)
@@ -284,4 +307,6 @@ Partial Class frmNuevaCuenta
     Friend WithEvents btnConfirmar As System.Windows.Forms.Button
     Friend WithEvents btnCancelar As System.Windows.Forms.Button
     Friend WithEvents txtClienteEncontrado As System.Windows.Forms.Label
+    Friend WithEvents cboMoneda As System.Windows.Forms.ComboBox
+    Friend WithEvents Label4 As System.Windows.Forms.Label
 End Class

@@ -2,7 +2,7 @@
 Module Personas
     Public Function AltaPersona(ByVal apellidop As String, ByVal ciudadnac As String, ByVal fechanac As DateTime, ByVal mail As String, ByVal id As Integer, ByVal nombrep As String, ByVal numdoccony As String, ByVal numdocp As String, ByVal paisdoccony As String, ByVal paisdocp As String, ByVal paisnac As String, ByVal sexop As String, ByVal tipodoccony As String, ByVal tipodocp As String) As Boolean
         Dim cx = ConexionBaseDatos.ObtenerActual()
-        Dim fechaNacimiento = fechanac.ToString("MM/dd/yyyy")
+        Dim fechaNacimiento = fechanac.ToString(FormatoFecha())
 
 
         ' Insertar cliente

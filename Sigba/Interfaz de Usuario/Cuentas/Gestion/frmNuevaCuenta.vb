@@ -10,12 +10,21 @@
     End Sub
 
     Private Sub btnConfirmar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnConfirmar.Click
-        If (cboTipoCuenta.Text <> "" And cboSucursal.Text <> "" And cboUsoFormas.Text <> "") Then
+        If (cboTipoCuenta.Text <> "" And cboSucursal.Text <> "" And cboUsoFormas.Text <> "" And txtClienteEncontrado.Text <> "") Then
             Dim usuarioConfirma = Mensajes.PreguntaSiNo("¿Desea confirmar esta información?", "Confirmar")
+            Dim tipoCliente = If(tabTipoCliente.SelectedIndex = 0, Clientes.TipoCliente.Persona, Clientes.TipoCliente.Empresa)
+            Dim nroSucursal As Integer = Val(cboSucursal.Text.Split(" - ")(0))
+            Dim idCliente As Integer = Val(txtClienteEncontrado.Text.Split(" / ")(0))
+            Dim tipoCuenta As String = cboTipoCuenta.Text.Split(" - ")(0)
 
             If usuarioConfirma = True Then
-                Mensajes.Simple("La cuenta se ha dado de alta exitosamente.")
-                Me.Close()
+                Dim pudoCrearCuenta = Cuentas.CrearCuenta(tipoCliente, idCliente, tipoCuenta, cboUsoFormas.Text.ToUpper(), cboMoneda.Text, nroSucursal)
+
+                If pudoCrearCuenta Then
+                    Mensajes.Simple("Cuenta creada exitosamente")
+                    Me.Close()
+                End If
+
             End If
         Else
             Mensajes.ErrorSimple("Complete todos los campos para continuar")
@@ -27,9 +36,10 @@
             Dim tipoCliente = If(tabTipoCliente.SelectedIndex = 0, Clientes.TipoCliente.Persona, Clientes.TipoCliente.Empresa)
             Dim pkTextField = If(tipoCliente = Clientes.TipoCliente.Persona, txtNroDoc, txtRUT)
             Dim idCliente = Clientes.ObtenerIdCliente(pkTextField.Text, tipoCliente)
+            Dim nombreCliente = Clientes.ObtenerNombreCliente(idCliente, tipoCliente)
 
             If (idCliente <> 0) Then
-                txtClienteEncontrado.Text = idCliente
+                txtClienteEncontrado.Text = idCliente & " / " & nombreCliente
             Else
                 txtClienteEncontrado.Text = ""
             End If
@@ -40,8 +50,6 @@
                 txtClienteEncontrado.Text = "Escriba un número de documento o RUT en el campo"
             End If
         End Try
-
-
     End Sub
 
     Private Sub txtRUT_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtRUT.KeyPress

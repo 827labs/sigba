@@ -24,15 +24,8 @@ Partial Class frmHistoricoTransaccionesCuenta
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmHistoricoTransaccionesCuenta))
         Me.Label1 = New System.Windows.Forms.Label
-        Me.Label2 = New System.Windows.Forms.Label
+        Me.txtNroCuenta = New System.Windows.Forms.Label
         Me.dgvTransacciones = New System.Windows.Forms.DataGridView
-        Me.suc = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.fecha = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.desc = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.comp = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.deb = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.cred = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.saldo = New System.Windows.Forms.DataGridViewTextBoxColumn
         CType(Me.dgvTransacciones, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -45,69 +38,26 @@ Partial Class frmHistoricoTransaccionesCuenta
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Cuenta"
         '
-        'Label2
+        'txtNroCuenta
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(12, 26)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(158, 16)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "CA UYU 123-456789-0"
+        Me.txtNroCuenta.AutoSize = True
+        Me.txtNroCuenta.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtNroCuenta.Location = New System.Drawing.Point(12, 26)
+        Me.txtNroCuenta.Name = "txtNroCuenta"
+        Me.txtNroCuenta.Size = New System.Drawing.Size(178, 16)
+        Me.txtNroCuenta.TabIndex = 1
+        Me.txtNroCuenta.Text = "CA UYU 123-456789-0"
         '
         'dgvTransacciones
         '
         Me.dgvTransacciones.AllowUserToAddRows = False
         Me.dgvTransacciones.AllowUserToDeleteRows = False
         Me.dgvTransacciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvTransacciones.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.suc, Me.fecha, Me.desc, Me.comp, Me.deb, Me.cred, Me.saldo})
         Me.dgvTransacciones.Location = New System.Drawing.Point(12, 51)
         Me.dgvTransacciones.Name = "dgvTransacciones"
         Me.dgvTransacciones.ReadOnly = True
         Me.dgvTransacciones.Size = New System.Drawing.Size(738, 330)
         Me.dgvTransacciones.TabIndex = 2
-        '
-        'suc
-        '
-        Me.suc.HeaderText = "Suc."
-        Me.suc.Name = "suc"
-        Me.suc.ReadOnly = True
-        '
-        'fecha
-        '
-        Me.fecha.HeaderText = "Fecha"
-        Me.fecha.Name = "fecha"
-        Me.fecha.ReadOnly = True
-        '
-        'desc
-        '
-        Me.desc.HeaderText = "Descripción"
-        Me.desc.Name = "desc"
-        Me.desc.ReadOnly = True
-        '
-        'comp
-        '
-        Me.comp.HeaderText = "Comprobante"
-        Me.comp.Name = "comp"
-        Me.comp.ReadOnly = True
-        '
-        'deb
-        '
-        Me.deb.HeaderText = "Débito"
-        Me.deb.Name = "deb"
-        Me.deb.ReadOnly = True
-        '
-        'cred
-        '
-        Me.cred.HeaderText = "Crédito"
-        Me.cred.Name = "cred"
-        Me.cred.ReadOnly = True
-        '
-        'saldo
-        '
-        Me.saldo.HeaderText = "Saldo"
-        Me.saldo.Name = "saldo"
-        Me.saldo.ReadOnly = True
         '
         'frmHistoricoTransaccionesCuenta
         '
@@ -115,7 +65,7 @@ Partial Class frmHistoricoTransaccionesCuenta
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(762, 393)
         Me.Controls.Add(Me.dgvTransacciones)
-        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.txtNroCuenta)
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -128,13 +78,6 @@ Partial Class frmHistoricoTransaccionesCuenta
 
     End Sub
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents txtNroCuenta As System.Windows.Forms.Label
     Friend WithEvents dgvTransacciones As System.Windows.Forms.DataGridView
-    Friend WithEvents suc As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents fecha As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents desc As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents comp As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents deb As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents cred As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents saldo As System.Windows.Forms.DataGridViewTextBoxColumn
 End Class

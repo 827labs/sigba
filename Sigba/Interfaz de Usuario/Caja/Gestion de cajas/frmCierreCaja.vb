@@ -75,7 +75,7 @@
         est.SaldoUYU = txtSaldoUYU.Text
         est.NumCaja = caj.Num
         est.Tipo = "CIERRE"
-        est.Fecha = Date.Today.ToString("MM/dd/yyyy")
+        est.Fecha = Date.Today.ToString(FormatoFecha())
 
         est.Guardar()
 

@@ -1,4 +1,8 @@
 ﻿Module Constantes
+    Function FormatoFecha() As String
+        Return "MM/dd/yyyy"
+    End Function
+
     Function Paises() As String()
         Dim arrPaises() As String = { _
                 "Afganistán", _
