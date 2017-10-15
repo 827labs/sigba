@@ -21,7 +21,9 @@ Module Clientes
 
         ' Obtener ID del cliente recien creado
         Dim cmr = New OdbcCommand(String.Format("SELECT MAX(id) FROM cliente WHERE telefonoc={0}", TelefonoC), cx)
-        Return cmr.ExecuteScalar()
+        Dim id = cmr.ExecuteScalar()
+        RegistrarAccion("Nuevo Cliente", String.Format("idcliente={0}", id))
+        Return id
     End Function
 
     Public Function ObtenerIdCliente(ByVal pk As String, ByVal tipo As TipoCliente) As Integer

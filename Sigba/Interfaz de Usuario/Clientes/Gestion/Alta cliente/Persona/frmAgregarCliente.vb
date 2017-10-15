@@ -39,7 +39,6 @@
         txtApellido1.Text = "Perez"
         txtApellido2.Text = "Rodriguez"
         cboSexo.SelectedIndex = 1
-        cboEstadoCivil.SelectedIndex = 1
         txtNroDoc.Text = "87654321"
         cboDiaNaci.SelectedIndex = 4
         cboMesNaci.SelectedIndex = 3
@@ -86,9 +85,8 @@
         cboMesNaci.SelectedIndex = 0
         cboAnoNaci.SelectedIndex = 0
         cboTipoDoc.SelectedIndex = 0
-        cboEstadoCivil.SelectedIndex = 0
+
         cboSexo.SelectedIndex = 0
-        cboSexoCony.SelectedIndex = 0
         cboTipoDocCony.SelectedIndex = 0
 
         'Deja por defecto el item numero 187 (Uruguay) de los ComboBox
@@ -149,7 +147,6 @@
     End Sub
 
     Private Sub CambiarHabilitacionModuloConyuge(ByVal esHabilitado As Boolean)
-        cboSexoCony.Enabled = esHabilitado
         cboPaisDocCony.Enabled = esHabilitado
         cboTipoDocCony.Enabled = esHabilitado
         txtNroDocCony.Enabled = esHabilitado

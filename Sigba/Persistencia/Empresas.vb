@@ -9,6 +9,7 @@ Module Empresas
 
         Try
             cm.ExecuteNonQuery()
+            RegistrarAccion("Nuevo Cliente Empresa", String.Format("idcliente={0}", id))
             Return True
         Catch ex As Exception
             If (ModoDesarrolloActivado()) Then

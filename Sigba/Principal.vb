@@ -14,10 +14,6 @@
         frmGestionUsuarios.Show()
     End Sub
 
-    Private Sub AdministraciónDeCargosToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AdministraciónDeCargosToolStripMenuItem.Click
-        frmGestionCargos.Show()
-    End Sub
-
     Private Sub AcercaDeToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AcercaDeToolStripMenuItem.Click
         AcercaDe.Show()
     End Sub

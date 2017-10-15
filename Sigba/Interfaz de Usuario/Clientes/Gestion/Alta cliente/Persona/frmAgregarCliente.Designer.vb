@@ -33,12 +33,8 @@ Partial Class frmAgregarClienteEmpresa
         Me.txtCelular = New System.Windows.Forms.TextBox
         Me.lblCelular = New System.Windows.Forms.Label
         Me.txtTelefonoFijo = New System.Windows.Forms.TextBox
-        Me.cboSexoCony = New System.Windows.Forms.ComboBox
-        Me.Label4 = New System.Windows.Forms.Label
         Me.lblNomCony = New System.Windows.Forms.Label
         Me.txtNombreCony = New System.Windows.Forms.TextBox
-        Me.lblEstadoCivil = New System.Windows.Forms.Label
-        Me.cboEstadoCivil = New System.Windows.Forms.ComboBox
         Me.txtCodigoPos = New System.Windows.Forms.TextBox
         Me.txtRegionRes = New System.Windows.Forms.TextBox
         Me.txtLocalidadRes = New System.Windows.Forms.TextBox
@@ -202,26 +198,6 @@ Partial Class frmAgregarClienteEmpresa
         Me.txtTelefonoFijo.Size = New System.Drawing.Size(138, 20)
         Me.txtTelefonoFijo.TabIndex = 27
         '
-        'cboSexoCony
-        '
-        Me.cboSexoCony.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cboSexoCony.FormattingEnabled = True
-        Me.cboSexoCony.Items.AddRange(New Object() {"Seleccionar...", "Hombre", "Mujer", "Sin especificar"})
-        Me.cboSexoCony.Location = New System.Drawing.Point(245, 20)
-        Me.cboSexoCony.Name = "cboSexoCony"
-        Me.cboSexoCony.Size = New System.Drawing.Size(129, 21)
-        Me.cboSexoCony.TabIndex = 23
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(206, 21)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(35, 15)
-        Me.Label4.TabIndex = 79
-        Me.Label4.Text = "Sexo"
-        '
         'lblNomCony
         '
         Me.lblNomCony.AutoSize = True
@@ -238,26 +214,6 @@ Partial Class frmAgregarClienteEmpresa
         Me.txtNombreCony.Name = "txtNombreCony"
         Me.txtNombreCony.Size = New System.Drawing.Size(129, 20)
         Me.txtNombreCony.TabIndex = 22
-        '
-        'lblEstadoCivil
-        '
-        Me.lblEstadoCivil.AutoSize = True
-        Me.lblEstadoCivil.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblEstadoCivil.Location = New System.Drawing.Point(711, 20)
-        Me.lblEstadoCivil.Name = "lblEstadoCivil"
-        Me.lblEstadoCivil.Size = New System.Drawing.Size(68, 15)
-        Me.lblEstadoCivil.TabIndex = 58
-        Me.lblEstadoCivil.Text = "Estado civil"
-        '
-        'cboEstadoCivil
-        '
-        Me.cboEstadoCivil.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cboEstadoCivil.FormattingEnabled = True
-        Me.cboEstadoCivil.Items.AddRange(New Object() {"Seleccionar...", "Soltero/a", "Casado/a", "Divorciado/a", "Viudo/a"})
-        Me.cboEstadoCivil.Location = New System.Drawing.Point(785, 17)
-        Me.cboEstadoCivil.Name = "cboEstadoCivil"
-        Me.cboEstadoCivil.Size = New System.Drawing.Size(84, 21)
-        Me.cboEstadoCivil.TabIndex = 57
         '
         'txtCodigoPos
         '
@@ -515,8 +471,6 @@ Partial Class frmAgregarClienteEmpresa
         Me.GroupBox1.Controls.Add(Me.lblDoc)
         Me.GroupBox1.Controls.Add(Me.cboSexo)
         Me.GroupBox1.Controls.Add(Me.lblSexo)
-        Me.GroupBox1.Controls.Add(Me.cboEstadoCivil)
-        Me.GroupBox1.Controls.Add(Me.lblEstadoCivil)
         Me.GroupBox1.Location = New System.Drawing.Point(13, 13)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(884, 125)
@@ -759,8 +713,6 @@ Partial Class frmAgregarClienteEmpresa
         '
         Me.GroupBox5.Controls.Add(Me.GroupBox6)
         Me.GroupBox5.Controls.Add(Me.txtNombreCony)
-        Me.GroupBox5.Controls.Add(Me.cboSexoCony)
-        Me.GroupBox5.Controls.Add(Me.Label4)
         Me.GroupBox5.Controls.Add(Me.lblNomCony)
         Me.GroupBox5.Location = New System.Drawing.Point(12, 294)
         Me.GroupBox5.Name = "GroupBox5"
@@ -899,8 +851,6 @@ Partial Class frmAgregarClienteEmpresa
     Friend WithEvents txtTelefonoFijo As System.Windows.Forms.TextBox
     Friend WithEvents txtCelular As System.Windows.Forms.TextBox
     Friend WithEvents lblCelular As System.Windows.Forms.Label
-    Friend WithEvents lblEstadoCivil As System.Windows.Forms.Label
-    Friend WithEvents cboEstadoCivil As System.Windows.Forms.ComboBox
     Friend WithEvents txtMail As System.Windows.Forms.TextBox
     Friend WithEvents txtNombreCony As System.Windows.Forms.TextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
@@ -912,8 +862,6 @@ Partial Class frmAgregarClienteEmpresa
     Friend WithEvents lblAclaracionDoc2 As System.Windows.Forms.Label
     Friend WithEvents cboSexo As System.Windows.Forms.ComboBox
     Friend WithEvents lblSexo As System.Windows.Forms.Label
-    Friend WithEvents cboSexoCony As System.Windows.Forms.ComboBox
-    Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents txtLocalidadRes As System.Windows.Forms.TextBox
     Friend WithEvents txtCiudadNac As System.Windows.Forms.TextBox
     Friend WithEvents txtRegionRes As System.Windows.Forms.TextBox

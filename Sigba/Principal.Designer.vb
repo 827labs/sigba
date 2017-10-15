@@ -52,7 +52,6 @@ Partial Class Principal
         Me.AdministraciToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.GestionarUsuariosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.IngresarUsuarioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.AdministraciónDeCargosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.DatosDelBancoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.AuditoriaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.AdministracíToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
@@ -169,7 +168,7 @@ Partial Class Principal
         '
         Me.GestiónToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AltaClienteToolStripMenuItem, Me.BajaClienteToolStripMenuItem})
         Me.GestiónToolStripMenuItem1.Name = "GestiónToolStripMenuItem1"
-        Me.GestiónToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.GestiónToolStripMenuItem1.Size = New System.Drawing.Size(114, 22)
         Me.GestiónToolStripMenuItem1.Text = "Gestión"
         '
         'AltaClienteToolStripMenuItem
@@ -194,7 +193,7 @@ Partial Class Principal
         'BajaClienteToolStripMenuItem
         '
         Me.BajaClienteToolStripMenuItem.Name = "BajaClienteToolStripMenuItem"
-        Me.BajaClienteToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.BajaClienteToolStripMenuItem.Size = New System.Drawing.Size(134, 22)
         Me.BajaClienteToolStripMenuItem.Text = "Baja cliente"
         '
         'ChequesToolStripMenuItem
@@ -231,7 +230,7 @@ Partial Class Principal
         '
         'ConfiguraciónToolStripMenuItem
         '
-        Me.ConfiguraciónToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AdministraciToolStripMenuItem, Me.AdministraciónDeCargosToolStripMenuItem, Me.DatosDelBancoToolStripMenuItem, Me.AuditoriaToolStripMenuItem, Me.AdministracíToolStripMenuItem})
+        Me.ConfiguraciónToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AdministraciToolStripMenuItem, Me.DatosDelBancoToolStripMenuItem, Me.AuditoriaToolStripMenuItem, Me.AdministracíToolStripMenuItem})
         Me.ConfiguraciónToolStripMenuItem.Name = "ConfiguraciónToolStripMenuItem"
         Me.ConfiguraciónToolStripMenuItem.Size = New System.Drawing.Size(95, 20)
         Me.ConfiguraciónToolStripMenuItem.Text = "Configuración"
@@ -254,12 +253,6 @@ Partial Class Principal
         Me.IngresarUsuarioToolStripMenuItem.Name = "IngresarUsuarioToolStripMenuItem"
         Me.IngresarUsuarioToolStripMenuItem.Size = New System.Drawing.Size(171, 22)
         Me.IngresarUsuarioToolStripMenuItem.Text = "Ingresar Usuario"
-        '
-        'AdministraciónDeCargosToolStripMenuItem
-        '
-        Me.AdministraciónDeCargosToolStripMenuItem.Name = "AdministraciónDeCargosToolStripMenuItem"
-        Me.AdministraciónDeCargosToolStripMenuItem.Size = New System.Drawing.Size(229, 22)
-        Me.AdministraciónDeCargosToolStripMenuItem.Text = "Administración de cargos"
         '
         'DatosDelBancoToolStripMenuItem
         '
@@ -365,7 +358,6 @@ Partial Class Principal
     Friend WithEvents CajasAbiertasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents AdministraciToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents GestionarUsuariosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents AdministraciónDeCargosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents AcercaDeToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents GestiónCuentasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents AltaDeCuentaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem

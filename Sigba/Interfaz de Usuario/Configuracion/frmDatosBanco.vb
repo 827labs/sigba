@@ -39,10 +39,6 @@
         Validadores.KeyPressSoloNumeros(e)
     End Sub
 
-    Private Sub btnSeleccionarNuevoLogo_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnSeleccionarNuevoLogo.Click
-        Dim arch = abrirArchivo.ShowDialog()
-    End Sub
-
     Private Sub frmDatosBanco_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         If Not Banco.HayBancoRegistrado Then
             Return
