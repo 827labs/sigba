@@ -19,9 +19,23 @@ Module Cuentas
         End Try
     End Function
 
+    Public Function BajarCuenta(ByVal idCuenta As Integer) As Boolean
+        Dim cx = ConexionBaseDatos.ObtenerActual()
+        Dim fecha = Date.Today.ToString(FormatoFecha())
+        Dim cm = New OdbcCommand(String.Format("UPDATE cuenta set fechacierre='{0}' where idcuenta={1}", fecha, idCuenta), cx)
+
+        Try
+            cm.ExecuteNonQuery()
+            Return True
+        Catch ex As Exception
+            Mensajes.ErrorSimple(ex.Message)
+            Return False
+        End Try
+    End Function
+
     Public Sub BuscarCuentasDGV(ByVal idCliente As Integer, ByRef dgv As DataGridView)
         Dim cx = ConexionBaseDatos.ObtenerActual()
-        Dim cm = New OdbcCommand("SELECT tipo || ' ' || moneda || ' ' || idcuenta, saldo  FROM cuenta WHERE idcliente=" & idCliente, cx)
+        Dim cm = New OdbcCommand("SELECT tipo || ' ' || moneda || ' ' || idcuenta, saldo  FROM cuenta WHERE fechacierre IS NULL AND idcliente=" & idCliente, cx)
         Dim da = New OdbcDataAdapter(cm)
         Dim ds = New DataSet
         da.Fill(ds, "cuenta")
@@ -32,4 +46,18 @@ Module Cuentas
             .Columns(1).HeaderCell.Value = "Saldo"
         End With
     End Sub
+
+    Public Function ObtenerNombreTitularCuenta(ByVal nroCuentaCompleto As String) As String
+        Dim cx = ConexionBaseDatos.ObtenerActual()
+        Dim nroCuentaSplitteado = nroCuentaCompleto.Split(" ")
+        Dim nroCuenta = nroCuentaSplitteado(2)
+
+        Dim cm = New OdbcCommand(String.Format("SELECT idcliente from cuenta where idcuenta={0}", nroCuenta), cx)
+        Dim idCliente = cm.ExecuteScalar()
+
+        Dim tipoCliente = ObtenerTipoCliente(idCliente)
+
+        Return ObtenerNombreCliente(idCliente, tipoCliente)
+    End Function
+
 End Module

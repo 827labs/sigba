@@ -56,4 +56,20 @@ Module Clientes
 
         Return cm.ExecuteScalar()
     End Function
+
+    Public Function ObtenerTipoCliente(ByVal idCliente As Integer) As TipoCliente
+        Dim cx = ConexionBaseDatos.ObtenerActual()
+
+        Dim cmP = New OdbcCommand("select COUNT(*) from persona where id=" & idCliente, cx)
+        Dim CantCliPersona As Integer = cmP.ExecuteScalar()
+
+        Dim cmE = New OdbcCommand("select COUNT(*) from empresa where id=" & idCliente, cx)
+        Dim CantCliEmpresa As Integer = cmE.ExecuteScalar()
+
+        If CantCliPersona > 0 And CantCliEmpresa = 0 Then
+            Return TipoCliente.Persona
+        Else
+            Return TipoCliente.Empresa
+        End If
+    End Function
 End Module

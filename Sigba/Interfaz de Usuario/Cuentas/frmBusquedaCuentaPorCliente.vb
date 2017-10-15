@@ -83,7 +83,9 @@
             frmHistorico.Show()
             frmHistorico.SetearNroCuenta(nroCuenta)
         ElseIf Me.tipoBusqueda = TipoBusquedaCuenta.Baja Then
-            frmBajaCuenta.Show()
+            Dim frmBaja = New frmBajaCuenta()
+            frmBaja.Show()
+            frmBaja.SetearNroCuenta(nroCuenta)
         ElseIf Me.tipoBusqueda = TipoBusquedaCuenta.DebitoAutomatico Then
             frmDebitoAutomatico.Show()
         ElseIf Me.tipoBusqueda = TipoBusquedaCuenta.Notificable Then

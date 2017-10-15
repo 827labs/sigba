@@ -27,12 +27,8 @@ Partial Class frmBajaCuenta
         Me.lblCuenta = New System.Windows.Forms.Label
         Me.lblTitular = New System.Windows.Forms.Label
         Me.Label4 = New System.Windows.Forms.Label
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox
-        Me.cboRazonPredefinida = New System.Windows.Forms.ComboBox
-        Me.txtRazon = New System.Windows.Forms.TextBox
         Me.btnConfirmar = New System.Windows.Forms.Button
         Me.btnCancelar = New System.Windows.Forms.Button
-        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
@@ -74,42 +70,12 @@ Partial Class frmBajaCuenta
         Me.Label4.TabIndex = 2
         Me.Label4.Text = "Titular de la cuenta"
         '
-        'GroupBox1
-        '
-        Me.GroupBox1.Controls.Add(Me.cboRazonPredefinida)
-        Me.GroupBox1.Controls.Add(Me.txtRazon)
-        Me.GroupBox1.Location = New System.Drawing.Point(16, 61)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(411, 129)
-        Me.GroupBox1.TabIndex = 4
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Razón de la baja"
-        '
-        'cboRazonPredefinida
-        '
-        Me.cboRazonPredefinida.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cboRazonPredefinida.FormattingEnabled = True
-        Me.cboRazonPredefinida.Items.AddRange(New Object() {"001 - Razón 1", "002 - Razón 2", "003 - Razón 3", "Otra... (Especificar)"})
-        Me.cboRazonPredefinida.Location = New System.Drawing.Point(7, 20)
-        Me.cboRazonPredefinida.Name = "cboRazonPredefinida"
-        Me.cboRazonPredefinida.Size = New System.Drawing.Size(398, 21)
-        Me.cboRazonPredefinida.TabIndex = 0
-        '
-        'txtRazon
-        '
-        Me.txtRazon.Enabled = False
-        Me.txtRazon.Location = New System.Drawing.Point(7, 47)
-        Me.txtRazon.Multiline = True
-        Me.txtRazon.Name = "txtRazon"
-        Me.txtRazon.Size = New System.Drawing.Size(398, 74)
-        Me.txtRazon.TabIndex = 1
-        '
         'btnConfirmar
         '
-        Me.btnConfirmar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnConfirmar.Location = New System.Drawing.Point(257, 197)
+        Me.btnConfirmar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnConfirmar.Location = New System.Drawing.Point(642, 16)
         Me.btnConfirmar.Name = "btnConfirmar"
-        Me.btnConfirmar.Size = New System.Drawing.Size(170, 23)
+        Me.btnConfirmar.Size = New System.Drawing.Size(249, 34)
         Me.btnConfirmar.TabIndex = 2
         Me.btnConfirmar.Text = "Confirmar baja de cuenta"
         Me.btnConfirmar.UseVisualStyleBackColor = True
@@ -117,9 +83,9 @@ Partial Class frmBajaCuenta
         'btnCancelar
         '
         Me.btnCancelar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.btnCancelar.Location = New System.Drawing.Point(176, 197)
+        Me.btnCancelar.Location = New System.Drawing.Point(547, 16)
         Me.btnCancelar.Name = "btnCancelar"
-        Me.btnCancelar.Size = New System.Drawing.Size(75, 23)
+        Me.btnCancelar.Size = New System.Drawing.Size(89, 34)
         Me.btnCancelar.TabIndex = 3
         Me.btnCancelar.Text = "Cancelar"
         Me.btnCancelar.UseVisualStyleBackColor = True
@@ -128,10 +94,9 @@ Partial Class frmBajaCuenta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(439, 236)
+        Me.ClientSize = New System.Drawing.Size(903, 65)
         Me.Controls.Add(Me.btnCancelar)
         Me.Controls.Add(Me.btnConfirmar)
-        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.lblTitular)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.lblCuenta)
@@ -141,8 +106,6 @@ Partial Class frmBajaCuenta
         Me.MaximizeBox = False
         Me.Name = "frmBajaCuenta"
         Me.Text = "Baja de cuenta"
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -151,9 +114,6 @@ Partial Class frmBajaCuenta
     Friend WithEvents lblCuenta As System.Windows.Forms.Label
     Friend WithEvents lblTitular As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
-    Friend WithEvents cboRazonPredefinida As System.Windows.Forms.ComboBox
-    Friend WithEvents txtRazon As System.Windows.Forms.TextBox
     Friend WithEvents btnConfirmar As System.Windows.Forms.Button
     Friend WithEvents btnCancelar As System.Windows.Forms.Button
 End Class
