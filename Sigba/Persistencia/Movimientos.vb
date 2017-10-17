@@ -43,6 +43,37 @@ Module Movimientos
         End With
     End Sub
 
+    Public Function EfectuarRetiro(ByVal cuentaBeneficiarioCompleto As String, ByVal moneda As String, ByVal monto As Decimal) As Boolean
+        Dim cx = ConexionBaseDatos.ObtenerActual()
+
+        If Not CuentaEstaHabilitada(cuentaBeneficiarioCompleto) Then
+            Mensajes.ErrorSimple("La cuenta no esta habilitada o no es válida.")
+            Return False
+        End If
+
+        Dim monedaCuenta = cuentaBeneficiarioCompleto.Split(" ")(1)
+        Dim montoADebitar = ObtenerMontoNormalizado(monto, moneda, monedaCuenta)
+        Dim saldoCuenta = ObtenerSaldoCuenta(cuentaBeneficiarioCompleto)
+
+        If saldoCuenta < montoADebitar Then
+            Mensajes.ErrorSimple("La cuenta no poseé los fondos suficientes para esta operación.")
+            Return False
+        End If
+
+        NuevoMovimiento("RETIRO CAJA", -1 * montoADebitar, cuentaBeneficiarioCompleto)
+        Dim nuevoSaldo = saldoCuenta - montoADebitar
+        Dim idCuenta = cuentaBeneficiarioCompleto.Split(" ")(2)
+        Dim cm = New OdbcCommand(String.Format("UPDATE cuenta SET saldo={0} WHERE idcuenta={1}", nuevoSaldo, idCuenta), cx)
+
+        If cm.ExecuteNonQuery() > 0 Then
+            RegistrarAccion("Retiro de cuenta", String.Format("cuenta={0};moneda={1};monto={2}", cuentaBeneficiarioCompleto, moneda, monto))
+            Return True
+        End If
+
+        Return False
+
+    End Function
+
     Public Function EfectuarDeposito(ByVal cuentaBeneficiarioCompleto As String, ByVal moneda As String, ByVal monto As Decimal, Optional ByVal noLimitar As Boolean = False) As Boolean
         Dim cx = ConexionBaseDatos.ObtenerActual()
 

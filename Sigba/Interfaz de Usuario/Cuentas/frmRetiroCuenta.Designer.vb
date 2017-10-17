@@ -56,7 +56,7 @@ Partial Class frmRetiroCuenta
         '
         Me.cboMonto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboMonto.FormattingEnabled = True
-        Me.cboMonto.Items.AddRange(New Object() {"UYU", "USD"})
+        Me.cboMonto.Items.AddRange(New Object() {"UYU", "USD", "EUR"})
         Me.cboMonto.Location = New System.Drawing.Point(213, 28)
         Me.cboMonto.Name = "cboMonto"
         Me.cboMonto.Size = New System.Drawing.Size(51, 21)

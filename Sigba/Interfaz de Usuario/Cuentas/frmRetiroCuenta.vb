@@ -19,10 +19,12 @@
 
     Private Sub btnConfirmar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnConfirmar.Click
         If (txtCuentaBeneficiario.Text <> "" And txtMontoCantidad.Text <> "" And Val(txtMontoCantidad.Text) > 0 And cboMonto.Text <> "") Then
-            Dim decision = MessageBox.Show("¿Desea confirmar esta retiro?", "Confirmar", MessageBoxButtons.YesNo)
+            Dim decision = MessageBox.Show("¿Desea confirmar este retiro?", "Confirmar", MessageBoxButtons.YesNo)
             If decision = Windows.Forms.DialogResult.Yes Then
-                MessageBox.Show("La retiro se ha confirmado exitosamente.")
-                Me.Close()
+                If EfectuarRetiro(txtCuentaBeneficiario.Text, cboMonto.Text, txtMontoCantidad.Text) Then
+                    MessageBox.Show("El retiro se ha confirmado exitosamente.")
+                    Me.Close()
+                End If
             End If
         Else
             MessageBox.Show("Complete todos los campos para continuar")
