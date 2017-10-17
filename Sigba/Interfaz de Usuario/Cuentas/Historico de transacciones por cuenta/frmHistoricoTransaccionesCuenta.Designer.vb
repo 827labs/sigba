@@ -44,7 +44,7 @@ Partial Class frmHistoricoTransaccionesCuenta
         Me.txtNroCuenta.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtNroCuenta.Location = New System.Drawing.Point(12, 26)
         Me.txtNroCuenta.Name = "txtNroCuenta"
-        Me.txtNroCuenta.Size = New System.Drawing.Size(178, 16)
+        Me.txtNroCuenta.Size = New System.Drawing.Size(158, 16)
         Me.txtNroCuenta.TabIndex = 1
         Me.txtNroCuenta.Text = "CA UYU 123-456789-0"
         '

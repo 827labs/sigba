@@ -4,5 +4,4 @@
         HistoricoCuentaDGV(dgvTransacciones, nroCuenta)
         txtNroCuenta.Text = nroCuenta
     End Sub
-
 End Class

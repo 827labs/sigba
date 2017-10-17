@@ -27,7 +27,7 @@ Module Movimientos
         Dim cuenta = nroCuenta.Split(" ")
         Dim idCuenta = cuenta(2)
 
-        Dim cm = New OdbcCommand(String.Format("SELECT idmov comprobante, numdocu usuario, concepto, diferencia monto, saldoanterior anterior, saldoanterior + diferencia actual FROM movimiento WHERE idcuenta={0}", idCuenta), cx)
+        Dim cm = New OdbcCommand(String.Format("SELECT idmov comprobante, numdocu usuario, concepto, diferencia monto, saldoanterior anterior, saldoanterior + diferencia actual FROM movimiento WHERE idcuenta={0} ORDER BY idmov DESC", idCuenta), cx)
         Dim da = New OdbcDataAdapter(cm)
         Dim ds = New DataSet
         da.Fill(ds, "movimiento")

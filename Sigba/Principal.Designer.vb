@@ -332,7 +332,6 @@ Partial Class Principal
         Me.MaximumSize = New System.Drawing.Size(935, 633)
         Me.MinimumSize = New System.Drawing.Size(935, 633)
         Me.Name = "Principal"
-        Me.ShowIcon = False
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Sistema Informático de Gestión Bancaria"
