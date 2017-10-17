@@ -57,6 +57,12 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core">
@@ -228,6 +234,12 @@
     <Compile Include="Interfaz de Usuario\Configuracion\frmDatosBanco.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Interfaz de Usuario\Configuracion\frmSeteoCotizacionManual.Designer.vb">
+      <DependentUpon>frmSeteoCotizacionManual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz de Usuario\Configuracion\frmSeteoCotizacionManual.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Interfaz de Usuario\Cuentas\Debito Automático\frmDetalleDebitoAutomatico.Designer.vb">
       <DependentUpon>frmDetalleDebitoAutomatico.vb</DependentUpon>
     </Compile>
@@ -291,11 +303,13 @@
     <Compile Include="Modelos\Banco.vb" />
     <Compile Include="Modelos\Caja.vb" />
     <Compile Include="Modelos\Cliente.vb" />
+    <Compile Include="Modelos\ConsultaBCU.vb" />
     <Compile Include="Modelos\Estado.vb" />
     <Compile Include="Modelos\Funcionalidad.vb" />
     <Compile Include="Modelos\Sucursal.vb" />
     <Compile Include="Modelos\Usuario.vb" />
     <Compile Include="Persistencia\Auditoria.vb" />
+    <Compile Include="Persistencia\BCU.vb" />
     <Compile Include="Persistencia\Cargos.vb" />
     <Compile Include="Persistencia\Clientes.vb" />
     <Compile Include="Persistencia\ConexionBaseDatos.vb" />
@@ -326,8 +340,14 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Service References\BCU\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Utiles\Autenticacion.vb" />
     <Compile Include="Utiles\Constantes.vb" />
+    <Compile Include="Utiles\Cotizaciones.vb" />
     <Compile Include="Utiles\Desarrollo.vb" />
     <Compile Include="Utiles\Funcionalidades.vb" />
     <Compile Include="Utiles\Generadores.vb" />
@@ -432,6 +452,10 @@
       <DependentUpon>frmDatosBanco.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz de Usuario\Configuracion\frmSeteoCotizacionManual.resx">
+      <DependentUpon>frmSeteoCotizacionManual.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Interfaz de Usuario\Cuentas\Debito Automático\frmDebitoAutomatico.resx">
       <DependentUpon>frmDebitoAutomatico.vb</DependentUpon>
       <SubType>Designer</SubType>
@@ -484,6 +508,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
@@ -494,6 +519,7 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+    <None Include="Service References\BCU\search.wsdl" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
@@ -516,6 +542,22 @@
       <ProductName>Windows Installer 3.1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\BCU\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BCU\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\DataSources\System.Data.DataSet.datasource" />
+    <None Include="Service References\BCU\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

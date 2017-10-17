@@ -22,8 +22,10 @@
         If (txtCuentaBeneficiario.Text <> "" And txtMontoCantidad.Text <> "" And Val(txtMontoCantidad.Text) > 0 And cboMonto.Text <> "") Then
             Dim decision = MessageBox.Show("¿Desea confirmar esta depósito?", "Confirmar", MessageBoxButtons.YesNo)
             If decision = Windows.Forms.DialogResult.Yes Then
-                MessageBox.Show("La depósito se ha confirmado exitosamente.")
-                Me.Close()
+                If EfectuarDeposito(txtCuentaBeneficiario.Text, cboMonto.Text, Convert.ToDecimal(txtMontoCantidad.Text)) Then
+                    MessageBox.Show("El depósito se ha confirmado exitosamente.")
+                    Me.Close()
+                End If
             End If
         Else
             MessageBox.Show("Complete todos los campos para continuar")

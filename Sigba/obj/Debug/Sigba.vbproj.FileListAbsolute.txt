@@ -237,3 +237,5 @@ Z:\Code\sigba\Sigba\obj\Debug\Sigba.vbproj.GenerateResource.Cache
 Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmNuevoUsuario.resources
 Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmListaSucursales.resources
 Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmEditarSucursal.resources
+Z:\Code\sigba\Sigba\bin\Debug\Sigba.exe.config
+Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmSeteoCotizacionManual.resources

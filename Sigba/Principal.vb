@@ -1,4 +1,6 @@
-﻿Public Class Principal
+﻿Imports System.Threading
+
+Public Class Principal
 
 
     ' El formulario 'Principal' actúa como un menú de funcionalidades
@@ -136,5 +138,10 @@
 
     Private Sub BajaClienteToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BajaClienteToolStripMenuItem.Click
         frmBajaCliente.Show()
+    End Sub
+
+    Private Sub Principal_Shown(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Shown
+        ''ObtenerCotizaciones()
+        frmSeteoCotizacionManual.Show()
     End Sub
 End Class

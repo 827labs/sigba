@@ -43,7 +43,41 @@ Module Movimientos
         End With
     End Sub
 
+    Public Function EfectuarDeposito(ByVal cuentaBeneficiarioCompleto As String, ByVal moneda As String, ByVal monto As Decimal, Optional ByVal noLimitar As Boolean = False) As Boolean
+        Dim cx = ConexionBaseDatos.ObtenerActual()
 
+        If Not CuentaEstaHabilitada(cuentaBeneficiarioCompleto) Then
+            Mensajes.ErrorSimple("La cuenta no esta habilitada o no es válida.")
+            Return False
+        End If
+
+        Dim montoEnUYU = ObtenerMontoNormalizado(monto, moneda)
+
+        Dim banco = New Banco()
+
+        If noLimitar = False Then
+            If montoEnUYU > banco.MaxDepositoSinDeclararPesos Then
+                If Not Mensajes.PreguntaSiNo(String.Format("El monto del deposito (UYU {0}) excede los limites establecidos por el banco. (UYU {2}) ¿Confirma que el depositante declaró el origen de los fondos?", montoEnUYU, banco.MinimoDepositoSinDeclararPesos, banco.MaxDepositoSinDeclararPesos), "Limite excedido") Then
+                    Return False
+                End If
+            ElseIf montoEnUYU < banco.MinimoDepositoSinDeclararPesos Then
+                Mensajes.ErrorSimple(String.Format("El monto no llega al minimo de depósito (UYU {0}).", banco.MinimoDepositoSinDeclararPesos))
+                Return False
+            End If
+        End If
+
+        Dim monedaCuenta = cuentaBeneficiarioCompleto.Split(" ")(1)
+        Dim saldoCuenta = ObtenerSaldoCuenta(cuentaBeneficiarioCompleto).Split(" ")(1)
+        Dim montoACreditar = ObtenerMontoNormalizado(monto, moneda, monedaCuenta)
+
+        NuevoMovimiento("DEPOSITO CAJA EFECTIVO", montoACreditar, cuentaBeneficiarioCompleto)
+        Dim nuevoSaldo = saldoCuenta + montoACreditar
+        Dim cmCredito = New OdbcCommand(String.Format("UPDATE cuenta SET saldo={0} WHERE idcuenta={1}", nuevoSaldo, cuentaBeneficiarioCompleto.Split(" ")(2)), cx)
+
+        RegistrarAccion("Deposito en cuenta", String.Format("cuenta={0};moneda={1};monto={2}", cuentaBeneficiarioCompleto, monedaCuenta, montoACreditar))
+
+        Return cmCredito.ExecuteNonQuery() > 0
+    End Function
 
     Public Function EfectuarTransferencia(ByVal cuentaOrigenCompleto As String, ByVal cuentaDestinoCompleto As String, ByVal moneda As String, ByVal monto As Decimal) As Boolean
         Dim cx = ConexionBaseDatos.ObtenerActual()

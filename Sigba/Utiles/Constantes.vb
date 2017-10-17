@@ -1,4 +1,5 @@
 ﻿Module Constantes
+
     Function FormatoFecha() As String
         Return "MM/dd/yyyy"
     End Function
