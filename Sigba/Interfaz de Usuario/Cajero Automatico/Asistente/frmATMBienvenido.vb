@@ -8,6 +8,9 @@
         lblBienvenido.BackColor = System.Drawing.Color.Transparent
         txtCedula.Focus()
 
+        If Cotizaciones.cotUSD Is Nothing Or Cotizaciones.cotEUR Is Nothing Then
+            frmSeteoCotizacionManual.Show()
+        End If
     End Sub
 
     Private Sub txtCedula_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtCedula.KeyPress
@@ -20,4 +23,6 @@
             Me.Hide()
         End If
     End Sub
+
+
 End Class
