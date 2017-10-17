@@ -71,4 +71,15 @@ Module Cuentas
         Return cm.ExecuteScalar()
     End Function
 
+    Public Function CuentaEstaHabilitada(ByVal numeroCuentaCompleto As String) As Boolean
+        Dim tipo = numeroCuentaCompleto.Split()(0)
+        Dim moneda = numeroCuentaCompleto.Split()(1)
+        Dim idcuenta = numeroCuentaCompleto.Split()(2)
+
+        Dim cx = ConexionBaseDatos.ObtenerActual()
+        Dim cm = New OdbcCommand(String.Format("SELECT COUNT(*) FROM cuenta WHERE fechacierre IS NULL AND tipo='{0}' AND moneda='{1}' AND idcuenta={2}", tipo, moneda, idcuenta), cx)
+
+        Return Val(cm.ExecuteScalar()) > 0
+    End Function
+
 End Module

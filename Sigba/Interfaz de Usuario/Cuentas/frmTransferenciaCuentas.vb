@@ -13,11 +13,19 @@
     End Sub
 
     Private Sub SetearCuentaDestino(ByVal cuenta As String)
-        txtCuentaDestino.Text = cuenta
+        If CuentaEstaHabilitada(cuenta) Then
+            txtCuentaDestino.Text = cuenta
+        Else
+            txtCuentaDestino.Text = "N/D"
+        End If
     End Sub
 
     Private Sub SetearCuentaOrigen(ByVal cuenta As String)
-        txtCuentaOrigen.Text = cuenta
+        If CuentaEstaHabilitada(cuenta) Then
+            txtCuentaOrigen.Text = cuenta
+        Else
+            txtCuentaOrigen.Text = "N/D"
+        End If
     End Sub
 
     Private Sub frmTransferenciaCuentas_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
@@ -52,6 +60,11 @@
 
     Private Sub btnTransferir_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnTransferir.Click
         If (txtCuentaDestino.Text <> "" And txtCuentaOrigen.Text <> "" And cboMontoMoneda.Text <> "" And txtMontoCantidad.Text <> "") Then
+            If lblTitularCtaOrigen.Text = "N/D" Or lblSaldoCuentaOrigen.Text = "N/D" Then
+                Mensajes.ErrorSimple("La cuenta de origen no la podido ser encontrada")
+                Return
+            End If
+
             Dim decision = MessageBox.Show("¿Desea confirmar esta transacción?", "Confirmar", MessageBoxButtons.YesNo)
             If decision = Windows.Forms.DialogResult.Yes Then
                 Dim pudoTransferir = Movimientos.EfectuarTransferencia(txtCuentaOrigen.Text, txtCuentaDestino.Text, cboMontoMoneda.Text, Convert.ToDecimal(txtMontoCantidad.Text))
