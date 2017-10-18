@@ -261,3 +261,6 @@ Z:\Code\sigba\Sigba\obj\Debug\Sigba.Principal.en-AU.resources
 Z:\Code\sigba\Sigba\obj\Debug\en-AU\Sigba.resources.dll
 Z:\Code\sigba\Sigba\obj\Debug\af\Sigba.resources.dll
 Z:\Code\sigba\Sigba\obj\Debug\af-ZA\Sigba.resources.dll
+Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmTransferenciaCuentas.en-AU.resources
+Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmTransferenciaCuentas.en.resources
+Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmSeteoCotizacionManual.en.resources

@@ -1,4 +1,6 @@
-﻿Public Class frmSeteoCotizacionManual
+﻿Imports System.Globalization
+
+Public Class frmSeteoCotizacionManual
 
     Private Sub btnContinuar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnContinuar.Click
         If Not (txtEURCot.Text <> "" And txtUSDCot.Text <> "") Then
@@ -21,5 +23,6 @@
             txtEURCot.Text = "34.5"
             txtUSDCot.Text = "29.74"
         End If
+        System.Threading.Thread.CurrentThread.CurrentUICulture = New CultureInfo(Autenticacion.idioma)
     End Sub
 End Class

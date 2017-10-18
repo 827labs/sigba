@@ -6,6 +6,8 @@
     Public Shared pinATM As Integer
     Public Shared cuentaATM As String
 
+    Public Shared idioma As String
+
     Public Shared RolAdminstrador = "Administrador"
     Public Shared RolGerente = "Gerente"
     Public Shared RolEjecutivo = "Ejecutivo de cuentas"

@@ -47,9 +47,11 @@ Public Class Login
     Private Sub cboIdioma_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cboIdioma.SelectedIndexChanged
         Select Case cboIdioma.SelectedIndex
             Case 0
-                System.Threading.Thread.CurrentThread.CurrentUICulture = New CultureInfo("es")
+                Autenticacion.idioma = "es"
             Case 1
-                System.Threading.Thread.CurrentThread.CurrentUICulture = New CultureInfo("en")
+                Autenticacion.idioma = "en"
         End Select
+
+        System.Threading.Thread.CurrentThread.CurrentUICulture = New CultureInfo(Autenticacion.idioma)
     End Sub
 End Class

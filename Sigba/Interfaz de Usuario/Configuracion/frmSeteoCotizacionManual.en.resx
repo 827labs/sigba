@@ -119,10 +119,10 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="Label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>279, 13</value>
+    <value>199, 13</value>
   </data>
   <data name="Label1.Text" xml:space="preserve">
-    <value>Please, enter the current exchange rates for the following:</value>
+    <value>Please enter the current exchange rates.</value>
   </data>
   <data name="Label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 13</value>
