@@ -56,259 +56,265 @@ Partial Class frmCobrarCheque
         '
         'Label1
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(13, 52)
+        Me.Label1.AccessibleDescription = Nothing
+        Me.Label1.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label1, "Label1")
+        Me.Label1.Font = Nothing
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(82, 13)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Tipo de cheque"
         '
         'cboTipoCheque
         '
+        Me.cboTipoCheque.AccessibleDescription = Nothing
+        Me.cboTipoCheque.AccessibleName = Nothing
+        resources.ApplyResources(Me.cboTipoCheque, "cboTipoCheque")
+        Me.cboTipoCheque.BackgroundImage = Nothing
         Me.cboTipoCheque.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboTipoCheque.Font = Nothing
         Me.cboTipoCheque.FormattingEnabled = True
-        Me.cboTipoCheque.Items.AddRange(New Object() {"Común", "Diferido", "Cruzado"})
-        Me.cboTipoCheque.Location = New System.Drawing.Point(16, 69)
+        Me.cboTipoCheque.Items.AddRange(New Object() {resources.GetString("cboTipoCheque.Items"), resources.GetString("cboTipoCheque.Items1"), resources.GetString("cboTipoCheque.Items2")})
         Me.cboTipoCheque.Name = "cboTipoCheque"
-        Me.cboTipoCheque.Size = New System.Drawing.Size(121, 21)
-        Me.cboTipoCheque.TabIndex = 6
         '
         'cboTipoCobro
         '
+        Me.cboTipoCobro.AccessibleDescription = Nothing
+        Me.cboTipoCobro.AccessibleName = Nothing
+        resources.ApplyResources(Me.cboTipoCobro, "cboTipoCobro")
+        Me.cboTipoCobro.BackgroundImage = Nothing
         Me.cboTipoCobro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboTipoCobro.Font = Nothing
         Me.cboTipoCobro.FormattingEnabled = True
-        Me.cboTipoCobro.Items.AddRange(New Object() {"Cobro en efectivo", "Depósito en cuenta"})
-        Me.cboTipoCobro.Location = New System.Drawing.Point(143, 69)
+        Me.cboTipoCobro.Items.AddRange(New Object() {resources.GetString("cboTipoCobro.Items"), resources.GetString("cboTipoCobro.Items1")})
         Me.cboTipoCobro.Name = "cboTipoCobro"
-        Me.cboTipoCobro.Size = New System.Drawing.Size(121, 21)
-        Me.cboTipoCobro.TabIndex = 7
         '
         'Label2
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(140, 52)
+        Me.Label2.AccessibleDescription = Nothing
+        Me.Label2.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label2, "Label2")
+        Me.Label2.Font = Nothing
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(73, 13)
-        Me.Label2.TabIndex = 2
-        Me.Label2.Text = "Tipo de cobro"
         '
         'GroupBox2
         '
+        Me.GroupBox2.AccessibleDescription = Nothing
+        Me.GroupBox2.AccessibleName = Nothing
+        resources.ApplyResources(Me.GroupBox2, "GroupBox2")
+        Me.GroupBox2.BackgroundImage = Nothing
         Me.GroupBox2.Controls.Add(Me.cboPaisDoc)
         Me.GroupBox2.Controls.Add(Me.txtNroDoc)
         Me.GroupBox2.Controls.Add(Me.cboTipoDoc)
         Me.GroupBox2.Controls.Add(Me.Label5)
         Me.GroupBox2.Controls.Add(Me.Label6)
         Me.GroupBox2.Controls.Add(Me.Label7)
-        Me.GroupBox2.Location = New System.Drawing.Point(270, 52)
+        Me.GroupBox2.Font = Nothing
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(360, 79)
-        Me.GroupBox2.TabIndex = 85
         Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "Documento cliente"
         '
         'cboPaisDoc
         '
+        Me.cboPaisDoc.AccessibleDescription = Nothing
+        Me.cboPaisDoc.AccessibleName = Nothing
+        resources.ApplyResources(Me.cboPaisDoc, "cboPaisDoc")
+        Me.cboPaisDoc.BackgroundImage = Nothing
         Me.cboPaisDoc.Cursor = System.Windows.Forms.Cursors.Default
         Me.cboPaisDoc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboPaisDoc.Font = Nothing
         Me.cboPaisDoc.FormattingEnabled = True
-        Me.cboPaisDoc.Location = New System.Drawing.Point(9, 33)
         Me.cboPaisDoc.Name = "cboPaisDoc"
-        Me.cboPaisDoc.Size = New System.Drawing.Size(129, 21)
-        Me.cboPaisDoc.TabIndex = 3
         '
         'txtNroDoc
         '
-        Me.txtNroDoc.Location = New System.Drawing.Point(221, 34)
+        Me.txtNroDoc.AccessibleDescription = Nothing
+        Me.txtNroDoc.AccessibleName = Nothing
+        resources.ApplyResources(Me.txtNroDoc, "txtNroDoc")
+        Me.txtNroDoc.BackgroundImage = Nothing
+        Me.txtNroDoc.Font = Nothing
         Me.txtNroDoc.Name = "txtNroDoc"
-        Me.txtNroDoc.Size = New System.Drawing.Size(129, 20)
-        Me.txtNroDoc.TabIndex = 5
         '
         'cboTipoDoc
         '
+        Me.cboTipoDoc.AccessibleDescription = Nothing
+        Me.cboTipoDoc.AccessibleName = Nothing
+        resources.ApplyResources(Me.cboTipoDoc, "cboTipoDoc")
+        Me.cboTipoDoc.BackgroundImage = Nothing
         Me.cboTipoDoc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboTipoDoc.Font = Nothing
         Me.cboTipoDoc.FormattingEnabled = True
-        Me.cboTipoDoc.Items.AddRange(New Object() {"CI", "Pasaporte", "Otros"})
-        Me.cboTipoDoc.Location = New System.Drawing.Point(144, 33)
+        Me.cboTipoDoc.Items.AddRange(New Object() {resources.GetString("cboTipoDoc.Items"), resources.GetString("cboTipoDoc.Items1"), resources.GetString("cboTipoDoc.Items2")})
         Me.cboTipoDoc.Name = "cboTipoDoc"
-        Me.cboTipoDoc.Size = New System.Drawing.Size(71, 21)
-        Me.cboTipoDoc.TabIndex = 4
         '
         'Label5
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(6, 19)
+        Me.Label5.AccessibleDescription = Nothing
+        Me.Label5.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label5, "Label5")
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(29, 13)
-        Me.Label5.TabIndex = 22
-        Me.Label5.Text = "País"
         '
         'Label6
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.Label6.Location = New System.Drawing.Point(141, 19)
+        Me.Label6.AccessibleDescription = Nothing
+        Me.Label6.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label6, "Label6")
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(28, 13)
-        Me.Label6.TabIndex = 23
-        Me.Label6.Text = "Tipo"
         '
         'Label7
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.Label7.Location = New System.Drawing.Point(218, 19)
+        Me.Label7.AccessibleDescription = Nothing
+        Me.Label7.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label7, "Label7")
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(44, 13)
-        Me.Label7.TabIndex = 24
-        Me.Label7.Text = "Número"
         '
         'txtFechaEmision
         '
-        Me.txtFechaEmision.Location = New System.Drawing.Point(16, 111)
-        Me.txtFechaEmision.Mask = "99/99/9999"
+        Me.txtFechaEmision.AccessibleDescription = Nothing
+        Me.txtFechaEmision.AccessibleName = Nothing
+        resources.ApplyResources(Me.txtFechaEmision, "txtFechaEmision")
+        Me.txtFechaEmision.BackgroundImage = Nothing
+        Me.txtFechaEmision.Font = Nothing
         Me.txtFechaEmision.Name = "txtFechaEmision"
-        Me.txtFechaEmision.Size = New System.Drawing.Size(121, 20)
-        Me.txtFechaEmision.TabIndex = 8
         '
         'Label3
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(13, 95)
+        Me.Label3.AccessibleDescription = Nothing
+        Me.Label3.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label3, "Label3")
+        Me.Label3.Font = Nothing
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(90, 13)
-        Me.Label3.TabIndex = 87
-        Me.Label3.Text = "Fecha de emisión"
         '
         'Label4
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(140, 95)
+        Me.Label4.AccessibleDescription = Nothing
+        Me.Label4.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label4, "Label4")
+        Me.Label4.Font = Nothing
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(91, 13)
-        Me.Label4.TabIndex = 89
-        Me.Label4.Text = "Cobrar a partir de:"
         '
         'txtFechaCobro
         '
-        Me.txtFechaCobro.Enabled = False
-        Me.txtFechaCobro.Location = New System.Drawing.Point(143, 111)
-        Me.txtFechaCobro.Mask = "99/99/9999"
+        Me.txtFechaCobro.AccessibleDescription = Nothing
+        Me.txtFechaCobro.AccessibleName = Nothing
+        resources.ApplyResources(Me.txtFechaCobro, "txtFechaCobro")
+        Me.txtFechaCobro.BackgroundImage = Nothing
+        Me.txtFechaCobro.Font = Nothing
         Me.txtFechaCobro.Name = "txtFechaCobro"
-        Me.txtFechaCobro.Size = New System.Drawing.Size(121, 20)
-        Me.txtFechaCobro.TabIndex = 9
         '
         'txtNumLibreta
         '
-        Me.txtNumLibreta.Location = New System.Drawing.Point(273, 156)
+        Me.txtNumLibreta.AccessibleDescription = Nothing
+        Me.txtNumLibreta.AccessibleName = Nothing
+        resources.ApplyResources(Me.txtNumLibreta, "txtNumLibreta")
+        Me.txtNumLibreta.BackgroundImage = Nothing
+        Me.txtNumLibreta.Font = Nothing
         Me.txtNumLibreta.Name = "txtNumLibreta"
-        Me.txtNumLibreta.Size = New System.Drawing.Size(110, 20)
-        Me.txtNumLibreta.TabIndex = 12
         '
         'Label8
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(270, 140)
+        Me.Label8.AccessibleDescription = Nothing
+        Me.Label8.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label8, "Label8")
+        Me.Label8.Font = Nothing
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(54, 13)
-        Me.Label8.TabIndex = 91
-        Me.Label8.Text = "Nº Libreta"
         '
         'GroupBox1
         '
+        Me.GroupBox1.AccessibleDescription = Nothing
+        Me.GroupBox1.AccessibleName = Nothing
+        resources.ApplyResources(Me.GroupBox1, "GroupBox1")
+        Me.GroupBox1.BackgroundImage = Nothing
         Me.GroupBox1.Controls.Add(Me.cboMontoMoneda)
         Me.GroupBox1.Controls.Add(Me.txtMontoCantidad)
-        Me.GroupBox1.Location = New System.Drawing.Point(16, 137)
+        Me.GroupBox1.Font = Nothing
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(248, 47)
-        Me.GroupBox1.TabIndex = 92
         Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Monto"
         '
         'cboMontoMoneda
         '
+        Me.cboMontoMoneda.AccessibleDescription = Nothing
+        Me.cboMontoMoneda.AccessibleName = Nothing
+        resources.ApplyResources(Me.cboMontoMoneda, "cboMontoMoneda")
+        Me.cboMontoMoneda.BackgroundImage = Nothing
         Me.cboMontoMoneda.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboMontoMoneda.Font = Nothing
         Me.cboMontoMoneda.FormattingEnabled = True
-        Me.cboMontoMoneda.Items.AddRange(New Object() {"UYU - Pesos Uruguayos", "USD - Dólares Americanos"})
-        Me.cboMontoMoneda.Location = New System.Drawing.Point(7, 18)
+        Me.cboMontoMoneda.Items.AddRange(New Object() {resources.GetString("cboMontoMoneda.Items"), resources.GetString("cboMontoMoneda.Items1")})
         Me.cboMontoMoneda.Name = "cboMontoMoneda"
-        Me.cboMontoMoneda.Size = New System.Drawing.Size(129, 21)
-        Me.cboMontoMoneda.TabIndex = 10
         '
         'txtMontoCantidad
         '
-        Me.txtMontoCantidad.Location = New System.Drawing.Point(142, 19)
+        Me.txtMontoCantidad.AccessibleDescription = Nothing
+        Me.txtMontoCantidad.AccessibleName = Nothing
+        resources.ApplyResources(Me.txtMontoCantidad, "txtMontoCantidad")
+        Me.txtMontoCantidad.BackgroundImage = Nothing
+        Me.txtMontoCantidad.Font = Nothing
         Me.txtMontoCantidad.Name = "txtMontoCantidad"
-        Me.txtMontoCantidad.Size = New System.Drawing.Size(100, 20)
-        Me.txtMontoCantidad.TabIndex = 11
         '
         'Label9
         '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(386, 140)
+        Me.Label9.AccessibleDescription = Nothing
+        Me.Label9.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label9, "Label9")
+        Me.Label9.Font = Nothing
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(31, 13)
-        Me.Label9.TabIndex = 94
-        Me.Label9.Text = "Serie"
         '
         'txtNumSerie
         '
-        Me.txtNumSerie.Location = New System.Drawing.Point(389, 156)
+        Me.txtNumSerie.AccessibleDescription = Nothing
+        Me.txtNumSerie.AccessibleName = Nothing
+        resources.ApplyResources(Me.txtNumSerie, "txtNumSerie")
+        Me.txtNumSerie.BackgroundImage = Nothing
+        Me.txtNumSerie.Font = Nothing
         Me.txtNumSerie.Name = "txtNumSerie"
-        Me.txtNumSerie.Size = New System.Drawing.Size(74, 20)
-        Me.txtNumSerie.TabIndex = 13
         '
         'Label10
         '
-        Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(466, 139)
+        Me.Label10.AccessibleDescription = Nothing
+        Me.Label10.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label10, "Label10")
+        Me.Label10.Font = Nothing
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(98, 13)
-        Me.Label10.TabIndex = 96
-        Me.Label10.Text = "Número de cheque"
         '
         'txtNumCheque
         '
-        Me.txtNumCheque.Location = New System.Drawing.Point(469, 155)
+        Me.txtNumCheque.AccessibleDescription = Nothing
+        Me.txtNumCheque.AccessibleName = Nothing
+        resources.ApplyResources(Me.txtNumCheque, "txtNumCheque")
+        Me.txtNumCheque.BackgroundImage = Nothing
+        Me.txtNumCheque.Font = Nothing
         Me.txtNumCheque.Name = "txtNumCheque"
-        Me.txtNumCheque.Size = New System.Drawing.Size(161, 20)
-        Me.txtNumCheque.TabIndex = 14
         '
         'Label11
         '
-        Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(11, 12)
+        Me.Label11.AccessibleDescription = Nothing
+        Me.Label11.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label11, "Label11")
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(204, 25)
-        Me.Label11.TabIndex = 97
-        Me.Label11.Text = "Cobro de cheques"
         '
         'btnProcesar
         '
-        Me.btnProcesar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnProcesar.Location = New System.Drawing.Point(516, 182)
+        Me.btnProcesar.AccessibleDescription = Nothing
+        Me.btnProcesar.AccessibleName = Nothing
+        resources.ApplyResources(Me.btnProcesar, "btnProcesar")
+        Me.btnProcesar.BackgroundImage = Nothing
         Me.btnProcesar.Name = "btnProcesar"
-        Me.btnProcesar.Size = New System.Drawing.Size(113, 24)
-        Me.btnProcesar.TabIndex = 15
-        Me.btnProcesar.Text = "Procesar cobro"
         Me.btnProcesar.UseVisualStyleBackColor = True
         '
         'btnCancelar
         '
-        Me.btnCancelar.Location = New System.Drawing.Point(435, 182)
+        Me.btnCancelar.AccessibleDescription = Nothing
+        Me.btnCancelar.AccessibleName = Nothing
+        resources.ApplyResources(Me.btnCancelar, "btnCancelar")
+        Me.btnCancelar.BackgroundImage = Nothing
+        Me.btnCancelar.Font = Nothing
         Me.btnCancelar.Name = "btnCancelar"
-        Me.btnCancelar.Size = New System.Drawing.Size(75, 23)
-        Me.btnCancelar.TabIndex = 16
-        Me.btnCancelar.Text = "Cancelar"
         Me.btnCancelar.UseVisualStyleBackColor = True
         '
         'frmCobrarCheque
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AccessibleDescription = Nothing
+        Me.AccessibleName = Nothing
+        resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(642, 213)
+        Me.BackgroundImage = Nothing
         Me.Controls.Add(Me.btnCancelar)
         Me.Controls.Add(Me.btnProcesar)
         Me.Controls.Add(Me.Label11)
@@ -328,11 +334,10 @@ Partial Class frmCobrarCheque
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.cboTipoCheque)
         Me.Controls.Add(Me.Label1)
+        Me.Font = Nothing
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "frmCobrarCheque"
-        Me.Text = "Cobrar cheque"
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         Me.GroupBox1.ResumeLayout(False)

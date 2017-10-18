@@ -33,6 +33,7 @@ Partial Class Login
         Me.PictureBox2 = New System.Windows.Forms.PictureBox
         Me.lblVersion = New System.Windows.Forms.Label
         Me.btnCajero = New System.Windows.Forms.Button
+        Me.cboIdioma = New System.Windows.Forms.ComboBox
         Me.GroupBox1.SuspendLayout()
         CType(Me.picSideImageLogin, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -131,11 +132,23 @@ Partial Class Login
         Me.btnCajero.Text = "Modo Cajero Automático"
         Me.btnCajero.UseVisualStyleBackColor = True
         '
+        'cboIdioma
+        '
+        Me.cboIdioma.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboIdioma.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cboIdioma.FormattingEnabled = True
+        Me.cboIdioma.Items.AddRange(New Object() {"Español", "English"})
+        Me.cboIdioma.Location = New System.Drawing.Point(354, 224)
+        Me.cboIdioma.Name = "cboIdioma"
+        Me.cboIdioma.Size = New System.Drawing.Size(108, 21)
+        Me.cboIdioma.TabIndex = 8
+        '
         'Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(572, 373)
+        Me.Controls.Add(Me.cboIdioma)
         Me.Controls.Add(Me.btnCajero)
         Me.Controls.Add(Me.lblVersion)
         Me.Controls.Add(Me.PictureBox2)
@@ -166,5 +179,6 @@ Partial Class Login
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
     Friend WithEvents lblVersion As System.Windows.Forms.Label
     Friend WithEvents btnCajero As System.Windows.Forms.Button
+    Friend WithEvents cboIdioma As System.Windows.Forms.ComboBox
 
 End Class

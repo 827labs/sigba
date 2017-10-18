@@ -35,82 +35,83 @@ Partial Class frmAnularLibreta
         '
         'GroupBox1
         '
+        Me.GroupBox1.AccessibleDescription = Nothing
+        Me.GroupBox1.AccessibleName = Nothing
+        resources.ApplyResources(Me.GroupBox1, "GroupBox1")
+        Me.GroupBox1.BackgroundImage = Nothing
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.txtSerieLibreta)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.txtNumLibreta)
-        Me.GroupBox1.Location = New System.Drawing.Point(13, 13)
+        Me.GroupBox1.Font = Nothing
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(221, 68)
-        Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Anular libreta por numero"
         '
         'Label2
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(5, 20)
+        Me.Label2.AccessibleDescription = Nothing
+        Me.Label2.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label2, "Label2")
+        Me.Label2.Font = Nothing
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(31, 13)
-        Me.Label2.TabIndex = 3
-        Me.Label2.Text = "Serie"
         '
         'txtSerieLibreta
         '
-        Me.txtSerieLibreta.Location = New System.Drawing.Point(8, 36)
+        Me.txtSerieLibreta.AccessibleDescription = Nothing
+        Me.txtSerieLibreta.AccessibleName = Nothing
+        resources.ApplyResources(Me.txtSerieLibreta, "txtSerieLibreta")
+        Me.txtSerieLibreta.BackgroundImage = Nothing
+        Me.txtSerieLibreta.Font = Nothing
         Me.txtSerieLibreta.Name = "txtSerieLibreta"
-        Me.txtSerieLibreta.Size = New System.Drawing.Size(56, 20)
-        Me.txtSerieLibreta.TabIndex = 0
         '
         'Label1
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(65, 20)
+        Me.Label1.AccessibleDescription = Nothing
+        Me.Label1.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label1, "Label1")
+        Me.Label1.Font = Nothing
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(44, 13)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Número"
         '
         'txtNumLibreta
         '
-        Me.txtNumLibreta.Location = New System.Drawing.Point(68, 36)
+        Me.txtNumLibreta.AccessibleDescription = Nothing
+        Me.txtNumLibreta.AccessibleName = Nothing
+        resources.ApplyResources(Me.txtNumLibreta, "txtNumLibreta")
+        Me.txtNumLibreta.BackgroundImage = Nothing
+        Me.txtNumLibreta.Font = Nothing
         Me.txtNumLibreta.Name = "txtNumLibreta"
-        Me.txtNumLibreta.Size = New System.Drawing.Size(143, 20)
-        Me.txtNumLibreta.TabIndex = 1
         '
         'lblCliente
         '
-        Me.lblCliente.AutoSize = True
-        Me.lblCliente.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCliente.Location = New System.Drawing.Point(10, 84)
+        Me.lblCliente.AccessibleDescription = Nothing
+        Me.lblCliente.AccessibleName = Nothing
+        resources.ApplyResources(Me.lblCliente, "lblCliente")
         Me.lblCliente.Name = "lblCliente"
-        Me.lblCliente.Size = New System.Drawing.Size(214, 15)
-        Me.lblCliente.TabIndex = 1
-        Me.lblCliente.Text = "12345678 - APELLIDO NOMBRE"
-        Me.lblCliente.Visible = False
         '
         'btnAnular
         '
-        Me.btnAnular.Location = New System.Drawing.Point(158, 110)
+        Me.btnAnular.AccessibleDescription = Nothing
+        Me.btnAnular.AccessibleName = Nothing
+        resources.ApplyResources(Me.btnAnular, "btnAnular")
+        Me.btnAnular.BackgroundImage = Nothing
+        Me.btnAnular.Font = Nothing
         Me.btnAnular.Name = "btnAnular"
-        Me.btnAnular.Size = New System.Drawing.Size(75, 23)
-        Me.btnAnular.TabIndex = 2
-        Me.btnAnular.Text = "Anular"
         Me.btnAnular.UseVisualStyleBackColor = True
         '
         'frmAnularLibreta
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AccessibleDescription = Nothing
+        Me.AccessibleName = Nothing
+        resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(248, 145)
+        Me.BackgroundImage = Nothing
         Me.Controls.Add(Me.btnAnular)
         Me.Controls.Add(Me.lblCliente)
         Me.Controls.Add(Me.GroupBox1)
+        Me.Font = Nothing
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "frmAnularLibreta"
-        Me.Text = "Anular Libreta"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)

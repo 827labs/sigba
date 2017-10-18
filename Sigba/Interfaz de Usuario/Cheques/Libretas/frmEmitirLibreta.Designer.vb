@@ -51,219 +51,218 @@ Partial Class frmEmitirLibreta
         '
         'GroupBox1
         '
+        Me.GroupBox1.AccessibleDescription = Nothing
+        Me.GroupBox1.AccessibleName = Nothing
+        resources.ApplyResources(Me.GroupBox1, "GroupBox1")
+        Me.GroupBox1.BackgroundImage = Nothing
         Me.GroupBox1.Controls.Add(Me.GroupBox2)
         Me.GroupBox1.Controls.Add(Me.grpDocumento)
-        Me.GroupBox1.Location = New System.Drawing.Point(13, 13)
+        Me.GroupBox1.Font = Nothing
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(372, 153)
-        Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Datos del librador"
         '
         'GroupBox2
         '
+        Me.GroupBox2.AccessibleDescription = Nothing
+        Me.GroupBox2.AccessibleName = Nothing
+        resources.ApplyResources(Me.GroupBox2, "GroupBox2")
+        Me.GroupBox2.BackgroundImage = Nothing
         Me.GroupBox2.Controls.Add(Me.cboNumCuenta)
         Me.GroupBox2.Controls.Add(Me.Label1)
-        Me.GroupBox2.Location = New System.Drawing.Point(6, 92)
+        Me.GroupBox2.Font = Nothing
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(360, 53)
-        Me.GroupBox2.TabIndex = 87
         Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "Cuenta"
         '
         'cboNumCuenta
         '
+        Me.cboNumCuenta.AccessibleDescription = Nothing
+        Me.cboNumCuenta.AccessibleName = Nothing
+        resources.ApplyResources(Me.cboNumCuenta, "cboNumCuenta")
+        Me.cboNumCuenta.BackgroundImage = Nothing
         Me.cboNumCuenta.Cursor = System.Windows.Forms.Cursors.Default
         Me.cboNumCuenta.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboNumCuenta.Font = Nothing
         Me.cboNumCuenta.FormattingEnabled = True
-        Me.cboNumCuenta.Location = New System.Drawing.Point(9, 20)
         Me.cboNumCuenta.Name = "cboNumCuenta"
-        Me.cboNumCuenta.Size = New System.Drawing.Size(341, 21)
-        Me.cboNumCuenta.TabIndex = 4
         '
         'Label1
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(6, 18)
+        Me.Label1.AccessibleDescription = Nothing
+        Me.Label1.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label1, "Label1")
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(0, 13)
-        Me.Label1.TabIndex = 26
         '
         'grpDocumento
         '
+        Me.grpDocumento.AccessibleDescription = Nothing
+        Me.grpDocumento.AccessibleName = Nothing
+        resources.ApplyResources(Me.grpDocumento, "grpDocumento")
+        Me.grpDocumento.BackgroundImage = Nothing
         Me.grpDocumento.Controls.Add(Me.cboPaisDocCliente)
         Me.grpDocumento.Controls.Add(Me.txtNroDocCliente)
         Me.grpDocumento.Controls.Add(Me.cboTipoDocCliente)
         Me.grpDocumento.Controls.Add(Me.lblPaisDoc)
         Me.grpDocumento.Controls.Add(Me.lblTipoDoc)
         Me.grpDocumento.Controls.Add(Me.lblNroDocumento)
-        Me.grpDocumento.Location = New System.Drawing.Point(6, 19)
+        Me.grpDocumento.Font = Nothing
         Me.grpDocumento.Name = "grpDocumento"
-        Me.grpDocumento.Size = New System.Drawing.Size(360, 67)
-        Me.grpDocumento.TabIndex = 86
         Me.grpDocumento.TabStop = False
-        Me.grpDocumento.Text = "Documento"
         '
         'cboPaisDocCliente
         '
+        Me.cboPaisDocCliente.AccessibleDescription = Nothing
+        Me.cboPaisDocCliente.AccessibleName = Nothing
+        resources.ApplyResources(Me.cboPaisDocCliente, "cboPaisDocCliente")
+        Me.cboPaisDocCliente.BackgroundImage = Nothing
         Me.cboPaisDocCliente.Cursor = System.Windows.Forms.Cursors.Default
         Me.cboPaisDocCliente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboPaisDocCliente.Font = Nothing
         Me.cboPaisDocCliente.FormattingEnabled = True
-        Me.cboPaisDocCliente.Location = New System.Drawing.Point(9, 33)
         Me.cboPaisDocCliente.Name = "cboPaisDocCliente"
-        Me.cboPaisDocCliente.Size = New System.Drawing.Size(129, 21)
-        Me.cboPaisDocCliente.TabIndex = 1
         '
         'txtNroDocCliente
         '
-        Me.txtNroDocCliente.Location = New System.Drawing.Point(221, 34)
+        Me.txtNroDocCliente.AccessibleDescription = Nothing
+        Me.txtNroDocCliente.AccessibleName = Nothing
+        resources.ApplyResources(Me.txtNroDocCliente, "txtNroDocCliente")
+        Me.txtNroDocCliente.BackgroundImage = Nothing
+        Me.txtNroDocCliente.Font = Nothing
         Me.txtNroDocCliente.Name = "txtNroDocCliente"
-        Me.txtNroDocCliente.Size = New System.Drawing.Size(129, 20)
-        Me.txtNroDocCliente.TabIndex = 3
         '
         'cboTipoDocCliente
         '
+        Me.cboTipoDocCliente.AccessibleDescription = Nothing
+        Me.cboTipoDocCliente.AccessibleName = Nothing
+        resources.ApplyResources(Me.cboTipoDocCliente, "cboTipoDocCliente")
+        Me.cboTipoDocCliente.BackgroundImage = Nothing
         Me.cboTipoDocCliente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboTipoDocCliente.Font = Nothing
         Me.cboTipoDocCliente.FormattingEnabled = True
-        Me.cboTipoDocCliente.Items.AddRange(New Object() {"CI", "Pasaporte", "Otros"})
-        Me.cboTipoDocCliente.Location = New System.Drawing.Point(144, 33)
+        Me.cboTipoDocCliente.Items.AddRange(New Object() {resources.GetString("cboTipoDocCliente.Items"), resources.GetString("cboTipoDocCliente.Items1"), resources.GetString("cboTipoDocCliente.Items2")})
         Me.cboTipoDocCliente.Name = "cboTipoDocCliente"
-        Me.cboTipoDocCliente.Size = New System.Drawing.Size(71, 21)
-        Me.cboTipoDocCliente.TabIndex = 2
         '
         'lblPaisDoc
         '
-        Me.lblPaisDoc.AutoSize = True
-        Me.lblPaisDoc.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPaisDoc.Location = New System.Drawing.Point(6, 19)
+        Me.lblPaisDoc.AccessibleDescription = Nothing
+        Me.lblPaisDoc.AccessibleName = Nothing
+        resources.ApplyResources(Me.lblPaisDoc, "lblPaisDoc")
         Me.lblPaisDoc.Name = "lblPaisDoc"
-        Me.lblPaisDoc.Size = New System.Drawing.Size(29, 13)
-        Me.lblPaisDoc.TabIndex = 22
-        Me.lblPaisDoc.Text = "País"
         '
         'lblTipoDoc
         '
-        Me.lblTipoDoc.AutoSize = True
-        Me.lblTipoDoc.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.lblTipoDoc.Location = New System.Drawing.Point(141, 19)
+        Me.lblTipoDoc.AccessibleDescription = Nothing
+        Me.lblTipoDoc.AccessibleName = Nothing
+        resources.ApplyResources(Me.lblTipoDoc, "lblTipoDoc")
         Me.lblTipoDoc.Name = "lblTipoDoc"
-        Me.lblTipoDoc.Size = New System.Drawing.Size(28, 13)
-        Me.lblTipoDoc.TabIndex = 23
-        Me.lblTipoDoc.Text = "Tipo"
         '
         'lblNroDocumento
         '
-        Me.lblNroDocumento.AutoSize = True
-        Me.lblNroDocumento.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.lblNroDocumento.Location = New System.Drawing.Point(218, 19)
+        Me.lblNroDocumento.AccessibleDescription = Nothing
+        Me.lblNroDocumento.AccessibleName = Nothing
+        resources.ApplyResources(Me.lblNroDocumento, "lblNroDocumento")
         Me.lblNroDocumento.Name = "lblNroDocumento"
-        Me.lblNroDocumento.Size = New System.Drawing.Size(44, 13)
-        Me.lblNroDocumento.TabIndex = 24
-        Me.lblNroDocumento.Text = "Número"
         '
         'GroupBox3
         '
+        Me.GroupBox3.AccessibleDescription = Nothing
+        Me.GroupBox3.AccessibleName = Nothing
+        resources.ApplyResources(Me.GroupBox3, "GroupBox3")
+        Me.GroupBox3.BackgroundImage = Nothing
         Me.GroupBox3.Controls.Add(Me.txtSerieLibreta)
         Me.GroupBox3.Controls.Add(Me.Label4)
         Me.GroupBox3.Controls.Add(Me.txtCantCheques)
         Me.GroupBox3.Controls.Add(Me.Label3)
         Me.GroupBox3.Controls.Add(Me.txtNroLibreta)
         Me.GroupBox3.Controls.Add(Me.Label2)
-        Me.GroupBox3.Location = New System.Drawing.Point(13, 172)
+        Me.GroupBox3.Font = Nothing
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(372, 65)
-        Me.GroupBox3.TabIndex = 1
         Me.GroupBox3.TabStop = False
-        Me.GroupBox3.Text = "Datos de la libreta"
         '
         'txtSerieLibreta
         '
+        Me.txtSerieLibreta.AccessibleDescription = Nothing
+        Me.txtSerieLibreta.AccessibleName = Nothing
+        resources.ApplyResources(Me.txtSerieLibreta, "txtSerieLibreta")
+        Me.txtSerieLibreta.BackgroundImage = Nothing
         Me.txtSerieLibreta.Cursor = System.Windows.Forms.Cursors.No
-        Me.txtSerieLibreta.Enabled = False
-        Me.txtSerieLibreta.Location = New System.Drawing.Point(9, 35)
+        Me.txtSerieLibreta.Font = Nothing
         Me.txtSerieLibreta.Name = "txtSerieLibreta"
-        Me.txtSerieLibreta.Size = New System.Drawing.Size(48, 20)
-        Me.txtSerieLibreta.TabIndex = 5
         '
         'Label4
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.Label4.Location = New System.Drawing.Point(6, 19)
+        Me.Label4.AccessibleDescription = Nothing
+        Me.Label4.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label4, "Label4")
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(31, 13)
-        Me.Label4.TabIndex = 28
-        Me.Label4.Text = "Serie"
         '
         'txtCantCheques
         '
-        Me.txtCantCheques.Location = New System.Drawing.Point(227, 35)
+        Me.txtCantCheques.AccessibleDescription = Nothing
+        Me.txtCantCheques.AccessibleName = Nothing
+        resources.ApplyResources(Me.txtCantCheques, "txtCantCheques")
+        Me.txtCantCheques.BackgroundImage = Nothing
+        Me.txtCantCheques.Font = Nothing
         Me.txtCantCheques.Name = "txtCantCheques"
-        Me.txtCantCheques.Size = New System.Drawing.Size(129, 20)
-        Me.txtCantCheques.TabIndex = 7
         '
         'Label3
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.Label3.Location = New System.Drawing.Point(225, 19)
+        Me.Label3.AccessibleDescription = Nothing
+        Me.Label3.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label3, "Label3")
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(91, 13)
-        Me.Label3.TabIndex = 26
-        Me.Label3.Text = "Cant. de cheques"
         '
         'txtNroLibreta
         '
+        Me.txtNroLibreta.AccessibleDescription = Nothing
+        Me.txtNroLibreta.AccessibleName = Nothing
+        resources.ApplyResources(Me.txtNroLibreta, "txtNroLibreta")
+        Me.txtNroLibreta.BackgroundImage = Nothing
         Me.txtNroLibreta.Cursor = System.Windows.Forms.Cursors.No
-        Me.txtNroLibreta.Enabled = False
-        Me.txtNroLibreta.Location = New System.Drawing.Point(63, 35)
+        Me.txtNroLibreta.Font = Nothing
         Me.txtNroLibreta.Name = "txtNroLibreta"
-        Me.txtNroLibreta.Size = New System.Drawing.Size(158, 20)
-        Me.txtNroLibreta.TabIndex = 6
         '
         'Label2
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.Label2.Location = New System.Drawing.Point(60, 19)
+        Me.Label2.AccessibleDescription = Nothing
+        Me.Label2.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label2, "Label2")
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(44, 13)
-        Me.Label2.TabIndex = 26
-        Me.Label2.Text = "Número"
         '
         'btnEmitir
         '
-        Me.btnEmitir.Location = New System.Drawing.Point(309, 244)
+        Me.btnEmitir.AccessibleDescription = Nothing
+        Me.btnEmitir.AccessibleName = Nothing
+        resources.ApplyResources(Me.btnEmitir, "btnEmitir")
+        Me.btnEmitir.BackgroundImage = Nothing
+        Me.btnEmitir.Font = Nothing
         Me.btnEmitir.Name = "btnEmitir"
-        Me.btnEmitir.Size = New System.Drawing.Size(75, 23)
-        Me.btnEmitir.TabIndex = 8
-        Me.btnEmitir.Text = "Emitir"
         Me.btnEmitir.UseVisualStyleBackColor = True
         '
         'btnCancelar
         '
-        Me.btnCancelar.Location = New System.Drawing.Point(228, 244)
+        Me.btnCancelar.AccessibleDescription = Nothing
+        Me.btnCancelar.AccessibleName = Nothing
+        resources.ApplyResources(Me.btnCancelar, "btnCancelar")
+        Me.btnCancelar.BackgroundImage = Nothing
+        Me.btnCancelar.Font = Nothing
         Me.btnCancelar.Name = "btnCancelar"
-        Me.btnCancelar.Size = New System.Drawing.Size(75, 23)
-        Me.btnCancelar.TabIndex = 9
-        Me.btnCancelar.Text = "Cancelar"
         Me.btnCancelar.UseVisualStyleBackColor = True
         '
         'frmEmitirLibreta
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AccessibleDescription = Nothing
+        Me.AccessibleName = Nothing
+        resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(398, 278)
+        Me.BackgroundImage = Nothing
         Me.Controls.Add(Me.btnCancelar)
         Me.Controls.Add(Me.btnEmitir)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox1)
+        Me.Font = Nothing
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "frmEmitirLibreta"
-        Me.Text = "Emitir Libreta"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()

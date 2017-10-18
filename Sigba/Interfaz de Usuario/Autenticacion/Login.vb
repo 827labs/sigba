@@ -1,4 +1,6 @@
 ﻿Imports System.Data.Odbc
+Imports System.Globalization
+
 Public Class Login
 
     Dim CompletarLogin = Desarrollo.ModoDesarrolloActivado()
@@ -39,5 +41,15 @@ Public Class Login
             txtUsuario.Text = "informix"
             txtClave.Text = "informix"
         End If
+        cboIdioma.SelectedIndex = 0
+    End Sub
+
+    Private Sub cboIdioma_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cboIdioma.SelectedIndexChanged
+        Select Case cboIdioma.SelectedIndex
+            Case 0
+                System.Threading.Thread.CurrentThread.CurrentUICulture = New CultureInfo("es")
+            Case 1
+                System.Threading.Thread.CurrentThread.CurrentUICulture = New CultureInfo("en")
+        End Select
     End Sub
 End Class

@@ -68,273 +68,375 @@ Partial Class Principal
         '
         'strItems
         '
+        Me.strItems.AccessibleDescription = Nothing
+        Me.strItems.AccessibleName = Nothing
+        resources.ApplyResources(Me.strItems, "strItems")
+        Me.strItems.BackgroundImage = Nothing
+        Me.strItems.Font = Nothing
         Me.strItems.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CajaToolStripMenuItem, Me.CuentasToolStripMenuItem, Me.ClientesToolStripMenuItem, Me.ChequesToolStripMenuItem, Me.ConfiguraciónToolStripMenuItem, Me.AyudaToolStripMenuItem})
-        Me.strItems.Location = New System.Drawing.Point(0, 0)
         Me.strItems.Name = "strItems"
-        Me.strItems.Size = New System.Drawing.Size(919, 24)
-        Me.strItems.TabIndex = 0
-        Me.strItems.Text = "MenuStrip1"
         '
         'CajaToolStripMenuItem
         '
+        Me.CajaToolStripMenuItem.AccessibleDescription = Nothing
+        Me.CajaToolStripMenuItem.AccessibleName = Nothing
+        resources.ApplyResources(Me.CajaToolStripMenuItem, "CajaToolStripMenuItem")
+        Me.CajaToolStripMenuItem.BackgroundImage = Nothing
         Me.CajaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GestiónDeCajasToolStripMenuItem})
         Me.CajaToolStripMenuItem.Name = "CajaToolStripMenuItem"
-        Me.CajaToolStripMenuItem.Size = New System.Drawing.Size(42, 20)
-        Me.CajaToolStripMenuItem.Text = "Caja"
+        Me.CajaToolStripMenuItem.ShortcutKeyDisplayString = Nothing
         '
         'GestiónDeCajasToolStripMenuItem
         '
+        Me.GestiónDeCajasToolStripMenuItem.AccessibleDescription = Nothing
+        Me.GestiónDeCajasToolStripMenuItem.AccessibleName = Nothing
+        resources.ApplyResources(Me.GestiónDeCajasToolStripMenuItem, "GestiónDeCajasToolStripMenuItem")
+        Me.GestiónDeCajasToolStripMenuItem.BackgroundImage = Nothing
         Me.GestiónDeCajasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AperturaDeCajaToolStripMenuItem, Me.CajasAbiertasToolStripMenuItem})
         Me.GestiónDeCajasToolStripMenuItem.Name = "GestiónDeCajasToolStripMenuItem"
-        Me.GestiónDeCajasToolStripMenuItem.Size = New System.Drawing.Size(159, 22)
-        Me.GestiónDeCajasToolStripMenuItem.Text = "Gestión de cajas"
+        Me.GestiónDeCajasToolStripMenuItem.ShortcutKeyDisplayString = Nothing
         '
         'AperturaDeCajaToolStripMenuItem
         '
+        Me.AperturaDeCajaToolStripMenuItem.AccessibleDescription = Nothing
+        Me.AperturaDeCajaToolStripMenuItem.AccessibleName = Nothing
+        resources.ApplyResources(Me.AperturaDeCajaToolStripMenuItem, "AperturaDeCajaToolStripMenuItem")
+        Me.AperturaDeCajaToolStripMenuItem.BackgroundImage = Nothing
         Me.AperturaDeCajaToolStripMenuItem.Name = "AperturaDeCajaToolStripMenuItem"
-        Me.AperturaDeCajaToolStripMenuItem.Size = New System.Drawing.Size(160, 22)
-        Me.AperturaDeCajaToolStripMenuItem.Text = "Apertura de caja"
+        Me.AperturaDeCajaToolStripMenuItem.ShortcutKeyDisplayString = Nothing
         '
         'CajasAbiertasToolStripMenuItem
         '
+        Me.CajasAbiertasToolStripMenuItem.AccessibleDescription = Nothing
+        Me.CajasAbiertasToolStripMenuItem.AccessibleName = Nothing
+        resources.ApplyResources(Me.CajasAbiertasToolStripMenuItem, "CajasAbiertasToolStripMenuItem")
+        Me.CajasAbiertasToolStripMenuItem.BackgroundImage = Nothing
         Me.CajasAbiertasToolStripMenuItem.Name = "CajasAbiertasToolStripMenuItem"
-        Me.CajasAbiertasToolStripMenuItem.Size = New System.Drawing.Size(160, 22)
-        Me.CajasAbiertasToolStripMenuItem.Text = "Cierre de caja"
+        Me.CajasAbiertasToolStripMenuItem.ShortcutKeyDisplayString = Nothing
         '
         'CuentasToolStripMenuItem
         '
+        Me.CuentasToolStripMenuItem.AccessibleDescription = Nothing
+        Me.CuentasToolStripMenuItem.AccessibleName = Nothing
+        resources.ApplyResources(Me.CuentasToolStripMenuItem, "CuentasToolStripMenuItem")
+        Me.CuentasToolStripMenuItem.BackgroundImage = Nothing
         Me.CuentasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GestiónCuentasToolStripMenuItem, Me.HistóricoDeTransacciónesToolStripMenuItem, Me.DébitosAutomáticosToolStripMenuItem, Me.DepósitoEnCuentaToolStripMenuItem, Me.RetiroDeCuentaToolStripMenuItem, Me.TransferenciaEntreCuentasToolStripMenuItem})
         Me.CuentasToolStripMenuItem.Name = "CuentasToolStripMenuItem"
-        Me.CuentasToolStripMenuItem.Size = New System.Drawing.Size(62, 20)
-        Me.CuentasToolStripMenuItem.Text = "Cuentas"
+        Me.CuentasToolStripMenuItem.ShortcutKeyDisplayString = Nothing
         '
         'GestiónCuentasToolStripMenuItem
         '
+        Me.GestiónCuentasToolStripMenuItem.AccessibleDescription = Nothing
+        Me.GestiónCuentasToolStripMenuItem.AccessibleName = Nothing
+        resources.ApplyResources(Me.GestiónCuentasToolStripMenuItem, "GestiónCuentasToolStripMenuItem")
+        Me.GestiónCuentasToolStripMenuItem.BackgroundImage = Nothing
         Me.GestiónCuentasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AltaDeCuentaToolStripMenuItem, Me.BajaDeCuentaToolStripMenuItem})
         Me.GestiónCuentasToolStripMenuItem.Name = "GestiónCuentasToolStripMenuItem"
-        Me.GestiónCuentasToolStripMenuItem.Size = New System.Drawing.Size(273, 22)
-        Me.GestiónCuentasToolStripMenuItem.Text = "Gestión"
+        Me.GestiónCuentasToolStripMenuItem.ShortcutKeyDisplayString = Nothing
         '
         'AltaDeCuentaToolStripMenuItem
         '
+        Me.AltaDeCuentaToolStripMenuItem.AccessibleDescription = Nothing
+        Me.AltaDeCuentaToolStripMenuItem.AccessibleName = Nothing
+        resources.ApplyResources(Me.AltaDeCuentaToolStripMenuItem, "AltaDeCuentaToolStripMenuItem")
+        Me.AltaDeCuentaToolStripMenuItem.BackgroundImage = Nothing
         Me.AltaDeCuentaToolStripMenuItem.Name = "AltaDeCuentaToolStripMenuItem"
-        Me.AltaDeCuentaToolStripMenuItem.Size = New System.Drawing.Size(151, 22)
-        Me.AltaDeCuentaToolStripMenuItem.Text = "Alta de cuenta"
+        Me.AltaDeCuentaToolStripMenuItem.ShortcutKeyDisplayString = Nothing
         '
         'BajaDeCuentaToolStripMenuItem
         '
+        Me.BajaDeCuentaToolStripMenuItem.AccessibleDescription = Nothing
+        Me.BajaDeCuentaToolStripMenuItem.AccessibleName = Nothing
+        resources.ApplyResources(Me.BajaDeCuentaToolStripMenuItem, "BajaDeCuentaToolStripMenuItem")
+        Me.BajaDeCuentaToolStripMenuItem.BackgroundImage = Nothing
         Me.BajaDeCuentaToolStripMenuItem.Name = "BajaDeCuentaToolStripMenuItem"
-        Me.BajaDeCuentaToolStripMenuItem.Size = New System.Drawing.Size(151, 22)
-        Me.BajaDeCuentaToolStripMenuItem.Text = "Baja de cuenta"
+        Me.BajaDeCuentaToolStripMenuItem.ShortcutKeyDisplayString = Nothing
         '
         'HistóricoDeTransacciónesToolStripMenuItem
         '
+        Me.HistóricoDeTransacciónesToolStripMenuItem.AccessibleDescription = Nothing
+        Me.HistóricoDeTransacciónesToolStripMenuItem.AccessibleName = Nothing
+        resources.ApplyResources(Me.HistóricoDeTransacciónesToolStripMenuItem, "HistóricoDeTransacciónesToolStripMenuItem")
+        Me.HistóricoDeTransacciónesToolStripMenuItem.BackgroundImage = Nothing
         Me.HistóricoDeTransacciónesToolStripMenuItem.Name = "HistóricoDeTransacciónesToolStripMenuItem"
-        Me.HistóricoDeTransacciónesToolStripMenuItem.Size = New System.Drawing.Size(273, 22)
-        Me.HistóricoDeTransacciónesToolStripMenuItem.Text = "Histórico de transacciones por cuenta"
+        Me.HistóricoDeTransacciónesToolStripMenuItem.ShortcutKeyDisplayString = Nothing
         '
         'DébitosAutomáticosToolStripMenuItem
         '
+        Me.DébitosAutomáticosToolStripMenuItem.AccessibleDescription = Nothing
+        Me.DébitosAutomáticosToolStripMenuItem.AccessibleName = Nothing
+        resources.ApplyResources(Me.DébitosAutomáticosToolStripMenuItem, "DébitosAutomáticosToolStripMenuItem")
+        Me.DébitosAutomáticosToolStripMenuItem.BackgroundImage = Nothing
         Me.DébitosAutomáticosToolStripMenuItem.Name = "DébitosAutomáticosToolStripMenuItem"
-        Me.DébitosAutomáticosToolStripMenuItem.Size = New System.Drawing.Size(273, 22)
-        Me.DébitosAutomáticosToolStripMenuItem.Text = "Débitos automáticos"
+        Me.DébitosAutomáticosToolStripMenuItem.ShortcutKeyDisplayString = Nothing
         '
         'DepósitoEnCuentaToolStripMenuItem
         '
+        Me.DepósitoEnCuentaToolStripMenuItem.AccessibleDescription = Nothing
+        Me.DepósitoEnCuentaToolStripMenuItem.AccessibleName = Nothing
+        resources.ApplyResources(Me.DepósitoEnCuentaToolStripMenuItem, "DepósitoEnCuentaToolStripMenuItem")
+        Me.DepósitoEnCuentaToolStripMenuItem.BackgroundImage = Nothing
         Me.DepósitoEnCuentaToolStripMenuItem.Name = "DepósitoEnCuentaToolStripMenuItem"
-        Me.DepósitoEnCuentaToolStripMenuItem.Size = New System.Drawing.Size(273, 22)
-        Me.DepósitoEnCuentaToolStripMenuItem.Text = "Depósito en cuenta"
+        Me.DepósitoEnCuentaToolStripMenuItem.ShortcutKeyDisplayString = Nothing
         '
         'RetiroDeCuentaToolStripMenuItem
         '
+        Me.RetiroDeCuentaToolStripMenuItem.AccessibleDescription = Nothing
+        Me.RetiroDeCuentaToolStripMenuItem.AccessibleName = Nothing
+        resources.ApplyResources(Me.RetiroDeCuentaToolStripMenuItem, "RetiroDeCuentaToolStripMenuItem")
+        Me.RetiroDeCuentaToolStripMenuItem.BackgroundImage = Nothing
         Me.RetiroDeCuentaToolStripMenuItem.Name = "RetiroDeCuentaToolStripMenuItem"
-        Me.RetiroDeCuentaToolStripMenuItem.Size = New System.Drawing.Size(273, 22)
-        Me.RetiroDeCuentaToolStripMenuItem.Text = "Retiro de cuenta"
+        Me.RetiroDeCuentaToolStripMenuItem.ShortcutKeyDisplayString = Nothing
         '
         'TransferenciaEntreCuentasToolStripMenuItem
         '
+        Me.TransferenciaEntreCuentasToolStripMenuItem.AccessibleDescription = Nothing
+        Me.TransferenciaEntreCuentasToolStripMenuItem.AccessibleName = Nothing
+        resources.ApplyResources(Me.TransferenciaEntreCuentasToolStripMenuItem, "TransferenciaEntreCuentasToolStripMenuItem")
+        Me.TransferenciaEntreCuentasToolStripMenuItem.BackgroundImage = Nothing
         Me.TransferenciaEntreCuentasToolStripMenuItem.Name = "TransferenciaEntreCuentasToolStripMenuItem"
-        Me.TransferenciaEntreCuentasToolStripMenuItem.Size = New System.Drawing.Size(273, 22)
-        Me.TransferenciaEntreCuentasToolStripMenuItem.Text = "Transferencia entre cuentas"
+        Me.TransferenciaEntreCuentasToolStripMenuItem.ShortcutKeyDisplayString = Nothing
         '
         'ClientesToolStripMenuItem
         '
+        Me.ClientesToolStripMenuItem.AccessibleDescription = Nothing
+        Me.ClientesToolStripMenuItem.AccessibleName = Nothing
+        resources.ApplyResources(Me.ClientesToolStripMenuItem, "ClientesToolStripMenuItem")
+        Me.ClientesToolStripMenuItem.BackgroundImage = Nothing
         Me.ClientesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GestiónToolStripMenuItem1})
         Me.ClientesToolStripMenuItem.Name = "ClientesToolStripMenuItem"
-        Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(61, 20)
-        Me.ClientesToolStripMenuItem.Text = "Clientes"
+        Me.ClientesToolStripMenuItem.ShortcutKeyDisplayString = Nothing
         '
         'GestiónToolStripMenuItem1
         '
+        Me.GestiónToolStripMenuItem1.AccessibleDescription = Nothing
+        Me.GestiónToolStripMenuItem1.AccessibleName = Nothing
+        resources.ApplyResources(Me.GestiónToolStripMenuItem1, "GestiónToolStripMenuItem1")
+        Me.GestiónToolStripMenuItem1.BackgroundImage = Nothing
         Me.GestiónToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AltaClienteToolStripMenuItem, Me.BajaClienteToolStripMenuItem})
         Me.GestiónToolStripMenuItem1.Name = "GestiónToolStripMenuItem1"
-        Me.GestiónToolStripMenuItem1.Size = New System.Drawing.Size(114, 22)
-        Me.GestiónToolStripMenuItem1.Text = "Gestión"
+        Me.GestiónToolStripMenuItem1.ShortcutKeyDisplayString = Nothing
         '
         'AltaClienteToolStripMenuItem
         '
+        Me.AltaClienteToolStripMenuItem.AccessibleDescription = Nothing
+        Me.AltaClienteToolStripMenuItem.AccessibleName = Nothing
+        resources.ApplyResources(Me.AltaClienteToolStripMenuItem, "AltaClienteToolStripMenuItem")
+        Me.AltaClienteToolStripMenuItem.BackgroundImage = Nothing
         Me.AltaClienteToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PersonaToolStripMenuItem, Me.EmpresaToolStripMenuItem})
         Me.AltaClienteToolStripMenuItem.Name = "AltaClienteToolStripMenuItem"
-        Me.AltaClienteToolStripMenuItem.Size = New System.Drawing.Size(134, 22)
-        Me.AltaClienteToolStripMenuItem.Text = "Alta cliente"
+        Me.AltaClienteToolStripMenuItem.ShortcutKeyDisplayString = Nothing
         '
         'PersonaToolStripMenuItem
         '
+        Me.PersonaToolStripMenuItem.AccessibleDescription = Nothing
+        Me.PersonaToolStripMenuItem.AccessibleName = Nothing
+        resources.ApplyResources(Me.PersonaToolStripMenuItem, "PersonaToolStripMenuItem")
+        Me.PersonaToolStripMenuItem.BackgroundImage = Nothing
         Me.PersonaToolStripMenuItem.Name = "PersonaToolStripMenuItem"
-        Me.PersonaToolStripMenuItem.Size = New System.Drawing.Size(119, 22)
-        Me.PersonaToolStripMenuItem.Text = "Persona"
+        Me.PersonaToolStripMenuItem.ShortcutKeyDisplayString = Nothing
         '
         'EmpresaToolStripMenuItem
         '
+        Me.EmpresaToolStripMenuItem.AccessibleDescription = Nothing
+        Me.EmpresaToolStripMenuItem.AccessibleName = Nothing
+        resources.ApplyResources(Me.EmpresaToolStripMenuItem, "EmpresaToolStripMenuItem")
+        Me.EmpresaToolStripMenuItem.BackgroundImage = Nothing
         Me.EmpresaToolStripMenuItem.Name = "EmpresaToolStripMenuItem"
-        Me.EmpresaToolStripMenuItem.Size = New System.Drawing.Size(119, 22)
-        Me.EmpresaToolStripMenuItem.Text = "Empresa"
+        Me.EmpresaToolStripMenuItem.ShortcutKeyDisplayString = Nothing
         '
         'BajaClienteToolStripMenuItem
         '
+        Me.BajaClienteToolStripMenuItem.AccessibleDescription = Nothing
+        Me.BajaClienteToolStripMenuItem.AccessibleName = Nothing
+        resources.ApplyResources(Me.BajaClienteToolStripMenuItem, "BajaClienteToolStripMenuItem")
+        Me.BajaClienteToolStripMenuItem.BackgroundImage = Nothing
         Me.BajaClienteToolStripMenuItem.Name = "BajaClienteToolStripMenuItem"
-        Me.BajaClienteToolStripMenuItem.Size = New System.Drawing.Size(134, 22)
-        Me.BajaClienteToolStripMenuItem.Text = "Baja cliente"
+        Me.BajaClienteToolStripMenuItem.ShortcutKeyDisplayString = Nothing
         '
         'ChequesToolStripMenuItem
         '
+        Me.ChequesToolStripMenuItem.AccessibleDescription = Nothing
+        Me.ChequesToolStripMenuItem.AccessibleName = Nothing
+        resources.ApplyResources(Me.ChequesToolStripMenuItem, "ChequesToolStripMenuItem")
+        Me.ChequesToolStripMenuItem.BackgroundImage = Nothing
         Me.ChequesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LibretasToolStripMenuItem, Me.CobrarChequeToolStripMenuItem})
         Me.ChequesToolStripMenuItem.Name = "ChequesToolStripMenuItem"
-        Me.ChequesToolStripMenuItem.Size = New System.Drawing.Size(65, 20)
-        Me.ChequesToolStripMenuItem.Text = "Cheques"
+        Me.ChequesToolStripMenuItem.ShortcutKeyDisplayString = Nothing
         '
         'LibretasToolStripMenuItem
         '
+        Me.LibretasToolStripMenuItem.AccessibleDescription = Nothing
+        Me.LibretasToolStripMenuItem.AccessibleName = Nothing
+        resources.ApplyResources(Me.LibretasToolStripMenuItem, "LibretasToolStripMenuItem")
+        Me.LibretasToolStripMenuItem.BackgroundImage = Nothing
         Me.LibretasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EmitirToolStripMenuItem, Me.AnularToolStripMenuItem})
         Me.LibretasToolStripMenuItem.Name = "LibretasToolStripMenuItem"
-        Me.LibretasToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.LibretasToolStripMenuItem.Text = "Libretas"
+        Me.LibretasToolStripMenuItem.ShortcutKeyDisplayString = Nothing
         '
         'EmitirToolStripMenuItem
         '
+        Me.EmitirToolStripMenuItem.AccessibleDescription = Nothing
+        Me.EmitirToolStripMenuItem.AccessibleName = Nothing
+        resources.ApplyResources(Me.EmitirToolStripMenuItem, "EmitirToolStripMenuItem")
+        Me.EmitirToolStripMenuItem.BackgroundImage = Nothing
         Me.EmitirToolStripMenuItem.Name = "EmitirToolStripMenuItem"
-        Me.EmitirToolStripMenuItem.Size = New System.Drawing.Size(109, 22)
-        Me.EmitirToolStripMenuItem.Text = "Emitir"
+        Me.EmitirToolStripMenuItem.ShortcutKeyDisplayString = Nothing
         '
         'AnularToolStripMenuItem
         '
+        Me.AnularToolStripMenuItem.AccessibleDescription = Nothing
+        Me.AnularToolStripMenuItem.AccessibleName = Nothing
+        resources.ApplyResources(Me.AnularToolStripMenuItem, "AnularToolStripMenuItem")
+        Me.AnularToolStripMenuItem.BackgroundImage = Nothing
         Me.AnularToolStripMenuItem.Name = "AnularToolStripMenuItem"
-        Me.AnularToolStripMenuItem.Size = New System.Drawing.Size(109, 22)
-        Me.AnularToolStripMenuItem.Text = "Anular"
+        Me.AnularToolStripMenuItem.ShortcutKeyDisplayString = Nothing
         '
         'CobrarChequeToolStripMenuItem
         '
+        Me.CobrarChequeToolStripMenuItem.AccessibleDescription = Nothing
+        Me.CobrarChequeToolStripMenuItem.AccessibleName = Nothing
+        resources.ApplyResources(Me.CobrarChequeToolStripMenuItem, "CobrarChequeToolStripMenuItem")
+        Me.CobrarChequeToolStripMenuItem.BackgroundImage = Nothing
         Me.CobrarChequeToolStripMenuItem.Name = "CobrarChequeToolStripMenuItem"
-        Me.CobrarChequeToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.CobrarChequeToolStripMenuItem.Text = "Cobrar cheque"
+        Me.CobrarChequeToolStripMenuItem.ShortcutKeyDisplayString = Nothing
         '
         'ConfiguraciónToolStripMenuItem
         '
+        Me.ConfiguraciónToolStripMenuItem.AccessibleDescription = Nothing
+        Me.ConfiguraciónToolStripMenuItem.AccessibleName = Nothing
+        resources.ApplyResources(Me.ConfiguraciónToolStripMenuItem, "ConfiguraciónToolStripMenuItem")
+        Me.ConfiguraciónToolStripMenuItem.BackgroundImage = Nothing
         Me.ConfiguraciónToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AdministraciToolStripMenuItem, Me.DatosDelBancoToolStripMenuItem, Me.AuditoriaToolStripMenuItem, Me.AdministracíToolStripMenuItem})
         Me.ConfiguraciónToolStripMenuItem.Name = "ConfiguraciónToolStripMenuItem"
-        Me.ConfiguraciónToolStripMenuItem.Size = New System.Drawing.Size(95, 20)
-        Me.ConfiguraciónToolStripMenuItem.Text = "Configuración"
+        Me.ConfiguraciónToolStripMenuItem.ShortcutKeyDisplayString = Nothing
         '
         'AdministraciToolStripMenuItem
         '
+        Me.AdministraciToolStripMenuItem.AccessibleDescription = Nothing
+        Me.AdministraciToolStripMenuItem.AccessibleName = Nothing
+        resources.ApplyResources(Me.AdministraciToolStripMenuItem, "AdministraciToolStripMenuItem")
+        Me.AdministraciToolStripMenuItem.BackgroundImage = Nothing
         Me.AdministraciToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GestionarUsuariosToolStripMenuItem, Me.IngresarUsuarioToolStripMenuItem})
         Me.AdministraciToolStripMenuItem.Name = "AdministraciToolStripMenuItem"
-        Me.AdministraciToolStripMenuItem.Size = New System.Drawing.Size(229, 22)
-        Me.AdministraciToolStripMenuItem.Text = "Administración de usuarios"
+        Me.AdministraciToolStripMenuItem.ShortcutKeyDisplayString = Nothing
         '
         'GestionarUsuariosToolStripMenuItem
         '
+        Me.GestionarUsuariosToolStripMenuItem.AccessibleDescription = Nothing
+        Me.GestionarUsuariosToolStripMenuItem.AccessibleName = Nothing
+        resources.ApplyResources(Me.GestionarUsuariosToolStripMenuItem, "GestionarUsuariosToolStripMenuItem")
+        Me.GestionarUsuariosToolStripMenuItem.BackgroundImage = Nothing
         Me.GestionarUsuariosToolStripMenuItem.Name = "GestionarUsuariosToolStripMenuItem"
-        Me.GestionarUsuariosToolStripMenuItem.Size = New System.Drawing.Size(171, 22)
-        Me.GestionarUsuariosToolStripMenuItem.Text = "Gestionar usuarios"
+        Me.GestionarUsuariosToolStripMenuItem.ShortcutKeyDisplayString = Nothing
         '
         'IngresarUsuarioToolStripMenuItem
         '
+        Me.IngresarUsuarioToolStripMenuItem.AccessibleDescription = Nothing
+        Me.IngresarUsuarioToolStripMenuItem.AccessibleName = Nothing
+        resources.ApplyResources(Me.IngresarUsuarioToolStripMenuItem, "IngresarUsuarioToolStripMenuItem")
+        Me.IngresarUsuarioToolStripMenuItem.BackgroundImage = Nothing
         Me.IngresarUsuarioToolStripMenuItem.Name = "IngresarUsuarioToolStripMenuItem"
-        Me.IngresarUsuarioToolStripMenuItem.Size = New System.Drawing.Size(171, 22)
-        Me.IngresarUsuarioToolStripMenuItem.Text = "Ingresar Usuario"
+        Me.IngresarUsuarioToolStripMenuItem.ShortcutKeyDisplayString = Nothing
         '
         'DatosDelBancoToolStripMenuItem
         '
+        Me.DatosDelBancoToolStripMenuItem.AccessibleDescription = Nothing
+        Me.DatosDelBancoToolStripMenuItem.AccessibleName = Nothing
+        resources.ApplyResources(Me.DatosDelBancoToolStripMenuItem, "DatosDelBancoToolStripMenuItem")
+        Me.DatosDelBancoToolStripMenuItem.BackgroundImage = Nothing
         Me.DatosDelBancoToolStripMenuItem.Name = "DatosDelBancoToolStripMenuItem"
-        Me.DatosDelBancoToolStripMenuItem.Size = New System.Drawing.Size(229, 22)
-        Me.DatosDelBancoToolStripMenuItem.Text = "Datos del banco"
+        Me.DatosDelBancoToolStripMenuItem.ShortcutKeyDisplayString = Nothing
         '
         'AuditoriaToolStripMenuItem
         '
+        Me.AuditoriaToolStripMenuItem.AccessibleDescription = Nothing
+        Me.AuditoriaToolStripMenuItem.AccessibleName = Nothing
+        resources.ApplyResources(Me.AuditoriaToolStripMenuItem, "AuditoriaToolStripMenuItem")
+        Me.AuditoriaToolStripMenuItem.BackgroundImage = Nothing
         Me.AuditoriaToolStripMenuItem.Name = "AuditoriaToolStripMenuItem"
-        Me.AuditoriaToolStripMenuItem.Size = New System.Drawing.Size(229, 22)
-        Me.AuditoriaToolStripMenuItem.Text = "Auditoría"
+        Me.AuditoriaToolStripMenuItem.ShortcutKeyDisplayString = Nothing
         '
         'AdministracíToolStripMenuItem
         '
+        Me.AdministracíToolStripMenuItem.AccessibleDescription = Nothing
+        Me.AdministracíToolStripMenuItem.AccessibleName = Nothing
+        resources.ApplyResources(Me.AdministracíToolStripMenuItem, "AdministracíToolStripMenuItem")
+        Me.AdministracíToolStripMenuItem.BackgroundImage = Nothing
         Me.AdministracíToolStripMenuItem.Name = "AdministracíToolStripMenuItem"
-        Me.AdministracíToolStripMenuItem.Size = New System.Drawing.Size(229, 22)
-        Me.AdministracíToolStripMenuItem.Text = "Administración de Sucursales"
+        Me.AdministracíToolStripMenuItem.ShortcutKeyDisplayString = Nothing
         '
         'AyudaToolStripMenuItem
         '
+        Me.AyudaToolStripMenuItem.AccessibleDescription = Nothing
+        Me.AyudaToolStripMenuItem.AccessibleName = Nothing
+        resources.ApplyResources(Me.AyudaToolStripMenuItem, "AyudaToolStripMenuItem")
+        Me.AyudaToolStripMenuItem.BackgroundImage = Nothing
         Me.AyudaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AcercaDeToolStripMenuItem})
         Me.AyudaToolStripMenuItem.Name = "AyudaToolStripMenuItem"
-        Me.AyudaToolStripMenuItem.Size = New System.Drawing.Size(53, 20)
-        Me.AyudaToolStripMenuItem.Text = "Ayuda"
+        Me.AyudaToolStripMenuItem.ShortcutKeyDisplayString = Nothing
         '
         'AcercaDeToolStripMenuItem
         '
+        Me.AcercaDeToolStripMenuItem.AccessibleDescription = Nothing
+        Me.AcercaDeToolStripMenuItem.AccessibleName = Nothing
+        resources.ApplyResources(Me.AcercaDeToolStripMenuItem, "AcercaDeToolStripMenuItem")
+        Me.AcercaDeToolStripMenuItem.BackgroundImage = Nothing
         Me.AcercaDeToolStripMenuItem.Name = "AcercaDeToolStripMenuItem"
-        Me.AcercaDeToolStripMenuItem.Size = New System.Drawing.Size(135, 22)
-        Me.AcercaDeToolStripMenuItem.Text = "Acerca de..."
+        Me.AcercaDeToolStripMenuItem.ShortcutKeyDisplayString = Nothing
         '
         'picSigba
         '
-        Me.picSigba.Image = CType(resources.GetObject("picSigba.Image"), System.Drawing.Image)
-        Me.picSigba.Location = New System.Drawing.Point(0, 25)
+        Me.picSigba.AccessibleDescription = Nothing
+        Me.picSigba.AccessibleName = Nothing
+        resources.ApplyResources(Me.picSigba, "picSigba")
+        Me.picSigba.BackgroundImage = Nothing
+        Me.picSigba.Font = Nothing
+        Me.picSigba.ImageLocation = Nothing
         Me.picSigba.Name = "picSigba"
-        Me.picSigba.Size = New System.Drawing.Size(919, 570)
-        Me.picSigba.TabIndex = 1
         Me.picSigba.TabStop = False
         '
         'StatusStrip1
         '
+        Me.StatusStrip1.AccessibleDescription = Nothing
+        Me.StatusStrip1.AccessibleName = Nothing
+        resources.ApplyResources(Me.StatusStrip1, "StatusStrip1")
+        Me.StatusStrip1.BackgroundImage = Nothing
+        Me.StatusStrip1.Font = Nothing
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.lblStatusUsuario})
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 572)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(919, 22)
-        Me.StatusStrip1.TabIndex = 2
-        Me.StatusStrip1.Text = "StatusStrip1"
         '
         'lblStatusUsuario
         '
+        Me.lblStatusUsuario.AccessibleDescription = Nothing
+        Me.lblStatusUsuario.AccessibleName = Nothing
+        resources.ApplyResources(Me.lblStatusUsuario, "lblStatusUsuario")
+        Me.lblStatusUsuario.BackgroundImage = Nothing
         Me.lblStatusUsuario.Name = "lblStatusUsuario"
-        Me.lblStatusUsuario.Size = New System.Drawing.Size(133, 17)
-        Me.lblStatusUsuario.Text = "Información del usuario"
         '
         'lblCargo
         '
-        Me.lblCargo.Location = New System.Drawing.Point(655, 572)
+        Me.lblCargo.AccessibleDescription = Nothing
+        Me.lblCargo.AccessibleName = Nothing
+        resources.ApplyResources(Me.lblCargo, "lblCargo")
+        Me.lblCargo.Font = Nothing
         Me.lblCargo.Name = "lblCargo"
-        Me.lblCargo.Size = New System.Drawing.Size(252, 23)
-        Me.lblCargo.TabIndex = 3
-        Me.lblCargo.Text = "Cargo"
-        Me.lblCargo.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'Principal
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AccessibleDescription = Nothing
+        Me.AccessibleName = Nothing
+        resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(919, 594)
+        Me.BackgroundImage = Nothing
         Me.Controls.Add(Me.lblCargo)
         Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.picSigba)
         Me.Controls.Add(Me.strItems)
-        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Font = Nothing
         Me.MainMenuStrip = Me.strItems
-        Me.MaximumSize = New System.Drawing.Size(935, 633)
-        Me.MinimumSize = New System.Drawing.Size(935, 633)
         Me.Name = "Principal"
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Sistema Informático de Gestión Bancaria"
         Me.strItems.ResumeLayout(False)
         Me.strItems.PerformLayout()
         CType(Me.picSigba, System.ComponentModel.ISupportInitialize).EndInit()

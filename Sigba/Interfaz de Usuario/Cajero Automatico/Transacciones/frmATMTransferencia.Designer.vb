@@ -23,7 +23,7 @@ Partial Class frmATMTransferencia
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmATMTransferencia))
-        Me.Label2 = New System.Windows.Forms.Label
+        Me.lblCuentaOrigen = New System.Windows.Forms.Label
         Me.btnCancelar = New System.Windows.Forms.Button
         Me.btnContinuar = New System.Windows.Forms.Button
         Me.txtMonto = New System.Windows.Forms.TextBox
@@ -37,17 +37,17 @@ Partial Class frmATMTransferencia
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Label2
+        'lblCuentaOrigen
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(161, Byte), Integer), CType(CType(77, Byte), Integer))
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(613, 41)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(176, 18)
-        Me.Label2.TabIndex = 29
-        Me.Label2.Text = "CA UYU 012-345678-9"
+        Me.lblCuentaOrigen.BackColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(161, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.lblCuentaOrigen.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCuentaOrigen.ForeColor = System.Drawing.Color.White
+        Me.lblCuentaOrigen.Location = New System.Drawing.Point(419, 41)
+        Me.lblCuentaOrigen.Name = "lblCuentaOrigen"
+        Me.lblCuentaOrigen.Size = New System.Drawing.Size(370, 18)
+        Me.lblCuentaOrigen.TabIndex = 29
+        Me.lblCuentaOrigen.Text = "CA UYU 012-345678-9"
+        Me.lblCuentaOrigen.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'btnCancelar
         '
@@ -83,11 +83,11 @@ Partial Class frmATMTransferencia
         '
         Me.lblTitulo.BackColor = System.Drawing.Color.White
         Me.lblTitulo.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTitulo.Location = New System.Drawing.Point(173, 232)
+        Me.lblTitulo.Location = New System.Drawing.Point(118, 232)
         Me.lblTitulo.Name = "lblTitulo"
-        Me.lblTitulo.Size = New System.Drawing.Size(452, 25)
+        Me.lblTitulo.Size = New System.Drawing.Size(552, 25)
         Me.lblTitulo.TabIndex = 25
-        Me.lblTitulo.Text = "Ingrese el monto en la moneda de la cuenta"
+        Me.lblTitulo.Text = "Ingrese el monto en la moneda de la cuenta a transferir"
         Me.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblBienvenido
@@ -165,7 +165,7 @@ Partial Class frmATMTransferencia
         Me.Controls.Add(Me.cboCuentaDestinoTipo)
         Me.Controls.Add(Me.txtCuentaDestino)
         Me.Controls.Add(Me.lblCuenta)
-        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.lblCuentaOrigen)
         Me.Controls.Add(Me.btnCancelar)
         Me.Controls.Add(Me.btnContinuar)
         Me.Controls.Add(Me.txtMonto)
@@ -181,7 +181,7 @@ Partial Class frmATMTransferencia
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents lblCuentaOrigen As System.Windows.Forms.Label
     Friend WithEvents btnCancelar As System.Windows.Forms.Button
     Friend WithEvents btnContinuar As System.Windows.Forms.Button
     Friend WithEvents txtMonto As System.Windows.Forms.TextBox

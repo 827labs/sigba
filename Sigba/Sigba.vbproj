@@ -491,6 +491,10 @@
       <DependentUpon>frmHistoricoTransaccionesCuenta.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Principal.en.resx">
+      <DependentUpon>Principal.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Principal.resx">
       <DependentUpon>Principal.vb</DependentUpon>
       <SubType>Designer</SubType>

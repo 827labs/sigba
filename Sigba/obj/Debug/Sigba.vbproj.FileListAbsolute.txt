@@ -239,3 +239,6 @@ Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmListaSucursales.resources
 Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmEditarSucursal.resources
 Z:\Code\sigba\Sigba\bin\Debug\Sigba.exe.config
 Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmSeteoCotizacionManual.resources
+Z:\Code\sigba\Sigba\bin\Debug\en\Sigba.resources.dll
+Z:\Code\sigba\Sigba\obj\Debug\Sigba.Principal.en.resources
+Z:\Code\sigba\Sigba\obj\Debug\en\Sigba.resources.dll
