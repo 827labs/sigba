@@ -51,196 +51,197 @@ Partial Class frmBusquedaCuentaPorCliente
         '
         'GroupBox2
         '
+        Me.GroupBox2.AccessibleDescription = Nothing
+        Me.GroupBox2.AccessibleName = Nothing
+        resources.ApplyResources(Me.GroupBox2, "GroupBox2")
+        Me.GroupBox2.BackgroundImage = Nothing
         Me.GroupBox2.Controls.Add(Me.txtNroDoc)
         Me.GroupBox2.Controls.Add(Me.Label7)
-        Me.GroupBox2.Location = New System.Drawing.Point(6, 7)
+        Me.GroupBox2.Font = Nothing
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(360, 67)
-        Me.GroupBox2.TabIndex = 85
         Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "Documento"
         '
         'txtNroDoc
         '
-        Me.txtNroDoc.Location = New System.Drawing.Point(9, 34)
+        Me.txtNroDoc.AccessibleDescription = Nothing
+        Me.txtNroDoc.AccessibleName = Nothing
+        resources.ApplyResources(Me.txtNroDoc, "txtNroDoc")
+        Me.txtNroDoc.BackgroundImage = Nothing
+        Me.txtNroDoc.Font = Nothing
         Me.txtNroDoc.Name = "txtNroDoc"
-        Me.txtNroDoc.Size = New System.Drawing.Size(345, 20)
-        Me.txtNroDoc.TabIndex = 7
         '
         'Label7
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.Label7.Location = New System.Drawing.Point(6, 19)
+        Me.Label7.AccessibleDescription = Nothing
+        Me.Label7.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label7, "Label7")
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(44, 13)
-        Me.Label7.TabIndex = 24
-        Me.Label7.Text = "Número"
         '
         'dgvCuentas
         '
+        Me.dgvCuentas.AccessibleDescription = Nothing
+        Me.dgvCuentas.AccessibleName = Nothing
         Me.dgvCuentas.AllowUserToAddRows = False
         Me.dgvCuentas.AllowUserToDeleteRows = False
+        resources.ApplyResources(Me.dgvCuentas, "dgvCuentas")
+        Me.dgvCuentas.BackgroundImage = Nothing
         Me.dgvCuentas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvCuentas.Location = New System.Drawing.Point(12, 194)
+        Me.dgvCuentas.Font = Nothing
         Me.dgvCuentas.Name = "dgvCuentas"
         Me.dgvCuentas.ReadOnly = True
-        Me.dgvCuentas.Size = New System.Drawing.Size(375, 208)
-        Me.dgvCuentas.TabIndex = 86
         '
         'btnBuscar
         '
-        Me.btnBuscar.Location = New System.Drawing.Point(298, 152)
+        Me.btnBuscar.AccessibleDescription = Nothing
+        Me.btnBuscar.AccessibleName = Nothing
+        resources.ApplyResources(Me.btnBuscar, "btnBuscar")
+        Me.btnBuscar.BackgroundImage = Nothing
+        Me.btnBuscar.Font = Nothing
         Me.btnBuscar.Name = "btnBuscar"
-        Me.btnBuscar.Size = New System.Drawing.Size(91, 23)
-        Me.btnBuscar.TabIndex = 87
-        Me.btnBuscar.Text = "Buscar"
         Me.btnBuscar.UseVisualStyleBackColor = True
         '
         'TabControl
         '
+        Me.TabControl.AccessibleDescription = Nothing
+        Me.TabControl.AccessibleName = Nothing
+        resources.ApplyResources(Me.TabControl, "TabControl")
+        Me.TabControl.BackgroundImage = Nothing
         Me.TabControl.Controls.Add(Me.tabPersona)
         Me.TabControl.Controls.Add(Me.tabEmpresa)
-        Me.TabControl.Location = New System.Drawing.Point(12, 42)
+        Me.TabControl.Font = Nothing
         Me.TabControl.Name = "TabControl"
         Me.TabControl.SelectedIndex = 0
-        Me.TabControl.Size = New System.Drawing.Size(381, 108)
-        Me.TabControl.TabIndex = 88
         '
         'tabPersona
         '
+        Me.tabPersona.AccessibleDescription = Nothing
+        Me.tabPersona.AccessibleName = Nothing
+        resources.ApplyResources(Me.tabPersona, "tabPersona")
+        Me.tabPersona.BackgroundImage = Nothing
         Me.tabPersona.Controls.Add(Me.GroupBox2)
-        Me.tabPersona.Location = New System.Drawing.Point(4, 22)
+        Me.tabPersona.Font = Nothing
         Me.tabPersona.Name = "tabPersona"
-        Me.tabPersona.Padding = New System.Windows.Forms.Padding(3)
-        Me.tabPersona.Size = New System.Drawing.Size(373, 82)
-        Me.tabPersona.TabIndex = 0
-        Me.tabPersona.Text = "Personas"
         Me.tabPersona.UseVisualStyleBackColor = True
         '
         'tabEmpresa
         '
+        Me.tabEmpresa.AccessibleDescription = Nothing
+        Me.tabEmpresa.AccessibleName = Nothing
+        resources.ApplyResources(Me.tabEmpresa, "tabEmpresa")
+        Me.tabEmpresa.BackgroundImage = Nothing
         Me.tabEmpresa.Controls.Add(Me.GroupBox1)
-        Me.tabEmpresa.Location = New System.Drawing.Point(4, 22)
+        Me.tabEmpresa.Font = Nothing
         Me.tabEmpresa.Name = "tabEmpresa"
-        Me.tabEmpresa.Padding = New System.Windows.Forms.Padding(3)
-        Me.tabEmpresa.Size = New System.Drawing.Size(373, 82)
-        Me.tabEmpresa.TabIndex = 1
-        Me.tabEmpresa.Text = "Empresas"
         Me.tabEmpresa.UseVisualStyleBackColor = True
         '
         'GroupBox1
         '
+        Me.GroupBox1.AccessibleDescription = Nothing
+        Me.GroupBox1.AccessibleName = Nothing
+        resources.ApplyResources(Me.GroupBox1, "GroupBox1")
+        Me.GroupBox1.BackgroundImage = Nothing
         Me.GroupBox1.Controls.Add(Me.txtRUT)
         Me.GroupBox1.Controls.Add(Me.Label9)
-        Me.GroupBox1.Location = New System.Drawing.Point(6, 8)
+        Me.GroupBox1.Font = Nothing
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(360, 67)
-        Me.GroupBox1.TabIndex = 86
         Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Documento"
         '
         'txtRUT
         '
-        Me.txtRUT.Location = New System.Drawing.Point(9, 31)
+        Me.txtRUT.AccessibleDescription = Nothing
+        Me.txtRUT.AccessibleName = Nothing
+        resources.ApplyResources(Me.txtRUT, "txtRUT")
+        Me.txtRUT.BackgroundImage = Nothing
+        Me.txtRUT.Font = Nothing
         Me.txtRUT.Name = "txtRUT"
-        Me.txtRUT.Size = New System.Drawing.Size(345, 20)
-        Me.txtRUT.TabIndex = 7
         '
         'Label9
         '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.Label9.Location = New System.Drawing.Point(6, 16)
+        Me.Label9.AccessibleDescription = Nothing
+        Me.Label9.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label9, "Label9")
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(30, 13)
-        Me.Label9.TabIndex = 24
-        Me.Label9.Text = "RUT"
         '
         'ComboBox1
         '
+        Me.ComboBox1.AccessibleDescription = Nothing
+        Me.ComboBox1.AccessibleName = Nothing
+        resources.ApplyResources(Me.ComboBox1, "ComboBox1")
+        Me.ComboBox1.BackgroundImage = Nothing
         Me.ComboBox1.Cursor = System.Windows.Forms.Cursors.Default
         Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox1.Font = Nothing
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Afganistán", "Albania" & Global.Microsoft.VisualBasic.ChrW(9), "Alemania" & Global.Microsoft.VisualBasic.ChrW(9), "Andorra" & Global.Microsoft.VisualBasic.ChrW(9), "Angola" & Global.Microsoft.VisualBasic.ChrW(9), "Antigua y Barbuda" & Global.Microsoft.VisualBasic.ChrW(9), "Arabia Saudita" & Global.Microsoft.VisualBasic.ChrW(9), "Argelia" & Global.Microsoft.VisualBasic.ChrW(9), "Argentina", "Armenia" & Global.Microsoft.VisualBasic.ChrW(9), "Australia" & Global.Microsoft.VisualBasic.ChrW(9), "Austria", "Azerbaiyán" & Global.Microsoft.VisualBasic.ChrW(9), "Bahamas" & Global.Microsoft.VisualBasic.ChrW(9), "Bangladés" & Global.Microsoft.VisualBasic.ChrW(9), "Barbados" & Global.Microsoft.VisualBasic.ChrW(9), "Baréin" & Global.Microsoft.VisualBasic.ChrW(9), "Bélgica" & Global.Microsoft.VisualBasic.ChrW(9), "Belice" & Global.Microsoft.VisualBasic.ChrW(9), "Benín" & Global.Microsoft.VisualBasic.ChrW(9), "Bielorrusia" & Global.Microsoft.VisualBasic.ChrW(9), "Birmania" & Global.Microsoft.VisualBasic.ChrW(9), "Bolivia" & Global.Microsoft.VisualBasic.ChrW(9), "Bosnia-Herzegovina" & Global.Microsoft.VisualBasic.ChrW(9), "Botsuana" & Global.Microsoft.VisualBasic.ChrW(9), "Brasil" & Global.Microsoft.VisualBasic.ChrW(9), "Brunéi" & Global.Microsoft.VisualBasic.ChrW(9), "Bulgaria" & Global.Microsoft.VisualBasic.ChrW(9), "Burkina Faso" & Global.Microsoft.VisualBasic.ChrW(9), "Burundi" & Global.Microsoft.VisualBasic.ChrW(9), "Bután" & Global.Microsoft.VisualBasic.ChrW(9), "Cabo Verde" & Global.Microsoft.VisualBasic.ChrW(9), "Camboya" & Global.Microsoft.VisualBasic.ChrW(9), "Camerún" & Global.Microsoft.VisualBasic.ChrW(9), "Canadá" & Global.Microsoft.VisualBasic.ChrW(9), "Catar" & Global.Microsoft.VisualBasic.ChrW(9), "Chad" & Global.Microsoft.VisualBasic.ChrW(9), "Chile" & Global.Microsoft.VisualBasic.ChrW(9), "China" & Global.Microsoft.VisualBasic.ChrW(9), "Chipre" & Global.Microsoft.VisualBasic.ChrW(9), "Colombia" & Global.Microsoft.VisualBasic.ChrW(9), "Comoras" & Global.Microsoft.VisualBasic.ChrW(9), "Congo" & Global.Microsoft.VisualBasic.ChrW(9), "Corea del Norte" & Global.Microsoft.VisualBasic.ChrW(9), "Corea del Sur" & Global.Microsoft.VisualBasic.ChrW(9), "Costa de Marfil" & Global.Microsoft.VisualBasic.ChrW(9), "Costa Rica", "Croacia" & Global.Microsoft.VisualBasic.ChrW(9), "Cuba" & Global.Microsoft.VisualBasic.ChrW(9), "Dinamarca" & Global.Microsoft.VisualBasic.ChrW(9), "Dominica" & Global.Microsoft.VisualBasic.ChrW(9), "Ecuador" & Global.Microsoft.VisualBasic.ChrW(9), "Egipto" & Global.Microsoft.VisualBasic.ChrW(9), "El Salvador" & Global.Microsoft.VisualBasic.ChrW(9), "Emiratos Árabes Unidos" & Global.Microsoft.VisualBasic.ChrW(9), "Eritrea" & Global.Microsoft.VisualBasic.ChrW(9), "Eslovaquia", "Eslovenia" & Global.Microsoft.VisualBasic.ChrW(9), "España", "Estados Unidos" & Global.Microsoft.VisualBasic.ChrW(9), "Estonia" & Global.Microsoft.VisualBasic.ChrW(9), "Etiopía" & Global.Microsoft.VisualBasic.ChrW(9), "Filipinas" & Global.Microsoft.VisualBasic.ChrW(9), "Finlandia" & Global.Microsoft.VisualBasic.ChrW(9), "Fiyi" & Global.Microsoft.VisualBasic.ChrW(9), "Francia", "Gabón" & Global.Microsoft.VisualBasic.ChrW(9), "Gambia", "Georgia" & Global.Microsoft.VisualBasic.ChrW(9), "Ghana" & Global.Microsoft.VisualBasic.ChrW(9), "Granada", "Grecia" & Global.Microsoft.VisualBasic.ChrW(9), "Guatemala" & Global.Microsoft.VisualBasic.ChrW(9), "Guinea" & Global.Microsoft.VisualBasic.ChrW(9), "Guinea Ecuatorial" & Global.Microsoft.VisualBasic.ChrW(9), "Guinea-Bisáu" & Global.Microsoft.VisualBasic.ChrW(9), "Guyana", "Haití" & Global.Microsoft.VisualBasic.ChrW(9), "Honduras" & Global.Microsoft.VisualBasic.ChrW(9), "Hungría" & Global.Microsoft.VisualBasic.ChrW(9), "India" & Global.Microsoft.VisualBasic.ChrW(9), "Indonesia" & Global.Microsoft.VisualBasic.ChrW(9), "Irak" & Global.Microsoft.VisualBasic.ChrW(9), "Irán" & Global.Microsoft.VisualBasic.ChrW(9), "Irlanda" & Global.Microsoft.VisualBasic.ChrW(9), "Islandia" & Global.Microsoft.VisualBasic.ChrW(9), "Islas Marshall" & Global.Microsoft.VisualBasic.ChrW(9), "Islas Salomón" & Global.Microsoft.VisualBasic.ChrW(9), "Israel" & Global.Microsoft.VisualBasic.ChrW(9), "Italia" & Global.Microsoft.VisualBasic.ChrW(9), "Jamaica" & Global.Microsoft.VisualBasic.ChrW(9), "Japón" & Global.Microsoft.VisualBasic.ChrW(9), "Jordania" & Global.Microsoft.VisualBasic.ChrW(9), "Kazajistán", "Kenia" & Global.Microsoft.VisualBasic.ChrW(9), "Kirguistán" & Global.Microsoft.VisualBasic.ChrW(9), "Kiribati" & Global.Microsoft.VisualBasic.ChrW(9), "Kosovo" & Global.Microsoft.VisualBasic.ChrW(9), "Kuwait" & Global.Microsoft.VisualBasic.ChrW(9), "Laos" & Global.Microsoft.VisualBasic.ChrW(9), "Lesoto" & Global.Microsoft.VisualBasic.ChrW(9), "Letonia" & Global.Microsoft.VisualBasic.ChrW(9), "Líbano", "Liberia" & Global.Microsoft.VisualBasic.ChrW(9), "Libia" & Global.Microsoft.VisualBasic.ChrW(9), "Liechtenstein" & Global.Microsoft.VisualBasic.ChrW(9), "Lituania" & Global.Microsoft.VisualBasic.ChrW(9), "Luxemburgo" & Global.Microsoft.VisualBasic.ChrW(9), "Macedonia" & Global.Microsoft.VisualBasic.ChrW(9), "Madagascar" & Global.Microsoft.VisualBasic.ChrW(9), "Malasia" & Global.Microsoft.VisualBasic.ChrW(9), "Malaui" & Global.Microsoft.VisualBasic.ChrW(9), "Maldivas" & Global.Microsoft.VisualBasic.ChrW(9), "Malí" & Global.Microsoft.VisualBasic.ChrW(9), "Malta" & Global.Microsoft.VisualBasic.ChrW(9), "Marruecos", "Mauricio", "Mauritania" & Global.Microsoft.VisualBasic.ChrW(9), "México" & Global.Microsoft.VisualBasic.ChrW(9), "Micronesia" & Global.Microsoft.VisualBasic.ChrW(9), "Moldavia" & Global.Microsoft.VisualBasic.ChrW(9), "Mónaco" & Global.Microsoft.VisualBasic.ChrW(9), "Mongolia" & Global.Microsoft.VisualBasic.ChrW(9), "Montenegro" & Global.Microsoft.VisualBasic.ChrW(9), "Mozambique" & Global.Microsoft.VisualBasic.ChrW(9), "Namibia", "Nauru" & Global.Microsoft.VisualBasic.ChrW(9), "Nepal" & Global.Microsoft.VisualBasic.ChrW(9), "Nicaragua", "Níger" & Global.Microsoft.VisualBasic.ChrW(9), "Nigeria" & Global.Microsoft.VisualBasic.ChrW(9), "Noruega" & Global.Microsoft.VisualBasic.ChrW(9), "Nueva Zelanda" & Global.Microsoft.VisualBasic.ChrW(9), "Omán", "Países Bajos" & Global.Microsoft.VisualBasic.ChrW(9), "Pakistán" & Global.Microsoft.VisualBasic.ChrW(9), "Palaos" & Global.Microsoft.VisualBasic.ChrW(9), "Palestina" & Global.Microsoft.VisualBasic.ChrW(9), "Panamá" & Global.Microsoft.VisualBasic.ChrW(9), "Papúa Nueva Guinea" & Global.Microsoft.VisualBasic.ChrW(9), "Paraguay" & Global.Microsoft.VisualBasic.ChrW(9), "Perú" & Global.Microsoft.VisualBasic.ChrW(9), "Polonia", "Portugal" & Global.Microsoft.VisualBasic.ChrW(9), "Reino Unido" & Global.Microsoft.VisualBasic.ChrW(9), "República Centroafricana", "República Checa", "República Democrática del Congo", "República Dominicana", "Ruanda", "Rumania", "Rusia" & Global.Microsoft.VisualBasic.ChrW(9), "Samoa" & Global.Microsoft.VisualBasic.ChrW(9), "San Cristóbal y Nieves", "San Marino" & Global.Microsoft.VisualBasic.ChrW(9), "San Vicente y las Granadinas" & Global.Microsoft.VisualBasic.ChrW(9), "Santa Lucía" & Global.Microsoft.VisualBasic.ChrW(9), "Santo Tomé y Príncipe", "Senegal" & Global.Microsoft.VisualBasic.ChrW(9), "Serbia" & Global.Microsoft.VisualBasic.ChrW(9), "Seychelles" & Global.Microsoft.VisualBasic.ChrW(9), "Sierra Leona" & Global.Microsoft.VisualBasic.ChrW(9), "Singapur" & Global.Microsoft.VisualBasic.ChrW(9), "Siria" & Global.Microsoft.VisualBasic.ChrW(9), "Somalia" & Global.Microsoft.VisualBasic.ChrW(9), "Sri Lanka" & Global.Microsoft.VisualBasic.ChrW(9), "Suazilandia" & Global.Microsoft.VisualBasic.ChrW(9), "Sudáfrica" & Global.Microsoft.VisualBasic.ChrW(9), "Sudán" & Global.Microsoft.VisualBasic.ChrW(9), "Sudán del Sur" & Global.Microsoft.VisualBasic.ChrW(9), "Suecia" & Global.Microsoft.VisualBasic.ChrW(9), "Suiza" & Global.Microsoft.VisualBasic.ChrW(9), "Surinam" & Global.Microsoft.VisualBasic.ChrW(9), "Tailandia", "Taiwán" & Global.Microsoft.VisualBasic.ChrW(9), "Tanzania" & Global.Microsoft.VisualBasic.ChrW(9), "Tayikistán" & Global.Microsoft.VisualBasic.ChrW(9), "Timor Oriental" & Global.Microsoft.VisualBasic.ChrW(9), "Togo" & Global.Microsoft.VisualBasic.ChrW(9), "Tonga" & Global.Microsoft.VisualBasic.ChrW(9), "Trinidad y Tobago", "Túnez" & Global.Microsoft.VisualBasic.ChrW(9), "Turkmenistán", "Turquía" & Global.Microsoft.VisualBasic.ChrW(9), "Tuvalu" & Global.Microsoft.VisualBasic.ChrW(9), "Ucrania" & Global.Microsoft.VisualBasic.ChrW(9), "Uganda" & Global.Microsoft.VisualBasic.ChrW(9), "Uruguay", "Uzbekistán", "Vanuatu", "Vaticano" & Global.Microsoft.VisualBasic.ChrW(9), "Venezuela" & Global.Microsoft.VisualBasic.ChrW(9), "Vietnam" & Global.Microsoft.VisualBasic.ChrW(9), "Yemen" & Global.Microsoft.VisualBasic.ChrW(9), "Yibuti" & Global.Microsoft.VisualBasic.ChrW(9), "Zambia" & Global.Microsoft.VisualBasic.ChrW(9), "Zimbabue" & Global.Microsoft.VisualBasic.ChrW(9)})
-        Me.ComboBox1.Location = New System.Drawing.Point(9, 33)
+        Me.ComboBox1.Items.AddRange(New Object() {resources.GetString("ComboBox1.Items"), resources.GetString("ComboBox1.Items1"), resources.GetString("ComboBox1.Items2"), resources.GetString("ComboBox1.Items3"), resources.GetString("ComboBox1.Items4"), resources.GetString("ComboBox1.Items5"), resources.GetString("ComboBox1.Items6"), resources.GetString("ComboBox1.Items7"), resources.GetString("ComboBox1.Items8"), resources.GetString("ComboBox1.Items9"), resources.GetString("ComboBox1.Items10"), resources.GetString("ComboBox1.Items11"), resources.GetString("ComboBox1.Items12"), resources.GetString("ComboBox1.Items13"), resources.GetString("ComboBox1.Items14"), resources.GetString("ComboBox1.Items15"), resources.GetString("ComboBox1.Items16"), resources.GetString("ComboBox1.Items17"), resources.GetString("ComboBox1.Items18"), resources.GetString("ComboBox1.Items19"), resources.GetString("ComboBox1.Items20"), resources.GetString("ComboBox1.Items21"), resources.GetString("ComboBox1.Items22"), resources.GetString("ComboBox1.Items23"), resources.GetString("ComboBox1.Items24"), resources.GetString("ComboBox1.Items25"), resources.GetString("ComboBox1.Items26"), resources.GetString("ComboBox1.Items27"), resources.GetString("ComboBox1.Items28"), resources.GetString("ComboBox1.Items29"), resources.GetString("ComboBox1.Items30"), resources.GetString("ComboBox1.Items31"), resources.GetString("ComboBox1.Items32"), resources.GetString("ComboBox1.Items33"), resources.GetString("ComboBox1.Items34"), resources.GetString("ComboBox1.Items35"), resources.GetString("ComboBox1.Items36"), resources.GetString("ComboBox1.Items37"), resources.GetString("ComboBox1.Items38"), resources.GetString("ComboBox1.Items39"), resources.GetString("ComboBox1.Items40"), resources.GetString("ComboBox1.Items41"), resources.GetString("ComboBox1.Items42"), resources.GetString("ComboBox1.Items43"), resources.GetString("ComboBox1.Items44"), resources.GetString("ComboBox1.Items45"), resources.GetString("ComboBox1.Items46"), resources.GetString("ComboBox1.Items47"), resources.GetString("ComboBox1.Items48"), resources.GetString("ComboBox1.Items49"), resources.GetString("ComboBox1.Items50"), resources.GetString("ComboBox1.Items51"), resources.GetString("ComboBox1.Items52"), resources.GetString("ComboBox1.Items53"), resources.GetString("ComboBox1.Items54"), resources.GetString("ComboBox1.Items55"), resources.GetString("ComboBox1.Items56"), resources.GetString("ComboBox1.Items57"), resources.GetString("ComboBox1.Items58"), resources.GetString("ComboBox1.Items59"), resources.GetString("ComboBox1.Items60"), resources.GetString("ComboBox1.Items61"), resources.GetString("ComboBox1.Items62"), resources.GetString("ComboBox1.Items63"), resources.GetString("ComboBox1.Items64"), resources.GetString("ComboBox1.Items65"), resources.GetString("ComboBox1.Items66"), resources.GetString("ComboBox1.Items67"), resources.GetString("ComboBox1.Items68"), resources.GetString("ComboBox1.Items69"), resources.GetString("ComboBox1.Items70"), resources.GetString("ComboBox1.Items71"), resources.GetString("ComboBox1.Items72"), resources.GetString("ComboBox1.Items73"), resources.GetString("ComboBox1.Items74"), resources.GetString("ComboBox1.Items75"), resources.GetString("ComboBox1.Items76"), resources.GetString("ComboBox1.Items77"), resources.GetString("ComboBox1.Items78"), resources.GetString("ComboBox1.Items79"), resources.GetString("ComboBox1.Items80"), resources.GetString("ComboBox1.Items81"), resources.GetString("ComboBox1.Items82"), resources.GetString("ComboBox1.Items83"), resources.GetString("ComboBox1.Items84"), resources.GetString("ComboBox1.Items85"), resources.GetString("ComboBox1.Items86"), resources.GetString("ComboBox1.Items87"), resources.GetString("ComboBox1.Items88"), resources.GetString("ComboBox1.Items89"), resources.GetString("ComboBox1.Items90"), resources.GetString("ComboBox1.Items91"), resources.GetString("ComboBox1.Items92"), resources.GetString("ComboBox1.Items93"), resources.GetString("ComboBox1.Items94"), resources.GetString("ComboBox1.Items95"), resources.GetString("ComboBox1.Items96"), resources.GetString("ComboBox1.Items97"), resources.GetString("ComboBox1.Items98"), resources.GetString("ComboBox1.Items99"), resources.GetString("ComboBox1.Items100"), resources.GetString("ComboBox1.Items101"), resources.GetString("ComboBox1.Items102"), resources.GetString("ComboBox1.Items103"), resources.GetString("ComboBox1.Items104"), resources.GetString("ComboBox1.Items105"), resources.GetString("ComboBox1.Items106"), resources.GetString("ComboBox1.Items107"), resources.GetString("ComboBox1.Items108"), resources.GetString("ComboBox1.Items109"), resources.GetString("ComboBox1.Items110"), resources.GetString("ComboBox1.Items111"), resources.GetString("ComboBox1.Items112"), resources.GetString("ComboBox1.Items113"), resources.GetString("ComboBox1.Items114"), resources.GetString("ComboBox1.Items115"), resources.GetString("ComboBox1.Items116"), resources.GetString("ComboBox1.Items117"), resources.GetString("ComboBox1.Items118"), resources.GetString("ComboBox1.Items119"), resources.GetString("ComboBox1.Items120"), resources.GetString("ComboBox1.Items121"), resources.GetString("ComboBox1.Items122"), resources.GetString("ComboBox1.Items123"), resources.GetString("ComboBox1.Items124"), resources.GetString("ComboBox1.Items125"), resources.GetString("ComboBox1.Items126"), resources.GetString("ComboBox1.Items127"), resources.GetString("ComboBox1.Items128"), resources.GetString("ComboBox1.Items129"), resources.GetString("ComboBox1.Items130"), resources.GetString("ComboBox1.Items131"), resources.GetString("ComboBox1.Items132"), resources.GetString("ComboBox1.Items133"), resources.GetString("ComboBox1.Items134"), resources.GetString("ComboBox1.Items135"), resources.GetString("ComboBox1.Items136"), resources.GetString("ComboBox1.Items137"), resources.GetString("ComboBox1.Items138"), resources.GetString("ComboBox1.Items139"), resources.GetString("ComboBox1.Items140"), resources.GetString("ComboBox1.Items141"), resources.GetString("ComboBox1.Items142"), resources.GetString("ComboBox1.Items143"), resources.GetString("ComboBox1.Items144"), resources.GetString("ComboBox1.Items145"), resources.GetString("ComboBox1.Items146"), resources.GetString("ComboBox1.Items147"), resources.GetString("ComboBox1.Items148"), resources.GetString("ComboBox1.Items149"), resources.GetString("ComboBox1.Items150"), resources.GetString("ComboBox1.Items151"), resources.GetString("ComboBox1.Items152"), resources.GetString("ComboBox1.Items153"), resources.GetString("ComboBox1.Items154"), resources.GetString("ComboBox1.Items155"), resources.GetString("ComboBox1.Items156"), resources.GetString("ComboBox1.Items157"), resources.GetString("ComboBox1.Items158"), resources.GetString("ComboBox1.Items159"), resources.GetString("ComboBox1.Items160"), resources.GetString("ComboBox1.Items161"), resources.GetString("ComboBox1.Items162"), resources.GetString("ComboBox1.Items163"), resources.GetString("ComboBox1.Items164"), resources.GetString("ComboBox1.Items165"), resources.GetString("ComboBox1.Items166"), resources.GetString("ComboBox1.Items167"), resources.GetString("ComboBox1.Items168"), resources.GetString("ComboBox1.Items169"), resources.GetString("ComboBox1.Items170"), resources.GetString("ComboBox1.Items171"), resources.GetString("ComboBox1.Items172"), resources.GetString("ComboBox1.Items173"), resources.GetString("ComboBox1.Items174"), resources.GetString("ComboBox1.Items175"), resources.GetString("ComboBox1.Items176"), resources.GetString("ComboBox1.Items177"), resources.GetString("ComboBox1.Items178"), resources.GetString("ComboBox1.Items179"), resources.GetString("ComboBox1.Items180"), resources.GetString("ComboBox1.Items181"), resources.GetString("ComboBox1.Items182"), resources.GetString("ComboBox1.Items183"), resources.GetString("ComboBox1.Items184"), resources.GetString("ComboBox1.Items185"), resources.GetString("ComboBox1.Items186"), resources.GetString("ComboBox1.Items187"), resources.GetString("ComboBox1.Items188"), resources.GetString("ComboBox1.Items189"), resources.GetString("ComboBox1.Items190"), resources.GetString("ComboBox1.Items191"), resources.GetString("ComboBox1.Items192"), resources.GetString("ComboBox1.Items193"), resources.GetString("ComboBox1.Items194"), resources.GetString("ComboBox1.Items195"), resources.GetString("ComboBox1.Items196")})
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(129, 21)
-        Me.ComboBox1.TabIndex = 5
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(221, 34)
+        Me.TextBox1.AccessibleDescription = Nothing
+        Me.TextBox1.AccessibleName = Nothing
+        resources.ApplyResources(Me.TextBox1, "TextBox1")
+        Me.TextBox1.BackgroundImage = Nothing
+        Me.TextBox1.Font = Nothing
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(129, 20)
-        Me.TextBox1.TabIndex = 7
         '
         'ComboBox2
         '
+        Me.ComboBox2.AccessibleDescription = Nothing
+        Me.ComboBox2.AccessibleName = Nothing
+        resources.ApplyResources(Me.ComboBox2, "ComboBox2")
+        Me.ComboBox2.BackgroundImage = Nothing
         Me.ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox2.Font = Nothing
         Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Items.AddRange(New Object() {"CI", "Pasaporte", "Otros"})
-        Me.ComboBox2.Location = New System.Drawing.Point(144, 33)
+        Me.ComboBox2.Items.AddRange(New Object() {resources.GetString("ComboBox2.Items"), resources.GetString("ComboBox2.Items1"), resources.GetString("ComboBox2.Items2")})
         Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(71, 21)
-        Me.ComboBox2.TabIndex = 6
         '
         'Label1
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(6, 19)
+        Me.Label1.AccessibleDescription = Nothing
+        Me.Label1.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label1, "Label1")
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(29, 13)
-        Me.Label1.TabIndex = 22
-        Me.Label1.Text = "País"
         '
         'Label2
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.Label2.Location = New System.Drawing.Point(141, 19)
+        Me.Label2.AccessibleDescription = Nothing
+        Me.Label2.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label2, "Label2")
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(28, 13)
-        Me.Label2.TabIndex = 23
-        Me.Label2.Text = "Tipo"
         '
         'Label3
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.Label3.Location = New System.Drawing.Point(218, 19)
+        Me.Label3.AccessibleDescription = Nothing
+        Me.Label3.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label3, "Label3")
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(44, 13)
-        Me.Label3.TabIndex = 24
-        Me.Label3.Text = "Número"
         '
         'lblMotivoAux
         '
-        Me.lblMotivoAux.AutoSize = True
-        Me.lblMotivoAux.Location = New System.Drawing.Point(12, 13)
+        Me.lblMotivoAux.AccessibleDescription = Nothing
+        Me.lblMotivoAux.AccessibleName = Nothing
+        resources.ApplyResources(Me.lblMotivoAux, "lblMotivoAux")
+        Me.lblMotivoAux.Font = Nothing
         Me.lblMotivoAux.Name = "lblMotivoAux"
-        Me.lblMotivoAux.Size = New System.Drawing.Size(120, 13)
-        Me.lblMotivoAux.TabIndex = 89
-        Me.lblMotivoAux.Text = "Seleccione una cuenta."
         '
         'frmBusquedaCuentaPorCliente
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AccessibleDescription = Nothing
+        Me.AccessibleName = Nothing
+        resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(399, 414)
+        Me.BackgroundImage = Nothing
         Me.Controls.Add(Me.lblMotivoAux)
         Me.Controls.Add(Me.TabControl)
         Me.Controls.Add(Me.btnBuscar)
         Me.Controls.Add(Me.dgvCuentas)
+        Me.Font = Nothing
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
-        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmBusquedaCuentaPorCliente"
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Buscar cuenta por cliente"
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         CType(Me.dgvCuentas, System.ComponentModel.ISupportInitialize).EndInit()
