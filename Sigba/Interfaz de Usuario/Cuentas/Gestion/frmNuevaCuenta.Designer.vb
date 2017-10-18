@@ -54,211 +54,219 @@ Partial Class frmNuevaCuenta
         '
         'tabTipoCliente
         '
+        Me.tabTipoCliente.AccessibleDescription = Nothing
+        Me.tabTipoCliente.AccessibleName = Nothing
+        resources.ApplyResources(Me.tabTipoCliente, "tabTipoCliente")
+        Me.tabTipoCliente.BackgroundImage = Nothing
         Me.tabTipoCliente.Controls.Add(Me.tabPersona)
         Me.tabTipoCliente.Controls.Add(Me.tabEmpresa)
-        Me.tabTipoCliente.Location = New System.Drawing.Point(6, 19)
+        Me.tabTipoCliente.Font = Nothing
         Me.tabTipoCliente.Name = "tabTipoCliente"
         Me.tabTipoCliente.SelectedIndex = 0
-        Me.tabTipoCliente.Size = New System.Drawing.Size(381, 108)
-        Me.tabTipoCliente.TabIndex = 89
         '
         'tabPersona
         '
+        Me.tabPersona.AccessibleDescription = Nothing
+        Me.tabPersona.AccessibleName = Nothing
+        resources.ApplyResources(Me.tabPersona, "tabPersona")
+        Me.tabPersona.BackgroundImage = Nothing
         Me.tabPersona.Controls.Add(Me.GroupBox2)
-        Me.tabPersona.Location = New System.Drawing.Point(4, 22)
+        Me.tabPersona.Font = Nothing
         Me.tabPersona.Name = "tabPersona"
-        Me.tabPersona.Padding = New System.Windows.Forms.Padding(3)
-        Me.tabPersona.Size = New System.Drawing.Size(373, 82)
-        Me.tabPersona.TabIndex = 0
-        Me.tabPersona.Text = "Persona"
         Me.tabPersona.UseVisualStyleBackColor = True
         '
         'GroupBox2
         '
+        Me.GroupBox2.AccessibleDescription = Nothing
+        Me.GroupBox2.AccessibleName = Nothing
+        resources.ApplyResources(Me.GroupBox2, "GroupBox2")
+        Me.GroupBox2.BackgroundImage = Nothing
         Me.GroupBox2.Controls.Add(Me.txtNroDoc)
         Me.GroupBox2.Controls.Add(Me.Label7)
-        Me.GroupBox2.Location = New System.Drawing.Point(6, 7)
+        Me.GroupBox2.Font = Nothing
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(360, 67)
-        Me.GroupBox2.TabIndex = 85
         Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "Documento"
         '
         'txtNroDoc
         '
-        Me.txtNroDoc.Location = New System.Drawing.Point(9, 33)
+        Me.txtNroDoc.AccessibleDescription = Nothing
+        Me.txtNroDoc.AccessibleName = Nothing
+        resources.ApplyResources(Me.txtNroDoc, "txtNroDoc")
+        Me.txtNroDoc.BackgroundImage = Nothing
+        Me.txtNroDoc.Font = Nothing
         Me.txtNroDoc.Name = "txtNroDoc"
-        Me.txtNroDoc.Size = New System.Drawing.Size(129, 20)
-        Me.txtNroDoc.TabIndex = 7
         '
         'Label7
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.Label7.Location = New System.Drawing.Point(6, 18)
+        Me.Label7.AccessibleDescription = Nothing
+        Me.Label7.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label7, "Label7")
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(44, 13)
-        Me.Label7.TabIndex = 24
-        Me.Label7.Text = "Número"
         '
         'tabEmpresa
         '
+        Me.tabEmpresa.AccessibleDescription = Nothing
+        Me.tabEmpresa.AccessibleName = Nothing
+        resources.ApplyResources(Me.tabEmpresa, "tabEmpresa")
+        Me.tabEmpresa.BackgroundImage = Nothing
         Me.tabEmpresa.Controls.Add(Me.GroupBox1)
-        Me.tabEmpresa.Location = New System.Drawing.Point(4, 22)
+        Me.tabEmpresa.Font = Nothing
         Me.tabEmpresa.Name = "tabEmpresa"
-        Me.tabEmpresa.Padding = New System.Windows.Forms.Padding(3)
-        Me.tabEmpresa.Size = New System.Drawing.Size(373, 82)
-        Me.tabEmpresa.TabIndex = 1
-        Me.tabEmpresa.Text = "Empresa"
         Me.tabEmpresa.UseVisualStyleBackColor = True
         '
         'GroupBox1
         '
+        Me.GroupBox1.AccessibleDescription = Nothing
+        Me.GroupBox1.AccessibleName = Nothing
+        resources.ApplyResources(Me.GroupBox1, "GroupBox1")
+        Me.GroupBox1.BackgroundImage = Nothing
         Me.GroupBox1.Controls.Add(Me.txtRUT)
         Me.GroupBox1.Controls.Add(Me.Label9)
-        Me.GroupBox1.Location = New System.Drawing.Point(6, 8)
+        Me.GroupBox1.Font = Nothing
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(360, 67)
-        Me.GroupBox1.TabIndex = 86
         Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Documento"
         '
         'txtRUT
         '
-        Me.txtRUT.Location = New System.Drawing.Point(9, 31)
+        Me.txtRUT.AccessibleDescription = Nothing
+        Me.txtRUT.AccessibleName = Nothing
+        resources.ApplyResources(Me.txtRUT, "txtRUT")
+        Me.txtRUT.BackgroundImage = Nothing
+        Me.txtRUT.Font = Nothing
         Me.txtRUT.Name = "txtRUT"
-        Me.txtRUT.Size = New System.Drawing.Size(139, 20)
-        Me.txtRUT.TabIndex = 7
         '
         'Label9
         '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.Label9.Location = New System.Drawing.Point(6, 16)
+        Me.Label9.AccessibleDescription = Nothing
+        Me.Label9.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label9, "Label9")
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(30, 13)
-        Me.Label9.TabIndex = 24
-        Me.Label9.Text = "RUT"
         '
         'GroupBox3
         '
+        Me.GroupBox3.AccessibleDescription = Nothing
+        Me.GroupBox3.AccessibleName = Nothing
+        resources.ApplyResources(Me.GroupBox3, "GroupBox3")
+        Me.GroupBox3.BackgroundImage = Nothing
         Me.GroupBox3.Controls.Add(Me.tabTipoCliente)
-        Me.GroupBox3.Location = New System.Drawing.Point(13, 13)
+        Me.GroupBox3.Font = Nothing
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(392, 133)
-        Me.GroupBox3.TabIndex = 90
         Me.GroupBox3.TabStop = False
-        Me.GroupBox3.Text = "Cliente"
         '
         'Label1
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(10, 178)
+        Me.Label1.AccessibleDescription = Nothing
+        Me.Label1.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label1, "Label1")
+        Me.Label1.Font = Nothing
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(79, 13)
-        Me.Label1.TabIndex = 91
-        Me.Label1.Text = "Tipo de cuenta"
         '
         'cboTipoCuenta
         '
+        Me.cboTipoCuenta.AccessibleDescription = Nothing
+        Me.cboTipoCuenta.AccessibleName = Nothing
+        resources.ApplyResources(Me.cboTipoCuenta, "cboTipoCuenta")
+        Me.cboTipoCuenta.BackgroundImage = Nothing
         Me.cboTipoCuenta.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboTipoCuenta.Font = Nothing
         Me.cboTipoCuenta.FormattingEnabled = True
-        Me.cboTipoCuenta.Items.AddRange(New Object() {"CA - Caja de Ahorro", "CC - Cuenta Corriente"})
-        Me.cboTipoCuenta.Location = New System.Drawing.Point(13, 195)
+        Me.cboTipoCuenta.Items.AddRange(New Object() {resources.GetString("cboTipoCuenta.Items"), resources.GetString("cboTipoCuenta.Items1")})
         Me.cboTipoCuenta.Name = "cboTipoCuenta"
-        Me.cboTipoCuenta.Size = New System.Drawing.Size(249, 21)
-        Me.cboTipoCuenta.TabIndex = 92
         '
         'cboSucursal
         '
+        Me.cboSucursal.AccessibleDescription = Nothing
+        Me.cboSucursal.AccessibleName = Nothing
+        resources.ApplyResources(Me.cboSucursal, "cboSucursal")
+        Me.cboSucursal.BackgroundImage = Nothing
         Me.cboSucursal.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboSucursal.Font = Nothing
         Me.cboSucursal.FormattingEnabled = True
-        Me.cboSucursal.Items.AddRange(New Object() {"001 - Casa Central", "002 - Sucursal X"})
-        Me.cboSucursal.Location = New System.Drawing.Point(13, 240)
+        Me.cboSucursal.Items.AddRange(New Object() {resources.GetString("cboSucursal.Items"), resources.GetString("cboSucursal.Items1")})
         Me.cboSucursal.Name = "cboSucursal"
-        Me.cboSucursal.Size = New System.Drawing.Size(154, 21)
-        Me.cboSucursal.TabIndex = 94
         '
         'Label2
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(10, 223)
+        Me.Label2.AccessibleDescription = Nothing
+        Me.Label2.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label2, "Label2")
+        Me.Label2.Font = Nothing
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(48, 13)
-        Me.Label2.TabIndex = 93
-        Me.Label2.Text = "Sucursal"
         '
         'cboUsoFormas
         '
+        Me.cboUsoFormas.AccessibleDescription = Nothing
+        Me.cboUsoFormas.AccessibleName = Nothing
+        resources.ApplyResources(Me.cboUsoFormas, "cboUsoFormas")
+        Me.cboUsoFormas.BackgroundImage = Nothing
         Me.cboUsoFormas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboUsoFormas.Font = Nothing
         Me.cboUsoFormas.FormattingEnabled = True
-        Me.cboUsoFormas.Items.AddRange(New Object() {"No Aplica", "Indistinta", "Conjunta"})
-        Me.cboUsoFormas.Location = New System.Drawing.Point(173, 240)
+        Me.cboUsoFormas.Items.AddRange(New Object() {resources.GetString("cboUsoFormas.Items"), resources.GetString("cboUsoFormas.Items1"), resources.GetString("cboUsoFormas.Items2")})
         Me.cboUsoFormas.Name = "cboUsoFormas"
-        Me.cboUsoFormas.Size = New System.Drawing.Size(232, 21)
-        Me.cboUsoFormas.TabIndex = 96
         '
         'Label3
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(170, 223)
+        Me.Label3.AccessibleDescription = Nothing
+        Me.Label3.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label3, "Label3")
+        Me.Label3.Font = Nothing
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(71, 13)
-        Me.Label3.TabIndex = 95
-        Me.Label3.Text = "Uso de firmas"
         '
         'btnConfirmar
         '
-        Me.btnConfirmar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnConfirmar.Location = New System.Drawing.Point(219, 276)
+        Me.btnConfirmar.AccessibleDescription = Nothing
+        Me.btnConfirmar.AccessibleName = Nothing
+        resources.ApplyResources(Me.btnConfirmar, "btnConfirmar")
+        Me.btnConfirmar.BackgroundImage = Nothing
         Me.btnConfirmar.Name = "btnConfirmar"
-        Me.btnConfirmar.Size = New System.Drawing.Size(186, 26)
-        Me.btnConfirmar.TabIndex = 98
-        Me.btnConfirmar.Text = "Confirmar apertura de cuenta"
         Me.btnConfirmar.UseVisualStyleBackColor = True
         '
         'btnCancelar
         '
-        Me.btnCancelar.Location = New System.Drawing.Point(146, 276)
+        Me.btnCancelar.AccessibleDescription = Nothing
+        Me.btnCancelar.AccessibleName = Nothing
+        resources.ApplyResources(Me.btnCancelar, "btnCancelar")
+        Me.btnCancelar.BackgroundImage = Nothing
+        Me.btnCancelar.Font = Nothing
         Me.btnCancelar.Name = "btnCancelar"
-        Me.btnCancelar.Size = New System.Drawing.Size(67, 26)
-        Me.btnCancelar.TabIndex = 99
-        Me.btnCancelar.Text = "Cancelar"
         Me.btnCancelar.UseVisualStyleBackColor = True
         '
         'txtClienteEncontrado
         '
-        Me.txtClienteEncontrado.AutoSize = True
-        Me.txtClienteEncontrado.Location = New System.Drawing.Point(13, 153)
+        Me.txtClienteEncontrado.AccessibleDescription = Nothing
+        Me.txtClienteEncontrado.AccessibleName = Nothing
+        resources.ApplyResources(Me.txtClienteEncontrado, "txtClienteEncontrado")
+        Me.txtClienteEncontrado.Font = Nothing
         Me.txtClienteEncontrado.Name = "txtClienteEncontrado"
-        Me.txtClienteEncontrado.Size = New System.Drawing.Size(39, 13)
-        Me.txtClienteEncontrado.TabIndex = 100
-        Me.txtClienteEncontrado.Text = "Cliente"
         '
         'cboMoneda
         '
+        Me.cboMoneda.AccessibleDescription = Nothing
+        Me.cboMoneda.AccessibleName = Nothing
+        resources.ApplyResources(Me.cboMoneda, "cboMoneda")
+        Me.cboMoneda.BackgroundImage = Nothing
         Me.cboMoneda.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboMoneda.Font = Nothing
         Me.cboMoneda.FormattingEnabled = True
-        Me.cboMoneda.Items.AddRange(New Object() {"UYU", "USD"})
-        Me.cboMoneda.Location = New System.Drawing.Point(268, 195)
+        Me.cboMoneda.Items.AddRange(New Object() {resources.GetString("cboMoneda.Items"), resources.GetString("cboMoneda.Items1")})
         Me.cboMoneda.Name = "cboMoneda"
-        Me.cboMoneda.Size = New System.Drawing.Size(137, 21)
-        Me.cboMoneda.TabIndex = 102
         '
         'Label4
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(265, 178)
+        Me.Label4.AccessibleDescription = Nothing
+        Me.Label4.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label4, "Label4")
+        Me.Label4.Font = Nothing
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(46, 13)
-        Me.Label4.TabIndex = 101
-        Me.Label4.Text = "Moneda"
         '
         'frmNuevaCuenta
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AccessibleDescription = Nothing
+        Me.AccessibleName = Nothing
+        resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(416, 313)
+        Me.BackgroundImage = Nothing
         Me.Controls.Add(Me.cboMoneda)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.txtClienteEncontrado)
@@ -271,11 +279,10 @@ Partial Class frmNuevaCuenta
         Me.Controls.Add(Me.cboTipoCuenta)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.GroupBox3)
+        Me.Font = Nothing
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "frmNuevaCuenta"
-        Me.Text = "Apertura de cuenta"
         Me.tabTipoCliente.ResumeLayout(False)
         Me.tabPersona.ResumeLayout(False)
         Me.GroupBox2.ResumeLayout(False)

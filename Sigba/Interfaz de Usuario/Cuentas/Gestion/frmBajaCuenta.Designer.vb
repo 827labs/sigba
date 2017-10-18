@@ -33,79 +33,68 @@ Partial Class frmBajaCuenta
         '
         'Label1
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(13, 13)
+        Me.Label1.AccessibleDescription = Nothing
+        Me.Label1.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label1, "Label1")
+        Me.Label1.Font = Nothing
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(41, 13)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Cuenta"
         '
         'lblCuenta
         '
-        Me.lblCuenta.AutoSize = True
-        Me.lblCuenta.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCuenta.Location = New System.Drawing.Point(10, 28)
+        Me.lblCuenta.AccessibleDescription = Nothing
+        Me.lblCuenta.AccessibleName = Nothing
+        resources.ApplyResources(Me.lblCuenta, "lblCuenta")
         Me.lblCuenta.Name = "lblCuenta"
-        Me.lblCuenta.Size = New System.Drawing.Size(150, 20)
-        Me.lblCuenta.TabIndex = 1
-        Me.lblCuenta.Text = "CA 012-345678-9"
         '
         'lblTitular
         '
-        Me.lblTitular.AutoSize = True
-        Me.lblTitular.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTitular.Location = New System.Drawing.Point(166, 28)
+        Me.lblTitular.AccessibleDescription = Nothing
+        Me.lblTitular.AccessibleName = Nothing
+        resources.ApplyResources(Me.lblTitular, "lblTitular")
         Me.lblTitular.Name = "lblTitular"
-        Me.lblTitular.Size = New System.Drawing.Size(145, 20)
-        Me.lblTitular.TabIndex = 3
-        Me.lblTitular.Text = "Apellido, Nombre"
         '
         'Label4
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.Label4.Location = New System.Drawing.Point(169, 13)
+        Me.Label4.AccessibleDescription = Nothing
+        Me.Label4.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label4, "Label4")
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(98, 13)
-        Me.Label4.TabIndex = 2
-        Me.Label4.Text = "Titular de la cuenta"
         '
         'btnConfirmar
         '
-        Me.btnConfirmar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnConfirmar.Location = New System.Drawing.Point(642, 16)
+        Me.btnConfirmar.AccessibleDescription = Nothing
+        Me.btnConfirmar.AccessibleName = Nothing
+        resources.ApplyResources(Me.btnConfirmar, "btnConfirmar")
+        Me.btnConfirmar.BackgroundImage = Nothing
         Me.btnConfirmar.Name = "btnConfirmar"
-        Me.btnConfirmar.Size = New System.Drawing.Size(249, 34)
-        Me.btnConfirmar.TabIndex = 2
-        Me.btnConfirmar.Text = "Confirmar baja de cuenta"
         Me.btnConfirmar.UseVisualStyleBackColor = True
         '
         'btnCancelar
         '
-        Me.btnCancelar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.btnCancelar.Location = New System.Drawing.Point(547, 16)
+        Me.btnCancelar.AccessibleDescription = Nothing
+        Me.btnCancelar.AccessibleName = Nothing
+        resources.ApplyResources(Me.btnCancelar, "btnCancelar")
+        Me.btnCancelar.BackgroundImage = Nothing
         Me.btnCancelar.Name = "btnCancelar"
-        Me.btnCancelar.Size = New System.Drawing.Size(89, 34)
-        Me.btnCancelar.TabIndex = 3
-        Me.btnCancelar.Text = "Cancelar"
         Me.btnCancelar.UseVisualStyleBackColor = True
         '
         'frmBajaCuenta
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AccessibleDescription = Nothing
+        Me.AccessibleName = Nothing
+        resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(903, 65)
+        Me.BackgroundImage = Nothing
         Me.Controls.Add(Me.btnCancelar)
         Me.Controls.Add(Me.btnConfirmar)
         Me.Controls.Add(Me.lblTitular)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.lblCuenta)
         Me.Controls.Add(Me.Label1)
+        Me.Font = Nothing
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "frmBajaCuenta"
-        Me.Text = "Baja de cuenta"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
