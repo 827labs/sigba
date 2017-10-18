@@ -36,87 +36,91 @@ Partial Class frmGestionUsuarios
         '
         'dgvUsuarios
         '
+        Me.dgvUsuarios.AccessibleDescription = Nothing
+        Me.dgvUsuarios.AccessibleName = Nothing
         Me.dgvUsuarios.AllowUserToAddRows = False
         Me.dgvUsuarios.AllowUserToDeleteRows = False
+        resources.ApplyResources(Me.dgvUsuarios, "dgvUsuarios")
+        Me.dgvUsuarios.BackgroundImage = Nothing
         Me.dgvUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvUsuarios.Location = New System.Drawing.Point(202, 12)
+        Me.dgvUsuarios.Font = Nothing
         Me.dgvUsuarios.Name = "dgvUsuarios"
         Me.dgvUsuarios.ReadOnly = True
-        Me.dgvUsuarios.Size = New System.Drawing.Size(719, 570)
-        Me.dgvUsuarios.TabIndex = 0
         '
         'grpBuscarUsuarios
         '
+        Me.grpBuscarUsuarios.AccessibleDescription = Nothing
+        Me.grpBuscarUsuarios.AccessibleName = Nothing
+        resources.ApplyResources(Me.grpBuscarUsuarios, "grpBuscarUsuarios")
+        Me.grpBuscarUsuarios.BackgroundImage = Nothing
         Me.grpBuscarUsuarios.Controls.Add(Me.btnLimpiarCedula)
         Me.grpBuscarUsuarios.Controls.Add(Me.btnBuscarCedula)
         Me.grpBuscarUsuarios.Controls.Add(Me.txtBuscaCedula)
         Me.grpBuscarUsuarios.Controls.Add(Me.Label2)
-        Me.grpBuscarUsuarios.Location = New System.Drawing.Point(12, 12)
+        Me.grpBuscarUsuarios.Font = Nothing
         Me.grpBuscarUsuarios.Name = "grpBuscarUsuarios"
-        Me.grpBuscarUsuarios.Size = New System.Drawing.Size(184, 95)
-        Me.grpBuscarUsuarios.TabIndex = 2
         Me.grpBuscarUsuarios.TabStop = False
-        Me.grpBuscarUsuarios.Text = "Buscar usuarios"
         '
         'btnLimpiarCedula
         '
-        Me.btnLimpiarCedula.Location = New System.Drawing.Point(41, 64)
+        Me.btnLimpiarCedula.AccessibleDescription = Nothing
+        Me.btnLimpiarCedula.AccessibleName = Nothing
+        resources.ApplyResources(Me.btnLimpiarCedula, "btnLimpiarCedula")
+        Me.btnLimpiarCedula.BackgroundImage = Nothing
+        Me.btnLimpiarCedula.Font = Nothing
         Me.btnLimpiarCedula.Name = "btnLimpiarCedula"
-        Me.btnLimpiarCedula.Size = New System.Drawing.Size(55, 23)
-        Me.btnLimpiarCedula.TabIndex = 9
-        Me.btnLimpiarCedula.Text = "Limpiar"
         Me.btnLimpiarCedula.UseVisualStyleBackColor = True
         '
         'btnBuscarCedula
         '
-        Me.btnBuscarCedula.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBuscarCedula.Location = New System.Drawing.Point(102, 64)
+        Me.btnBuscarCedula.AccessibleDescription = Nothing
+        Me.btnBuscarCedula.AccessibleName = Nothing
+        resources.ApplyResources(Me.btnBuscarCedula, "btnBuscarCedula")
+        Me.btnBuscarCedula.BackgroundImage = Nothing
         Me.btnBuscarCedula.Name = "btnBuscarCedula"
-        Me.btnBuscarCedula.Size = New System.Drawing.Size(75, 23)
-        Me.btnBuscarCedula.TabIndex = 2
-        Me.btnBuscarCedula.Text = "Buscar"
         Me.btnBuscarCedula.UseVisualStyleBackColor = True
         '
         'txtBuscaCedula
         '
-        Me.txtBuscaCedula.Location = New System.Drawing.Point(10, 37)
+        Me.txtBuscaCedula.AccessibleDescription = Nothing
+        Me.txtBuscaCedula.AccessibleName = Nothing
+        resources.ApplyResources(Me.txtBuscaCedula, "txtBuscaCedula")
+        Me.txtBuscaCedula.BackgroundImage = Nothing
+        Me.txtBuscaCedula.Font = Nothing
         Me.txtBuscaCedula.Name = "txtBuscaCedula"
-        Me.txtBuscaCedula.Size = New System.Drawing.Size(167, 20)
-        Me.txtBuscaCedula.TabIndex = 1
         '
         'Label2
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(7, 20)
+        Me.Label2.AccessibleDescription = Nothing
+        Me.Label2.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label2, "Label2")
+        Me.Label2.Font = Nothing
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(101, 13)
-        Me.Label2.TabIndex = 0
-        Me.Label2.Text = "Cédula de identidad"
         '
         'btnNuevoUsuario
         '
-        Me.btnNuevoUsuario.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnNuevoUsuario.Location = New System.Drawing.Point(12, 114)
+        Me.btnNuevoUsuario.AccessibleDescription = Nothing
+        Me.btnNuevoUsuario.AccessibleName = Nothing
+        resources.ApplyResources(Me.btnNuevoUsuario, "btnNuevoUsuario")
+        Me.btnNuevoUsuario.BackgroundImage = Nothing
         Me.btnNuevoUsuario.Name = "btnNuevoUsuario"
-        Me.btnNuevoUsuario.Size = New System.Drawing.Size(184, 31)
-        Me.btnNuevoUsuario.TabIndex = 3
-        Me.btnNuevoUsuario.Text = "Nuevo Usuario"
         Me.btnNuevoUsuario.UseVisualStyleBackColor = True
         '
         'frmGestionUsuarios
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AccessibleDescription = Nothing
+        Me.AccessibleName = Nothing
+        resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(933, 594)
+        Me.BackgroundImage = Nothing
         Me.Controls.Add(Me.btnNuevoUsuario)
         Me.Controls.Add(Me.grpBuscarUsuarios)
         Me.Controls.Add(Me.dgvUsuarios)
+        Me.Font = Nothing
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmGestionUsuarios"
-        Me.Text = "Gestión de usuarios"
         CType(Me.dgvUsuarios, System.ComponentModel.ISupportInitialize).EndInit()
         Me.grpBuscarUsuarios.ResumeLayout(False)
         Me.grpBuscarUsuarios.PerformLayout()
