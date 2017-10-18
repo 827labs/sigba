@@ -359,8 +359,20 @@
       <DependentUpon>AcercaDe.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz de Usuario\Caja\Gestion de cajas\frmAperturaCaja.en-AU.resx">
+      <DependentUpon>frmAperturaCaja.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz de Usuario\Caja\Gestion de cajas\frmAperturaCaja.en.resx">
+      <DependentUpon>frmAperturaCaja.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Interfaz de Usuario\Caja\Gestion de cajas\frmAperturaCaja.resx">
       <DependentUpon>frmAperturaCaja.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz de Usuario\Caja\Gestion de cajas\frmCierreCaja.en.resx">
+      <DependentUpon>frmCierreCaja.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaz de Usuario\Caja\Gestion de cajas\frmCierreCaja.resx">
@@ -399,16 +411,52 @@
       <DependentUpon>frmATMTransferencia.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz de Usuario\Cheques\frmCobrarCheque.en-AU.resx">
+      <DependentUpon>frmCobrarCheque.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz de Usuario\Cheques\frmCobrarCheque.en.resx">
+      <DependentUpon>frmCobrarCheque.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Interfaz de Usuario\Cheques\frmCobrarCheque.resx">
       <DependentUpon>frmCobrarCheque.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz de Usuario\Cheques\Libretas\frmAnularLibreta.en.resx">
+      <DependentUpon>frmAnularLibreta.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaz de Usuario\Cheques\Libretas\frmAnularLibreta.resx">
       <DependentUpon>frmAnularLibreta.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz de Usuario\Cheques\Libretas\frmEmitirLibreta.af.resx">
+      <DependentUpon>frmEmitirLibreta.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz de Usuario\Cheques\Libretas\frmEmitirLibreta.en.resx">
+      <DependentUpon>frmEmitirLibreta.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Interfaz de Usuario\Cheques\Libretas\frmEmitirLibreta.resx">
       <DependentUpon>frmEmitirLibreta.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz de Usuario\Clientes\Gestion\Alta cliente\Empresa\frmAltaClienteEmpresa.af-ZA.resx">
+      <DependentUpon>frmAltaClienteEmpresa.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz de Usuario\Clientes\Gestion\Alta cliente\Empresa\frmAltaClienteEmpresa.af.resx">
+      <DependentUpon>frmAltaClienteEmpresa.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz de Usuario\Clientes\Gestion\Alta cliente\Empresa\frmAltaClienteEmpresa.en-AU.resx">
+      <DependentUpon>frmAltaClienteEmpresa.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz de Usuario\Clientes\Gestion\Alta cliente\Empresa\frmAltaClienteEmpresa.en.resx">
+      <DependentUpon>frmAltaClienteEmpresa.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaz de Usuario\Clientes\Gestion\Alta cliente\Empresa\frmAltaClienteEmpresa.resx">
@@ -489,6 +537,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaz de Usuario\Cuentas\Historico de transacciones por cuenta\frmHistoricoTransaccionesCuenta.resx">
       <DependentUpon>frmHistoricoTransaccionesCuenta.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal.en-AU.resx">
+      <DependentUpon>Principal.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Principal.en.resx">

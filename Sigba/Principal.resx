@@ -138,21 +138,21 @@
   <data name="&gt;&gt;AnularToolStripMenuItem.Name" xml:space="preserve">
     <value>AnularToolStripMenuItem</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="RetiroDeCuentaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>273, 22</value>
+  </data>
   <data name="AdministracíToolStripMenuItem.Text" xml:space="preserve">
     <value>Administración de Sucursales</value>
   </data>
   <data name="BajaDeCuentaToolStripMenuItem.Text" xml:space="preserve">
     <value>Baja de cuenta</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="BajaDeCuentaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>151, 22</value>
-  </data>
   <data name="&gt;&gt;BajaClienteToolStripMenuItem.Name" xml:space="preserve">
     <value>BajaClienteToolStripMenuItem</value>
   </data>
-  <data name="StatusStrip1.Text" xml:space="preserve">
-    <value>StatusStrip1</value>
+  <data name="&gt;&gt;StatusStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="ConfiguraciónToolStripMenuItem.Text" xml:space="preserve">
     <value>Configuración</value>
@@ -185,9 +185,6 @@
     <value>229, 22</value>
   </data>
   <data name="&gt;&gt;ConfiguraciónToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PersonaToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;TransferenciaEntreCuentasToolStripMenuItem.Type" xml:space="preserve">
@@ -3589,14 +3586,14 @@
   <data name="AcercaDeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>135, 22</value>
   </data>
-  <data name="picSigba.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 25</value>
+  <data name="&gt;&gt;AdministracíToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblCargo.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="RetiroDeCuentaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>273, 22</value>
+  <data name="&gt;&gt;ChequesToolStripMenuItem.Name" xml:space="preserve">
+    <value>ChequesToolStripMenuItem</value>
   </data>
   <data name="ChequesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 20</value>
@@ -3618,9 +3615,6 @@
   </data>
   <data name="AyudaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>53, 20</value>
-  </data>
-  <data name="&gt;&gt;GestiónCuentasToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="PersonaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>119, 22</value>
@@ -3665,9 +3659,6 @@
   <data name="&gt;&gt;CobrarChequeToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="AdministraciToolStripMenuItem.Text" xml:space="preserve">
-    <value>Administración de usuarios</value>
-  </data>
   <data name="BajaClienteToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>134, 22</value>
   </data>
@@ -3707,17 +3698,14 @@
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;strItems.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="StatusStrip1.Text" xml:space="preserve">
+    <value>StatusStrip1</value>
   </data>
   <data name="GestiónDeCajasToolStripMenuItem.Text" xml:space="preserve">
     <value>Gestión de cajas</value>
   </data>
   <data name="&gt;&gt;strItems.Parent" xml:space="preserve">
     <value>$this</value>
-  </data>
-  <data name="&gt;&gt;CajasAbiertasToolStripMenuItem.Name" xml:space="preserve">
-    <value>CajasAbiertasToolStripMenuItem</value>
   </data>
   <data name="lblCargo.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleRight</value>
@@ -3737,20 +3725,20 @@
   <data name="AltaClienteToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>134, 22</value>
   </data>
-  <data name="&gt;&gt;AdministracíToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;PersonaToolStripMenuItem.Name" xml:space="preserve">
     <value>PersonaToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;GestionarUsuariosToolStripMenuItem.Name" xml:space="preserve">
     <value>GestionarUsuariosToolStripMenuItem</value>
   </data>
+  <data name="picSigba.Size" type="System.Drawing.Size, System.Drawing">
+    <value>919, 570</value>
+  </data>
   <data name="AnularToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>109, 22</value>
   </data>
-  <data name="&gt;&gt;ChequesToolStripMenuItem.Name" xml:space="preserve">
-    <value>ChequesToolStripMenuItem</value>
+  <data name="BajaDeCuentaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 22</value>
   </data>
   <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>935, 633</value>
@@ -9937,8 +9925,8 @@
   <data name="lblCargo.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="TransferenciaEntreCuentasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>273, 22</value>
+  <data name="GestiónToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Gestión</value>
   </data>
   <data name="&gt;&gt;EmpresaToolStripMenuItem.Name" xml:space="preserve">
     <value>EmpresaToolStripMenuItem</value>
@@ -9948,6 +9936,9 @@
   </data>
   <data name="lblStatusUsuario.Size" type="System.Drawing.Size, System.Drawing">
     <value>133, 17</value>
+  </data>
+  <data name="&gt;&gt;StatusStrip1.Name" xml:space="preserve">
+    <value>StatusStrip1</value>
   </data>
   <data name="AltaDeCuentaToolStripMenuItem.Text" xml:space="preserve">
     <value>Alta de cuenta</value>
@@ -9960,6 +9951,9 @@
   </data>
   <data name="&gt;&gt;DatosDelBancoToolStripMenuItem.Name" xml:space="preserve">
     <value>DatosDelBancoToolStripMenuItem</value>
+  </data>
+  <data name="ChequesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Cheques</value>
   </data>
   <data name="strItems.Size" type="System.Drawing.Size, System.Drawing">
     <value>919, 24</value>
@@ -9988,8 +9982,8 @@
   <data name="&gt;&gt;ClientesToolStripMenuItem.Name" xml:space="preserve">
     <value>ClientesToolStripMenuItem</value>
   </data>
-  <data name="StatusStrip1.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="&gt;&gt;PersonaToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;CobrarChequeToolStripMenuItem.Name" xml:space="preserve">
     <value>CobrarChequeToolStripMenuItem</value>
@@ -10006,11 +10000,17 @@
   <data name="AltaClienteToolStripMenuItem.Text" xml:space="preserve">
     <value>Alta cliente</value>
   </data>
+  <data name="DepósitoEnCuentaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>273, 22</value>
+  </data>
   <data name="ClientesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>61, 20</value>
   </data>
   <data name="DébitosAutomáticosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>273, 22</value>
+  </data>
+  <data name="&gt;&gt;picSigba.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;DepósitoEnCuentaToolStripMenuItem.Name" xml:space="preserve">
     <value>DepósitoEnCuentaToolStripMenuItem</value>
@@ -10033,8 +10033,8 @@
   <data name="&gt;&gt;AperturaDeCajaToolStripMenuItem.Name" xml:space="preserve">
     <value>AperturaDeCajaToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;StatusStrip1.Name" xml:space="preserve">
-    <value>StatusStrip1</value>
+  <data name="&gt;&gt;CajasAbiertasToolStripMenuItem.Name" xml:space="preserve">
+    <value>CajasAbiertasToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;lblStatusUsuario.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -10042,8 +10042,8 @@
   <data name="&gt;&gt;lblCargo.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="DepósitoEnCuentaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>273, 22</value>
+  <data name="picSigba.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 25</value>
   </data>
   <data name="CobrarChequeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>152, 22</value>
@@ -10053,9 +10053,6 @@
   </data>
   <data name="DébitosAutomáticosToolStripMenuItem.Text" xml:space="preserve">
     <value>Débitos automáticos</value>
-  </data>
-  <data name="&gt;&gt;AcercaDeToolStripMenuItem.Name" xml:space="preserve">
-    <value>AcercaDeToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;GestiónCuentasToolStripMenuItem.Name" xml:space="preserve">
     <value>GestiónCuentasToolStripMenuItem</value>
@@ -10084,14 +10081,14 @@
   <data name="GestionarUsuariosToolStripMenuItem.Text" xml:space="preserve">
     <value>Gestionar usuarios</value>
   </data>
-  <data name="picSigba.Size" type="System.Drawing.Size, System.Drawing">
-    <value>919, 570</value>
+  <data name="&gt;&gt;AcercaDeToolStripMenuItem.Name" xml:space="preserve">
+    <value>AcercaDeToolStripMenuItem</value>
   </data>
   <data name="strItems.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="&gt;&gt;AdministraciToolStripMenuItem.Name" xml:space="preserve">
-    <value>AdministraciToolStripMenuItem</value>
+  <data name="&gt;&gt;GestiónCuentasToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;ClientesToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -10114,8 +10111,8 @@
   <data name="&gt;&gt;AyudaToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="GestiónToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Gestión</value>
+  <data name="AdministraciToolStripMenuItem.Text" xml:space="preserve">
+    <value>Administración de usuarios</value>
   </data>
   <data name="&gt;&gt;AltaClienteToolStripMenuItem.Name" xml:space="preserve">
     <value>AltaClienteToolStripMenuItem</value>
@@ -10138,6 +10135,9 @@
   <data name="ClientesToolStripMenuItem.Text" xml:space="preserve">
     <value>Clientes</value>
   </data>
+  <data name="&gt;&gt;lblStatusUsuario.Name" xml:space="preserve">
+    <value>lblStatusUsuario</value>
+  </data>
   <data name="RetiroDeCuentaToolStripMenuItem.Text" xml:space="preserve">
     <value>Retiro de cuenta</value>
   </data>
@@ -10150,6 +10150,9 @@
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>919, 594</value>
   </data>
+  <data name="StatusStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
   <data name="&gt;&gt;LibretasToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -10159,8 +10162,8 @@
   <data name="DatosDelBancoToolStripMenuItem.Text" xml:space="preserve">
     <value>Datos del banco</value>
   </data>
-  <data name="&gt;&gt;picSigba.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;AdministraciToolStripMenuItem.Name" xml:space="preserve">
+    <value>AdministraciToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;BajaClienteToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -10171,8 +10174,8 @@
   <data name="&gt;&gt;AltaDeCuentaToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="ChequesToolStripMenuItem.Text" xml:space="preserve">
-    <value>Cheques</value>
+  <data name="TransferenciaEntreCuentasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>273, 22</value>
   </data>
   <data name="GestiónDeCajasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>159, 22</value>
@@ -10189,8 +10192,8 @@
   <data name="lblStatusUsuario.Text" xml:space="preserve">
     <value>Información del usuario</value>
   </data>
-  <data name="&gt;&gt;lblStatusUsuario.Name" xml:space="preserve">
-    <value>lblStatusUsuario</value>
+  <data name="&gt;&gt;strItems.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="AdministraciToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>229, 22</value>
@@ -10201,9 +10204,6 @@
   <data name="&gt;&gt;LibretasToolStripMenuItem.Name" xml:space="preserve">
     <value>LibretasToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;StatusStrip1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
   <data name="&gt;&gt;DatosDelBancoToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -10211,15 +10211,12 @@
     <value>True</value>
   </metadata>
   <metadata name="StatusStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>112, 17</value>
+    <value>0, 572</value>
   </metadata>
   <metadata name="strItems.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>0, 0</value>
   </metadata>
   <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
-  </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>English</value>
   </metadata>
 </root>
