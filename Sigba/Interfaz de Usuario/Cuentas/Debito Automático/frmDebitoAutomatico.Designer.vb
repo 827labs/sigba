@@ -36,78 +36,79 @@ Partial Class frmDebitoAutomatico
         '
         'Label1
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(12, 12)
+        Me.Label1.AccessibleDescription = Nothing
+        Me.Label1.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label1, "Label1")
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(453, 16)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Suscripciones de débito automático para la cuenta 012-345678-9"
         '
         'dgvDebitos
         '
+        Me.dgvDebitos.AccessibleDescription = Nothing
+        Me.dgvDebitos.AccessibleName = Nothing
         Me.dgvDebitos.AllowUserToAddRows = False
         Me.dgvDebitos.AllowUserToDeleteRows = False
+        resources.ApplyResources(Me.dgvDebitos, "dgvDebitos")
+        Me.dgvDebitos.BackgroundImage = Nothing
         Me.dgvDebitos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvDebitos.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.empresa, Me.cuentaDeposito, Me.monto, Me.fecha, Me.estadoUlt})
-        Me.dgvDebitos.Location = New System.Drawing.Point(15, 44)
+        Me.dgvDebitos.Font = Nothing
         Me.dgvDebitos.Name = "dgvDebitos"
         Me.dgvDebitos.ReadOnly = True
-        Me.dgvDebitos.Size = New System.Drawing.Size(647, 304)
-        Me.dgvDebitos.TabIndex = 1
         '
         'empresa
         '
-        Me.empresa.HeaderText = "Empresa"
+        resources.ApplyResources(Me.empresa, "empresa")
         Me.empresa.Name = "empresa"
         Me.empresa.ReadOnly = True
         '
         'cuentaDeposito
         '
-        Me.cuentaDeposito.HeaderText = "Cuenta a depositar"
+        resources.ApplyResources(Me.cuentaDeposito, "cuentaDeposito")
         Me.cuentaDeposito.Name = "cuentaDeposito"
         Me.cuentaDeposito.ReadOnly = True
         '
         'monto
         '
-        Me.monto.HeaderText = "Monto"
+        resources.ApplyResources(Me.monto, "monto")
         Me.monto.Name = "monto"
         Me.monto.ReadOnly = True
         '
         'fecha
         '
-        Me.fecha.HeaderText = "Prox. débito"
+        resources.ApplyResources(Me.fecha, "fecha")
         Me.fecha.Name = "fecha"
         Me.fecha.ReadOnly = True
         '
         'estadoUlt
         '
-        Me.estadoUlt.HeaderText = "Últ. transacción"
+        resources.ApplyResources(Me.estadoUlt, "estadoUlt")
         Me.estadoUlt.Name = "estadoUlt"
         Me.estadoUlt.ReadOnly = True
         '
         'btnNueva
         '
-        Me.btnNueva.Location = New System.Drawing.Point(587, 9)
+        Me.btnNueva.AccessibleDescription = Nothing
+        Me.btnNueva.AccessibleName = Nothing
+        resources.ApplyResources(Me.btnNueva, "btnNueva")
+        Me.btnNueva.BackgroundImage = Nothing
+        Me.btnNueva.Font = Nothing
         Me.btnNueva.Name = "btnNueva"
-        Me.btnNueva.Size = New System.Drawing.Size(75, 23)
-        Me.btnNueva.TabIndex = 2
-        Me.btnNueva.Text = "Nueva"
         Me.btnNueva.UseVisualStyleBackColor = True
         '
         'frmDebitoAutomatico
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AccessibleDescription = Nothing
+        Me.AccessibleName = Nothing
+        resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(674, 360)
+        Me.BackgroundImage = Nothing
         Me.Controls.Add(Me.btnNueva)
         Me.Controls.Add(Me.dgvDebitos)
         Me.Controls.Add(Me.Label1)
+        Me.Font = Nothing
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "frmDebitoAutomatico"
-        Me.Text = "Débito Automático"
         CType(Me.dgvDebitos, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
