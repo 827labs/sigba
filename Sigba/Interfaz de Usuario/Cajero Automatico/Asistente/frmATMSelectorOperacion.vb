@@ -15,6 +15,9 @@
     End Sub
 
     Private Sub btnCancelar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancelar.Click
+        Autenticacion.usuarioATM = Nothing
+        Autenticacion.pinATM = Nothing
+        Autenticacion.cuentaATM = Nothing
         Dim form = New frmATMBienvenido()
         form.Show()
         Me.Hide()

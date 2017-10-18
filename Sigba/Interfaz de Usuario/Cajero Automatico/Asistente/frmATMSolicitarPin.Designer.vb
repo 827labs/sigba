@@ -24,9 +24,11 @@ Partial Class frmATMSolicitarPin
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmATMSolicitarPin))
         Me.txtPIN = New System.Windows.Forms.TextBox
-        Me.Label1 = New System.Windows.Forms.Label
+        Me.lblSubtitulo = New System.Windows.Forms.Label
         Me.lblBienvenido = New System.Windows.Forms.Label
         Me.PictureBox1 = New System.Windows.Forms.PictureBox
+        Me.btnVolver = New System.Windows.Forms.Button
+        Me.lblNuevoPinRecor = New System.Windows.Forms.Label
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -41,16 +43,16 @@ Partial Class frmATMSolicitarPin
         Me.txtPIN.TabIndex = 7
         Me.txtPIN.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'Label1
+        'lblSubtitulo
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.White
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(312, 187)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(152, 25)
-        Me.Label1.TabIndex = 6
-        Me.Label1.Text = "Ingrese su PIN"
+        Me.lblSubtitulo.BackColor = System.Drawing.Color.White
+        Me.lblSubtitulo.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSubtitulo.Location = New System.Drawing.Point(119, 187)
+        Me.lblSubtitulo.Name = "lblSubtitulo"
+        Me.lblSubtitulo.Size = New System.Drawing.Size(545, 25)
+        Me.lblSubtitulo.TabIndex = 6
+        Me.lblSubtitulo.Text = "Ingrese su PIN"
+        Me.lblSubtitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblBienvenido
         '
@@ -74,13 +76,37 @@ Partial Class frmATMSolicitarPin
         Me.PictureBox1.TabIndex = 4
         Me.PictureBox1.TabStop = False
         '
+        'btnVolver
+        '
+        Me.btnVolver.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnVolver.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnVolver.Location = New System.Drawing.Point(12, 558)
+        Me.btnVolver.Name = "btnVolver"
+        Me.btnVolver.Size = New System.Drawing.Size(93, 31)
+        Me.btnVolver.TabIndex = 8
+        Me.btnVolver.Text = "< Volver"
+        Me.btnVolver.UseVisualStyleBackColor = False
+        '
+        'lblNuevoPinRecor
+        '
+        Me.lblNuevoPinRecor.AutoSize = True
+        Me.lblNuevoPinRecor.BackColor = System.Drawing.SystemColors.HighlightText
+        Me.lblNuevoPinRecor.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNuevoPinRecor.Location = New System.Drawing.Point(364, 566)
+        Me.lblNuevoPinRecor.Name = "lblNuevoPinRecor"
+        Me.lblNuevoPinRecor.Size = New System.Drawing.Size(362, 16)
+        Me.lblNuevoPinRecor.TabIndex = 9
+        Me.lblNuevoPinRecor.Text = "Si usted aún no tiene un PIN, ingrese 123456 para crear uno."
+        '
         'frmATMSolicitarPin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(798, 601)
+        Me.Controls.Add(Me.lblNuevoPinRecor)
+        Me.Controls.Add(Me.btnVolver)
         Me.Controls.Add(Me.txtPIN)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.lblSubtitulo)
         Me.Controls.Add(Me.lblBienvenido)
         Me.Controls.Add(Me.PictureBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
@@ -93,7 +119,9 @@ Partial Class frmATMSolicitarPin
 
     End Sub
     Friend WithEvents txtPIN As System.Windows.Forms.TextBox
-    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents lblSubtitulo As System.Windows.Forms.Label
     Friend WithEvents lblBienvenido As System.Windows.Forms.Label
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents btnVolver As System.Windows.Forms.Button
+    Friend WithEvents lblNuevoPinRecor As System.Windows.Forms.Label
 End Class

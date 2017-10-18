@@ -16,13 +16,19 @@
     Private Sub txtCedula_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtCedula.KeyPress
         txtCedula.MaxLength = 8
         Validadores.KeyPressSoloNumeros(e)
+    End Sub
 
-        If txtCedula.TextLength = 7 Then
+    Private Sub txtCedula_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtCedula.TextChanged
+        If txtCedula.TextLength = 8 Then
+            If Val(txtCedula.Text) = 0 Then
+                txtCedula.Clear()
+                Mensajes.ErrorSimple("Cédula inválida.")
+                Return
+            End If
+            Autenticacion.usuarioATM = Val(txtCedula.Text)
             Dim form = New frmATMSolicitarPin()
             form.Show()
             Me.Hide()
         End If
     End Sub
-
-
 End Class
