@@ -24,15 +24,8 @@ Partial Class frmATMConsulta
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmATMConsulta))
         Me.PictureBox1 = New System.Windows.Forms.PictureBox
-        Me.Label1 = New System.Windows.Forms.Label
+        Me.lblTitulo = New System.Windows.Forms.Label
         Me.dgvTransacciones = New System.Windows.Forms.DataGridView
-        Me.suc = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.fecha = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.desc = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.comp = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.deb = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.cred = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.saldo = New System.Windows.Forms.DataGridViewTextBoxColumn
         Me.btnVolver = New System.Windows.Forms.Button
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvTransacciones, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -49,70 +42,27 @@ Partial Class frmATMConsulta
         Me.PictureBox1.TabIndex = 8
         Me.PictureBox1.TabStop = False
         '
-        'Label1
+        'lblTitulo
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.White
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(181, 89)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(433, 24)
-        Me.Label1.TabIndex = 9
-        Me.Label1.Text = "Transacciones de la cuenta CA UYU 012-345678-9"
+        Me.lblTitulo.BackColor = System.Drawing.Color.White
+        Me.lblTitulo.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTitulo.Location = New System.Drawing.Point(12, 89)
+        Me.lblTitulo.Name = "lblTitulo"
+        Me.lblTitulo.Size = New System.Drawing.Size(774, 24)
+        Me.lblTitulo.TabIndex = 9
+        Me.lblTitulo.Text = "Transacciones de la cuenta CA UYU 012-345678-9"
+        Me.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'dgvTransacciones
         '
         Me.dgvTransacciones.AllowUserToAddRows = False
         Me.dgvTransacciones.AllowUserToDeleteRows = False
         Me.dgvTransacciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvTransacciones.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.suc, Me.fecha, Me.desc, Me.comp, Me.deb, Me.cred, Me.saldo})
         Me.dgvTransacciones.Location = New System.Drawing.Point(12, 123)
         Me.dgvTransacciones.Name = "dgvTransacciones"
         Me.dgvTransacciones.ReadOnly = True
         Me.dgvTransacciones.Size = New System.Drawing.Size(774, 402)
         Me.dgvTransacciones.TabIndex = 10
-        '
-        'suc
-        '
-        Me.suc.HeaderText = "Suc."
-        Me.suc.Name = "suc"
-        Me.suc.ReadOnly = True
-        '
-        'fecha
-        '
-        Me.fecha.HeaderText = "Fecha"
-        Me.fecha.Name = "fecha"
-        Me.fecha.ReadOnly = True
-        '
-        'desc
-        '
-        Me.desc.HeaderText = "Descripción"
-        Me.desc.Name = "desc"
-        Me.desc.ReadOnly = True
-        '
-        'comp
-        '
-        Me.comp.HeaderText = "Comprobante"
-        Me.comp.Name = "comp"
-        Me.comp.ReadOnly = True
-        '
-        'deb
-        '
-        Me.deb.HeaderText = "Débito"
-        Me.deb.Name = "deb"
-        Me.deb.ReadOnly = True
-        '
-        'cred
-        '
-        Me.cred.HeaderText = "Crédito"
-        Me.cred.Name = "cred"
-        Me.cred.ReadOnly = True
-        '
-        'saldo
-        '
-        Me.saldo.HeaderText = "Saldo"
-        Me.saldo.Name = "saldo"
-        Me.saldo.ReadOnly = True
         '
         'btnVolver
         '
@@ -131,7 +81,7 @@ Partial Class frmATMConsulta
         Me.ClientSize = New System.Drawing.Size(798, 601)
         Me.Controls.Add(Me.btnVolver)
         Me.Controls.Add(Me.dgvTransacciones)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.lblTitulo)
         Me.Controls.Add(Me.PictureBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "frmATMConsulta"
@@ -144,14 +94,7 @@ Partial Class frmATMConsulta
 
     End Sub
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
-    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents lblTitulo As System.Windows.Forms.Label
     Friend WithEvents dgvTransacciones As System.Windows.Forms.DataGridView
-    Friend WithEvents suc As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents fecha As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents desc As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents comp As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents deb As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents cred As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents saldo As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents btnVolver As System.Windows.Forms.Button
 End Class
