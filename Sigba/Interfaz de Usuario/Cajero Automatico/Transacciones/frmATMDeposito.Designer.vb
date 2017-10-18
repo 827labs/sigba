@@ -23,7 +23,7 @@ Partial Class frmATMDeposito
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmATMDeposito))
-        Me.Label2 = New System.Windows.Forms.Label
+        Me.lblCuenta = New System.Windows.Forms.Label
         Me.btnCancelar = New System.Windows.Forms.Button
         Me.btnContinuar = New System.Windows.Forms.Button
         Me.txtMonto = New System.Windows.Forms.TextBox
@@ -33,17 +33,17 @@ Partial Class frmATMDeposito
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Label2
+        'lblCuenta
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(161, Byte), Integer), CType(CType(77, Byte), Integer))
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(605, 42)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(176, 18)
-        Me.Label2.TabIndex = 22
-        Me.Label2.Text = "CA UYU 012-345678-9"
+        Me.lblCuenta.BackColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(161, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.lblCuenta.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCuenta.ForeColor = System.Drawing.Color.White
+        Me.lblCuenta.Location = New System.Drawing.Point(511, 42)
+        Me.lblCuenta.Name = "lblCuenta"
+        Me.lblCuenta.Size = New System.Drawing.Size(270, 18)
+        Me.lblCuenta.TabIndex = 22
+        Me.lblCuenta.Text = "CA UYU 012-345678-9"
+        Me.lblCuenta.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'btnCancelar
         '
@@ -114,7 +114,7 @@ Partial Class frmATMDeposito
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(798, 601)
-        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.lblCuenta)
         Me.Controls.Add(Me.btnCancelar)
         Me.Controls.Add(Me.btnContinuar)
         Me.Controls.Add(Me.txtMonto)
@@ -130,7 +130,7 @@ Partial Class frmATMDeposito
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents lblCuenta As System.Windows.Forms.Label
     Friend WithEvents btnCancelar As System.Windows.Forms.Button
     Friend WithEvents btnContinuar As System.Windows.Forms.Button
     Friend WithEvents txtMonto As System.Windows.Forms.TextBox

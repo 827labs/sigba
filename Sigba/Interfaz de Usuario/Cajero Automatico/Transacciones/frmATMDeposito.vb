@@ -16,6 +16,12 @@
             lblTitulo.Text = "Ingrese el sobre y finalice"
             btnCancelar.Text = "FINALIZAR"
             btnCancelar.Height += 20
+            Dim monedaCuenta = Autenticacion.cuentaATM.Split(" ")(1)
+            EfectuarDeposito(Autenticacion.cuentaATM, monedaCuenta, txtMonto.Text, True)
         End If
+    End Sub
+
+    Private Sub frmATMDeposito_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        lblCuenta.Text = Autenticacion.cuentaATM
     End Sub
 End Class
