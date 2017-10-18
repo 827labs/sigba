@@ -35,12 +35,15 @@ Partial Class frmNuevoUsuario
         Me.btnIngresar = New System.Windows.Forms.Button
         Me.btnLimpiar = New System.Windows.Forms.Button
         Me.Label5 = New System.Windows.Forms.Label
-        Me.Label6 = New System.Windows.Forms.Label
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
+        Me.GroupBox1.AccessibleDescription = Nothing
+        Me.GroupBox1.AccessibleName = Nothing
+        resources.ApplyResources(Me.GroupBox1, "GroupBox1")
+        Me.GroupBox1.BackgroundImage = Nothing
         Me.GroupBox1.Controls.Add(Me.txtCorreo)
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.txtCedula)
@@ -49,130 +52,119 @@ Partial Class frmNuevoUsuario
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.txtNombres)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 42)
+        Me.GroupBox1.Font = Nothing
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(300, 119)
-        Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         '
         'txtCorreo
         '
-        Me.txtCorreo.Location = New System.Drawing.Point(153, 83)
+        Me.txtCorreo.AccessibleDescription = Nothing
+        Me.txtCorreo.AccessibleName = Nothing
+        resources.ApplyResources(Me.txtCorreo, "txtCorreo")
+        Me.txtCorreo.BackgroundImage = Nothing
+        Me.txtCorreo.Font = Nothing
         Me.txtCorreo.Name = "txtCorreo"
-        Me.txtCorreo.Size = New System.Drawing.Size(137, 20)
-        Me.txtCorreo.TabIndex = 7
         '
         'Label4
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(150, 66)
+        Me.Label4.AccessibleDescription = Nothing
+        Me.Label4.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label4, "Label4")
+        Me.Label4.Font = Nothing
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(93, 13)
-        Me.Label4.TabIndex = 6
-        Me.Label4.Text = "Correo electrónico"
         '
         'txtCedula
         '
-        Me.txtCedula.Location = New System.Drawing.Point(10, 83)
+        Me.txtCedula.AccessibleDescription = Nothing
+        Me.txtCedula.AccessibleName = Nothing
+        resources.ApplyResources(Me.txtCedula, "txtCedula")
+        Me.txtCedula.BackgroundImage = Nothing
+        Me.txtCedula.Font = Nothing
         Me.txtCedula.Name = "txtCedula"
-        Me.txtCedula.Size = New System.Drawing.Size(137, 20)
-        Me.txtCedula.TabIndex = 5
         '
         'Label3
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(7, 66)
+        Me.Label3.AccessibleDescription = Nothing
+        Me.Label3.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label3, "Label3")
+        Me.Label3.Font = Nothing
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(94, 13)
-        Me.Label3.TabIndex = 4
-        Me.Label3.Text = "Número de cédula"
         '
         'txtApellidos
         '
-        Me.txtApellidos.Location = New System.Drawing.Point(153, 37)
+        Me.txtApellidos.AccessibleDescription = Nothing
+        Me.txtApellidos.AccessibleName = Nothing
+        resources.ApplyResources(Me.txtApellidos, "txtApellidos")
+        Me.txtApellidos.BackgroundImage = Nothing
+        Me.txtApellidos.Font = Nothing
         Me.txtApellidos.Name = "txtApellidos"
-        Me.txtApellidos.Size = New System.Drawing.Size(137, 20)
-        Me.txtApellidos.TabIndex = 3
         '
         'Label2
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(150, 20)
+        Me.Label2.AccessibleDescription = Nothing
+        Me.Label2.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label2, "Label2")
+        Me.Label2.Font = Nothing
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(49, 13)
-        Me.Label2.TabIndex = 2
-        Me.Label2.Text = "Apellidos"
         '
         'txtNombres
         '
-        Me.txtNombres.Location = New System.Drawing.Point(10, 37)
+        Me.txtNombres.AccessibleDescription = Nothing
+        Me.txtNombres.AccessibleName = Nothing
+        resources.ApplyResources(Me.txtNombres, "txtNombres")
+        Me.txtNombres.BackgroundImage = Nothing
+        Me.txtNombres.Font = Nothing
         Me.txtNombres.Name = "txtNombres"
-        Me.txtNombres.Size = New System.Drawing.Size(137, 20)
-        Me.txtNombres.TabIndex = 1
         '
         'Label1
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(7, 20)
+        Me.Label1.AccessibleDescription = Nothing
+        Me.Label1.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label1, "Label1")
+        Me.Label1.Font = Nothing
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(49, 13)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Nombres"
         '
         'btnIngresar
         '
-        Me.btnIngresar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnIngresar.Location = New System.Drawing.Point(237, 200)
+        Me.btnIngresar.AccessibleDescription = Nothing
+        Me.btnIngresar.AccessibleName = Nothing
+        resources.ApplyResources(Me.btnIngresar, "btnIngresar")
+        Me.btnIngresar.BackgroundImage = Nothing
         Me.btnIngresar.Name = "btnIngresar"
-        Me.btnIngresar.Size = New System.Drawing.Size(75, 23)
-        Me.btnIngresar.TabIndex = 1
-        Me.btnIngresar.Text = "Ingresar"
         Me.btnIngresar.UseVisualStyleBackColor = True
         '
         'btnLimpiar
         '
-        Me.btnLimpiar.Location = New System.Drawing.Point(156, 200)
+        Me.btnLimpiar.AccessibleDescription = Nothing
+        Me.btnLimpiar.AccessibleName = Nothing
+        resources.ApplyResources(Me.btnLimpiar, "btnLimpiar")
+        Me.btnLimpiar.BackgroundImage = Nothing
+        Me.btnLimpiar.Font = Nothing
         Me.btnLimpiar.Name = "btnLimpiar"
-        Me.btnLimpiar.Size = New System.Drawing.Size(75, 23)
-        Me.btnLimpiar.TabIndex = 2
-        Me.btnLimpiar.Text = "Limpiar"
         Me.btnLimpiar.UseVisualStyleBackColor = True
         '
         'Label5
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(81, 13)
+        Me.Label5.AccessibleDescription = Nothing
+        Me.Label5.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label5, "Label5")
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(161, 24)
-        Me.Label5.TabIndex = 8
-        Me.Label5.Text = "Ingresar usuario"
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(11, 166)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(294, 26)
-        Me.Label6.TabIndex = 9
-        Me.Label6.Text = "Generaremos un código de 6 digitos para que el usuario cree" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "su propia clave de a" & _
-            "cceso."
         '
         'frmNuevoUsuario
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AccessibleDescription = Nothing
+        Me.AccessibleName = Nothing
+        resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(327, 230)
-        Me.Controls.Add(Me.Label6)
+        Me.BackgroundImage = Nothing
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.btnLimpiar)
         Me.Controls.Add(Me.btnIngresar)
         Me.Controls.Add(Me.GroupBox1)
+        Me.Font = Nothing
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "frmNuevoUsuario"
-        Me.Text = "Nuevo Usuario"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
@@ -191,5 +183,4 @@ Partial Class frmNuevoUsuario
     Friend WithEvents btnIngresar As System.Windows.Forms.Button
     Friend WithEvents btnLimpiar As System.Windows.Forms.Button
     Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents Label6 As System.Windows.Forms.Label
 End Class
