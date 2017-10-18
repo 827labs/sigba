@@ -31,47 +31,46 @@ Partial Class frmHistoricoTransaccionesCuenta
         '
         'Label1
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(13, 13)
+        Me.Label1.AccessibleDescription = Nothing
+        Me.Label1.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label1, "Label1")
+        Me.Label1.Font = Nothing
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(41, 13)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Cuenta"
         '
         'txtNroCuenta
         '
-        Me.txtNroCuenta.AutoSize = True
-        Me.txtNroCuenta.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNroCuenta.Location = New System.Drawing.Point(12, 26)
+        Me.txtNroCuenta.AccessibleDescription = Nothing
+        Me.txtNroCuenta.AccessibleName = Nothing
+        resources.ApplyResources(Me.txtNroCuenta, "txtNroCuenta")
         Me.txtNroCuenta.Name = "txtNroCuenta"
-        Me.txtNroCuenta.Size = New System.Drawing.Size(158, 16)
-        Me.txtNroCuenta.TabIndex = 1
-        Me.txtNroCuenta.Text = "CA UYU 123-456789-0"
         '
         'dgvTransacciones
         '
+        Me.dgvTransacciones.AccessibleDescription = Nothing
+        Me.dgvTransacciones.AccessibleName = Nothing
         Me.dgvTransacciones.AllowUserToAddRows = False
         Me.dgvTransacciones.AllowUserToDeleteRows = False
+        resources.ApplyResources(Me.dgvTransacciones, "dgvTransacciones")
+        Me.dgvTransacciones.BackgroundImage = Nothing
         Me.dgvTransacciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvTransacciones.Location = New System.Drawing.Point(12, 51)
+        Me.dgvTransacciones.Font = Nothing
         Me.dgvTransacciones.Name = "dgvTransacciones"
         Me.dgvTransacciones.ReadOnly = True
-        Me.dgvTransacciones.Size = New System.Drawing.Size(738, 330)
-        Me.dgvTransacciones.TabIndex = 2
         '
         'frmHistoricoTransaccionesCuenta
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AccessibleDescription = Nothing
+        Me.AccessibleName = Nothing
+        resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(762, 393)
+        Me.BackgroundImage = Nothing
         Me.Controls.Add(Me.dgvTransacciones)
         Me.Controls.Add(Me.txtNroCuenta)
         Me.Controls.Add(Me.Label1)
+        Me.Font = Nothing
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "frmHistoricoTransaccionesCuenta"
-        Me.Text = "Histórico de transacciones por cuenta"
         CType(Me.dgvTransacciones, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
