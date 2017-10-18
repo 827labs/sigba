@@ -28,9 +28,7 @@ Partial Class frmNuevoDebitoAutomatico
         Me.Label2 = New System.Windows.Forms.Label
         Me.Label1 = New System.Windows.Forms.Label
         Me.txtEmpresa = New System.Windows.Forms.TextBox
-        Me.txtCtaCredito = New System.Windows.Forms.TextBox
         Me.Label3 = New System.Windows.Forms.Label
-        Me.Label4 = New System.Windows.Forms.Label
         Me.txtDiaCobro = New System.Windows.Forms.TextBox
         Me.Label5 = New System.Windows.Forms.Label
         Me.Label6 = New System.Windows.Forms.Label
@@ -50,207 +48,184 @@ Partial Class frmNuevoDebitoAutomatico
         '
         'lblCtaDebito
         '
-        Me.lblCtaDebito.AutoSize = True
-        Me.lblCtaDebito.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCtaDebito.Location = New System.Drawing.Point(84, 18)
+        Me.lblCtaDebito.AccessibleDescription = Nothing
+        Me.lblCtaDebito.AccessibleName = Nothing
+        resources.ApplyResources(Me.lblCtaDebito, "lblCtaDebito")
         Me.lblCtaDebito.Name = "lblCtaDebito"
-        Me.lblCtaDebito.Size = New System.Drawing.Size(135, 13)
-        Me.lblCtaDebito.TabIndex = 10
-        Me.lblCtaDebito.Text = "CA UYU 012-345678-9"
         '
         'lblEmpresa
         '
-        Me.lblEmpresa.AutoSize = True
-        Me.lblEmpresa.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblEmpresa.Location = New System.Drawing.Point(67, 44)
+        Me.lblEmpresa.AccessibleDescription = Nothing
+        Me.lblEmpresa.AccessibleName = Nothing
+        resources.ApplyResources(Me.lblEmpresa, "lblEmpresa")
         Me.lblEmpresa.Name = "lblEmpresa"
-        Me.lblEmpresa.Size = New System.Drawing.Size(0, 13)
-        Me.lblEmpresa.TabIndex = 9
         '
         'Label2
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(10, 18)
+        Me.Label2.AccessibleDescription = Nothing
+        Me.Label2.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label2, "Label2")
+        Me.Label2.Font = Nothing
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(76, 13)
-        Me.Label2.TabIndex = 8
-        Me.Label2.Text = "Cuenta débito:"
         '
         'Label1
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(10, 44)
+        Me.Label1.AccessibleDescription = Nothing
+        Me.Label1.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label1, "Label1")
+        Me.Label1.Font = Nothing
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(48, 13)
-        Me.Label1.TabIndex = 7
-        Me.Label1.Text = "Empresa"
         '
         'txtEmpresa
         '
-        Me.txtEmpresa.Location = New System.Drawing.Point(13, 60)
+        Me.txtEmpresa.AccessibleDescription = Nothing
+        Me.txtEmpresa.AccessibleName = Nothing
+        resources.ApplyResources(Me.txtEmpresa, "txtEmpresa")
+        Me.txtEmpresa.BackgroundImage = Nothing
+        Me.txtEmpresa.Font = Nothing
         Me.txtEmpresa.Name = "txtEmpresa"
-        Me.txtEmpresa.Size = New System.Drawing.Size(150, 20)
-        Me.txtEmpresa.TabIndex = 11
-        '
-        'txtCtaCredito
-        '
-        Me.txtCtaCredito.Location = New System.Drawing.Point(169, 60)
-        Me.txtCtaCredito.Name = "txtCtaCredito"
-        Me.txtCtaCredito.Size = New System.Drawing.Size(150, 20)
-        Me.txtCtaCredito.TabIndex = 14
         '
         'Label3
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(223, 44)
+        Me.Label3.AccessibleDescription = Nothing
+        Me.Label3.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label3, "Label3")
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(0, 13)
-        Me.Label3.TabIndex = 13
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(166, 44)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(91, 13)
-        Me.Label4.TabIndex = 12
-        Me.Label4.Text = "Cuenta de crédito"
         '
         'txtDiaCobro
         '
-        Me.txtDiaCobro.Location = New System.Drawing.Point(169, 106)
+        Me.txtDiaCobro.AccessibleDescription = Nothing
+        Me.txtDiaCobro.AccessibleName = Nothing
+        resources.ApplyResources(Me.txtDiaCobro, "txtDiaCobro")
+        Me.txtDiaCobro.BackgroundImage = Nothing
+        Me.txtDiaCobro.Font = Nothing
         Me.txtDiaCobro.Name = "txtDiaCobro"
-        Me.txtDiaCobro.Size = New System.Drawing.Size(150, 20)
-        Me.txtDiaCobro.TabIndex = 20
         '
         'Label5
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(223, 90)
+        Me.Label5.AccessibleDescription = Nothing
+        Me.Label5.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label5, "Label5")
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(0, 13)
-        Me.Label5.TabIndex = 19
         '
         'Label6
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(166, 90)
+        Me.Label6.AccessibleDescription = Nothing
+        Me.Label6.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label6, "Label6")
+        Me.Label6.Font = Nothing
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(115, 13)
-        Me.Label6.TabIndex = 18
-        Me.Label6.Text = "Día de cobro (del mes)"
         '
         'txtMontoCantidad
         '
-        Me.txtMontoCantidad.Location = New System.Drawing.Point(80, 106)
+        Me.txtMontoCantidad.AccessibleDescription = Nothing
+        Me.txtMontoCantidad.AccessibleName = Nothing
+        resources.ApplyResources(Me.txtMontoCantidad, "txtMontoCantidad")
+        Me.txtMontoCantidad.BackgroundImage = Nothing
+        Me.txtMontoCantidad.Font = Nothing
         Me.txtMontoCantidad.Name = "txtMontoCantidad"
-        Me.txtMontoCantidad.Size = New System.Drawing.Size(83, 20)
-        Me.txtMontoCantidad.TabIndex = 17
         '
         'Label7
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(67, 90)
+        Me.Label7.AccessibleDescription = Nothing
+        Me.Label7.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label7, "Label7")
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(0, 13)
-        Me.Label7.TabIndex = 16
         '
         'Label8
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(10, 90)
+        Me.Label8.AccessibleDescription = Nothing
+        Me.Label8.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label8, "Label8")
+        Me.Label8.Font = Nothing
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(37, 13)
-        Me.Label8.TabIndex = 15
-        Me.Label8.Text = "Monto"
         '
         'cboMontoMoneda
         '
+        Me.cboMontoMoneda.AccessibleDescription = Nothing
+        Me.cboMontoMoneda.AccessibleName = Nothing
+        resources.ApplyResources(Me.cboMontoMoneda, "cboMontoMoneda")
+        Me.cboMontoMoneda.BackgroundImage = Nothing
         Me.cboMontoMoneda.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboMontoMoneda.Font = Nothing
         Me.cboMontoMoneda.FormattingEnabled = True
-        Me.cboMontoMoneda.Items.AddRange(New Object() {"UYU", "USD"})
-        Me.cboMontoMoneda.Location = New System.Drawing.Point(13, 106)
+        Me.cboMontoMoneda.Items.AddRange(New Object() {resources.GetString("cboMontoMoneda.Items"), resources.GetString("cboMontoMoneda.Items1")})
         Me.cboMontoMoneda.Name = "cboMontoMoneda"
-        Me.cboMontoMoneda.Size = New System.Drawing.Size(61, 21)
-        Me.cboMontoMoneda.TabIndex = 21
         '
         'txtAsunto
         '
-        Me.txtAsunto.Location = New System.Drawing.Point(13, 154)
+        Me.txtAsunto.AccessibleDescription = Nothing
+        Me.txtAsunto.AccessibleName = Nothing
+        resources.ApplyResources(Me.txtAsunto, "txtAsunto")
+        Me.txtAsunto.BackgroundImage = Nothing
+        Me.txtAsunto.Font = Nothing
         Me.txtAsunto.Name = "txtAsunto"
-        Me.txtAsunto.Size = New System.Drawing.Size(150, 20)
-        Me.txtAsunto.TabIndex = 24
         '
         'Label9
         '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(67, 138)
+        Me.Label9.AccessibleDescription = Nothing
+        Me.Label9.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label9, "Label9")
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(0, 13)
-        Me.Label9.TabIndex = 23
         '
         'Label10
         '
-        Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(10, 138)
+        Me.Label10.AccessibleDescription = Nothing
+        Me.Label10.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label10, "Label10")
+        Me.Label10.Font = Nothing
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(40, 13)
-        Me.Label10.TabIndex = 22
-        Me.Label10.Text = "Asunto"
         '
         'txtTelContactoEmpresa
         '
-        Me.txtTelContactoEmpresa.Location = New System.Drawing.Point(169, 154)
+        Me.txtTelContactoEmpresa.AccessibleDescription = Nothing
+        Me.txtTelContactoEmpresa.AccessibleName = Nothing
+        resources.ApplyResources(Me.txtTelContactoEmpresa, "txtTelContactoEmpresa")
+        Me.txtTelContactoEmpresa.BackgroundImage = Nothing
+        Me.txtTelContactoEmpresa.Font = Nothing
         Me.txtTelContactoEmpresa.Name = "txtTelContactoEmpresa"
-        Me.txtTelContactoEmpresa.Size = New System.Drawing.Size(150, 20)
-        Me.txtTelContactoEmpresa.TabIndex = 27
         '
         'Label11
         '
-        Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(223, 138)
+        Me.Label11.AccessibleDescription = Nothing
+        Me.Label11.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label11, "Label11")
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(0, 13)
-        Me.Label11.TabIndex = 26
         '
         'Label12
         '
-        Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(166, 138)
+        Me.Label12.AccessibleDescription = Nothing
+        Me.Label12.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label12, "Label12")
+        Me.Label12.Font = Nothing
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(137, 13)
-        Me.Label12.TabIndex = 25
-        Me.Label12.Text = "Telefono contacto empresa"
         '
         'btnConfirmar
         '
-        Me.btnConfirmar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnConfirmar.Location = New System.Drawing.Point(244, 193)
+        Me.btnConfirmar.AccessibleDescription = Nothing
+        Me.btnConfirmar.AccessibleName = Nothing
+        resources.ApplyResources(Me.btnConfirmar, "btnConfirmar")
+        Me.btnConfirmar.BackgroundImage = Nothing
         Me.btnConfirmar.Name = "btnConfirmar"
-        Me.btnConfirmar.Size = New System.Drawing.Size(75, 23)
-        Me.btnConfirmar.TabIndex = 28
-        Me.btnConfirmar.Text = "Confirmar"
         Me.btnConfirmar.UseVisualStyleBackColor = True
         '
         'btnCancelar
         '
-        Me.btnCancelar.Location = New System.Drawing.Point(163, 193)
+        Me.btnCancelar.AccessibleDescription = Nothing
+        Me.btnCancelar.AccessibleName = Nothing
+        resources.ApplyResources(Me.btnCancelar, "btnCancelar")
+        Me.btnCancelar.BackgroundImage = Nothing
+        Me.btnCancelar.Font = Nothing
         Me.btnCancelar.Name = "btnCancelar"
-        Me.btnCancelar.Size = New System.Drawing.Size(75, 23)
-        Me.btnCancelar.TabIndex = 29
-        Me.btnCancelar.Text = "Cancelar"
         Me.btnCancelar.UseVisualStyleBackColor = True
         '
         'frmNuevoDebitoAutomatico
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AccessibleDescription = Nothing
+        Me.AccessibleName = Nothing
+        resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(330, 226)
+        Me.BackgroundImage = Nothing
         Me.Controls.Add(Me.btnCancelar)
         Me.Controls.Add(Me.btnConfirmar)
         Me.Controls.Add(Me.txtTelContactoEmpresa)
@@ -266,19 +241,16 @@ Partial Class frmNuevoDebitoAutomatico
         Me.Controls.Add(Me.txtMontoCantidad)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.txtCtaCredito)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.txtEmpresa)
         Me.Controls.Add(Me.lblCtaDebito)
         Me.Controls.Add(Me.lblEmpresa)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.Font = Nothing
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "frmNuevoDebitoAutomatico"
-        Me.Text = "Nuevo Débito Automático"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -288,9 +260,7 @@ Partial Class frmNuevoDebitoAutomatico
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents txtEmpresa As System.Windows.Forms.TextBox
-    Friend WithEvents txtCtaCredito As System.Windows.Forms.TextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents txtDiaCobro As System.Windows.Forms.TextBox
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Label6 As System.Windows.Forms.Label
