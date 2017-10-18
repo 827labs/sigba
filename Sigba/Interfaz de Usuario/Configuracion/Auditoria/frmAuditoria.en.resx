@@ -117,253 +117,36 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="btnFiltrarFecha.Text" xml:space="preserve">
-    <value>Filtrar</value>
+  <data name="GroupBox1.Text" xml:space="preserve">
+    <value>Filter by date</value>
   </data>
-  <data name="&gt;&gt;btnFiltrarFecha.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="btnFiltrarFecha.Text" xml:space="preserve">
+    <value>Filter</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="Label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 62</value>
-  </data>
-  <data name="Label4.Text" xml:space="preserve">
-    <value>Cédula de identidad:</value>
-  </data>
-  <data name="&gt;&gt;btnFiltrarUsuario.Parent" xml:space="preserve">
-    <value>GroupBox2</value>
-  </data>
-  <data name="&gt;&gt;txtCedula.Parent" xml:space="preserve">
-    <value>GroupBox2</value>
-  </data>
-  <data name="&gt;&gt;GroupBox1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="GroupBox2.Text" xml:space="preserve">
-    <value>Filtrar por usuario</value>
-  </data>
-  <data name="Label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 13</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Label4.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;btnFiltrarFecha.Name" xml:space="preserve">
-    <value>btnFiltrarFecha</value>
-  </data>
-  <data name="txtCedula.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;Label1.Parent" xml:space="preserve">
-    <value>GroupBox1</value>
-  </data>
-  <data name="&gt;&gt;btnFiltrarFecha.Parent" xml:space="preserve">
-    <value>GroupBox1</value>
-  </data>
-  <data name="dgvAcciones.Size" type="System.Drawing.Size, System.Drawing">
-    <value>559, 420</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>782, 444</value>
-  </data>
   <data name="Label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>38, 13</value>
-  </data>
-  <data name="&gt;&gt;txtFechaDesde.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>23, 13</value>
   </data>
   <data name="Label2.Text" xml:space="preserve">
-    <value>Hasta:</value>
+    <value>To:</value>
   </data>
-  <data name="&gt;&gt;txtFechaHasta.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="Label1.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="GroupBox1.Text" xml:space="preserve">
-    <value>Filtrar por fecha</value>
-  </data>
-  <data name="&gt;&gt;dgvAcciones.Name" xml:space="preserve">
-    <value>dgvAcciones</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Auditoría</value>
-  </data>
-  <data name="&gt;&gt;txtCedula.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="Label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 21</value>
-  </data>
-  <data name="txtFechaDesde.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="txtFechaHasta.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 78</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
-  <data name="&gt;&gt;Label4.Parent" xml:space="preserve">
-    <value>GroupBox2</value>
-  </data>
-  <data name="GroupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>192, 134</value>
-  </data>
-  <data name="&gt;&gt;dgvAcciones.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="txtFechaHasta.Size" type="System.Drawing.Size, System.Drawing">
-    <value>176, 20</value>
-  </data>
-  <data name="&gt;&gt;GroupBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Label4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="btnFiltrarUsuario.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="&gt;&gt;txtCedula.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Label4.Name" xml:space="preserve">
-    <value>Label4</value>
+  <data name="Label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 13</value>
   </data>
   <data name="Label1.Text" xml:space="preserve">
-    <value>Desde:</value>
+    <value>From:</value>
   </data>
-  <data name="&gt;&gt;Label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Label1.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="txtFechaDesde.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 37</value>
-  </data>
-  <data name="GroupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 13</value>
-  </data>
-  <data name="&gt;&gt;btnFiltrarUsuario.Name" xml:space="preserve">
-    <value>btnFiltrarUsuario</value>
-  </data>
-  <data name="GroupBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 153</value>
-  </data>
-  <data name="&gt;&gt;dgvAcciones.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;txtFechaDesde.Name" xml:space="preserve">
-    <value>txtFechaDesde</value>
-  </data>
-  <data name="&gt;&gt;GroupBox1.Name" xml:space="preserve">
-    <value>GroupBox1</value>
-  </data>
-  <data name="Label2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;btnFiltrarUsuario.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>frmAuditoria</value>
-  </data>
-  <data name="&gt;&gt;txtFechaHasta.Name" xml:space="preserve">
-    <value>txtFechaHasta</value>
-  </data>
-  <data name="GroupBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;dgvAcciones.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="GroupBox2.Text" xml:space="preserve">
+    <value>Filter by user</value>
   </data>
   <data name="btnFiltrarUsuario.Text" xml:space="preserve">
-    <value>Filtrar</value>
-  </data>
-  <data name="txtFechaDesde.Size" type="System.Drawing.Size, System.Drawing">
-    <value>176, 20</value>
-  </data>
-  <data name="&gt;&gt;Label4.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;txtFechaHasta.Parent" xml:space="preserve">
-    <value>GroupBox1</value>
-  </data>
-  <data name="&gt;&gt;txtCedula.Name" xml:space="preserve">
-    <value>txtCedula</value>
-  </data>
-  <data name="&gt;&gt;GroupBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="txtCedula.Size" type="System.Drawing.Size, System.Drawing">
-    <value>176, 20</value>
-  </data>
-  <data name="&gt;&gt;Label2.Parent" xml:space="preserve">
-    <value>GroupBox1</value>
-  </data>
-  <data name="txtFechaHasta.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="dgvAcciones.Location" type="System.Drawing.Point, System.Drawing">
-    <value>211, 12</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GroupBox2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;txtFechaDesde.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="btnFiltrarUsuario.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;GroupBox2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="txtCedula.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 33</value>
-  </data>
-  <data name="&gt;&gt;Label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="GroupBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="dgvAcciones.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="Label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 16</value>
-  </data>
-  <data name="&gt;&gt;GroupBox1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Label2.Name" xml:space="preserve">
-    <value>Label2</value>
-  </data>
-  <data name="&gt;&gt;txtFechaDesde.Parent" xml:space="preserve">
-    <value>GroupBox1</value>
-  </data>
-  <data name="&gt;&gt;GroupBox2.Name" xml:space="preserve">
-    <value>GroupBox2</value>
-  </data>
-  <data name="GroupBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>192, 90</value>
+    <value>Filter</value>
   </data>
   <data name="Label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 13</value>
+    <value>58, 13</value>
   </data>
-  <data name="btnFiltrarFecha.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="Label2.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="Label4.Text" xml:space="preserve">
+    <value>ID Number</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -6537,37 +6320,7 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
 </value>
   </data>
-  <data name="&gt;&gt;Label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>User action log</value>
   </data>
-  <data name="&gt;&gt;Label2.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="Label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="btnFiltrarFecha.Location" type="System.Drawing.Point, System.Drawing">
-    <value>110, 105</value>
-  </data>
-  <data name="btnFiltrarUsuario.Location" type="System.Drawing.Point, System.Drawing">
-    <value>110, 59</value>
-  </data>
-  <data name="&gt;&gt;Label1.Name" xml:space="preserve">
-    <value>Label1</value>
-  </data>
-  <data name="&gt;&gt;txtFechaHasta.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnFiltrarFecha.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;btnFiltrarUsuario.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="btnFiltrarFecha.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
 </root>

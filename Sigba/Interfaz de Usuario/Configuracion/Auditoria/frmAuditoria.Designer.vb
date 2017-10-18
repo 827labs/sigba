@@ -41,120 +41,130 @@ Partial Class frmAuditoria
         '
         'dgvAcciones
         '
+        Me.dgvAcciones.AccessibleDescription = Nothing
+        Me.dgvAcciones.AccessibleName = Nothing
         Me.dgvAcciones.AllowUserToAddRows = False
         Me.dgvAcciones.AllowUserToDeleteRows = False
+        resources.ApplyResources(Me.dgvAcciones, "dgvAcciones")
+        Me.dgvAcciones.BackgroundImage = Nothing
         Me.dgvAcciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvAcciones.Location = New System.Drawing.Point(211, 12)
+        Me.dgvAcciones.Font = Nothing
         Me.dgvAcciones.Name = "dgvAcciones"
         Me.dgvAcciones.ReadOnly = True
-        Me.dgvAcciones.Size = New System.Drawing.Size(559, 420)
-        Me.dgvAcciones.TabIndex = 0
         '
         'GroupBox1
         '
+        Me.GroupBox1.AccessibleDescription = Nothing
+        Me.GroupBox1.AccessibleName = Nothing
+        resources.ApplyResources(Me.GroupBox1, "GroupBox1")
+        Me.GroupBox1.BackgroundImage = Nothing
         Me.GroupBox1.Controls.Add(Me.txtFechaHasta)
         Me.GroupBox1.Controls.Add(Me.txtFechaDesde)
         Me.GroupBox1.Controls.Add(Me.btnFiltrarFecha)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Location = New System.Drawing.Point(13, 13)
+        Me.GroupBox1.Font = Nothing
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(192, 134)
-        Me.GroupBox1.TabIndex = 1
         Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Filtrar por fecha"
         '
         'txtFechaHasta
         '
-        Me.txtFechaHasta.Location = New System.Drawing.Point(7, 78)
+        Me.txtFechaHasta.AccessibleDescription = Nothing
+        Me.txtFechaHasta.AccessibleName = Nothing
+        resources.ApplyResources(Me.txtFechaHasta, "txtFechaHasta")
+        Me.txtFechaHasta.BackgroundImage = Nothing
+        Me.txtFechaHasta.Font = Nothing
         Me.txtFechaHasta.Name = "txtFechaHasta"
-        Me.txtFechaHasta.Size = New System.Drawing.Size(176, 20)
-        Me.txtFechaHasta.TabIndex = 7
         '
         'txtFechaDesde
         '
-        Me.txtFechaDesde.Location = New System.Drawing.Point(7, 37)
+        Me.txtFechaDesde.AccessibleDescription = Nothing
+        Me.txtFechaDesde.AccessibleName = Nothing
+        resources.ApplyResources(Me.txtFechaDesde, "txtFechaDesde")
+        Me.txtFechaDesde.BackgroundImage = Nothing
+        Me.txtFechaDesde.Font = Nothing
         Me.txtFechaDesde.Name = "txtFechaDesde"
-        Me.txtFechaDesde.Size = New System.Drawing.Size(176, 20)
-        Me.txtFechaDesde.TabIndex = 6
         '
         'btnFiltrarFecha
         '
-        Me.btnFiltrarFecha.Location = New System.Drawing.Point(110, 105)
+        Me.btnFiltrarFecha.AccessibleDescription = Nothing
+        Me.btnFiltrarFecha.AccessibleName = Nothing
+        resources.ApplyResources(Me.btnFiltrarFecha, "btnFiltrarFecha")
+        Me.btnFiltrarFecha.BackgroundImage = Nothing
+        Me.btnFiltrarFecha.Font = Nothing
         Me.btnFiltrarFecha.Name = "btnFiltrarFecha"
-        Me.btnFiltrarFecha.Size = New System.Drawing.Size(75, 23)
-        Me.btnFiltrarFecha.TabIndex = 4
-        Me.btnFiltrarFecha.Text = "Filtrar"
         Me.btnFiltrarFecha.UseVisualStyleBackColor = True
         '
         'Label2
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(4, 62)
+        Me.Label2.AccessibleDescription = Nothing
+        Me.Label2.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label2, "Label2")
+        Me.Label2.Font = Nothing
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(38, 13)
-        Me.Label2.TabIndex = 3
-        Me.Label2.Text = "Hasta:"
         '
         'Label1
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(4, 21)
+        Me.Label1.AccessibleDescription = Nothing
+        Me.Label1.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label1, "Label1")
+        Me.Label1.Font = Nothing
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(41, 13)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Desde:"
         '
         'GroupBox2
         '
+        Me.GroupBox2.AccessibleDescription = Nothing
+        Me.GroupBox2.AccessibleName = Nothing
+        resources.ApplyResources(Me.GroupBox2, "GroupBox2")
+        Me.GroupBox2.BackgroundImage = Nothing
         Me.GroupBox2.Controls.Add(Me.txtCedula)
         Me.GroupBox2.Controls.Add(Me.btnFiltrarUsuario)
         Me.GroupBox2.Controls.Add(Me.Label4)
-        Me.GroupBox2.Location = New System.Drawing.Point(12, 153)
+        Me.GroupBox2.Font = Nothing
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(192, 90)
-        Me.GroupBox2.TabIndex = 5
         Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "Filtrar por usuario"
         '
         'txtCedula
         '
-        Me.txtCedula.Location = New System.Drawing.Point(9, 33)
+        Me.txtCedula.AccessibleDescription = Nothing
+        Me.txtCedula.AccessibleName = Nothing
+        resources.ApplyResources(Me.txtCedula, "txtCedula")
+        Me.txtCedula.BackgroundImage = Nothing
+        Me.txtCedula.Font = Nothing
         Me.txtCedula.Name = "txtCedula"
-        Me.txtCedula.Size = New System.Drawing.Size(176, 20)
-        Me.txtCedula.TabIndex = 5
         '
         'btnFiltrarUsuario
         '
-        Me.btnFiltrarUsuario.Location = New System.Drawing.Point(110, 59)
+        Me.btnFiltrarUsuario.AccessibleDescription = Nothing
+        Me.btnFiltrarUsuario.AccessibleName = Nothing
+        resources.ApplyResources(Me.btnFiltrarUsuario, "btnFiltrarUsuario")
+        Me.btnFiltrarUsuario.BackgroundImage = Nothing
+        Me.btnFiltrarUsuario.Font = Nothing
         Me.btnFiltrarUsuario.Name = "btnFiltrarUsuario"
-        Me.btnFiltrarUsuario.Size = New System.Drawing.Size(75, 23)
-        Me.btnFiltrarUsuario.TabIndex = 4
-        Me.btnFiltrarUsuario.Text = "Filtrar"
         Me.btnFiltrarUsuario.UseVisualStyleBackColor = True
         '
         'Label4
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(6, 16)
+        Me.Label4.AccessibleDescription = Nothing
+        Me.Label4.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label4, "Label4")
+        Me.Label4.Font = Nothing
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(104, 13)
-        Me.Label4.TabIndex = 1
-        Me.Label4.Text = "Cédula de identidad:"
         '
         'frmAuditoria
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AccessibleDescription = Nothing
+        Me.AccessibleName = Nothing
+        resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(782, 444)
+        Me.BackgroundImage = Nothing
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.dgvAcciones)
+        Me.Font = Nothing
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "frmAuditoria"
-        Me.Text = "Auditoría"
         CType(Me.dgvAcciones, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
