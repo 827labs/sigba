@@ -22,6 +22,7 @@ Partial Class frmEditarSucursal
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmEditarSucursal))
         Me.Label1 = New System.Windows.Forms.Label
         Me.txtNumero = New System.Windows.Forms.TextBox
         Me.txtNombre = New System.Windows.Forms.TextBox
@@ -36,89 +37,98 @@ Partial Class frmEditarSucursal
         '
         'Label1
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(12, 12)
+        Me.Label1.AccessibleDescription = Nothing
+        Me.Label1.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label1, "Label1")
+        Me.Label1.Font = Nothing
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(44, 13)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Número"
         '
         'txtNumero
         '
-        Me.txtNumero.Location = New System.Drawing.Point(15, 28)
+        Me.txtNumero.AccessibleDescription = Nothing
+        Me.txtNumero.AccessibleName = Nothing
+        resources.ApplyResources(Me.txtNumero, "txtNumero")
+        Me.txtNumero.BackgroundImage = Nothing
+        Me.txtNumero.Font = Nothing
         Me.txtNumero.Name = "txtNumero"
-        Me.txtNumero.Size = New System.Drawing.Size(290, 20)
-        Me.txtNumero.TabIndex = 1
         '
         'txtNombre
         '
-        Me.txtNombre.Location = New System.Drawing.Point(15, 69)
+        Me.txtNombre.AccessibleDescription = Nothing
+        Me.txtNombre.AccessibleName = Nothing
+        resources.ApplyResources(Me.txtNombre, "txtNombre")
+        Me.txtNombre.BackgroundImage = Nothing
+        Me.txtNombre.Font = Nothing
         Me.txtNombre.Name = "txtNombre"
-        Me.txtNombre.Size = New System.Drawing.Size(290, 20)
-        Me.txtNombre.TabIndex = 3
         '
         'Label2
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(12, 53)
+        Me.Label2.AccessibleDescription = Nothing
+        Me.Label2.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label2, "Label2")
+        Me.Label2.Font = Nothing
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(44, 13)
-        Me.Label2.TabIndex = 2
-        Me.Label2.Text = "Nombre"
         '
         'txtDirCalle
         '
-        Me.txtDirCalle.Location = New System.Drawing.Point(15, 115)
+        Me.txtDirCalle.AccessibleDescription = Nothing
+        Me.txtDirCalle.AccessibleName = Nothing
+        resources.ApplyResources(Me.txtDirCalle, "txtDirCalle")
+        Me.txtDirCalle.BackgroundImage = Nothing
+        Me.txtDirCalle.Font = Nothing
         Me.txtDirCalle.Name = "txtDirCalle"
-        Me.txtDirCalle.Size = New System.Drawing.Size(219, 20)
-        Me.txtDirCalle.TabIndex = 5
         '
         'Label3
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(12, 99)
+        Me.Label3.AccessibleDescription = Nothing
+        Me.Label3.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label3, "Label3")
+        Me.Label3.Font = Nothing
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(52, 13)
-        Me.Label3.TabIndex = 4
-        Me.Label3.Text = "Dirección"
         '
         'txtDirNumero
         '
-        Me.txtDirNumero.Location = New System.Drawing.Point(240, 115)
+        Me.txtDirNumero.AccessibleDescription = Nothing
+        Me.txtDirNumero.AccessibleName = Nothing
+        resources.ApplyResources(Me.txtDirNumero, "txtDirNumero")
+        Me.txtDirNumero.BackgroundImage = Nothing
+        Me.txtDirNumero.Font = Nothing
         Me.txtDirNumero.Name = "txtDirNumero"
-        Me.txtDirNumero.Size = New System.Drawing.Size(65, 20)
-        Me.txtDirNumero.TabIndex = 6
         '
         'txtHorario
         '
-        Me.txtHorario.Location = New System.Drawing.Point(15, 160)
+        Me.txtHorario.AccessibleDescription = Nothing
+        Me.txtHorario.AccessibleName = Nothing
+        resources.ApplyResources(Me.txtHorario, "txtHorario")
+        Me.txtHorario.BackgroundImage = Nothing
+        Me.txtHorario.Font = Nothing
         Me.txtHorario.Name = "txtHorario"
-        Me.txtHorario.Size = New System.Drawing.Size(290, 20)
-        Me.txtHorario.TabIndex = 8
         '
         'Label4
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(12, 144)
+        Me.Label4.AccessibleDescription = Nothing
+        Me.Label4.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label4, "Label4")
+        Me.Label4.Font = Nothing
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(41, 13)
-        Me.Label4.TabIndex = 7
-        Me.Label4.Text = "Horario"
         '
         'btnAccion
         '
-        Me.btnAccion.Location = New System.Drawing.Point(229, 196)
+        Me.btnAccion.AccessibleDescription = Nothing
+        Me.btnAccion.AccessibleName = Nothing
+        resources.ApplyResources(Me.btnAccion, "btnAccion")
+        Me.btnAccion.BackgroundImage = Nothing
+        Me.btnAccion.Font = Nothing
         Me.btnAccion.Name = "btnAccion"
-        Me.btnAccion.Size = New System.Drawing.Size(75, 23)
-        Me.btnAccion.TabIndex = 9
-        Me.btnAccion.Text = "Guardar"
         Me.btnAccion.UseVisualStyleBackColor = True
         '
         'frmEditarSucursal
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AccessibleDescription = Nothing
+        Me.AccessibleName = Nothing
+        resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(317, 231)
+        Me.BackgroundImage = Nothing
         Me.Controls.Add(Me.btnAccion)
         Me.Controls.Add(Me.txtHorario)
         Me.Controls.Add(Me.Label4)
@@ -129,10 +139,11 @@ Partial Class frmEditarSucursal
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.txtNumero)
         Me.Controls.Add(Me.Label1)
+        Me.Font = Nothing
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = Nothing
         Me.Name = "frmEditarSucursal"
         Me.ShowIcon = False
-        Me.Text = "Sucursal"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
