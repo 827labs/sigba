@@ -75,6 +75,10 @@ Partial Class frmDatosBanco
         '
         'grpDatosEmpresa
         '
+        Me.grpDatosEmpresa.AccessibleDescription = Nothing
+        Me.grpDatosEmpresa.AccessibleName = Nothing
+        resources.ApplyResources(Me.grpDatosEmpresa, "grpDatosEmpresa")
+        Me.grpDatosEmpresa.BackgroundImage = Nothing
         Me.grpDatosEmpresa.Controls.Add(Me.Label15)
         Me.grpDatosEmpresa.Controls.Add(Me.txtSitioWeb)
         Me.grpDatosEmpresa.Controls.Add(Me.Label14)
@@ -87,391 +91,379 @@ Partial Class frmDatosBanco
         Me.grpDatosEmpresa.Controls.Add(Me.txtRazonSocial)
         Me.grpDatosEmpresa.Controls.Add(Me.Label1)
         Me.grpDatosEmpresa.Controls.Add(Me.txtNombreFantasia)
-        Me.grpDatosEmpresa.Location = New System.Drawing.Point(12, 12)
+        Me.grpDatosEmpresa.Font = Nothing
         Me.grpDatosEmpresa.Name = "grpDatosEmpresa"
-        Me.grpDatosEmpresa.Size = New System.Drawing.Size(360, 295)
-        Me.grpDatosEmpresa.TabIndex = 1
         Me.grpDatosEmpresa.TabStop = False
-        Me.grpDatosEmpresa.Text = "Datos de la empresa"
         '
         'Label15
         '
-        Me.Label15.AutoSize = True
-        Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.Label15.Location = New System.Drawing.Point(6, 233)
+        Me.Label15.AccessibleDescription = Nothing
+        Me.Label15.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label15, "Label15")
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(50, 13)
-        Me.Label15.TabIndex = 11
-        Me.Label15.Text = "Sitio web"
         '
         'txtSitioWeb
         '
-        Me.txtSitioWeb.Location = New System.Drawing.Point(9, 249)
+        Me.txtSitioWeb.AccessibleDescription = Nothing
+        Me.txtSitioWeb.AccessibleName = Nothing
+        resources.ApplyResources(Me.txtSitioWeb, "txtSitioWeb")
+        Me.txtSitioWeb.BackgroundImage = Nothing
+        Me.txtSitioWeb.Font = Nothing
         Me.txtSitioWeb.Name = "txtSitioWeb"
-        Me.txtSitioWeb.Size = New System.Drawing.Size(345, 20)
-        Me.txtSitioWeb.TabIndex = 10
-        Me.txtSitioWeb.Text = "https://"
         '
         'Label14
         '
-        Me.Label14.AutoSize = True
-        Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.Label14.Location = New System.Drawing.Point(6, 192)
+        Me.Label14.AccessibleDescription = Nothing
+        Me.Label14.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label14, "Label14")
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(100, 13)
-        Me.Label14.TabIndex = 9
-        Me.Label14.Text = "Número de teléfono"
         '
         'txtTelefono
         '
-        Me.txtTelefono.Location = New System.Drawing.Point(9, 208)
+        Me.txtTelefono.AccessibleDescription = Nothing
+        Me.txtTelefono.AccessibleName = Nothing
+        resources.ApplyResources(Me.txtTelefono, "txtTelefono")
+        Me.txtTelefono.BackgroundImage = Nothing
+        Me.txtTelefono.Font = Nothing
         Me.txtTelefono.Name = "txtTelefono"
-        Me.txtTelefono.Size = New System.Drawing.Size(345, 20)
-        Me.txtTelefono.TabIndex = 8
         '
         'Label4
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.Label4.Location = New System.Drawing.Point(6, 150)
+        Me.Label4.AccessibleDescription = Nothing
+        Me.Label4.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label4, "Label4")
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(115, 13)
-        Me.Label4.TabIndex = 7
-        Me.Label4.Text = "Dirección Casa Central"
         '
         'txtCasaCentral
         '
-        Me.txtCasaCentral.Location = New System.Drawing.Point(9, 166)
+        Me.txtCasaCentral.AccessibleDescription = Nothing
+        Me.txtCasaCentral.AccessibleName = Nothing
+        resources.ApplyResources(Me.txtCasaCentral, "txtCasaCentral")
+        Me.txtCasaCentral.BackgroundImage = Nothing
+        Me.txtCasaCentral.Font = Nothing
         Me.txtCasaCentral.Name = "txtCasaCentral"
-        Me.txtCasaCentral.Size = New System.Drawing.Size(345, 20)
-        Me.txtCasaCentral.TabIndex = 6
         '
         'Label3
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.Label3.Location = New System.Drawing.Point(6, 107)
+        Me.Label3.AccessibleDescription = Nothing
+        Me.Label3.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label3, "Label3")
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(30, 13)
-        Me.Label3.TabIndex = 5
-        Me.Label3.Text = "RUT"
         '
         'txtRUT
         '
-        Me.txtRUT.Location = New System.Drawing.Point(9, 123)
+        Me.txtRUT.AccessibleDescription = Nothing
+        Me.txtRUT.AccessibleName = Nothing
+        resources.ApplyResources(Me.txtRUT, "txtRUT")
+        Me.txtRUT.BackgroundImage = Nothing
+        Me.txtRUT.Font = Nothing
         Me.txtRUT.Name = "txtRUT"
-        Me.txtRUT.Size = New System.Drawing.Size(345, 20)
-        Me.txtRUT.TabIndex = 4
         '
         'Label2
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.Label2.Location = New System.Drawing.Point(6, 64)
+        Me.Label2.AccessibleDescription = Nothing
+        Me.Label2.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label2, "Label2")
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(70, 13)
-        Me.Label2.TabIndex = 3
-        Me.Label2.Text = "Razón Social"
         '
         'txtRazonSocial
         '
-        Me.txtRazonSocial.Location = New System.Drawing.Point(9, 80)
+        Me.txtRazonSocial.AccessibleDescription = Nothing
+        Me.txtRazonSocial.AccessibleName = Nothing
+        resources.ApplyResources(Me.txtRazonSocial, "txtRazonSocial")
+        Me.txtRazonSocial.BackgroundImage = Nothing
+        Me.txtRazonSocial.Font = Nothing
         Me.txtRazonSocial.Name = "txtRazonSocial"
-        Me.txtRazonSocial.Size = New System.Drawing.Size(345, 20)
-        Me.txtRazonSocial.TabIndex = 2
         '
         'Label1
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.Label1.Location = New System.Drawing.Point(6, 21)
+        Me.Label1.AccessibleDescription = Nothing
+        Me.Label1.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label1, "Label1")
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(84, 13)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Nombre fantasia"
         '
         'txtNombreFantasia
         '
-        Me.txtNombreFantasia.Location = New System.Drawing.Point(9, 37)
+        Me.txtNombreFantasia.AccessibleDescription = Nothing
+        Me.txtNombreFantasia.AccessibleName = Nothing
+        resources.ApplyResources(Me.txtNombreFantasia, "txtNombreFantasia")
+        Me.txtNombreFantasia.BackgroundImage = Nothing
+        Me.txtNombreFantasia.Font = Nothing
         Me.txtNombreFantasia.Name = "txtNombreFantasia"
-        Me.txtNombreFantasia.Size = New System.Drawing.Size(345, 20)
-        Me.txtNombreFantasia.TabIndex = 0
         '
         'GroupBox2
         '
+        Me.GroupBox2.AccessibleDescription = Nothing
+        Me.GroupBox2.AccessibleName = Nothing
+        resources.ApplyResources(Me.GroupBox2, "GroupBox2")
+        Me.GroupBox2.BackgroundImage = Nothing
         Me.GroupBox2.Controls.Add(Me.GroupBox5)
         Me.GroupBox2.Controls.Add(Me.GroupBox3)
         Me.GroupBox2.Controls.Add(Me.Label5)
-        Me.GroupBox2.Location = New System.Drawing.Point(378, 12)
+        Me.GroupBox2.Font = Nothing
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(308, 177)
-        Me.GroupBox2.TabIndex = 2
         Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "Cajeros automaticos"
         '
         'GroupBox5
         '
+        Me.GroupBox5.AccessibleDescription = Nothing
+        Me.GroupBox5.AccessibleName = Nothing
+        resources.ApplyResources(Me.GroupBox5, "GroupBox5")
+        Me.GroupBox5.BackgroundImage = Nothing
         Me.GroupBox5.Controls.Add(Me.Label6)
         Me.GroupBox5.Controls.Add(Me.txtLimRetDiarioIslaUYU)
         Me.GroupBox5.Controls.Add(Me.Label9)
         Me.GroupBox5.Controls.Add(Me.txtLimRetDiarioIslaUSD)
-        Me.GroupBox5.Location = New System.Drawing.Point(6, 97)
+        Me.GroupBox5.Font = Nothing
         Me.GroupBox5.Name = "GroupBox5"
-        Me.GroupBox5.Size = New System.Drawing.Size(296, 72)
-        Me.GroupBox5.TabIndex = 16
         Me.GroupBox5.TabStop = False
-        Me.GroupBox5.Text = "Limite de retiro diario de cajeros isla"
         '
         'Label6
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.Label6.Location = New System.Drawing.Point(6, 46)
+        Me.Label6.AccessibleDescription = Nothing
+        Me.Label6.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label6, "Label6")
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(30, 13)
-        Me.Label6.TabIndex = 14
-        Me.Label6.Text = "USD"
         '
         'txtLimRetDiarioIslaUYU
         '
-        Me.txtLimRetDiarioIslaUYU.Location = New System.Drawing.Point(42, 17)
+        Me.txtLimRetDiarioIslaUYU.AccessibleDescription = Nothing
+        Me.txtLimRetDiarioIslaUYU.AccessibleName = Nothing
+        resources.ApplyResources(Me.txtLimRetDiarioIslaUYU, "txtLimRetDiarioIslaUYU")
+        Me.txtLimRetDiarioIslaUYU.BackgroundImage = Nothing
+        Me.txtLimRetDiarioIslaUYU.Font = Nothing
         Me.txtLimRetDiarioIslaUYU.Name = "txtLimRetDiarioIslaUYU"
-        Me.txtLimRetDiarioIslaUYU.Size = New System.Drawing.Size(248, 20)
-        Me.txtLimRetDiarioIslaUYU.TabIndex = 8
         '
         'Label9
         '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.Label9.Location = New System.Drawing.Point(6, 20)
+        Me.Label9.AccessibleDescription = Nothing
+        Me.Label9.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label9, "Label9")
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(30, 13)
-        Me.Label9.TabIndex = 12
-        Me.Label9.Text = "UYU"
         '
         'txtLimRetDiarioIslaUSD
         '
-        Me.txtLimRetDiarioIslaUSD.Location = New System.Drawing.Point(42, 43)
+        Me.txtLimRetDiarioIslaUSD.AccessibleDescription = Nothing
+        Me.txtLimRetDiarioIslaUSD.AccessibleName = Nothing
+        resources.ApplyResources(Me.txtLimRetDiarioIslaUSD, "txtLimRetDiarioIslaUSD")
+        Me.txtLimRetDiarioIslaUSD.BackgroundImage = Nothing
+        Me.txtLimRetDiarioIslaUSD.Font = Nothing
         Me.txtLimRetDiarioIslaUSD.Name = "txtLimRetDiarioIslaUSD"
-        Me.txtLimRetDiarioIslaUSD.Size = New System.Drawing.Size(248, 20)
-        Me.txtLimRetDiarioIslaUSD.TabIndex = 13
         '
         'GroupBox3
         '
+        Me.GroupBox3.AccessibleDescription = Nothing
+        Me.GroupBox3.AccessibleName = Nothing
+        resources.ApplyResources(Me.GroupBox3, "GroupBox3")
+        Me.GroupBox3.BackgroundImage = Nothing
         Me.GroupBox3.Controls.Add(Me.Label8)
         Me.GroupBox3.Controls.Add(Me.txtLimRetDiarioDependenciasUYU)
         Me.GroupBox3.Controls.Add(Me.Label7)
         Me.GroupBox3.Controls.Add(Me.txtLimRetDiarioDependenciasUSD)
-        Me.GroupBox3.Location = New System.Drawing.Point(6, 19)
+        Me.GroupBox3.Font = Nothing
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(296, 72)
-        Me.GroupBox3.TabIndex = 15
         Me.GroupBox3.TabStop = False
-        Me.GroupBox3.Text = "Limite de retiro diario de cajeros en dependencias "
         '
         'Label8
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.Label8.Location = New System.Drawing.Point(6, 46)
+        Me.Label8.AccessibleDescription = Nothing
+        Me.Label8.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label8, "Label8")
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(30, 13)
-        Me.Label8.TabIndex = 14
-        Me.Label8.Text = "USD"
         '
         'txtLimRetDiarioDependenciasUYU
         '
-        Me.txtLimRetDiarioDependenciasUYU.Location = New System.Drawing.Point(42, 17)
+        Me.txtLimRetDiarioDependenciasUYU.AccessibleDescription = Nothing
+        Me.txtLimRetDiarioDependenciasUYU.AccessibleName = Nothing
+        resources.ApplyResources(Me.txtLimRetDiarioDependenciasUYU, "txtLimRetDiarioDependenciasUYU")
+        Me.txtLimRetDiarioDependenciasUYU.BackgroundImage = Nothing
+        Me.txtLimRetDiarioDependenciasUYU.Font = Nothing
         Me.txtLimRetDiarioDependenciasUYU.Name = "txtLimRetDiarioDependenciasUYU"
-        Me.txtLimRetDiarioDependenciasUYU.Size = New System.Drawing.Size(248, 20)
-        Me.txtLimRetDiarioDependenciasUYU.TabIndex = 8
         '
         'Label7
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.Label7.Location = New System.Drawing.Point(6, 20)
+        Me.Label7.AccessibleDescription = Nothing
+        Me.Label7.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label7, "Label7")
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(30, 13)
-        Me.Label7.TabIndex = 12
-        Me.Label7.Text = "UYU"
         '
         'txtLimRetDiarioDependenciasUSD
         '
-        Me.txtLimRetDiarioDependenciasUSD.Location = New System.Drawing.Point(42, 43)
+        Me.txtLimRetDiarioDependenciasUSD.AccessibleDescription = Nothing
+        Me.txtLimRetDiarioDependenciasUSD.AccessibleName = Nothing
+        resources.ApplyResources(Me.txtLimRetDiarioDependenciasUSD, "txtLimRetDiarioDependenciasUSD")
+        Me.txtLimRetDiarioDependenciasUSD.BackgroundImage = Nothing
+        Me.txtLimRetDiarioDependenciasUSD.Font = Nothing
         Me.txtLimRetDiarioDependenciasUSD.Name = "txtLimRetDiarioDependenciasUSD"
-        Me.txtLimRetDiarioDependenciasUSD.Size = New System.Drawing.Size(248, 20)
-        Me.txtLimRetDiarioDependenciasUSD.TabIndex = 13
         '
         'Label5
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.Label5.Location = New System.Drawing.Point(5, 20)
+        Me.Label5.AccessibleDescription = Nothing
+        Me.Label5.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label5, "Label5")
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(0, 13)
-        Me.Label5.TabIndex = 9
         '
         'chkCCPersonas
         '
-        Me.chkCCPersonas.AutoSize = True
-        Me.chkCCPersonas.Location = New System.Drawing.Point(8, 19)
+        Me.chkCCPersonas.AccessibleDescription = Nothing
+        Me.chkCCPersonas.AccessibleName = Nothing
+        resources.ApplyResources(Me.chkCCPersonas, "chkCCPersonas")
+        Me.chkCCPersonas.BackgroundImage = Nothing
+        Me.chkCCPersonas.Font = Nothing
         Me.chkCCPersonas.Name = "chkCCPersonas"
-        Me.chkCCPersonas.Size = New System.Drawing.Size(265, 17)
-        Me.chkCCPersonas.TabIndex = 0
-        Me.chkCCPersonas.Text = "Permitir apertura de cuentas corrientes a personas."
         Me.chkCCPersonas.UseVisualStyleBackColor = True
         '
         'GroupBox4
         '
+        Me.GroupBox4.AccessibleDescription = Nothing
+        Me.GroupBox4.AccessibleName = Nothing
+        resources.ApplyResources(Me.GroupBox4, "GroupBox4")
+        Me.GroupBox4.BackgroundImage = Nothing
         Me.GroupBox4.Controls.Add(Me.chkCCPersonas)
-        Me.GroupBox4.Location = New System.Drawing.Point(378, 196)
+        Me.GroupBox4.Font = Nothing
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(308, 49)
-        Me.GroupBox4.TabIndex = 3
         Me.GroupBox4.TabStop = False
-        Me.GroupBox4.Text = "Cuentas"
         '
         'GroupBox6
         '
+        Me.GroupBox6.AccessibleDescription = Nothing
+        Me.GroupBox6.AccessibleName = Nothing
+        resources.ApplyResources(Me.GroupBox6, "GroupBox6")
+        Me.GroupBox6.BackgroundImage = Nothing
         Me.GroupBox6.Controls.Add(Me.GroupBox8)
         Me.GroupBox6.Controls.Add(Me.GroupBox7)
-        Me.GroupBox6.Location = New System.Drawing.Point(378, 251)
+        Me.GroupBox6.Font = Nothing
         Me.GroupBox6.Name = "GroupBox6"
-        Me.GroupBox6.Size = New System.Drawing.Size(308, 169)
-        Me.GroupBox6.TabIndex = 4
         Me.GroupBox6.TabStop = False
-        Me.GroupBox6.Text = "Cajas"
         '
         'GroupBox8
         '
+        Me.GroupBox8.AccessibleDescription = Nothing
+        Me.GroupBox8.AccessibleName = Nothing
+        resources.ApplyResources(Me.GroupBox8, "GroupBox8")
+        Me.GroupBox8.BackgroundImage = Nothing
         Me.GroupBox8.Controls.Add(Me.Label12)
         Me.GroupBox8.Controls.Add(Me.txtMaximoDepCajaUYU)
         Me.GroupBox8.Controls.Add(Me.Label13)
         Me.GroupBox8.Controls.Add(Me.txtMaximoDepCajaUSD)
-        Me.GroupBox8.Location = New System.Drawing.Point(6, 90)
+        Me.GroupBox8.Font = Nothing
         Me.GroupBox8.Name = "GroupBox8"
-        Me.GroupBox8.Size = New System.Drawing.Size(296, 72)
-        Me.GroupBox8.TabIndex = 17
         Me.GroupBox8.TabStop = False
-        Me.GroupBox8.Text = "Máximo deposito sin declaración de origen de fondos"
         '
         'Label12
         '
-        Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.Label12.Location = New System.Drawing.Point(6, 46)
+        Me.Label12.AccessibleDescription = Nothing
+        Me.Label12.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label12, "Label12")
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(30, 13)
-        Me.Label12.TabIndex = 14
-        Me.Label12.Text = "USD"
         '
         'txtMaximoDepCajaUYU
         '
-        Me.txtMaximoDepCajaUYU.Location = New System.Drawing.Point(42, 17)
+        Me.txtMaximoDepCajaUYU.AccessibleDescription = Nothing
+        Me.txtMaximoDepCajaUYU.AccessibleName = Nothing
+        resources.ApplyResources(Me.txtMaximoDepCajaUYU, "txtMaximoDepCajaUYU")
+        Me.txtMaximoDepCajaUYU.BackgroundImage = Nothing
+        Me.txtMaximoDepCajaUYU.Font = Nothing
         Me.txtMaximoDepCajaUYU.Name = "txtMaximoDepCajaUYU"
-        Me.txtMaximoDepCajaUYU.Size = New System.Drawing.Size(248, 20)
-        Me.txtMaximoDepCajaUYU.TabIndex = 8
         '
         'Label13
         '
-        Me.Label13.AutoSize = True
-        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.Label13.Location = New System.Drawing.Point(6, 20)
+        Me.Label13.AccessibleDescription = Nothing
+        Me.Label13.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label13, "Label13")
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(30, 13)
-        Me.Label13.TabIndex = 12
-        Me.Label13.Text = "UYU"
         '
         'txtMaximoDepCajaUSD
         '
-        Me.txtMaximoDepCajaUSD.Location = New System.Drawing.Point(42, 43)
+        Me.txtMaximoDepCajaUSD.AccessibleDescription = Nothing
+        Me.txtMaximoDepCajaUSD.AccessibleName = Nothing
+        resources.ApplyResources(Me.txtMaximoDepCajaUSD, "txtMaximoDepCajaUSD")
+        Me.txtMaximoDepCajaUSD.BackgroundImage = Nothing
+        Me.txtMaximoDepCajaUSD.Font = Nothing
         Me.txtMaximoDepCajaUSD.Name = "txtMaximoDepCajaUSD"
-        Me.txtMaximoDepCajaUSD.Size = New System.Drawing.Size(248, 20)
-        Me.txtMaximoDepCajaUSD.TabIndex = 13
         '
         'GroupBox7
         '
+        Me.GroupBox7.AccessibleDescription = Nothing
+        Me.GroupBox7.AccessibleName = Nothing
+        resources.ApplyResources(Me.GroupBox7, "GroupBox7")
+        Me.GroupBox7.BackgroundImage = Nothing
         Me.GroupBox7.Controls.Add(Me.Label10)
         Me.GroupBox7.Controls.Add(Me.txtMinimoDepCajaUYU)
         Me.GroupBox7.Controls.Add(Me.Label11)
         Me.GroupBox7.Controls.Add(Me.txtMinimoDepCajaUSD)
-        Me.GroupBox7.Location = New System.Drawing.Point(6, 16)
+        Me.GroupBox7.Font = Nothing
         Me.GroupBox7.Name = "GroupBox7"
-        Me.GroupBox7.Size = New System.Drawing.Size(296, 72)
-        Me.GroupBox7.TabIndex = 16
         Me.GroupBox7.TabStop = False
-        Me.GroupBox7.Text = "Minimo deposito presencial en caja"
         '
         'Label10
         '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.Label10.Location = New System.Drawing.Point(6, 46)
+        Me.Label10.AccessibleDescription = Nothing
+        Me.Label10.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label10, "Label10")
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(30, 13)
-        Me.Label10.TabIndex = 14
-        Me.Label10.Text = "USD"
         '
         'txtMinimoDepCajaUYU
         '
-        Me.txtMinimoDepCajaUYU.Location = New System.Drawing.Point(42, 17)
+        Me.txtMinimoDepCajaUYU.AccessibleDescription = Nothing
+        Me.txtMinimoDepCajaUYU.AccessibleName = Nothing
+        resources.ApplyResources(Me.txtMinimoDepCajaUYU, "txtMinimoDepCajaUYU")
+        Me.txtMinimoDepCajaUYU.BackgroundImage = Nothing
+        Me.txtMinimoDepCajaUYU.Font = Nothing
         Me.txtMinimoDepCajaUYU.Name = "txtMinimoDepCajaUYU"
-        Me.txtMinimoDepCajaUYU.Size = New System.Drawing.Size(248, 20)
-        Me.txtMinimoDepCajaUYU.TabIndex = 8
         '
         'Label11
         '
-        Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.Label11.Location = New System.Drawing.Point(6, 20)
+        Me.Label11.AccessibleDescription = Nothing
+        Me.Label11.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label11, "Label11")
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(30, 13)
-        Me.Label11.TabIndex = 12
-        Me.Label11.Text = "UYU"
         '
         'txtMinimoDepCajaUSD
         '
-        Me.txtMinimoDepCajaUSD.Location = New System.Drawing.Point(42, 43)
+        Me.txtMinimoDepCajaUSD.AccessibleDescription = Nothing
+        Me.txtMinimoDepCajaUSD.AccessibleName = Nothing
+        resources.ApplyResources(Me.txtMinimoDepCajaUSD, "txtMinimoDepCajaUSD")
+        Me.txtMinimoDepCajaUSD.BackgroundImage = Nothing
+        Me.txtMinimoDepCajaUSD.Font = Nothing
         Me.txtMinimoDepCajaUSD.Name = "txtMinimoDepCajaUSD"
-        Me.txtMinimoDepCajaUSD.Size = New System.Drawing.Size(248, 20)
-        Me.txtMinimoDepCajaUSD.TabIndex = 13
         '
         'btnAceptar
         '
-        Me.btnAceptar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAceptar.Location = New System.Drawing.Point(610, 427)
+        Me.btnAceptar.AccessibleDescription = Nothing
+        Me.btnAceptar.AccessibleName = Nothing
+        resources.ApplyResources(Me.btnAceptar, "btnAceptar")
+        Me.btnAceptar.BackgroundImage = Nothing
         Me.btnAceptar.Name = "btnAceptar"
-        Me.btnAceptar.Size = New System.Drawing.Size(75, 23)
-        Me.btnAceptar.TabIndex = 5
-        Me.btnAceptar.Text = "Aceptar"
         Me.btnAceptar.UseVisualStyleBackColor = True
         '
         'btnCancelar
         '
-        Me.btnCancelar.Location = New System.Drawing.Point(529, 427)
+        Me.btnCancelar.AccessibleDescription = Nothing
+        Me.btnCancelar.AccessibleName = Nothing
+        resources.ApplyResources(Me.btnCancelar, "btnCancelar")
+        Me.btnCancelar.BackgroundImage = Nothing
+        Me.btnCancelar.Font = Nothing
         Me.btnCancelar.Name = "btnCancelar"
-        Me.btnCancelar.Size = New System.Drawing.Size(75, 23)
-        Me.btnCancelar.TabIndex = 6
-        Me.btnCancelar.Text = "Cancelar"
         Me.btnCancelar.UseVisualStyleBackColor = True
         '
         'frmDatosBanco
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AccessibleDescription = Nothing
+        Me.AccessibleName = Nothing
+        resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(698, 457)
+        Me.BackgroundImage = Nothing
         Me.Controls.Add(Me.btnCancelar)
         Me.Controls.Add(Me.btnAceptar)
         Me.Controls.Add(Me.GroupBox6)
         Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.grpDatosEmpresa)
+        Me.Font = Nothing
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "frmDatosBanco"
-        Me.Text = "Configuración de los datos del banco"
         Me.grpDatosEmpresa.ResumeLayout(False)
         Me.grpDatosEmpresa.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
