@@ -35,79 +35,86 @@ Partial Class frmRetiroCuenta
         '
         'btnCancelar
         '
-        Me.btnCancelar.Location = New System.Drawing.Point(199, 62)
+        Me.btnCancelar.AccessibleDescription = Nothing
+        Me.btnCancelar.AccessibleName = Nothing
+        resources.ApplyResources(Me.btnCancelar, "btnCancelar")
+        Me.btnCancelar.BackgroundImage = Nothing
+        Me.btnCancelar.Font = Nothing
         Me.btnCancelar.Name = "btnCancelar"
-        Me.btnCancelar.Size = New System.Drawing.Size(65, 23)
-        Me.btnCancelar.TabIndex = 15
-        Me.btnCancelar.Text = "Cancelar"
         Me.btnCancelar.UseVisualStyleBackColor = True
         '
         'btnConfirmar
         '
-        Me.btnConfirmar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnConfirmar.Location = New System.Drawing.Point(270, 62)
+        Me.btnConfirmar.AccessibleDescription = Nothing
+        Me.btnConfirmar.AccessibleName = Nothing
+        resources.ApplyResources(Me.btnConfirmar, "btnConfirmar")
+        Me.btnConfirmar.BackgroundImage = Nothing
         Me.btnConfirmar.Name = "btnConfirmar"
-        Me.btnConfirmar.Size = New System.Drawing.Size(84, 23)
-        Me.btnConfirmar.TabIndex = 14
-        Me.btnConfirmar.Text = "Confirmar"
         Me.btnConfirmar.UseVisualStyleBackColor = True
         '
         'cboMonto
         '
+        Me.cboMonto.AccessibleDescription = Nothing
+        Me.cboMonto.AccessibleName = Nothing
+        resources.ApplyResources(Me.cboMonto, "cboMonto")
+        Me.cboMonto.BackgroundImage = Nothing
         Me.cboMonto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboMonto.Font = Nothing
         Me.cboMonto.FormattingEnabled = True
-        Me.cboMonto.Items.AddRange(New Object() {"UYU", "USD", "EUR"})
-        Me.cboMonto.Location = New System.Drawing.Point(213, 28)
+        Me.cboMonto.Items.AddRange(New Object() {resources.GetString("cboMonto.Items"), resources.GetString("cboMonto.Items1"), resources.GetString("cboMonto.Items2")})
         Me.cboMonto.Name = "cboMonto"
-        Me.cboMonto.Size = New System.Drawing.Size(51, 21)
-        Me.cboMonto.TabIndex = 13
         '
         'txtMontoCantidad
         '
-        Me.txtMontoCantidad.Location = New System.Drawing.Point(270, 28)
+        Me.txtMontoCantidad.AccessibleDescription = Nothing
+        Me.txtMontoCantidad.AccessibleName = Nothing
+        resources.ApplyResources(Me.txtMontoCantidad, "txtMontoCantidad")
+        Me.txtMontoCantidad.BackgroundImage = Nothing
+        Me.txtMontoCantidad.Font = Nothing
         Me.txtMontoCantidad.Name = "txtMontoCantidad"
-        Me.txtMontoCantidad.Size = New System.Drawing.Size(84, 20)
-        Me.txtMontoCantidad.TabIndex = 12
         '
         'Label2
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(210, 11)
+        Me.Label2.AccessibleDescription = Nothing
+        Me.Label2.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label2, "Label2")
+        Me.Label2.Font = Nothing
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(40, 13)
-        Me.Label2.TabIndex = 11
-        Me.Label2.Text = "Monto:"
         '
         'btnBuscarCuenta
         '
-        Me.btnBuscarCuenta.Location = New System.Drawing.Point(157, 26)
+        Me.btnBuscarCuenta.AccessibleDescription = Nothing
+        Me.btnBuscarCuenta.AccessibleName = Nothing
+        resources.ApplyResources(Me.btnBuscarCuenta, "btnBuscarCuenta")
+        Me.btnBuscarCuenta.BackgroundImage = Nothing
+        Me.btnBuscarCuenta.Font = Nothing
         Me.btnBuscarCuenta.Name = "btnBuscarCuenta"
-        Me.btnBuscarCuenta.Size = New System.Drawing.Size(50, 23)
-        Me.btnBuscarCuenta.TabIndex = 10
-        Me.btnBuscarCuenta.Text = "Buscar"
         Me.btnBuscarCuenta.UseVisualStyleBackColor = True
         '
         'txtCuentaBeneficiario
         '
-        Me.txtCuentaBeneficiario.Location = New System.Drawing.Point(10, 28)
+        Me.txtCuentaBeneficiario.AccessibleDescription = Nothing
+        Me.txtCuentaBeneficiario.AccessibleName = Nothing
+        resources.ApplyResources(Me.txtCuentaBeneficiario, "txtCuentaBeneficiario")
+        Me.txtCuentaBeneficiario.BackgroundImage = Nothing
+        Me.txtCuentaBeneficiario.Font = Nothing
         Me.txtCuentaBeneficiario.Name = "txtCuentaBeneficiario"
-        Me.txtCuentaBeneficiario.Size = New System.Drawing.Size(141, 20)
-        Me.txtCuentaBeneficiario.TabIndex = 9
         '
         'Label1
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(7, 11)
+        Me.Label1.AccessibleDescription = Nothing
+        Me.Label1.AccessibleName = Nothing
+        resources.ApplyResources(Me.Label1, "Label1")
+        Me.Label1.Font = Nothing
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(102, 13)
-        Me.Label1.TabIndex = 8
-        Me.Label1.Text = "Nº cuenta a débitar:"
         '
         'frmRetiroCuenta
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AccessibleDescription = Nothing
+        Me.AccessibleName = Nothing
+        resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(362, 96)
+        Me.BackgroundImage = Nothing
         Me.Controls.Add(Me.btnCancelar)
         Me.Controls.Add(Me.btnConfirmar)
         Me.Controls.Add(Me.cboMonto)
@@ -116,11 +123,10 @@ Partial Class frmRetiroCuenta
         Me.Controls.Add(Me.btnBuscarCuenta)
         Me.Controls.Add(Me.txtCuentaBeneficiario)
         Me.Controls.Add(Me.Label1)
+        Me.Font = Nothing
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "frmRetiroCuenta"
-        Me.Text = "Retiro de cuenta"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
