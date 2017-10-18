@@ -22,6 +22,7 @@ Partial Class frmListaSucursales
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmListaSucursales))
         Me.dgvSucursales = New System.Windows.Forms.DataGridView
         Me.btnNueva = New System.Windows.Forms.Button
         Me.btnRefrescar = New System.Windows.Forms.Button
@@ -30,46 +31,53 @@ Partial Class frmListaSucursales
         '
         'dgvSucursales
         '
+        Me.dgvSucursales.AccessibleDescription = Nothing
+        Me.dgvSucursales.AccessibleName = Nothing
         Me.dgvSucursales.AllowUserToAddRows = False
         Me.dgvSucursales.AllowUserToDeleteRows = False
+        resources.ApplyResources(Me.dgvSucursales, "dgvSucursales")
+        Me.dgvSucursales.BackgroundImage = Nothing
         Me.dgvSucursales.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvSucursales.Location = New System.Drawing.Point(12, 43)
+        Me.dgvSucursales.Font = Nothing
         Me.dgvSucursales.Name = "dgvSucursales"
         Me.dgvSucursales.ReadOnly = True
-        Me.dgvSucursales.Size = New System.Drawing.Size(505, 367)
-        Me.dgvSucursales.TabIndex = 0
         '
         'btnNueva
         '
-        Me.btnNueva.Location = New System.Drawing.Point(12, 12)
+        Me.btnNueva.AccessibleDescription = Nothing
+        Me.btnNueva.AccessibleName = Nothing
+        resources.ApplyResources(Me.btnNueva, "btnNueva")
+        Me.btnNueva.BackgroundImage = Nothing
+        Me.btnNueva.Font = Nothing
         Me.btnNueva.Name = "btnNueva"
-        Me.btnNueva.Size = New System.Drawing.Size(75, 23)
-        Me.btnNueva.TabIndex = 1
-        Me.btnNueva.Text = "Nueva"
         Me.btnNueva.UseVisualStyleBackColor = True
         '
         'btnRefrescar
         '
-        Me.btnRefrescar.Location = New System.Drawing.Point(442, 12)
+        Me.btnRefrescar.AccessibleDescription = Nothing
+        Me.btnRefrescar.AccessibleName = Nothing
+        resources.ApplyResources(Me.btnRefrescar, "btnRefrescar")
+        Me.btnRefrescar.BackgroundImage = Nothing
+        Me.btnRefrescar.Font = Nothing
         Me.btnRefrescar.Name = "btnRefrescar"
-        Me.btnRefrescar.Size = New System.Drawing.Size(75, 23)
-        Me.btnRefrescar.TabIndex = 2
-        Me.btnRefrescar.Text = "Refrescar"
         Me.btnRefrescar.UseVisualStyleBackColor = True
         '
         'frmListaSucursales
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AccessibleDescription = Nothing
+        Me.AccessibleName = Nothing
+        resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(529, 422)
+        Me.BackgroundImage = Nothing
         Me.Controls.Add(Me.btnRefrescar)
         Me.Controls.Add(Me.btnNueva)
         Me.Controls.Add(Me.dgvSucursales)
+        Me.Font = Nothing
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = Nothing
         Me.MaximizeBox = False
         Me.Name = "frmListaSucursales"
         Me.ShowIcon = False
-        Me.Text = "Sucursales"
         CType(Me.dgvSucursales, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
