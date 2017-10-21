@@ -347,6 +347,7 @@
     <Compile Include="Utiles\Funcionalidades.vb" />
     <Compile Include="Utiles\Generadores.vb" />
     <Compile Include="Utiles\Mensajes.vb" />
+    <Compile Include="Utiles\Traduccion.vb" />
     <Compile Include="Utiles\Utilidades.vb" />
     <Compile Include="Utiles\Validadores.vb" />
   </ItemGroup>

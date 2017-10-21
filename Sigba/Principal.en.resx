@@ -244,6 +244,18 @@
   <data name="AdministraciToolStripMenuItem.Text" xml:space="preserve">
     <value>User management</value>
   </data>
+  <data name="GestionarUsuariosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="GestionarUsuariosToolStripMenuItem.Text" xml:space="preserve">
+    <value>Manage users</value>
+  </data>
+  <data name="IngresarUsuarioToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="IngresarUsuarioToolStripMenuItem.Text" xml:space="preserve">
+    <value>New user</value>
+  </data>
   <data name="DatosDelBancoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>185, 22</value>
   </data>

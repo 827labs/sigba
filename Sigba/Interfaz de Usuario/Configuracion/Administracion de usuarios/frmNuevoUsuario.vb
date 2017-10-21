@@ -10,7 +10,7 @@ Public Class frmNuevoUsuario
                 Dim codUsuario = Usuarios.CrearUsuario(txtCedula.Text, txtCorreo.Text, txtNombres.Text, txtApellidos.Text, txtUsuario.Text)
                 AsignarCargoAUsuario()
                 If codUsuario Then
-                    Mensajes.Simple("El usuario ha sido ingresado exitosamente.")
+                    Mensajes.Simple(T("El usuario ha sido ingresado exitosamente.", "The user has been registered successfully"))
                 End If
 
             Else
@@ -19,11 +19,11 @@ Public Class frmNuevoUsuario
                 AsignarCargoAUsuario()
 
                 If cm.ExecuteNonQuery() > 0 Then
-                    Mensajes.Simple("Usuario actualizado correctamente")
+                    Mensajes.Simple(T("Usuario actualizado correctamente", "The user has been updated successfully"))
                     RegistrarAccion("Editar datos usuario", "numdocu=" & txtCedula.Text)
                     Me.Close()
                 Else
-                    Mensajes.ErrorSimple("No se pudo actualizar el usuario, contacte a soporte.")
+                    Mensajes.ErrorSimple(T("No se pudo actualizar el usuario, contacte a soporte.", "We couldn't update user details, please contact support."))
                 End If
             End If
         Else
@@ -45,14 +45,14 @@ Public Class frmNuevoUsuario
         txtUsuario.Text = u.NomUsuarioSOU
         txtCorreo.Text = u.EmailU
         Me.editando = True
-        Me.Text = "Editar usuario"
-        Me.lblTitulo.Text = "Editar usuario"
+        Me.Text = T("Editar usuario", "Edit user")
+        Me.lblTitulo.Text = T("Editar usuario", "Edit user")
 
         btnSuspender.Visible = True
         btnLimpiar.Visible = False
 
         If u.EstaSuspendido() Then
-            btnSuspender.Text = "Habiltar"
+            btnSuspender.Text = T("Habiltar", "Enable")
         End If
 
         btnIngresar.Text = "OK"
@@ -67,20 +67,20 @@ Public Class frmNuevoUsuario
             Dim cm = New OdbcCommand(String.Format("update usuario set suspendido=NULL where numdocu='{0}'", txtCedula.Text), cx)
 
             If cm.ExecuteNonQuery() > 0 Then
-                Mensajes.Simple("Usuario habilitado correctamente")
+                Mensajes.Simple(T("Usuario habilitado correctamente", "The user has been re-enabled successfully"))
                 RegistrarAccion("Habilitar usuario", String.Format("numdocu={0}", txtCedula.Text))
             Else
-                Mensajes.ErrorSimple("No se pudo habilitar al usuario. Contacte a soporte.")
+                Mensajes.ErrorSimple(T("No se pudo habilitar al usuario. Contacte a soporte.", "We coudn't re-enable the user, please contact support."))
             End If
         Else
             Dim fecha = Date.Today().ToString("dd/MM/yyyy")
             Dim cm = New OdbcCommand(String.Format("update usuario set suspendido='{0}' where numdocu='{1}'", fecha, txtCedula.Text), cx)
 
             If cm.ExecuteNonQuery() > 0 Then
-                Mensajes.Simple("Usuario suspendido correctamente")
+                Mensajes.Simple(T("Usuario suspendido correctamente", "The user has been suspended"))
                 RegistrarAccion("Suspender usuario", String.Format("numdocu={0}", txtCedula.Text))
             Else
-                Mensajes.ErrorSimple("No se pudo suspender al usuario. Contacte a soporte.")
+                Mensajes.ErrorSimple(T("No se pudo suspender al usuario. Contacte a soporte.", "We couldn't suspend the user, please contact support."))
             End If
         End If
     End Sub
