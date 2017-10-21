@@ -130,6 +130,9 @@
   <data name="Label2.Text" xml:space="preserve">
     <value>USA Dollars</value>
   </data>
+  <data name="btnContinuar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>127, 103</value>
+  </data>
   <data name="btnContinuar.Text" xml:space="preserve">
     <value>Continue</value>
   </data>

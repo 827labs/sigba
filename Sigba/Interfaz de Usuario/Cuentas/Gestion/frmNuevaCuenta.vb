@@ -10,6 +10,13 @@
     End Sub
 
     Private Sub btnConfirmar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnConfirmar.Click
+        Dim banco = New Banco()
+        If Not banco.HabilitarCCPersonas Then
+            If tabTipoCliente.SelectedIndex = 0 And cboTipoCuenta.SelectedIndex = 1 Then
+                Mensajes.ErrorSimple("El banco no permite crear cuentas corriente a clientes persona.")
+                Return
+            End If
+        End If
         If (cboTipoCuenta.Text <> "" And cboSucursal.Text <> "" And cboUsoFormas.Text <> "" And txtClienteEncontrado.Text <> "") Then
             Dim usuarioConfirma = Mensajes.PreguntaSiNo("¿Desea confirmar esta información?", "Confirmar")
             Dim tipoCliente = If(tabTipoCliente.SelectedIndex = 0, Clientes.TipoCliente.Persona, Clientes.TipoCliente.Empresa)
