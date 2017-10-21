@@ -7,10 +7,10 @@ Public Class frmNuevoUsuario
     Private Sub btnIngresar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnIngresar.Click
         If txtNombres.Text <> "" And txtApellidos.Text <> "" And txtCedula.Text <> "" And txtCorreo.Text <> "" And Validadores.EsEmailValido(txtCorreo.Text) Then
             If Not Me.editando Then
-                Dim codUsuario = Usuarios.CrearUsuario(txtCedula.Text, txtCorreo.Text, txtNombres.Text, txtApellidos.Text)
+                Dim codUsuario = Usuarios.CrearUsuario(txtCedula.Text, txtCorreo.Text, txtNombres.Text, txtApellidos.Text, txtUsuario.Text)
                 AsignarCargoAUsuario()
                 If codUsuario Then
-                    Mensajes.Simple(String.Format("El usuario ha sido ingresado exitosamente, podrá crear su contraseña con el codigo '{0}'.", codUsuario))
+                    Mensajes.Simple("El usuario ha sido ingresado exitosamente.")
                 End If
 
             Else
