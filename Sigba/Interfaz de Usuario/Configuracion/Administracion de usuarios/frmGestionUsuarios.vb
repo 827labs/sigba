@@ -41,4 +41,16 @@
     Private Sub btnNuevoUsuario_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnNuevoUsuario.Click
         frmNuevoUsuario.Show()
     End Sub
+
+    Private Sub dgvUsuarios_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgvUsuarios.CellContentClick
+        Dim usuario = dgvUsuarios.Rows(e.RowIndex).Cells(4).Value
+        Dim frmEdicion = New frmNuevoUsuario()
+        frmEdicion.Show()
+        frmEdicion.SetearUsuarioEdicion(usuario)
+
+    End Sub
+
+    Private Sub btnRefrescar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRefrescar.Click
+        Usuarios.ListarUsuarios(dgvUsuarios)
+    End Sub
 End Class

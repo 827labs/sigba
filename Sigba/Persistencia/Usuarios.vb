@@ -38,7 +38,7 @@ Module Usuarios
         Dim ds As New DataSet
 
         cm.Connection = ConexionBaseDatos.ObtenerActual()
-        cm.CommandText = "SELECT numdocu, emailu, apellido, nombre FROM usuario"
+        cm.CommandText = "SELECT numdocu, emailu, apellido, nombre, nomusuariosou, NVL(suspendido, 'No') FROM usuario"
 
         If cedula <> 0 Then
             cm.CommandText += String.Format(" WHERE numdocu={0}", cedula)
@@ -57,6 +57,8 @@ Module Usuarios
             .Columns(1).HeaderCell.Value = "Correo electrónico"
             .Columns(2).HeaderCell.Value = "Apellidos"
             .Columns(3).HeaderCell.Value = "Nombres"
+            .Columns(4).HeaderCell.Value = "Nom. Usuario"
+            .Columns(5).HeaderCell.Value = "Suspendido"
         End With
     End Sub
 End Module

@@ -30,6 +30,7 @@ Partial Class frmGestionUsuarios
         Me.txtBuscaCedula = New System.Windows.Forms.TextBox
         Me.Label2 = New System.Windows.Forms.Label
         Me.btnNuevoUsuario = New System.Windows.Forms.Button
+        Me.btnRefrescar = New System.Windows.Forms.Button
         CType(Me.dgvUsuarios, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.grpBuscarUsuarios.SuspendLayout()
         Me.SuspendLayout()
@@ -106,6 +107,16 @@ Partial Class frmGestionUsuarios
         Me.btnNuevoUsuario.Name = "btnNuevoUsuario"
         Me.btnNuevoUsuario.UseVisualStyleBackColor = True
         '
+        'btnRefrescar
+        '
+        Me.btnRefrescar.AccessibleDescription = Nothing
+        Me.btnRefrescar.AccessibleName = Nothing
+        resources.ApplyResources(Me.btnRefrescar, "btnRefrescar")
+        Me.btnRefrescar.BackgroundImage = Nothing
+        Me.btnRefrescar.Font = Nothing
+        Me.btnRefrescar.Name = "btnRefrescar"
+        Me.btnRefrescar.UseVisualStyleBackColor = True
+        '
         'frmGestionUsuarios
         '
         Me.AccessibleDescription = Nothing
@@ -113,6 +124,7 @@ Partial Class frmGestionUsuarios
         resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Nothing
+        Me.Controls.Add(Me.btnRefrescar)
         Me.Controls.Add(Me.btnNuevoUsuario)
         Me.Controls.Add(Me.grpBuscarUsuarios)
         Me.Controls.Add(Me.dgvUsuarios)
@@ -134,4 +146,5 @@ Partial Class frmGestionUsuarios
     Friend WithEvents txtBuscaCedula As System.Windows.Forms.TextBox
     Friend WithEvents btnLimpiarCedula As System.Windows.Forms.Button
     Friend WithEvents btnNuevoUsuario As System.Windows.Forms.Button
+    Friend WithEvents btnRefrescar As System.Windows.Forms.Button
 End Class

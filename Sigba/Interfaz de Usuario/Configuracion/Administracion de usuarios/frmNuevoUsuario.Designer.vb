@@ -24,6 +24,8 @@ Partial Class frmNuevoUsuario
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmNuevoUsuario))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox
+        Me.txtUsuario = New System.Windows.Forms.TextBox
+        Me.Label6 = New System.Windows.Forms.Label
         Me.txtCorreo = New System.Windows.Forms.TextBox
         Me.Label4 = New System.Windows.Forms.Label
         Me.txtCedula = New System.Windows.Forms.TextBox
@@ -34,16 +36,19 @@ Partial Class frmNuevoUsuario
         Me.Label1 = New System.Windows.Forms.Label
         Me.btnIngresar = New System.Windows.Forms.Button
         Me.btnLimpiar = New System.Windows.Forms.Button
-        Me.Label5 = New System.Windows.Forms.Label
+        Me.lblTitulo = New System.Windows.Forms.Label
+        Me.btnSuspender = New System.Windows.Forms.Button
+        Me.lblCargo = New System.Windows.Forms.Label
+        Me.cboCargo = New System.Windows.Forms.ComboBox
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
-        Me.GroupBox1.AccessibleDescription = Nothing
-        Me.GroupBox1.AccessibleName = Nothing
-        resources.ApplyResources(Me.GroupBox1, "GroupBox1")
-        Me.GroupBox1.BackgroundImage = Nothing
+        Me.GroupBox1.Controls.Add(Me.cboCargo)
+        Me.GroupBox1.Controls.Add(Me.lblCargo)
+        Me.GroupBox1.Controls.Add(Me.txtUsuario)
+        Me.GroupBox1.Controls.Add(Me.Label6)
         Me.GroupBox1.Controls.Add(Me.txtCorreo)
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.txtCedula)
@@ -52,116 +57,104 @@ Partial Class frmNuevoUsuario
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.txtNombres)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Font = Nothing
+        resources.ApplyResources(Me.GroupBox1, "GroupBox1")
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.TabStop = False
         '
+        'txtUsuario
+        '
+        resources.ApplyResources(Me.txtUsuario, "txtUsuario")
+        Me.txtUsuario.Name = "txtUsuario"
+        '
+        'Label6
+        '
+        resources.ApplyResources(Me.Label6, "Label6")
+        Me.Label6.Name = "Label6"
+        '
         'txtCorreo
         '
-        Me.txtCorreo.AccessibleDescription = Nothing
-        Me.txtCorreo.AccessibleName = Nothing
         resources.ApplyResources(Me.txtCorreo, "txtCorreo")
-        Me.txtCorreo.BackgroundImage = Nothing
-        Me.txtCorreo.Font = Nothing
         Me.txtCorreo.Name = "txtCorreo"
         '
         'Label4
         '
-        Me.Label4.AccessibleDescription = Nothing
-        Me.Label4.AccessibleName = Nothing
         resources.ApplyResources(Me.Label4, "Label4")
-        Me.Label4.Font = Nothing
         Me.Label4.Name = "Label4"
         '
         'txtCedula
         '
-        Me.txtCedula.AccessibleDescription = Nothing
-        Me.txtCedula.AccessibleName = Nothing
         resources.ApplyResources(Me.txtCedula, "txtCedula")
-        Me.txtCedula.BackgroundImage = Nothing
-        Me.txtCedula.Font = Nothing
         Me.txtCedula.Name = "txtCedula"
         '
         'Label3
         '
-        Me.Label3.AccessibleDescription = Nothing
-        Me.Label3.AccessibleName = Nothing
         resources.ApplyResources(Me.Label3, "Label3")
-        Me.Label3.Font = Nothing
         Me.Label3.Name = "Label3"
         '
         'txtApellidos
         '
-        Me.txtApellidos.AccessibleDescription = Nothing
-        Me.txtApellidos.AccessibleName = Nothing
         resources.ApplyResources(Me.txtApellidos, "txtApellidos")
-        Me.txtApellidos.BackgroundImage = Nothing
-        Me.txtApellidos.Font = Nothing
         Me.txtApellidos.Name = "txtApellidos"
         '
         'Label2
         '
-        Me.Label2.AccessibleDescription = Nothing
-        Me.Label2.AccessibleName = Nothing
         resources.ApplyResources(Me.Label2, "Label2")
-        Me.Label2.Font = Nothing
         Me.Label2.Name = "Label2"
         '
         'txtNombres
         '
-        Me.txtNombres.AccessibleDescription = Nothing
-        Me.txtNombres.AccessibleName = Nothing
         resources.ApplyResources(Me.txtNombres, "txtNombres")
-        Me.txtNombres.BackgroundImage = Nothing
-        Me.txtNombres.Font = Nothing
         Me.txtNombres.Name = "txtNombres"
         '
         'Label1
         '
-        Me.Label1.AccessibleDescription = Nothing
-        Me.Label1.AccessibleName = Nothing
         resources.ApplyResources(Me.Label1, "Label1")
-        Me.Label1.Font = Nothing
         Me.Label1.Name = "Label1"
         '
         'btnIngresar
         '
-        Me.btnIngresar.AccessibleDescription = Nothing
-        Me.btnIngresar.AccessibleName = Nothing
         resources.ApplyResources(Me.btnIngresar, "btnIngresar")
-        Me.btnIngresar.BackgroundImage = Nothing
         Me.btnIngresar.Name = "btnIngresar"
         Me.btnIngresar.UseVisualStyleBackColor = True
         '
         'btnLimpiar
         '
-        Me.btnLimpiar.AccessibleDescription = Nothing
-        Me.btnLimpiar.AccessibleName = Nothing
         resources.ApplyResources(Me.btnLimpiar, "btnLimpiar")
-        Me.btnLimpiar.BackgroundImage = Nothing
-        Me.btnLimpiar.Font = Nothing
         Me.btnLimpiar.Name = "btnLimpiar"
         Me.btnLimpiar.UseVisualStyleBackColor = True
         '
-        'Label5
+        'lblTitulo
         '
-        Me.Label5.AccessibleDescription = Nothing
-        Me.Label5.AccessibleName = Nothing
-        resources.ApplyResources(Me.Label5, "Label5")
-        Me.Label5.Name = "Label5"
+        resources.ApplyResources(Me.lblTitulo, "lblTitulo")
+        Me.lblTitulo.Name = "lblTitulo"
+        '
+        'btnSuspender
+        '
+        resources.ApplyResources(Me.btnSuspender, "btnSuspender")
+        Me.btnSuspender.Name = "btnSuspender"
+        Me.btnSuspender.UseVisualStyleBackColor = True
+        '
+        'lblCargo
+        '
+        resources.ApplyResources(Me.lblCargo, "lblCargo")
+        Me.lblCargo.Name = "lblCargo"
+        '
+        'cboCargo
+        '
+        Me.cboCargo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboCargo.FormattingEnabled = True
+        resources.ApplyResources(Me.cboCargo, "cboCargo")
+        Me.cboCargo.Name = "cboCargo"
         '
         'frmNuevoUsuario
         '
-        Me.AccessibleDescription = Nothing
-        Me.AccessibleName = Nothing
         resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Nothing
-        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.btnSuspender)
+        Me.Controls.Add(Me.lblTitulo)
         Me.Controls.Add(Me.btnLimpiar)
         Me.Controls.Add(Me.btnIngresar)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Font = Nothing
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximizeBox = False
         Me.Name = "frmNuevoUsuario"
@@ -182,5 +175,10 @@ Partial Class frmNuevoUsuario
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents btnIngresar As System.Windows.Forms.Button
     Friend WithEvents btnLimpiar As System.Windows.Forms.Button
-    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents lblTitulo As System.Windows.Forms.Label
+    Friend WithEvents txtUsuario As System.Windows.Forms.TextBox
+    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents btnSuspender As System.Windows.Forms.Button
+    Friend WithEvents cboCargo As System.Windows.Forms.ComboBox
+    Friend WithEvents lblCargo As System.Windows.Forms.Label
 End Class

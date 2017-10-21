@@ -28,9 +28,6 @@ Public Class Usuario
             Me.Suspendido = lector("sus")
         End While
 
-        If Me.EstaSuspendido() Then
-            Mensajes.ErrorSimple(String.Format("El usuario {0} ({1} {2}) fué suspendido el dia {3}.", Me.NomUsuarioSOU, Me.Nombre, Me.Apellido, Me.Suspendido))
-        End If
     End Sub
 
     Public Function EsValido() As Boolean

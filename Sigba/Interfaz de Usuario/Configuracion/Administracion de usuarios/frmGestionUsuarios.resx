@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="btnBuscarCedula.Text" xml:space="preserve">
+    <value>Buscar</value>
+  </data>
   <data name="&gt;&gt;btnNuevoUsuario.Name" xml:space="preserve">
     <value>btnNuevoUsuario</value>
   </data>
@@ -146,14 +149,17 @@
   <data name="Label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;btnLimpiarCedula.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;txtBuscaCedula.Name" xml:space="preserve">
+    <value>txtBuscaCedula</value>
   </data>
-  <data name="&gt;&gt;Label2.Name" xml:space="preserve">
-    <value>Label2</value>
+  <data name="&gt;&gt;btnNuevoUsuario.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Label2.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="&gt;&gt;btnNuevoUsuario.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="dgvUsuarios.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -161,8 +167,8 @@
   <data name="btnNuevoUsuario.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 114</value>
   </data>
-  <data name="grpBuscarUsuarios.Text" xml:space="preserve">
-    <value>Buscar usuarios</value>
+  <data name="btnBuscarCedula.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
   <data name="Label2.Location" type="System.Drawing.Point, System.Drawing">
     <value>7, 20</value>
@@ -176,14 +182,17 @@
   <data name="Label2.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="btnBuscarCedula.Text" xml:space="preserve">
-    <value>Buscar</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Gestión de usuarios</value>
   </data>
   <data name="&gt;&gt;btnLimpiarCedula.Name" xml:space="preserve">
     <value>btnLimpiarCedula</value>
   </data>
   <data name="&gt;&gt;btnNuevoUsuario.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnRefrescar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 30</value>
   </data>
   <data name="&gt;&gt;btnLimpiarCedula.Parent" xml:space="preserve">
     <value>grpBuscarUsuarios</value>
@@ -200,17 +209,11 @@
   <data name="txtBuscaCedula.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="Label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>101, 13</value>
-  </data>
-  <data name="btnBuscarCedula.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
   <data name="&gt;&gt;btnBuscarCedula.Name" xml:space="preserve">
     <value>btnBuscarCedula</value>
   </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;txtBuscaCedula.ZOrder" xml:space="preserve">
     <value>2</value>
@@ -221,8 +224,8 @@
   <data name="&gt;&gt;txtBuscaCedula.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="dgvUsuarios.Location" type="System.Drawing.Point, System.Drawing">
-    <value>202, 12</value>
+  <data name="btnLimpiarCedula.Text" xml:space="preserve">
+    <value>Limpiar</value>
   </data>
   <data name="&gt;&gt;btnBuscarCedula.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -230,17 +233,20 @@
   <data name="&gt;&gt;btnBuscarCedula.Parent" xml:space="preserve">
     <value>grpBuscarUsuarios</value>
   </data>
-  <data name="&gt;&gt;Label2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnLimpiarCedula.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgvUsuarios.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
   <data name="txtBuscaCedula.Location" type="System.Drawing.Point, System.Drawing">
     <value>10, 37</value>
   </data>
-  <data name="&gt;&gt;dgvUsuarios.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;grpBuscarUsuarios.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="dgvUsuarios.Location" type="System.Drawing.Point, System.Drawing">
+    <value>202, 12</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -6414,14 +6420,23 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
 </value>
   </data>
-  <data name="&gt;&gt;btnLimpiarCedula.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;grpBuscarUsuarios.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnRefrescar.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;btnRefrescar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
   </data>
   <data name="&gt;&gt;txtBuscaCedula.Parent" xml:space="preserve">
     <value>grpBuscarUsuarios</value>
   </data>
-  <data name="&gt;&gt;btnNuevoUsuario.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;Label2.Name" xml:space="preserve">
+    <value>Label2</value>
   </data>
   <data name="&gt;&gt;grpBuscarUsuarios.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -6429,47 +6444,56 @@
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>933, 594</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Gestión de usuarios</value>
-  </data>
   <data name="&gt;&gt;grpBuscarUsuarios.Name" xml:space="preserve">
     <value>grpBuscarUsuarios</value>
   </data>
-  <data name="&gt;&gt;grpBuscarUsuarios.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="btnBuscarCedula.Location" type="System.Drawing.Point, System.Drawing">
-    <value>102, 64</value>
-  </data>
-  <data name="&gt;&gt;txtBuscaCedula.Name" xml:space="preserve">
-    <value>txtBuscaCedula</value>
-  </data>
-  <data name="btnNuevoUsuario.Text" xml:space="preserve">
-    <value>Nuevo Usuario</value>
-  </data>
-  <data name="btnLimpiarCedula.Text" xml:space="preserve">
-    <value>Limpiar</value>
-  </data>
-  <data name="btnBuscarCedula.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="&gt;&gt;Label2.Parent" xml:space="preserve">
-    <value>grpBuscarUsuarios</value>
-  </data>
-  <data name="btnNuevoUsuario.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9pt, style=Bold</value>
+  <data name="Label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 13</value>
   </data>
   <data name="&gt;&gt;dgvUsuarios.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="btnBuscarCedula.Location" type="System.Drawing.Point, System.Drawing">
+    <value>102, 64</value>
+  </data>
+  <data name="&gt;&gt;btnLimpiarCedula.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnNuevoUsuario.Text" xml:space="preserve">
+    <value>Nuevo Usuario</value>
+  </data>
+  <data name="&gt;&gt;btnRefrescar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnBuscarCedula.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnRefrescar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>55, 152</value>
+  </data>
+  <data name="&gt;&gt;Label2.Parent" xml:space="preserve">
+    <value>grpBuscarUsuarios</value>
+  </data>
+  <data name="&gt;&gt;btnRefrescar.Name" xml:space="preserve">
+    <value>btnRefrescar</value>
+  </data>
+  <data name="btnNuevoUsuario.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt, style=Bold</value>
+  </data>
+  <data name="btnRefrescar.Text" xml:space="preserve">
+    <value>Refrescar</value>
+  </data>
   <data name="btnLimpiarCedula.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 23</value>
+  </data>
+  <data name="&gt;&gt;btnRefrescar.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;dgvUsuarios.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;grpBuscarUsuarios.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="grpBuscarUsuarios.Text" xml:space="preserve">
+    <value>Buscar usuarios</value>
   </data>
   <data name="btnBuscarCedula.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
@@ -6479,5 +6503,8 @@
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>English</value>
   </metadata>
 </root>

@@ -264,3 +264,11 @@ Z:\Code\sigba\Sigba\obj\Debug\af-ZA\Sigba.resources.dll
 Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmTransferenciaCuentas.en-AU.resources
 Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmTransferenciaCuentas.en.resources
 Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmSeteoCotizacionManual.en.resources
+Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmNuevoUsuario.en.resources
+Z:\Code\sigba\Sigba\bin\Debug\en-US\Sigba.resources.dll
+Z:\Code\sigba\Sigba\bin\Debug\en-ZW\Sigba.resources.dll
+Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmGestionUsuarios.en-US.resources
+Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmGestionUsuarios.en-ZW.resources
+Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmGestionUsuarios.en.resources
+Z:\Code\sigba\Sigba\obj\Debug\en-US\Sigba.resources.dll
+Z:\Code\sigba\Sigba\obj\Debug\en-ZW\Sigba.resources.dll

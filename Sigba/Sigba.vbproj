@@ -479,8 +479,24 @@
       <DependentUpon>frmListaSucursales.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz de Usuario\Configuracion\Administracion de usuarios\frmGestionUsuarios.en-US.resx">
+      <DependentUpon>frmGestionUsuarios.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz de Usuario\Configuracion\Administracion de usuarios\frmGestionUsuarios.en-ZW.resx">
+      <DependentUpon>frmGestionUsuarios.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz de Usuario\Configuracion\Administracion de usuarios\frmGestionUsuarios.en.resx">
+      <DependentUpon>frmGestionUsuarios.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Interfaz de Usuario\Configuracion\Administracion de usuarios\frmGestionUsuarios.resx">
       <DependentUpon>frmGestionUsuarios.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz de Usuario\Configuracion\Administracion de usuarios\frmNuevoUsuario.en.resx">
+      <DependentUpon>frmNuevoUsuario.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaz de Usuario\Configuracion\Administracion de usuarios\frmNuevoUsuario.resx">
