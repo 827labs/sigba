@@ -19,7 +19,7 @@ Module Personas
             End If
 
             If ex.Message.Contains("UNIQUE INDEX") Then
-                Mensajes.ErrorSimple("El número de cédula que ingresó ya existe.")
+                Mensajes.ErrorSimple(T("El número de cédula que ingresó ya existe.", "The ID number already exists"))
             End If
             Return False
         End Try

@@ -34,12 +34,12 @@ Module Movimientos
         dgv.DataSource = ds.Tables("movimiento")
 
         With dgv
-            .Columns(0).HeaderCell.Value = "Comprobante"
-            .Columns(1).HeaderCell.Value = "Usuario"
-            .Columns(2).HeaderCell.Value = "Concepto"
-            .Columns(3).HeaderCell.Value = "Monto"
-            .Columns(4).HeaderCell.Value = "Saldo Anterior"
-            .Columns(5).HeaderCell.Value = "Saldo Actual"
+            .Columns(0).HeaderCell.Value = T("Comprobante", "Transaction")
+            .Columns(1).HeaderCell.Value = T("Usuario", "User")
+            .Columns(2).HeaderCell.Value = T("Concepto", "Concept")
+            .Columns(3).HeaderCell.Value = T("Monto", "Amount")
+            .Columns(4).HeaderCell.Value = T("Saldo Anterior", "Previous balance")
+            .Columns(5).HeaderCell.Value = T("Saldo Actual", "Current balance")
         End With
     End Sub
 
@@ -47,7 +47,7 @@ Module Movimientos
         Dim cx = ConexionBaseDatos.ObtenerActual()
 
         If Not CuentaEstaHabilitada(cuentaBeneficiarioCompleto) Then
-            Mensajes.ErrorSimple("La cuenta no esta habilitada o no es válida.")
+            Mensajes.ErrorSimple(T("La cuenta no esta habilitada o no es válida.", "The account is disabled or not valid."))
             Return False
         End If
 
@@ -56,7 +56,7 @@ Module Movimientos
         Dim saldoCuenta = ObtenerSaldoCuenta(cuentaBeneficiarioCompleto)
 
         If saldoCuenta < montoADebitar Then
-            Mensajes.ErrorSimple("La cuenta no poseé los fondos suficientes para esta operación.")
+            Mensajes.ErrorSimple(T("La cuenta no poseé los fondos suficientes para esta operación.", "The account does not have enough funds to perform this operation."))
             Return False
         End If
 
@@ -78,7 +78,7 @@ Module Movimientos
         Dim cx = ConexionBaseDatos.ObtenerActual()
 
         If Not CuentaEstaHabilitada(cuentaBeneficiarioCompleto) Then
-            Mensajes.ErrorSimple("La cuenta no esta habilitada o no es válida.")
+            Mensajes.ErrorSimple(T("La cuenta no esta habilitada o no es válida.", "The account is disabled or not valid."))
             Return False
         End If
 
@@ -88,11 +88,11 @@ Module Movimientos
 
         If noLimitar = False Then
             If montoEnUYU > banco.MaxDepositoSinDeclararPesos Then
-                If Not Mensajes.PreguntaSiNo(String.Format("El monto del deposito (UYU {0}) excede los limites establecidos por el banco. (UYU {2}) ¿Confirma que el depositante declaró el origen de los fondos?", montoEnUYU, banco.MinimoDepositoSinDeclararPesos, banco.MaxDepositoSinDeclararPesos), "Limite excedido") Then
+                If Not Mensajes.PreguntaSiNo(String.Format(T("El monto del deposito (UYU {0}) excede los limites establecidos por el banco. (UYU {2}) ¿Confirma que el depositante declaró el origen de los fondos?", "The deposit amount (UYU {0}) exceeds the bank free-deposit limit (UYU {2}). Confirm the client declared its procedence?."), montoEnUYU, banco.MinimoDepositoSinDeclararPesos, banco.MaxDepositoSinDeclararPesos), T("Limite excedido", "Limit exceeded")) Then
                     Return False
                 End If
             ElseIf montoEnUYU < banco.MinimoDepositoSinDeclararPesos Then
-                Mensajes.ErrorSimple(String.Format("El monto no llega al minimo de depósito (UYU {0}).", banco.MinimoDepositoSinDeclararPesos))
+                Mensajes.ErrorSimple(String.Format(T("El monto no llega al minimo de depósito (UYU {0}).", "The amount does not reach the minimum deposit limit (UYU {0})"), banco.MinimoDepositoSinDeclararPesos))
                 Return False
             End If
         End If
@@ -129,15 +129,15 @@ Module Movimientos
             ' Transferencia Invalida
             Select Case validezTransferencia
                 Case ValidezTransaccion.SaldoInsuficiente
-                    Mensajes.ErrorSimple("El saldo de la cuenta de origen es insuficiente.")
+                    Mensajes.ErrorSimple(T("El saldo de la cuenta de origen es insuficiente.", "The origin account does not have enough funds."))
                 Case ValidezTransaccion.CuentaOrigenNoHabilitadaNoValida
-                    Mensajes.ErrorSimple("La cuenta de origen no está habilitada o no es válida.")
+                    Mensajes.ErrorSimple(T("La cuenta de origen no está habilitada o no es válida.", "The origin account is not enabled or not valid."))
                 Case ValidezTransaccion.CuentaDestinoNoHabilitadaNoValida
-                    Mensajes.ErrorSimple("La cuenta de destino no está habilitada o no es válida.")
+                    Mensajes.ErrorSimple(T("La cuenta de destino no está habilitada o no es válida.", "The destination account is not enabled or not valid."))
                 Case ValidezTransaccion.CuentaNoValida
-                    Mensajes.ErrorSimple("La cuenta de destino o de origen no és válida.")
+                    Mensajes.ErrorSimple(T("La cuenta de destino o de origen no és válida.", "One of the accounts is not valid."))
                 Case Else
-                    Mensajes.ErrorSimple("La transferencia no pudo ser validada. Comuniquese con el gerente de la sucursal.")
+                    Mensajes.ErrorSimple(T("La transferencia no pudo ser validada. Comuniquese con el gerente de la sucursal.", "The transaction could not be validated. Please contact support."))
             End Select
 
             Return False

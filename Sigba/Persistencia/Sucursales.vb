@@ -10,11 +10,11 @@ Module Sucursales
 
         dgv.DataSource = ds.Tables("sucursal")
         With dgv
-            .Columns(0).HeaderCell.Value = "No"
-            .Columns(1).HeaderCell.Value = "Nombre"
-            .Columns(2).HeaderCell.Value = "Calle"
-            .Columns(3).HeaderCell.Value = "Numero"
-            .Columns(4).HeaderCell.Value = "Horario"
+            .Columns(0).HeaderCell.Value = "Nº"
+            .Columns(1).HeaderCell.Value = T("Nombre", "Name")
+            .Columns(2).HeaderCell.Value = T("Calle", "Addr. Street")
+            .Columns(3).HeaderCell.Value = T("Numero", "Addr. Number")
+            .Columns(4).HeaderCell.Value = T("Horario", "Hours")
         End With
     End Sub
 

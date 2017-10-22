@@ -12,7 +12,7 @@ Module Usuarios
             cm.ExecuteNonQuery()
             Return 1
         Catch ex As Exception
-            Mensajes.ErrorSimple("Error al crear el usuario. Detalles: " & ex.Message)
+            Mensajes.ErrorSimple(T("Error al crear el usuario. Detalles: ", "Error while creating the user. Details:") & ex.Message)
             Return False
         End Try
     End Function
@@ -52,12 +52,12 @@ Module Usuarios
         dgv.DataSource = ds.Tables("usuario")
         With dgv
             .RowHeadersVisible = False
-            .Columns(0).HeaderCell.Value = "Cédula"
-            .Columns(1).HeaderCell.Value = "Correo electrónico"
-            .Columns(2).HeaderCell.Value = "Apellidos"
-            .Columns(3).HeaderCell.Value = "Nombres"
-            .Columns(4).HeaderCell.Value = "Nom. Usuario"
-            .Columns(5).HeaderCell.Value = "Suspendido"
+            .Columns(0).HeaderCell.Value = T("Cédula", "ID")
+            .Columns(1).HeaderCell.Value = T("Correo electrónico", "E-mail address")
+            .Columns(2).HeaderCell.Value = T("Apellidos", "Surnames")
+            .Columns(3).HeaderCell.Value = T("Nombres", "Names")
+            .Columns(4).HeaderCell.Value = T("Nom. Usuario", "Username")
+            .Columns(5).HeaderCell.Value = T("Suspendido", "Suspended")
         End With
     End Sub
 End Module

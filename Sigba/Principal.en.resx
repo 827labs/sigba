@@ -118,77 +118,47 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="AperturaDeCajaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="AperturaDeCajaToolStripMenuItem.Text" xml:space="preserve">
+    <value>Open register</value>
+  </data>
+  <data name="CajasAbiertasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="CajasAbiertasToolStripMenuItem.Text" xml:space="preserve">
+    <value>Close register</value>
+  </data>
+  <data name="GestiónDeCajasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="GestiónDeCajasToolStripMenuItem.Text" xml:space="preserve">
+    <value>Manage</value>
+  </data>
   <data name="CajaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>92, 20</value>
   </data>
   <data name="CajaToolStripMenuItem.Text" xml:space="preserve">
     <value>Cash registers</value>
   </data>
-  <data name="CuentasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 20</value>
+  <data name="AltaDeCuentaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
   </data>
-  <data name="CuentasToolStripMenuItem.Text" xml:space="preserve">
-    <value>Accounts</value>
+  <data name="AltaDeCuentaToolStripMenuItem.Text" xml:space="preserve">
+    <value>Open account</value>
   </data>
-  <data name="ClientesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 20</value>
+  <data name="BajaDeCuentaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
   </data>
-  <data name="ClientesToolStripMenuItem.Text" xml:space="preserve">
-    <value>Clients</value>
-  </data>
-  <data name="ChequesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 20</value>
-  </data>
-  <data name="ChequesToolStripMenuItem.Text" xml:space="preserve">
-    <value>Checks</value>
-  </data>
-  <data name="ConfiguraciónToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 20</value>
-  </data>
-  <data name="ConfiguraciónToolStripMenuItem.Text" xml:space="preserve">
-    <value>Settings</value>
-  </data>
-  <data name="AyudaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 20</value>
-  </data>
-  <data name="AyudaToolStripMenuItem.Text" xml:space="preserve">
-    <value>Help</value>
-  </data>
-  <data name="GestiónDeCajasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>117, 22</value>
-  </data>
-  <data name="GestiónDeCajasToolStripMenuItem.Text" xml:space="preserve">
-    <value>Manage</value>
-  </data>
-  <data name="AperturaDeCajaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>145, 22</value>
-  </data>
-  <data name="AperturaDeCajaToolStripMenuItem.Text" xml:space="preserve">
-    <value>Open register</value>
-  </data>
-  <data name="CajasAbiertasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>145, 22</value>
-  </data>
-  <data name="CajasAbiertasToolStripMenuItem.Text" xml:space="preserve">
-    <value>Close register</value>
+  <data name="BajaDeCuentaToolStripMenuItem.Text" xml:space="preserve">
+    <value>Close account</value>
   </data>
   <data name="GestiónCuentasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>165, 22</value>
   </data>
   <data name="GestiónCuentasToolStripMenuItem.Text" xml:space="preserve">
     <value>Management</value>
-  </data>
-  <data name="AltaDeCuentaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 22</value>
-  </data>
-  <data name="AltaDeCuentaToolStripMenuItem.Text" xml:space="preserve">
-    <value>Open account</value>
-  </data>
-  <data name="BajaDeCuentaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 22</value>
-  </data>
-  <data name="BajaDeCuentaToolStripMenuItem.Text" xml:space="preserve">
-    <value>Close account</value>
   </data>
   <data name="HistóricoDeTransacciónesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>165, 22</value>
@@ -220,11 +190,56 @@
   <data name="TransferenciaEntreCuentasToolStripMenuItem.Text" xml:space="preserve">
     <value>Transfer</value>
   </data>
-  <data name="GestiónToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>145, 22</value>
+  <data name="CuentasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 20</value>
+  </data>
+  <data name="CuentasToolStripMenuItem.Text" xml:space="preserve">
+    <value>Accounts</value>
+  </data>
+  <data name="PersonaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="PersonaToolStripMenuItem.Text" xml:space="preserve">
+    <value>Individual</value>
+  </data>
+  <data name="EmpresaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="EmpresaToolStripMenuItem.Text" xml:space="preserve">
+    <value>Business</value>
+  </data>
+  <data name="AltaClienteToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="AltaClienteToolStripMenuItem.Text" xml:space="preserve">
+    <value>Create client</value>
+  </data>
+  <data name="BajaClienteToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="BajaClienteToolStripMenuItem.Text" xml:space="preserve">
+    <value>Archive client</value>
   </data>
   <data name="GestiónToolStripMenuItem1.Text" xml:space="preserve">
     <value>Management</value>
+  </data>
+  <data name="ClientesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 20</value>
+  </data>
+  <data name="ClientesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Clients</value>
+  </data>
+  <data name="EmitirToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="EmitirToolStripMenuItem.Text" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="AnularToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="AnularToolStripMenuItem.Text" xml:space="preserve">
+    <value>Delete</value>
   </data>
   <data name="LibretasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>159, 22</value>
@@ -238,11 +253,11 @@
   <data name="CobrarChequeToolStripMenuItem.Text" xml:space="preserve">
     <value>Withdraw check</value>
   </data>
-  <data name="AdministraciToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>185, 22</value>
+  <data name="ChequesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 20</value>
   </data>
-  <data name="AdministraciToolStripMenuItem.Text" xml:space="preserve">
-    <value>User management</value>
+  <data name="ChequesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Checks</value>
   </data>
   <data name="GestionarUsuariosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>152, 22</value>
@@ -255,6 +270,12 @@
   </data>
   <data name="IngresarUsuarioToolStripMenuItem.Text" xml:space="preserve">
     <value>New user</value>
+  </data>
+  <data name="AdministraciToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>185, 22</value>
+  </data>
+  <data name="AdministraciToolStripMenuItem.Text" xml:space="preserve">
+    <value>User management</value>
   </data>
   <data name="DatosDelBancoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>185, 22</value>
@@ -274,11 +295,23 @@
   <data name="AdministracíToolStripMenuItem.Text" xml:space="preserve">
     <value>Branch management</value>
   </data>
+  <data name="ConfiguraciónToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 20</value>
+  </data>
+  <data name="ConfiguraciónToolStripMenuItem.Text" xml:space="preserve">
+    <value>Settings</value>
+  </data>
   <data name="AcercaDeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 22</value>
+    <value>152, 22</value>
   </data>
   <data name="AcercaDeToolStripMenuItem.Text" xml:space="preserve">
     <value>About...</value>
+  </data>
+  <data name="AyudaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 20</value>
+  </data>
+  <data name="AyudaToolStripMenuItem.Text" xml:space="preserve">
+    <value>Help</value>
   </data>
   <data name="picSigba.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
