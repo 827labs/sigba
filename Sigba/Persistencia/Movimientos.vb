@@ -53,7 +53,7 @@ Module Movimientos
 
         Dim monedaCuenta = cuentaBeneficiarioCompleto.Split(" ")(1)
         Dim montoADebitar = ObtenerMontoNormalizado(monto, moneda, monedaCuenta)
-        Dim saldoCuenta = ObtenerSaldoCuenta(cuentaBeneficiarioCompleto)
+        Dim saldoCuenta = ObtenerSaldoCuenta(cuentaBeneficiarioCompleto).Split(" ")(1)
 
         If saldoCuenta < montoADebitar Then
             Mensajes.ErrorSimple(T("La cuenta no poseé los fondos suficientes para esta operación.", "The account does not have enough funds to perform this operation."))

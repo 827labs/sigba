@@ -273,3 +273,4 @@ Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmGestionUsuarios.en.resources
 Z:\Code\sigba\Sigba\obj\Debug\en-US\Sigba.resources.dll
 Z:\Code\sigba\Sigba\obj\Debug\en-ZW\Sigba.resources.dll
 Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmHistoricoTransaccionesCuenta.en.resources
+Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmDepositoCuenta.en.resources

@@ -536,6 +536,10 @@
       <DependentUpon>frmBusquedaCuentaPorCliente.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz de Usuario\Cuentas\frmDepositoCuenta.en.resx">
+      <DependentUpon>frmDepositoCuenta.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Interfaz de Usuario\Cuentas\frmDepositoCuenta.resx">
       <DependentUpon>frmDepositoCuenta.vb</DependentUpon>
       <SubType>Designer</SubType>
