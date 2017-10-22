@@ -124,9 +124,6 @@
   <data name="dgvTransacciones.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 51</value>
   </data>
-  <data name="&gt;&gt;dgvTransacciones.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
   <data name="Label1.Location" type="System.Drawing.Point, System.Drawing">
     <value>13, 13</value>
   </data>
@@ -6339,8 +6336,8 @@
   <data name="txtNroCuenta.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 26</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Histórico de transacciones por cuenta</value>
+  <data name="&gt;&gt;txtNroCuenta.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;txtNroCuenta.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -6350,6 +6347,9 @@
   </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Histórico de transacciones por cuenta</value>
   </data>
   <data name="Label1.Text" xml:space="preserve">
     <value>Cuenta</value>
@@ -6375,14 +6375,14 @@
   <data name="txtNroCuenta.Text" xml:space="preserve">
     <value>CA UYU 123-456789-0</value>
   </data>
-  <data name="&gt;&gt;txtNroCuenta.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="txtNroCuenta.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
   </data>
   <data name="&gt;&gt;Label1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="txtNroCuenta.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
+  <data name="&gt;&gt;dgvTransacciones.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

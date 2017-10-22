@@ -17,7 +17,7 @@ Module Empresas
             End If
 
             If ex.Message.Contains("UNIQUE INDEX") Then
-                Mensajes.ErrorSimple("El número de RUT que ingresó ya existe.")
+                Mensajes.ErrorSimple(T("El número de RUT que ingresó ya existe.", "RUT number already exists."))
             End If
             Return False
         End Try

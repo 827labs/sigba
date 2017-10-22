@@ -564,6 +564,10 @@
       <DependentUpon>frmNuevaCuenta.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz de Usuario\Cuentas\Historico de transacciones por cuenta\frmHistoricoTransaccionesCuenta.en.resx">
+      <DependentUpon>frmHistoricoTransaccionesCuenta.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Interfaz de Usuario\Cuentas\Historico de transacciones por cuenta\frmHistoricoTransaccionesCuenta.resx">
       <DependentUpon>frmHistoricoTransaccionesCuenta.vb</DependentUpon>
       <SubType>Designer</SubType>
