@@ -43,6 +43,37 @@ Module Movimientos
         End With
     End Sub
 
+    Public Function EfectuarCobroCheque(ByVal cuentaDebitoCompleto As String, ByVal moneda As String, ByVal monto As Decimal, ByVal serieLibreta As String, ByVal numeroLibreta As String, ByVal numeroCheque As Integer) As Boolean
+        Dim cx = ConexionBaseDatos.ObtenerActual()
+
+        If Not CuentaEstaHabilitada(cuentaDebitoCompleto) Then
+            Mensajes.ErrorSimple(T("La cuenta no esta habilitada o no es válida.", "The account is disabled or not valid."))
+            Return False
+        End If
+
+        Dim monedaCuenta = cuentaDebitoCompleto.Split(" ")(1)
+        Dim montoADebitar = ObtenerMontoNormalizado(monto, moneda, monedaCuenta)
+        Dim saldoCuenta = ObtenerSaldoCuenta(cuentaDebitoCompleto).Split(" ")(1)
+
+        If saldoCuenta < montoADebitar Then
+            Mensajes.ErrorSimple(T("La cuenta no poseé los fondos suficientes para esta operación.", "The account does not have enough funds to perform this operation."))
+            Return False
+        End If
+
+        NuevoMovimiento(String.Format("DEBITO CHEQUE CAJA {0}-{1}-{2}", serieLibreta, numeroLibreta, numeroCheque), -1 * montoADebitar, cuentaDebitoCompleto)
+        Dim nuevoSaldo = saldoCuenta - montoADebitar
+        Dim idCuenta = cuentaDebitoCompleto.Split(" ")(2)
+        Dim cm = New OdbcCommand(String.Format("UPDATE cuenta SET saldo={0} WHERE idcuenta={1}", nuevoSaldo, idCuenta), cx)
+
+        If cm.ExecuteNonQuery() > 0 Then
+            RegistrarAccion("Debito cheque", String.Format("cuenta={0};moneda={1};monto={2}", cuentaDebitoCompleto, moneda, monto))
+            Return True
+        End If
+
+        Return False
+
+    End Function
+
     Public Function EfectuarRetiro(ByVal cuentaBeneficiarioCompleto As String, ByVal moneda As String, ByVal monto As Decimal) As Boolean
         Dim cx = ConexionBaseDatos.ObtenerActual()
 
