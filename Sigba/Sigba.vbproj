@@ -315,6 +315,7 @@
     <Compile Include="Persistencia\ConexionBaseDatos.vb" />
     <Compile Include="Persistencia\Cuentas.vb" />
     <Compile Include="Persistencia\Empresas.vb" />
+    <Compile Include="Persistencia\Libretas.vb" />
     <Compile Include="Persistencia\Movimientos.vb" />
     <Compile Include="Persistencia\Personas.vb" />
     <Compile Include="Persistencia\Sucursales.vb" />

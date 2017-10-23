@@ -1,22 +1,10 @@
 ﻿Public Class frmEmitirLibreta
 
     Private Sub EmitirLibreta_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        cboPaisDocCliente.Items.AddRange(Constantes.Paises())
-        cboPaisDocCliente.SelectedIndex = 187
-        cboTipoDocCliente.SelectedIndex = 0
-    End Sub
-
-    Private Sub txtNroDocCliente_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtNroDocCliente.KeyPress
-        Validadores.KeyPressDocumento(e, cboTipoDocCliente, txtNroDocCliente)
-    End Sub
-
-    Private Sub txtNroDocCliente_Leave(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtNroDocCliente.Leave
-        If txtNroDocCliente.Text <> "" Then
-            cboNumCuenta.Items.Add("CC UYU 045-018925-2 - Franco Correa - UYU 2814,28")
-            cboNumCuenta.Items.Add("CC USD 045-018925-2 - Franco Correa - USD 75,31")
-            cboNumCuenta.SelectedIndex = 0
-            txtSerieLibreta.Text = "001"
-            txtNroLibreta.Text = "45189252-001"
+        Dim banco = New Banco()
+        If banco.HabilitarCCPersonas = False Then
+            txtNroDoc.Text = T("El banco no permite la emisión de cheques a personas", "The bank does not allow people to have checkbooks")
+            txtNroDoc.Enabled = False
         End If
     End Sub
 
@@ -29,21 +17,31 @@
     End Sub
 
     Private Sub btnEmitir_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEmitir.Click
-        If (cboPaisDocCliente.Text <> "" _
-            And cboTipoDocCliente.Text <> "" _
-            And txtNroDocCliente.Text <> "" _
-            And cboNumCuenta.Text <> "" _
+        If ( _
+            cboNumCuenta.Text <> "" _
             And txtSerieLibreta.Text <> "" _
             And txtNroLibreta.Text <> "" _
             And txtCantCheques.Text <> "" _
             And Val(txtCantCheques.Text) <> 0 _
         ) Then
-            If MessageBox.Show("¿Confirma la emisión de la libreta?", "Confirmar", MessageBoxButtons.YesNo) = Windows.Forms.DialogResult.Yes Then
-                MessageBox.Show("Libreta emitida exitosamente")
-                Me.Close()
+            If MessageBox.Show(T("¿Confirma la emisión de la libreta?", "Confirm checkbook creation?"), T("Confirmar", "Confirm"), MessageBoxButtons.YesNo) = Windows.Forms.DialogResult.Yes Then
+                If Libretas.CrearLibreta(cboNumCuenta.Text, txtSerieLibreta.Text, txtNroLibreta.Text, txtCantCheques.Text) Then
+                    MessageBox.Show(T("Libreta emitida exitosamente", "Checkbook has been created successfully"))
+                    Me.Close()
+                End If
             End If
         Else
-            MessageBox.Show("Compruebe los campos")
+            MessageBox.Show(T("Compruebe los campos", "Check all fields are completed"))
         End If
+    End Sub
+
+    Private Sub txtRUT_TextChanged(ByVal sender As TextBox, ByVal e As System.EventArgs) Handles txtRUT.TextChanged, txtNroDoc.TextChanged
+        Dim tipo = If(tabTipoCli.SelectedIndex = 0, TipoCliente.Empresa, TipoCliente.Persona)
+        Dim idCliente = ObtenerIdCliente(sender.Text, tipo)
+        BuscarCuentasCorrienteCombo(idCliente, cboNumCuenta)
+    End Sub
+
+    Private Sub txtRUT_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtRUT.KeyPress
+        Validadores.KeyPressRUT(e, txtRUT.Text)
     End Sub
 End Class

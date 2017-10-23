@@ -33,12 +33,18 @@ Module Auditoria
         Dim fechaStr = fecha.ToString(FormatoFecha())
         Dim horaStr = fecha.ToString("HH:mm")
         Dim nomUsuario = Autenticacion.usuario
+        Dim ip = "0.0.0.0"
+
+        Try
+            ip = System.Net.Dns.GetHostAddresses(System.Net.Dns.GetHostName()).GetValue(0).ToString()
+        Catch ex As Exception
+        End Try
 
         If nomUsuario <> "" Then
             Dim usu = New Usuario(nomUsuario)
-            cm.CommandText = String.Format("INSERT INTO registroaccion (nombre, numdocu, fecha, hora, datosextra) VALUES ('{0}', {1}, '{2}', '{3}', '{4}')", nombreAccion, usu.NumDocU, fechaStr, horaStr, datosExtra)
+            cm.CommandText = String.Format("INSERT INTO registroaccion (nombre, numdocu, fecha, hora, datosextra, ip) VALUES ('{0}', {1}, '{2}', '{3}', '{4}', '{5}')", nombreAccion, usu.NumDocU, fechaStr, horaStr, datosExtra, ip)
         Else
-            cm.CommandText = String.Format("INSERT INTO registroaccion (nombre, fecha, hora, datosextra) VALUES ('{0}', '{1}', '{2}', '{3}')", nombreAccion, fechaStr, horaStr, datosExtra)
+            cm.CommandText = String.Format("INSERT INTO registroaccion (nombre, fecha, hora, datosextra, ip) VALUES ('{0}', '{1}', '{2}', '{3}', '{4}')", nombreAccion, fechaStr, horaStr, datosExtra, ip)
         End If
 
         cm.ExecuteNonQuery()

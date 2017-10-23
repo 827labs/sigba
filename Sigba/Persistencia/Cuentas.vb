@@ -23,7 +23,6 @@ Module Cuentas
         Dim cx = ConexionBaseDatos.ObtenerActual()
         Dim fecha = Date.Today.ToString(FormatoFecha())
         Dim cm = New OdbcCommand(String.Format("UPDATE cuenta set fechacierre='{0}' where idcuenta={1}", fecha, idCuenta), cx)
-
         Try
             cm.ExecuteNonQuery()
             RegistrarAccion("Baja cuenta", String.Format("idcuenta={0}", idCuenta))
@@ -33,6 +32,18 @@ Module Cuentas
             Return False
         End Try
     End Function
+
+    Public Sub BuscarCuentasCorrienteCombo(ByVal idCliente As Integer, ByRef cbo As ComboBox)
+        Dim cx = ConexionBaseDatos.ObtenerActual()
+        Dim cm = New OdbcCommand("SELECT tipo || ' ' || moneda || ' ' || idcuenta cuen FROM cuenta WHERE fechacierre IS NULL AND tipo='CC' AND idcliente=" & idCliente, cx)
+        Dim lector = cm.ExecuteReader()
+
+        cbo.Items.Clear()
+
+        While lector.Read()
+            cbo.Items.Add(lector("cuen"))
+        End While
+    End Sub
 
     Public Sub BuscarCuentasDGV(ByVal idCliente As Integer, ByRef dgv As DataGridView)
         Dim cx = ConexionBaseDatos.ObtenerActual()
