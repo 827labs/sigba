@@ -1,6 +1,6 @@
 ﻿Imports System.Globalization
 
-Public Class frmSeteoCotizacionManual
+Public Class frmSeteoCotizacionATMManual
 
     Private Sub btnContinuar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnContinuar.Click
         If Not (txtEURCot.Text <> "" And txtUSDCot.Text <> "") Then

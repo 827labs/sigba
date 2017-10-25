@@ -12,6 +12,8 @@
     Public Shared cajaAbierta As Integer
     Public Shared estadoCaja As Integer
 
+    Public Shared numATMActivo As Integer
+
     Public Shared RolAdminstrador = "Administrador"
     Public Shared RolGerente = "Gerente"
     Public Shared RolEjecutivo = "Ejecutivo de cuentas"

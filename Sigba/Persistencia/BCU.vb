@@ -35,7 +35,7 @@ Module BCUManager
 
             End If
         Catch ex As Exception
-            frmSeteoCotizacionManual.Show()
+            frmSeteoCotizacionATMManual.Show()
             Return 0
         End Try
     End Function

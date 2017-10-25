@@ -166,6 +166,6 @@ Public Class Principal
 
     Private Sub Principal_Shown(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Shown
         ''ObtenerCotizaciones()
-        frmSeteoCotizacionManual.Show()
+        frmSeteoCotizacionATMManual.Show()
     End Sub
 End Class

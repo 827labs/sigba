@@ -119,19 +119,19 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="AperturaDeCajaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>145, 22</value>
   </data>
   <data name="AperturaDeCajaToolStripMenuItem.Text" xml:space="preserve">
     <value>Open register</value>
   </data>
   <data name="CajasAbiertasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>145, 22</value>
   </data>
   <data name="CajasAbiertasToolStripMenuItem.Text" xml:space="preserve">
     <value>Close register</value>
   </data>
   <data name="GestiónDeCajasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>117, 22</value>
   </data>
   <data name="GestiónDeCajasToolStripMenuItem.Text" xml:space="preserve">
     <value>Manage</value>
@@ -143,13 +143,13 @@
     <value>Cash registers</value>
   </data>
   <data name="AltaDeCuentaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>149, 22</value>
   </data>
   <data name="AltaDeCuentaToolStripMenuItem.Text" xml:space="preserve">
     <value>Open account</value>
   </data>
   <data name="BajaDeCuentaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>149, 22</value>
   </data>
   <data name="BajaDeCuentaToolStripMenuItem.Text" xml:space="preserve">
     <value>Close account</value>
@@ -230,13 +230,13 @@
     <value>Clients</value>
   </data>
   <data name="EmitirToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>108, 22</value>
   </data>
   <data name="EmitirToolStripMenuItem.Text" xml:space="preserve">
     <value>Create</value>
   </data>
   <data name="AnularToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>108, 22</value>
   </data>
   <data name="AnularToolStripMenuItem.Text" xml:space="preserve">
     <value>Delete</value>
@@ -260,13 +260,13 @@
     <value>Checks</value>
   </data>
   <data name="GestionarUsuariosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>147, 22</value>
   </data>
   <data name="GestionarUsuariosToolStripMenuItem.Text" xml:space="preserve">
     <value>Manage users</value>
   </data>
   <data name="IngresarUsuarioToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>147, 22</value>
   </data>
   <data name="IngresarUsuarioToolStripMenuItem.Text" xml:space="preserve">
     <value>New user</value>
@@ -302,7 +302,7 @@
     <value>Settings</value>
   </data>
   <data name="AcercaDeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>116, 22</value>
   </data>
   <data name="AcercaDeToolStripMenuItem.Text" xml:space="preserve">
     <value>About...</value>

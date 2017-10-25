@@ -238,7 +238,6 @@ Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmNuevoUsuario.resources
 Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmListaSucursales.resources
 Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmEditarSucursal.resources
 Z:\Code\sigba\Sigba\bin\Debug\Sigba.exe.config
-Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmSeteoCotizacionManual.resources
 Z:\Code\sigba\Sigba\bin\Debug\en\Sigba.resources.dll
 Z:\Code\sigba\Sigba\obj\Debug\Sigba.Principal.en.resources
 Z:\Code\sigba\Sigba\obj\Debug\en\Sigba.resources.dll
@@ -263,7 +262,6 @@ Z:\Code\sigba\Sigba\obj\Debug\af\Sigba.resources.dll
 Z:\Code\sigba\Sigba\obj\Debug\af-ZA\Sigba.resources.dll
 Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmTransferenciaCuentas.en-AU.resources
 Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmTransferenciaCuentas.en.resources
-Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmSeteoCotizacionManual.en.resources
 Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmNuevoUsuario.en.resources
 Z:\Code\sigba\Sigba\bin\Debug\en-US\Sigba.resources.dll
 Z:\Code\sigba\Sigba\bin\Debug\en-ZW\Sigba.resources.dll
@@ -287,3 +285,7 @@ Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmBusquedaCuentaPorCliente.en.resources
 Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmRetiroCuenta.en.resources
 Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmBajaCuenta.en.resources
 Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmNuevaCuenta.en.resources
+Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmSeteoCotizacionATMManual.resources
+Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmSeteoCotizacionATMManual.en.resources
+Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmInicializacionATM.resources
+Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmInicializacionATM.en.resources
