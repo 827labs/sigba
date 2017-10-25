@@ -15,7 +15,7 @@ Module Cargos
 
         With dgv
             .Columns(0).HeaderCell.Value = "ID"
-            .Columns(1).HeaderCell.Value = "Nombre"
+            .Columns(1).HeaderCell.Value = T("Nombre", "Name")
         End With
     End Sub
 End Module

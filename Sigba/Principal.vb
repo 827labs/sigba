@@ -12,6 +12,14 @@ Public Class Principal
         Application.Exit()
     End Sub
 
+    Private Sub Principal_FormClosing(ByVal sender As Object, ByVal e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
+        If Autenticacion.HayCajaAbierta() Then
+            e.Cancel = True
+            Mensajes.ErrorSimple(T("Debe cerrar su caja antes de poder salir de SIGBA.", "You must close your register before closing SIGBA."))
+            frmCierreCaja.Show()
+        End If
+    End Sub
+
     Private Sub GestionarUsuariosToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles GestionarUsuariosToolStripMenuItem.Click
         frmGestionUsuarios.Show()
     End Sub
@@ -85,15 +93,31 @@ Public Class Principal
     End Sub
 
     Private Sub RetiroDeCuentaToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RetiroDeCuentaToolStripMenuItem.Click
-        frmRetiroCuenta.Show()
+        If Autenticacion.HayCajaAbierta() Then
+            frmRetiroCuenta.Show()
+        Else
+            Mensajes.ErrorSimple(T("Debe abrir una caja para poder realizar transacciones", "You must open a register in order to perform transactions."))
+            frmAperturaCaja.Show()
+        End If
+
     End Sub
 
     Private Sub DepósitoEnCuentaToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles DepósitoEnCuentaToolStripMenuItem.Click
-        frmDepositoCuenta.Show()
+        If Autenticacion.HayCajaAbierta() Then
+            frmDepositoCuenta.Show()
+        Else
+            Mensajes.ErrorSimple(T("Debe abrir una caja para poder realizar transacciones", "You must open a register in order to perform transactions."))
+            frmAperturaCaja.Show()
+        End If
     End Sub
 
     Private Sub TransferenciaEntreCuentasToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TransferenciaEntreCuentasToolStripMenuItem.Click
-        frmTransferenciaCuentas.Show()
+        If Autenticacion.HayCajaAbierta() Then
+            frmTransferenciaCuentas.Show()
+        Else
+            Mensajes.ErrorSimple(T("Debe abrir una caja para poder realizar transacciones", "You must open a register in order to perform transactions."))
+            frmAperturaCaja.Show()
+        End If
     End Sub
 
     Private Sub IngresarUsuarioToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles IngresarUsuarioToolStripMenuItem.Click

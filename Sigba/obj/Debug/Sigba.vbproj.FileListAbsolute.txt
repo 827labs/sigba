@@ -274,3 +274,16 @@ Z:\Code\sigba\Sigba\obj\Debug\en-US\Sigba.resources.dll
 Z:\Code\sigba\Sigba\obj\Debug\en-ZW\Sigba.resources.dll
 Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmHistoricoTransaccionesCuenta.en.resources
 Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmDepositoCuenta.en.resources
+Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmAgregarClienteEmpresa.en.resources
+Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmBajaCliente.en.resources
+Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmEditarSucursal.en.resources
+Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmListaSucursales.en.resources
+Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmAuditoria.en.resources
+Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmDatosBanco.en.resources
+Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmDebitoAutomatico.en.resources
+Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmDetalleDebitoAutomatico.en.resources
+Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmNuevoDebitoAutomatico.en.resources
+Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmBusquedaCuentaPorCliente.en.resources
+Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmRetiroCuenta.en.resources
+Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmBajaCuenta.en.resources
+Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmNuevaCuenta.en.resources

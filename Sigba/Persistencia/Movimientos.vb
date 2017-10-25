@@ -8,7 +8,7 @@ Module Movimientos
         Debito = 3
     End Enum
 
-    Public Function NuevoMovimiento(ByVal concepto As String, ByVal diferencia As Decimal, ByVal nroCuentaCompleto As String) As Boolean
+    Public Function NuevoMovimiento(ByVal concepto As String, ByVal diferencia As Decimal, ByVal nroCuentaCompleto As String, Optional ByVal DatosExtra As String = "") As Boolean
         Dim cx = ConexionBaseDatos.ObtenerActual()
         Dim saldoCuenta = ObtenerSaldoCuenta(nroCuentaCompleto).Split(" ")(1)
         Dim fechaActual = Date.Today().ToString(FormatoFecha())
@@ -17,7 +17,11 @@ Module Movimientos
         Dim usuario = New Usuario(Autenticacion.usuario)
         Dim numdocu = usuario.NumDocU
 
-        Dim cm = New OdbcCommand(String.Format("INSERT INTO movimiento (concepto, fecha, hora, diferencia, idcuenta, numdocu, saldoanterior) VALUES ('{0}', '{1}', '{2}', {3}, {4}, {5}, {6});", concepto, fechaActual, horaActual, diferencia, idCuenta, numdocu, saldoCuenta), cx)
+        If Autenticacion.HayCajaAbierta() Then
+            DatosExtra = DatosExtra & If(DatosExtra.Length > 0, ";", "") & String.Format("numcaja={0};sucursal={1};estadocaja={2}", Autenticacion.cajaAbierta, Autenticacion.sucursalCajaAbierta, Autenticacion.estadoCaja)
+        End If
+
+        Dim cm = New OdbcCommand(String.Format("INSERT INTO movimiento (concepto, fecha, hora, diferencia, idcuenta, numdocu, saldoanterior, datosextra) VALUES ('{0}', '{1}', '{2}', {3}, {4}, {5}, {6}, '{7}');", concepto, fechaActual, horaActual, diferencia, idCuenta, numdocu, saldoCuenta, DatosExtra), cx)
 
         Return cm.ExecuteNonQuery() > 0
     End Function

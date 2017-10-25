@@ -25,22 +25,22 @@
         Dim caj = New Caja(txtCaja.Text)
 
         If caj.Abierta <> Nothing Then
-            Mensajes.ErrorSimple("La caja ya está abierta.")
+            Mensajes.ErrorSimple(T("La caja ya está abierta.", "The register is already open"))
             Return
         End If
 
         If suc.EsValido() = False Or caj.EsValido() = False Then
-            Mensajes.ErrorSimple("La caja o sucursal indicada es invalida.")
+            Mensajes.ErrorSimple(T("La caja o sucursal indicada es invalida.", "The register or branch is invalid"))
             Return
         End If
 
         If Not (caj.NumSuc = suc.NumSuc) Then
-            Mensajes.ErrorSimple("La caja no coincide con la sucursal.")
+            Mensajes.ErrorSimple(T("La caja no coincide con la sucursal.", "The register does not belong to this branch."))
             Return
         End If
 
         If Not (txtSaldoUYU.Text <> "" And txtSaldoUSD.Text <> "") Then
-            Mensajes.ErrorSimple("Complete los campos faltantes.")
+            Mensajes.ErrorSimple(T("Complete los campos faltantes.", "Fill the remaining fields"))
             Return
         End If
 
@@ -54,7 +54,11 @@
 
         est.Guardar()
 
-        Mensajes.Simple("La caja se abrió correctamente. Numero de apertura: " & est.IdE)
+        Mensajes.Simple(T("La caja se abrió correctamente. Numero de apertura: ", "The register has been opened successfully. Open ID: ") & est.IdE)
+
+        Autenticacion.cajaAbierta = txtCaja.Text
+        Autenticacion.sucursalCajaAbierta = txtSucursal.Text
+        Autenticacion.estadoCaja = est.IdE
 
         caj.Abierta = est.IdE
         caj.Actualizar()
@@ -79,7 +83,7 @@
     Private Sub txtCaja_Leave(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtCaja.Leave
         Dim cajaActual = New Caja(Val(txtCaja.Text))
         If Not (cajaActual.EsValido() And cajaActual.NumSuc = Val(txtSucursal.Text)) Then
-            Mensajes.ErrorSimple("La caja no existe o no pertenece a esta sucursal")
+            Mensajes.ErrorSimple(T("La caja no existe o no pertenece a esta sucursal", "The register does not belong to this branch"))
             txtCaja.Focus()
             txtCaja.Clear()
         End If

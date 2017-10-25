@@ -54,8 +54,8 @@ Module Cuentas
         dgv.DataSource = ds.Tables("cuenta")
 
         With dgv
-            .Columns(0).HeaderCell.Value = "Número"
-            .Columns(1).HeaderCell.Value = "Saldo"
+            .Columns(0).HeaderCell.Value = T("Número", "Number")
+            .Columns(1).HeaderCell.Value = T("Saldo", "Balance")
         End With
     End Sub
 

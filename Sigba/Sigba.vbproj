@@ -365,16 +365,8 @@
       <DependentUpon>frmAperturaCaja.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Interfaz de Usuario\Caja\Gestion de cajas\frmAperturaCaja.en.resx">
-      <DependentUpon>frmAperturaCaja.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="Interfaz de Usuario\Caja\Gestion de cajas\frmAperturaCaja.resx">
       <DependentUpon>frmAperturaCaja.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Interfaz de Usuario\Caja\Gestion de cajas\frmCierreCaja.en.resx">
-      <DependentUpon>frmCierreCaja.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaz de Usuario\Caja\Gestion de cajas\frmCierreCaja.resx">
@@ -417,16 +409,8 @@
       <DependentUpon>frmCobrarCheque.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Interfaz de Usuario\Cheques\frmCobrarCheque.en.resx">
-      <DependentUpon>frmCobrarCheque.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="Interfaz de Usuario\Cheques\frmCobrarCheque.resx">
       <DependentUpon>frmCobrarCheque.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Interfaz de Usuario\Cheques\Libretas\frmAnularLibreta.en.resx">
-      <DependentUpon>frmAnularLibreta.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaz de Usuario\Cheques\Libretas\frmAnularLibreta.resx">
@@ -434,10 +418,6 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaz de Usuario\Cheques\Libretas\frmEmitirLibreta.af.resx">
-      <DependentUpon>frmEmitirLibreta.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Interfaz de Usuario\Cheques\Libretas\frmEmitirLibreta.en.resx">
       <DependentUpon>frmEmitirLibreta.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -454,10 +434,6 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaz de Usuario\Clientes\Gestion\Alta cliente\Empresa\frmAltaClienteEmpresa.en-AU.resx">
-      <DependentUpon>frmAltaClienteEmpresa.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Interfaz de Usuario\Clientes\Gestion\Alta cliente\Empresa\frmAltaClienteEmpresa.en.resx">
       <DependentUpon>frmAltaClienteEmpresa.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -489,16 +465,8 @@
       <DependentUpon>frmGestionUsuarios.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Interfaz de Usuario\Configuracion\Administracion de usuarios\frmGestionUsuarios.en.resx">
-      <DependentUpon>frmGestionUsuarios.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="Interfaz de Usuario\Configuracion\Administracion de usuarios\frmGestionUsuarios.resx">
       <DependentUpon>frmGestionUsuarios.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Interfaz de Usuario\Configuracion\Administracion de usuarios\frmNuevoUsuario.en.resx">
-      <DependentUpon>frmNuevoUsuario.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaz de Usuario\Configuracion\Administracion de usuarios\frmNuevoUsuario.resx">
@@ -511,10 +479,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaz de Usuario\Configuracion\frmDatosBanco.resx">
       <DependentUpon>frmDatosBanco.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Interfaz de Usuario\Configuracion\frmSeteoCotizacionManual.en.resx">
-      <DependentUpon>frmSeteoCotizacionManual.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaz de Usuario\Configuracion\frmSeteoCotizacionManual.resx">
@@ -537,10 +501,6 @@
       <DependentUpon>frmBusquedaCuentaPorCliente.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Interfaz de Usuario\Cuentas\frmDepositoCuenta.en.resx">
-      <DependentUpon>frmDepositoCuenta.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="Interfaz de Usuario\Cuentas\frmDepositoCuenta.resx">
       <DependentUpon>frmDepositoCuenta.vb</DependentUpon>
       <SubType>Designer</SubType>
@@ -550,10 +510,6 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaz de Usuario\Cuentas\frmTransferenciaCuentas.en-AU.resx">
-      <DependentUpon>frmTransferenciaCuentas.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Interfaz de Usuario\Cuentas\frmTransferenciaCuentas.en.resx">
       <DependentUpon>frmTransferenciaCuentas.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -569,10 +525,6 @@
       <DependentUpon>frmNuevaCuenta.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Interfaz de Usuario\Cuentas\Historico de transacciones por cuenta\frmHistoricoTransaccionesCuenta.en.resx">
-      <DependentUpon>frmHistoricoTransaccionesCuenta.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="Interfaz de Usuario\Cuentas\Historico de transacciones por cuenta\frmHistoricoTransaccionesCuenta.resx">
       <DependentUpon>frmHistoricoTransaccionesCuenta.vb</DependentUpon>
       <SubType>Designer</SubType>
@@ -581,14 +533,114 @@
       <DependentUpon>Principal.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Principal.en.resx">
-      <DependentUpon>Principal.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="Principal.resx">
       <DependentUpon>Principal.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Principal.en.resx">
+    <DependentUpon>Principal.vb</DependentUpon>
+    <SubType>Designer</SubType>
+</EmbeddedResource>
+<EmbeddedResource Include="Interfaz de Usuario\Caja\Gestion de cajas\frmAperturaCaja.en.resx">
+    <DependentUpon>frmAperturaCaja.vb</DependentUpon>
+    <SubType>Designer</SubType>
+</EmbeddedResource>
+<EmbeddedResource Include="Interfaz de Usuario\Caja\Gestion de cajas\frmCierreCaja.en.resx">
+    <DependentUpon>frmCierreCaja.vb</DependentUpon>
+    <SubType>Designer</SubType>
+</EmbeddedResource>
+<EmbeddedResource Include="Interfaz de Usuario\Cheques\frmCobrarCheque.en.resx">
+    <DependentUpon>frmCobrarCheque.vb</DependentUpon>
+    <SubType>Designer</SubType>
+</EmbeddedResource>
+<EmbeddedResource Include="Interfaz de Usuario\Cheques\Libretas\frmAnularLibreta.en.resx">
+    <DependentUpon>frmAnularLibreta.vb</DependentUpon>
+    <SubType>Designer</SubType>
+</EmbeddedResource>
+<EmbeddedResource Include="Interfaz de Usuario\Cheques\Libretas\frmEmitirLibreta.en.resx">
+    <DependentUpon>frmEmitirLibreta.vb</DependentUpon>
+    <SubType>Designer</SubType>
+</EmbeddedResource>
+<EmbeddedResource Include="Interfaz de Usuario\Clientes\Gestion\Alta cliente\Empresa\frmAltaClienteEmpresa.en.resx">
+    <DependentUpon>frmAltaClienteEmpresa.vb</DependentUpon>
+    <SubType>Designer</SubType>
+</EmbeddedResource>
+<EmbeddedResource Include="Interfaz de Usuario\Clientes\Gestion\Alta cliente\Persona\frmAgregarCliente.en.resx">
+    <DependentUpon>frmAgregarCliente.vb</DependentUpon>
+    <SubType>Designer</SubType>
+</EmbeddedResource>
+<EmbeddedResource Include="Interfaz de Usuario\Clientes\Gestion\Baja cliente\frmBajaCliente.en.resx">
+    <DependentUpon>frmBajaCliente.vb</DependentUpon>
+    <SubType>Designer</SubType>
+</EmbeddedResource>
+<EmbeddedResource Include="Interfaz de Usuario\Configuracion\Administracion de sucursales\frmEditarSucursal.en.resx">
+    <DependentUpon>frmEditarSucursal.vb</DependentUpon>
+    <SubType>Designer</SubType>
+</EmbeddedResource>
+<EmbeddedResource Include="Interfaz de Usuario\Configuracion\Administracion de sucursales\frmListaSucursales.en.resx">
+    <DependentUpon>frmListaSucursales.vb</DependentUpon>
+    <SubType>Designer</SubType>
+</EmbeddedResource>
+<EmbeddedResource Include="Interfaz de Usuario\Configuracion\Administracion de usuarios\frmGestionUsuarios.en.resx">
+    <DependentUpon>frmGestionUsuarios.vb</DependentUpon>
+    <SubType>Designer</SubType>
+</EmbeddedResource>
+<EmbeddedResource Include="Interfaz de Usuario\Configuracion\Administracion de usuarios\frmNuevoUsuario.en.resx">
+    <DependentUpon>frmNuevoUsuario.vb</DependentUpon>
+    <SubType>Designer</SubType>
+</EmbeddedResource>
+<EmbeddedResource Include="Interfaz de Usuario\Configuracion\Auditoria\frmAuditoria.en.resx">
+    <DependentUpon>frmAuditoria.vb</DependentUpon>
+    <SubType>Designer</SubType>
+</EmbeddedResource>
+<EmbeddedResource Include="Interfaz de Usuario\Configuracion\frmDatosBanco.en.resx">
+    <DependentUpon>frmDatosBanco.vb</DependentUpon>
+    <SubType>Designer</SubType>
+</EmbeddedResource>
+<EmbeddedResource Include="Interfaz de Usuario\Configuracion\frmSeteoCotizacionManual.en.resx">
+    <DependentUpon>frmSeteoCotizacionManual.vb</DependentUpon>
+    <SubType>Designer</SubType>
+</EmbeddedResource>
+<EmbeddedResource Include="Interfaz de Usuario\Cuentas\Debito Automático\frmDebitoAutomatico.en.resx">
+    <DependentUpon>frmDebitoAutomatico.vb</DependentUpon>
+    <SubType>Designer</SubType>
+</EmbeddedResource>
+<EmbeddedResource Include="Interfaz de Usuario\Cuentas\Debito Automático\frmDetalleDebitoAutomatico.en.resx">
+    <DependentUpon>frmDetalleDebitoAutomatico.vb</DependentUpon>
+    <SubType>Designer</SubType>
+</EmbeddedResource>
+<EmbeddedResource Include="Interfaz de Usuario\Cuentas\Debito Automático\frmNuevoDebitoAutomatico.en.resx">
+    <DependentUpon>frmNuevoDebitoAutomatico.vb</DependentUpon>
+    <SubType>Designer</SubType>
+</EmbeddedResource>
+<EmbeddedResource Include="Interfaz de Usuario\Cuentas\frmBusquedaCuentaPorCliente.en.resx">
+    <DependentUpon>frmBusquedaCuentaPorCliente.vb</DependentUpon>
+    <SubType>Designer</SubType>
+</EmbeddedResource>
+<EmbeddedResource Include="Interfaz de Usuario\Cuentas\frmDepositoCuenta.en.resx">
+    <DependentUpon>frmDepositoCuenta.vb</DependentUpon>
+    <SubType>Designer</SubType>
+</EmbeddedResource>
+<EmbeddedResource Include="Interfaz de Usuario\Cuentas\frmRetiroCuenta.en.resx">
+    <DependentUpon>frmRetiroCuenta.vb</DependentUpon>
+    <SubType>Designer</SubType>
+</EmbeddedResource>
+<EmbeddedResource Include="Interfaz de Usuario\Cuentas\frmTransferenciaCuentas.en.resx">
+    <DependentUpon>frmTransferenciaCuentas.vb</DependentUpon>
+    <SubType>Designer</SubType>
+</EmbeddedResource>
+<EmbeddedResource Include="Interfaz de Usuario\Cuentas\Gestion\frmBajaCuenta.en.resx">
+    <DependentUpon>frmBajaCuenta.vb</DependentUpon>
+    <SubType>Designer</SubType>
+</EmbeddedResource>
+<EmbeddedResource Include="Interfaz de Usuario\Cuentas\Gestion\frmNuevaCuenta.en.resx">
+    <DependentUpon>frmNuevaCuenta.vb</DependentUpon>
+    <SubType>Designer</SubType>
+</EmbeddedResource>
+<EmbeddedResource Include="Interfaz de Usuario\Cuentas\Historico de transacciones por cuenta\frmHistoricoTransaccionesCuenta.en.resx">
+    <DependentUpon>frmHistoricoTransaccionesCuenta.vb</DependentUpon>
+    <SubType>Designer</SubType>
+</EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>

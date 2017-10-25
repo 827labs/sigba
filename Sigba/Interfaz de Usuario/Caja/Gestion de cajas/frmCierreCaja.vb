@@ -13,6 +13,11 @@
         Dim cajero = New Usuario(Autenticacion.usuario)
 
         txtNombreCajera.Text = String.Format("{0}, {1}", cajero.Apellido, cajero.Nombre)
+
+        If Autenticacion.HayCajaAbierta() Then
+            txtSucursal.Text = Autenticacion.sucursalCajaAbierta
+            txtCaja.Text = Autenticacion.cajaAbierta
+        End If
     End Sub
 
     Private Sub KPSoloNumeros(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtSaldoUYU.KeyPress, txtSaldoUSD.KeyPress, txtCaja.KeyPress, txtCajero.KeyPress, txtSucursal.KeyPress
@@ -50,22 +55,22 @@
         Dim caj = New Caja(txtCaja.Text)
 
         If caj.Abierta = Nothing Then
-            Mensajes.ErrorSimple("La caja no está abierta.")
+            Mensajes.ErrorSimple(T("La caja no está abierta.", "The register is not open."))
             Return
         End If
 
         If suc.EsValido() = False Or caj.EsValido() = False Then
-            Mensajes.ErrorSimple("La caja o sucursal indicada es invalida.")
+            Mensajes.ErrorSimple(T("La caja o sucursal indicada es invalida.", "The register or branch is invalid"))
             Return
         End If
 
         If Not (caj.NumSuc = suc.NumSuc) Then
-            Mensajes.ErrorSimple("La caja no coincide con la sucursal.")
+            Mensajes.ErrorSimple(T("La caja no coincide con la sucursal.", "The register does not belong to this branch."))
             Return
         End If
 
         If Not (txtSaldoUYU.Text <> "" And txtSaldoUSD.Text <> "") Then
-            Mensajes.ErrorSimple("Complete los campos faltantes.")
+            Mensajes.ErrorSimple(T("Complete los campos faltantes.", "Fill the remaining fields"))
             Return
         End If
 
@@ -79,7 +84,11 @@
 
         est.Guardar()
 
-        Mensajes.Simple("La caja se cerró correctamente. Numero de cierre: " & est.IdE)
+        Mensajes.Simple(T("La caja se cerró correctamente. Numero de cierre: ", "The register has been closed successfully. Close ID: ") & est.IdE)
+
+        Autenticacion.cajaAbierta = Nothing
+        Autenticacion.sucursalCajaAbierta = Nothing
+        Autenticacion.estadoCaja = Nothing
 
         caj.CerrarCaja()
         Auditoria.RegistrarAccion("Cierre de caja", String.Format("caja={0};saldouyu={1};saldousd={2}", txtCaja.Text, txtSaldoUYU.Text, txtSaldoUSD.Text))

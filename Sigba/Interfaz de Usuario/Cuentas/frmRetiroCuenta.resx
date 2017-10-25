@@ -130,30 +130,27 @@
   <data name="&gt;&gt;Label2.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;txtCuentaBeneficiario.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Retiro de cuenta</value>
   </data>
   <data name="&gt;&gt;btnConfirmar.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 13</value>
+  <data name="cboMonto.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 21</value>
+  </data>
+  <data name="txtCuentaBeneficiario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 28</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="txtCuentaBeneficiario.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 28</value>
-  </data>
-  <data name="&gt;&gt;Label1.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="txtCuentaBeneficiario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 20</value>
   </data>
   <data name="cboMonto.Items2" xml:space="preserve">
     <value>EUR</value>
-  </data>
-  <data name="&gt;&gt;btnBuscarCuenta.ZOrder" xml:space="preserve">
-    <value>5</value>
   </data>
   <data name="btnConfirmar.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
@@ -161,95 +158,14 @@
   <data name="&gt;&gt;Label1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Retiro de cuenta</value>
+  <data name="&gt;&gt;Label1.Name" xml:space="preserve">
+    <value>Label1</value>
+  </data>
+  <data name="txtCuentaBeneficiario.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
   </data>
   <data name="&gt;&gt;txtMontoCantidad.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtCuentaBeneficiario.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="btnCancelar.Text" xml:space="preserve">
-    <value>Cancelar</value>
-  </data>
-  <data name="Label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>210, 11</value>
-  </data>
-  <data name="&gt;&gt;cboMonto.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="Label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>102, 13</value>
-  </data>
-  <data name="Label2.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="btnBuscarCuenta.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 23</value>
-  </data>
-  <data name="btnConfirmar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>270, 62</value>
-  </data>
-  <data name="&gt;&gt;Label1.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="btnBuscarCuenta.Text" xml:space="preserve">
-    <value>Buscar</value>
-  </data>
-  <data name="txtCuentaBeneficiario.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 20</value>
-  </data>
-  <data name="cboMonto.Items1" xml:space="preserve">
-    <value>USD</value>
-  </data>
-  <data name="&gt;&gt;btnConfirmar.Name" xml:space="preserve">
-    <value>btnConfirmar</value>
-  </data>
-  <data name="&gt;&gt;txtCuentaBeneficiario.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnConfirmar.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="txtMontoCantidad.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;btnCancelar.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btnConfirmar.Text" xml:space="preserve">
-    <value>Confirmar</value>
-  </data>
-  <data name="Label1.Text" xml:space="preserve">
-    <value>Nº cuenta a débitar:</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
-  <data name="Label2.Text" xml:space="preserve">
-    <value>Monto:</value>
-  </data>
-  <data name="Label1.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="btnBuscarCuenta.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;cboMonto.Name" xml:space="preserve">
-    <value>cboMonto</value>
-  </data>
-  <data name="&gt;&gt;Label2.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>362, 96</value>
-  </data>
-  <data name="&gt;&gt;txtMontoCantidad.Name" xml:space="preserve">
-    <value>txtMontoCantidad</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -6423,23 +6339,104 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
 </value>
   </data>
+  <data name="&gt;&gt;txtCuentaBeneficiario.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="btnCancelar.Text" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="Label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>210, 11</value>
+  </data>
+  <data name="&gt;&gt;cboMonto.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="txtMontoCantidad.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 20</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="Label2.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="btnBuscarCuenta.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 23</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label1.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>frmRetiroCuenta</value>
+  </data>
+  <data name="&gt;&gt;Label2.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;btnConfirmar.Name" xml:space="preserve">
+    <value>btnConfirmar</value>
+  </data>
+  <data name="&gt;&gt;txtCuentaBeneficiario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnBuscarCuenta.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;btnConfirmar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="txtMontoCantidad.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;btnCancelar.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;txtMontoCantidad.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="Label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;txtCuentaBeneficiario.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="Label2.Text" xml:space="preserve">
+    <value>Monto:</value>
+  </data>
+  <data name="Label1.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="btnBuscarCuenta.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;cboMonto.Name" xml:space="preserve">
+    <value>cboMonto</value>
+  </data>
+  <data name="Label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 11</value>
+  </data>
+  <data name="btnCancelar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 23</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>362, 96</value>
+  </data>
+  <data name="&gt;&gt;txtMontoCantidad.Name" xml:space="preserve">
+    <value>txtMontoCantidad</value>
+  </data>
+  <data name="cboMonto.Items1" xml:space="preserve">
+    <value>USD</value>
+  </data>
+  <data name="&gt;&gt;Label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
   <data name="&gt;&gt;btnCancelar.Name" xml:space="preserve">
     <value>btnCancelar</value>
   </data>
   <data name="&gt;&gt;btnBuscarCuenta.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="txtCuentaBeneficiario.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="txtMontoCantidad.Location" type="System.Drawing.Point, System.Drawing">
-    <value>270, 28</value>
-  </data>
-  <data name="&gt;&gt;Label2.Name" xml:space="preserve">
-    <value>Label2</value>
   </data>
   <data name="cboMonto.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -6447,17 +6444,26 @@
   <data name="&gt;&gt;btnBuscarCuenta.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;Label1.Name" xml:space="preserve">
-    <value>Label1</value>
+  <data name="&gt;&gt;Label2.Name" xml:space="preserve">
+    <value>Label2</value>
+  </data>
+  <data name="Label1.Text" xml:space="preserve">
+    <value>Nº cuenta a débitar:</value>
+  </data>
+  <data name="btnConfirmar.Text" xml:space="preserve">
+    <value>Confirmar</value>
+  </data>
+  <data name="btnBuscarCuenta.Text" xml:space="preserve">
+    <value>Buscar</value>
   </data>
   <data name="btnConfirmar.Size" type="System.Drawing.Size, System.Drawing">
     <value>84, 23</value>
   </data>
-  <data name="&gt;&gt;txtMontoCantidad.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="btnConfirmar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>270, 62</value>
   </data>
-  <data name="cboMonto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 21</value>
+  <data name="Label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 13</value>
   </data>
   <data name="&gt;&gt;txtMontoCantidad.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -6468,8 +6474,8 @@
   <data name="&gt;&gt;cboMonto.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="txtMontoCantidad.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 20</value>
+  <data name="&gt;&gt;cboMonto.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="cboMonto.Location" type="System.Drawing.Point, System.Drawing">
     <value>213, 28</value>
@@ -6477,32 +6483,26 @@
   <data name="&gt;&gt;Label2.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="Label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 11</value>
+  <data name="&gt;&gt;btnCancelar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnBuscarCuenta.Name" xml:space="preserve">
     <value>btnBuscarCuenta</value>
   </data>
-  <data name="btnCancelar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 23</value>
+  <data name="&gt;&gt;btnConfirmar.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>frmRetiroCuenta</value>
+  <data name="Label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 13</value>
   </data>
-  <data name="&gt;&gt;cboMonto.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="txtMontoCantidad.Location" type="System.Drawing.Point, System.Drawing">
+    <value>270, 28</value>
   </data>
   <data name="btnCancelar.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
   </data>
-  <data name="&gt;&gt;btnCancelar.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;txtCuentaBeneficiario.Name" xml:space="preserve">
     <value>txtCuentaBeneficiario</value>
-  </data>
-  <data name="&gt;&gt;btnConfirmar.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <data name="&gt;&gt;btnCancelar.Parent" xml:space="preserve">
     <value>$this</value>

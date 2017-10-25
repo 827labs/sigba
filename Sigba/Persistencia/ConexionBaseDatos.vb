@@ -11,7 +11,7 @@ Public Class ConexionBaseDatos
         Try
             cx.Open()
         Catch ex As Exception
-            Mensajes.ErrorSimple(String.Format("Ocurrió un error al intentarnos conectar con la base de datos. Asegurese de tiene conexión, que el archivo DSN esté presente en C:\sigba.dsn y que el mismo esté bien configurado. Error: {0}", ex.Message))
+            Mensajes.ErrorSimple(String.Format(T("Ocurrió un error al intentarnos conectar con la base de datos. Asegurese de tiene conexión, que el archivo DSN esté presente en C:\sigba.dsn y que el mismo esté bien configurado. Error: {0}", "An error occured while trying to connect to the database. Check the DSN file is in C:\ and is well configured. Details: {0}"), ex.Message))
             Application.Exit()
         End Try
 
