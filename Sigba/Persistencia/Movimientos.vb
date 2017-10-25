@@ -21,6 +21,10 @@ Module Movimientos
             DatosExtra = DatosExtra & If(DatosExtra.Length > 0, ";", "") & String.Format("numcaja={0};sucursal={1};estadocaja={2}", Autenticacion.cajaAbierta, Autenticacion.sucursalCajaAbierta, Autenticacion.estadoCaja)
         End If
 
+        If Autenticacion.numATMActivo <> Nothing Then
+            DatosExtra = DatosExtra & If(DatosExtra.Length > 0, ";", "") & String.Format("numcajeroatm={0}", Autenticacion.numATMActivo)
+        End If
+
         Dim cm = New OdbcCommand(String.Format("INSERT INTO movimiento (concepto, fecha, hora, diferencia, idcuenta, numdocu, saldoanterior, datosextra) VALUES ('{0}', '{1}', '{2}', {3}, {4}, {5}, {6}, '{7}');", concepto, fechaActual, horaActual, diferencia, idCuenta, numdocu, saldoCuenta, DatosExtra), cx)
 
         Return cm.ExecuteNonQuery() > 0

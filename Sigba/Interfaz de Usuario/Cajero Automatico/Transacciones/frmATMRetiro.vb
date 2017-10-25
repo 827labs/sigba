@@ -15,7 +15,7 @@
             Dim saldoCuenta = ObtenerSaldoCuenta(Autenticacion.cuentaATM).Split(" ")(1)
             Dim banco = New Banco()
             Dim monedaCuenta = Autenticacion.cuentaATM.Split(" ")(1)
-            If ObtenerMontoNormalizado(txtMonto.Text, monedaCuenta) > banco.LimiteRetiroCajeroDependenciasPesos Then
+            If ObtenerMontoNormalizado(txtMonto.Text, monedaCuenta) < banco.LimiteRetiroCajeroDependenciasPesos Then
                 If saldoCuenta > Val(txtMonto.Text) Then
                     btnContinuar.Visible = False
                     txtMonto.Visible = False
