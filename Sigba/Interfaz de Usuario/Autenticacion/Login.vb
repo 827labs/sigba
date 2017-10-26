@@ -24,12 +24,6 @@ Public Class Login
         End If
     End Sub
 
-    Private Sub txtCedula_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtUsuario.KeyPress
-        ' KeyPress es el evento que se maneja cuando el usuario presiona un tecla que produce un caracter
-        ' que se puede escribir
-        txtUsuario.MaxLength = 8          'el textbox tendrá 8 caracteres como máximo
-        Validadores.KeyPressSoloNumeros(e)
-    End Sub
 
     Private Sub btnCajero_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCajero.Click
         frmATMBienvenido.Show()

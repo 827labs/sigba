@@ -21,6 +21,15 @@ Public Class ConexionBaseDatos
     Shared Function ObtenerActual(Optional ByVal usuario As String = "informix", Optional ByVal clave As String = "informix") As OdbcConnection
         ' Si la conexión nunca fue abierta (Is Nothing) o no está abierta (.Open)
         ' la voy a crear de nuevo o abrirla respectivamente antes de retornarla.
+
+        If Autenticacion.usuario <> Nothing Then
+            usuario = Autenticacion.usuario
+        End If
+
+        If Autenticacion.clave <> Nothing Then
+            clave = Autenticacion.clave
+        End If
+
         If (cxCompartida Is Nothing) Then
             cxCompartida = CrearNuevaConexion(usuario, clave)
         End If
