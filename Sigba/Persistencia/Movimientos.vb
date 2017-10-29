@@ -206,8 +206,8 @@ Module Movimientos
     End Function
 
     Public Function ObtenerMontoNormalizado(ByVal monto As Decimal, ByVal moneda As String, Optional ByVal montoDestino As String = "UYU") As Decimal
-        Dim tasaDolares = 29.43 ' Reemplazar esto por tasa dinámica
-        Dim tasaEuros = 34.7
+        Dim tasaDolares = Cotizaciones.cotUSD
+        Dim tasaEuros = Cotizaciones.cotEUR
 
         If montoDestino = "UYU" Then
             Select Case moneda

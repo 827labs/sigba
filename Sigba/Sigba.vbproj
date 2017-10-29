@@ -387,6 +387,10 @@
       <DependentUpon>frmATMSelectorCuenta.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz de Usuario\Cajero Automatico\Asistente\frmATMSelectorOperacion.en.resx">
+      <DependentUpon>frmATMSelectorOperacion.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Interfaz de Usuario\Cajero Automatico\Asistente\frmATMSelectorOperacion.resx">
       <DependentUpon>frmATMSelectorOperacion.vb</DependentUpon>
       <SubType>Designer</SubType>

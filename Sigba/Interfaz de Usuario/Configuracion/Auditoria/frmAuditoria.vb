@@ -2,15 +2,15 @@
 
     Private Sub btnsFiltrar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnFiltrarFecha.Click, btnFiltrarUsuario.Click
         If (txtFechaDesde.Text <> "" And txtFechaHasta.Text <> "") Or (txtCedula.Text <> "") Then
-            ' TODO: Actualizar criterio de busqueda en las acciones
+            Auditoria.ObtenerRegistros(dgvAcciones, txtFechaDesde.Text, txtFechaHasta.Text, txtCedula.Text)
         Else
             MessageBox.Show("Ingrese un criterio de búsqueda para filtrar.")
         End If
     End Sub
 
     Private Sub frmAuditoria_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        txtFechaDesde.Text = Generadores.StringFechaActual()
-        txtFechaHasta.Text = Generadores.StringFechaActual()
+        txtFechaDesde.Text = Date.Today.ToString(FormatoFecha())
+        txtFechaHasta.Text = Date.Today.ToString(FormatoFecha())
         Auditoria.ObtenerRegistros(dgvAcciones)
     End Sub
 

@@ -48,7 +48,7 @@ Partial Class frmATMSelectorOperacion
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.White
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!)
         Me.Label1.Location = New System.Drawing.Point(269, 107)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(242, 25)
@@ -57,7 +57,7 @@ Partial Class frmATMSelectorOperacion
         '
         'btnRetiro
         '
-        Me.btnRetiro.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRetiro.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!)
         Me.btnRetiro.Location = New System.Drawing.Point(218, 168)
         Me.btnRetiro.Name = "btnRetiro"
         Me.btnRetiro.Size = New System.Drawing.Size(342, 51)
@@ -67,7 +67,7 @@ Partial Class frmATMSelectorOperacion
         '
         'btnDeposito
         '
-        Me.btnDeposito.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnDeposito.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!)
         Me.btnDeposito.Location = New System.Drawing.Point(218, 230)
         Me.btnDeposito.Name = "btnDeposito"
         Me.btnDeposito.Size = New System.Drawing.Size(342, 51)
@@ -77,7 +77,7 @@ Partial Class frmATMSelectorOperacion
         '
         'btnConsulta
         '
-        Me.btnConsulta.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnConsulta.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!)
         Me.btnConsulta.Location = New System.Drawing.Point(218, 354)
         Me.btnConsulta.Name = "btnConsulta"
         Me.btnConsulta.Size = New System.Drawing.Size(342, 51)
@@ -87,7 +87,7 @@ Partial Class frmATMSelectorOperacion
         '
         'btnTransferencia
         '
-        Me.btnTransferencia.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnTransferencia.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!)
         Me.btnTransferencia.Location = New System.Drawing.Point(218, 292)
         Me.btnTransferencia.Name = "btnTransferencia"
         Me.btnTransferencia.Size = New System.Drawing.Size(342, 51)
@@ -97,7 +97,7 @@ Partial Class frmATMSelectorOperacion
         '
         'btnCancelar
         '
-        Me.btnCancelar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCancelar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!)
         Me.btnCancelar.Location = New System.Drawing.Point(218, 465)
         Me.btnCancelar.Name = "btnCancelar"
         Me.btnCancelar.Size = New System.Drawing.Size(342, 36)

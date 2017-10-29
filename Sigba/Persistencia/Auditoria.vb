@@ -2,17 +2,40 @@
 
 Module Auditoria
 
-    Sub ObtenerRegistros(ByRef dgv As DataGridView)
+    Sub ObtenerRegistros(ByRef dgv As DataGridView, Optional ByVal FechaDesde As String = "", Optional ByVal FechaHasta As String = "", Optional ByVal CIUsuario As String = "")
         Dim cx = ConexionBaseDatos.ObtenerActual()
         Dim cm = New OdbcCommand
         cm.Connection = cx
 
-        cm.CommandText = "SELECT idreg, nombre, numdocu, fecha, hora, datosextra FROM registroaccion ORDER BY idreg DESC"
+        cm.CommandText = "SELECT idreg, nombre, numdocu, fecha, hora, datosextra FROM registroaccion"
+        Dim filtrarPorFecha = FechaDesde <> "" And FechaHasta <> ""
+        Dim filtrarPorUsuario = CIUsuario <> ""
+
+        If filtrarPorFecha Or filtrarPorUsuario Then
+            cm.CommandText += " WHERE"
+        End If
+
+        If filtrarPorFecha Then
+            cm.CommandText += String.Format(" fecha BETWEEN '{0}' AND '{1}'", FechaDesde, FechaHasta)
+        End If
+
+        If filtrarPorFecha And filtrarPorUsuario Then
+            cm.CommandText += " AND"
+        End If
+
+        If filtrarPorUsuario Then
+            cm.CommandText += String.Format(" numdocu={0}", CIUsuario)
+        End If
+
+        cm.CommandText += " ORDER BY idreg DESC"
+
         Dim da = New OdbcDataAdapter(cm)
         Dim ds = New DataSet
         da.Fill(ds, "registroaccion")
 
         dgv.DataSource = ds.Tables("registroaccion")
+
+
 
         With dgv
             .Columns(0).HeaderCell.Value = "ID"

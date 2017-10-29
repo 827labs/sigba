@@ -385,3 +385,4 @@ C:\Users\docente\Desktop\sigba\Sigba\obj\Debug\af-ZA\Sigba.resources.dll
 C:\Users\docente\Desktop\sigba\Sigba\obj\Debug\en-US\Sigba.resources.dll
 C:\Users\docente\Desktop\sigba\Sigba\obj\Debug\en-ZW\Sigba.resources.dll
 C:\Users\docente\Desktop\sigba\Sigba\obj\Debug\en\Sigba.resources.dll
+Z:\Code\sigba\Sigba\obj\Debug\Sigba.frmATMSelectorOperacion.en.resources
