@@ -56,265 +56,170 @@ Partial Class frmCobrarCheque
         '
         'Label1
         '
-        Me.Label1.AccessibleDescription = Nothing
-        Me.Label1.AccessibleName = Nothing
         resources.ApplyResources(Me.Label1, "Label1")
-        Me.Label1.Font = Nothing
         Me.Label1.Name = "Label1"
         '
         'cboTipoCheque
         '
-        Me.cboTipoCheque.AccessibleDescription = Nothing
-        Me.cboTipoCheque.AccessibleName = Nothing
-        resources.ApplyResources(Me.cboTipoCheque, "cboTipoCheque")
-        Me.cboTipoCheque.BackgroundImage = Nothing
         Me.cboTipoCheque.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cboTipoCheque.Font = Nothing
         Me.cboTipoCheque.FormattingEnabled = True
-        Me.cboTipoCheque.Items.AddRange(New Object() {resources.GetString("cboTipoCheque.Items"), resources.GetString("cboTipoCheque.Items1"), resources.GetString("cboTipoCheque.Items2")})
+        Me.cboTipoCheque.Items.AddRange(New Object() {resources.GetString("cboTipoCheque.Items"), resources.GetString("cboTipoCheque.Items1"), resources.GetString("cboTipoCheque.Items2"), resources.GetString("cboTipoCheque.Items3")})
+        resources.ApplyResources(Me.cboTipoCheque, "cboTipoCheque")
         Me.cboTipoCheque.Name = "cboTipoCheque"
         '
         'cboTipoCobro
         '
-        Me.cboTipoCobro.AccessibleDescription = Nothing
-        Me.cboTipoCobro.AccessibleName = Nothing
-        resources.ApplyResources(Me.cboTipoCobro, "cboTipoCobro")
-        Me.cboTipoCobro.BackgroundImage = Nothing
         Me.cboTipoCobro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cboTipoCobro.Font = Nothing
         Me.cboTipoCobro.FormattingEnabled = True
         Me.cboTipoCobro.Items.AddRange(New Object() {resources.GetString("cboTipoCobro.Items"), resources.GetString("cboTipoCobro.Items1")})
+        resources.ApplyResources(Me.cboTipoCobro, "cboTipoCobro")
         Me.cboTipoCobro.Name = "cboTipoCobro"
         '
         'Label2
         '
-        Me.Label2.AccessibleDescription = Nothing
-        Me.Label2.AccessibleName = Nothing
         resources.ApplyResources(Me.Label2, "Label2")
-        Me.Label2.Font = Nothing
         Me.Label2.Name = "Label2"
         '
         'GroupBox2
         '
-        Me.GroupBox2.AccessibleDescription = Nothing
-        Me.GroupBox2.AccessibleName = Nothing
-        resources.ApplyResources(Me.GroupBox2, "GroupBox2")
-        Me.GroupBox2.BackgroundImage = Nothing
         Me.GroupBox2.Controls.Add(Me.cboPaisDoc)
         Me.GroupBox2.Controls.Add(Me.txtNroDoc)
         Me.GroupBox2.Controls.Add(Me.cboTipoDoc)
         Me.GroupBox2.Controls.Add(Me.Label5)
         Me.GroupBox2.Controls.Add(Me.Label6)
         Me.GroupBox2.Controls.Add(Me.Label7)
-        Me.GroupBox2.Font = Nothing
+        resources.ApplyResources(Me.GroupBox2, "GroupBox2")
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.TabStop = False
         '
         'cboPaisDoc
         '
-        Me.cboPaisDoc.AccessibleDescription = Nothing
-        Me.cboPaisDoc.AccessibleName = Nothing
-        resources.ApplyResources(Me.cboPaisDoc, "cboPaisDoc")
-        Me.cboPaisDoc.BackgroundImage = Nothing
         Me.cboPaisDoc.Cursor = System.Windows.Forms.Cursors.Default
         Me.cboPaisDoc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cboPaisDoc.Font = Nothing
         Me.cboPaisDoc.FormattingEnabled = True
+        resources.ApplyResources(Me.cboPaisDoc, "cboPaisDoc")
         Me.cboPaisDoc.Name = "cboPaisDoc"
         '
         'txtNroDoc
         '
-        Me.txtNroDoc.AccessibleDescription = Nothing
-        Me.txtNroDoc.AccessibleName = Nothing
         resources.ApplyResources(Me.txtNroDoc, "txtNroDoc")
-        Me.txtNroDoc.BackgroundImage = Nothing
-        Me.txtNroDoc.Font = Nothing
         Me.txtNroDoc.Name = "txtNroDoc"
         '
         'cboTipoDoc
         '
-        Me.cboTipoDoc.AccessibleDescription = Nothing
-        Me.cboTipoDoc.AccessibleName = Nothing
-        resources.ApplyResources(Me.cboTipoDoc, "cboTipoDoc")
-        Me.cboTipoDoc.BackgroundImage = Nothing
         Me.cboTipoDoc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cboTipoDoc.Font = Nothing
         Me.cboTipoDoc.FormattingEnabled = True
         Me.cboTipoDoc.Items.AddRange(New Object() {resources.GetString("cboTipoDoc.Items"), resources.GetString("cboTipoDoc.Items1"), resources.GetString("cboTipoDoc.Items2")})
+        resources.ApplyResources(Me.cboTipoDoc, "cboTipoDoc")
         Me.cboTipoDoc.Name = "cboTipoDoc"
         '
         'Label5
         '
-        Me.Label5.AccessibleDescription = Nothing
-        Me.Label5.AccessibleName = Nothing
         resources.ApplyResources(Me.Label5, "Label5")
         Me.Label5.Name = "Label5"
         '
         'Label6
         '
-        Me.Label6.AccessibleDescription = Nothing
-        Me.Label6.AccessibleName = Nothing
         resources.ApplyResources(Me.Label6, "Label6")
         Me.Label6.Name = "Label6"
         '
         'Label7
         '
-        Me.Label7.AccessibleDescription = Nothing
-        Me.Label7.AccessibleName = Nothing
         resources.ApplyResources(Me.Label7, "Label7")
         Me.Label7.Name = "Label7"
         '
         'txtFechaEmision
         '
-        Me.txtFechaEmision.AccessibleDescription = Nothing
-        Me.txtFechaEmision.AccessibleName = Nothing
         resources.ApplyResources(Me.txtFechaEmision, "txtFechaEmision")
-        Me.txtFechaEmision.BackgroundImage = Nothing
-        Me.txtFechaEmision.Font = Nothing
         Me.txtFechaEmision.Name = "txtFechaEmision"
         '
         'Label3
         '
-        Me.Label3.AccessibleDescription = Nothing
-        Me.Label3.AccessibleName = Nothing
         resources.ApplyResources(Me.Label3, "Label3")
-        Me.Label3.Font = Nothing
         Me.Label3.Name = "Label3"
         '
         'Label4
         '
-        Me.Label4.AccessibleDescription = Nothing
-        Me.Label4.AccessibleName = Nothing
         resources.ApplyResources(Me.Label4, "Label4")
-        Me.Label4.Font = Nothing
         Me.Label4.Name = "Label4"
         '
         'txtFechaCobro
         '
-        Me.txtFechaCobro.AccessibleDescription = Nothing
-        Me.txtFechaCobro.AccessibleName = Nothing
         resources.ApplyResources(Me.txtFechaCobro, "txtFechaCobro")
-        Me.txtFechaCobro.BackgroundImage = Nothing
-        Me.txtFechaCobro.Font = Nothing
         Me.txtFechaCobro.Name = "txtFechaCobro"
         '
         'txtNumLibreta
         '
-        Me.txtNumLibreta.AccessibleDescription = Nothing
-        Me.txtNumLibreta.AccessibleName = Nothing
         resources.ApplyResources(Me.txtNumLibreta, "txtNumLibreta")
-        Me.txtNumLibreta.BackgroundImage = Nothing
-        Me.txtNumLibreta.Font = Nothing
         Me.txtNumLibreta.Name = "txtNumLibreta"
         '
         'Label8
         '
-        Me.Label8.AccessibleDescription = Nothing
-        Me.Label8.AccessibleName = Nothing
         resources.ApplyResources(Me.Label8, "Label8")
-        Me.Label8.Font = Nothing
         Me.Label8.Name = "Label8"
         '
         'GroupBox1
         '
-        Me.GroupBox1.AccessibleDescription = Nothing
-        Me.GroupBox1.AccessibleName = Nothing
-        resources.ApplyResources(Me.GroupBox1, "GroupBox1")
-        Me.GroupBox1.BackgroundImage = Nothing
         Me.GroupBox1.Controls.Add(Me.cboMontoMoneda)
         Me.GroupBox1.Controls.Add(Me.txtMontoCantidad)
-        Me.GroupBox1.Font = Nothing
+        resources.ApplyResources(Me.GroupBox1, "GroupBox1")
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.TabStop = False
         '
         'cboMontoMoneda
         '
-        Me.cboMontoMoneda.AccessibleDescription = Nothing
-        Me.cboMontoMoneda.AccessibleName = Nothing
-        resources.ApplyResources(Me.cboMontoMoneda, "cboMontoMoneda")
-        Me.cboMontoMoneda.BackgroundImage = Nothing
         Me.cboMontoMoneda.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cboMontoMoneda.Font = Nothing
         Me.cboMontoMoneda.FormattingEnabled = True
         Me.cboMontoMoneda.Items.AddRange(New Object() {resources.GetString("cboMontoMoneda.Items"), resources.GetString("cboMontoMoneda.Items1")})
+        resources.ApplyResources(Me.cboMontoMoneda, "cboMontoMoneda")
         Me.cboMontoMoneda.Name = "cboMontoMoneda"
         '
         'txtMontoCantidad
         '
-        Me.txtMontoCantidad.AccessibleDescription = Nothing
-        Me.txtMontoCantidad.AccessibleName = Nothing
         resources.ApplyResources(Me.txtMontoCantidad, "txtMontoCantidad")
-        Me.txtMontoCantidad.BackgroundImage = Nothing
-        Me.txtMontoCantidad.Font = Nothing
         Me.txtMontoCantidad.Name = "txtMontoCantidad"
         '
         'Label9
         '
-        Me.Label9.AccessibleDescription = Nothing
-        Me.Label9.AccessibleName = Nothing
         resources.ApplyResources(Me.Label9, "Label9")
-        Me.Label9.Font = Nothing
         Me.Label9.Name = "Label9"
         '
         'txtNumSerie
         '
-        Me.txtNumSerie.AccessibleDescription = Nothing
-        Me.txtNumSerie.AccessibleName = Nothing
         resources.ApplyResources(Me.txtNumSerie, "txtNumSerie")
-        Me.txtNumSerie.BackgroundImage = Nothing
-        Me.txtNumSerie.Font = Nothing
         Me.txtNumSerie.Name = "txtNumSerie"
         '
         'Label10
         '
-        Me.Label10.AccessibleDescription = Nothing
-        Me.Label10.AccessibleName = Nothing
         resources.ApplyResources(Me.Label10, "Label10")
-        Me.Label10.Font = Nothing
         Me.Label10.Name = "Label10"
         '
         'txtNumCheque
         '
-        Me.txtNumCheque.AccessibleDescription = Nothing
-        Me.txtNumCheque.AccessibleName = Nothing
         resources.ApplyResources(Me.txtNumCheque, "txtNumCheque")
-        Me.txtNumCheque.BackgroundImage = Nothing
-        Me.txtNumCheque.Font = Nothing
         Me.txtNumCheque.Name = "txtNumCheque"
         '
         'Label11
         '
-        Me.Label11.AccessibleDescription = Nothing
-        Me.Label11.AccessibleName = Nothing
         resources.ApplyResources(Me.Label11, "Label11")
         Me.Label11.Name = "Label11"
         '
         'btnProcesar
         '
-        Me.btnProcesar.AccessibleDescription = Nothing
-        Me.btnProcesar.AccessibleName = Nothing
         resources.ApplyResources(Me.btnProcesar, "btnProcesar")
-        Me.btnProcesar.BackgroundImage = Nothing
         Me.btnProcesar.Name = "btnProcesar"
         Me.btnProcesar.UseVisualStyleBackColor = True
         '
         'btnCancelar
         '
-        Me.btnCancelar.AccessibleDescription = Nothing
-        Me.btnCancelar.AccessibleName = Nothing
         resources.ApplyResources(Me.btnCancelar, "btnCancelar")
-        Me.btnCancelar.BackgroundImage = Nothing
-        Me.btnCancelar.Font = Nothing
         Me.btnCancelar.Name = "btnCancelar"
         Me.btnCancelar.UseVisualStyleBackColor = True
         '
         'frmCobrarCheque
         '
-        Me.AccessibleDescription = Nothing
-        Me.AccessibleName = Nothing
         resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Nothing
         Me.Controls.Add(Me.btnCancelar)
         Me.Controls.Add(Me.btnProcesar)
         Me.Controls.Add(Me.Label11)
@@ -334,7 +239,6 @@ Partial Class frmCobrarCheque
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.cboTipoCheque)
         Me.Controls.Add(Me.Label1)
-        Me.Font = Nothing
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximizeBox = False
         Me.Name = "frmCobrarCheque"

@@ -28,100 +28,63 @@ Partial Class frmAnularLibreta
         Me.txtSerieLibreta = New System.Windows.Forms.TextBox
         Me.Label1 = New System.Windows.Forms.Label
         Me.txtNumLibreta = New System.Windows.Forms.TextBox
-        Me.lblCliente = New System.Windows.Forms.Label
         Me.btnAnular = New System.Windows.Forms.Button
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
-        Me.GroupBox1.AccessibleDescription = Nothing
-        Me.GroupBox1.AccessibleName = Nothing
-        resources.ApplyResources(Me.GroupBox1, "GroupBox1")
-        Me.GroupBox1.BackgroundImage = Nothing
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.txtSerieLibreta)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.txtNumLibreta)
-        Me.GroupBox1.Font = Nothing
+        resources.ApplyResources(Me.GroupBox1, "GroupBox1")
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.TabStop = False
         '
         'Label2
         '
-        Me.Label2.AccessibleDescription = Nothing
-        Me.Label2.AccessibleName = Nothing
         resources.ApplyResources(Me.Label2, "Label2")
-        Me.Label2.Font = Nothing
         Me.Label2.Name = "Label2"
         '
         'txtSerieLibreta
         '
-        Me.txtSerieLibreta.AccessibleDescription = Nothing
-        Me.txtSerieLibreta.AccessibleName = Nothing
         resources.ApplyResources(Me.txtSerieLibreta, "txtSerieLibreta")
-        Me.txtSerieLibreta.BackgroundImage = Nothing
-        Me.txtSerieLibreta.Font = Nothing
         Me.txtSerieLibreta.Name = "txtSerieLibreta"
         '
         'Label1
         '
-        Me.Label1.AccessibleDescription = Nothing
-        Me.Label1.AccessibleName = Nothing
         resources.ApplyResources(Me.Label1, "Label1")
-        Me.Label1.Font = Nothing
         Me.Label1.Name = "Label1"
         '
         'txtNumLibreta
         '
-        Me.txtNumLibreta.AccessibleDescription = Nothing
-        Me.txtNumLibreta.AccessibleName = Nothing
         resources.ApplyResources(Me.txtNumLibreta, "txtNumLibreta")
-        Me.txtNumLibreta.BackgroundImage = Nothing
-        Me.txtNumLibreta.Font = Nothing
         Me.txtNumLibreta.Name = "txtNumLibreta"
-        '
-        'lblCliente
-        '
-        Me.lblCliente.AccessibleDescription = Nothing
-        Me.lblCliente.AccessibleName = Nothing
-        resources.ApplyResources(Me.lblCliente, "lblCliente")
-        Me.lblCliente.Name = "lblCliente"
         '
         'btnAnular
         '
-        Me.btnAnular.AccessibleDescription = Nothing
-        Me.btnAnular.AccessibleName = Nothing
         resources.ApplyResources(Me.btnAnular, "btnAnular")
-        Me.btnAnular.BackgroundImage = Nothing
-        Me.btnAnular.Font = Nothing
         Me.btnAnular.Name = "btnAnular"
         Me.btnAnular.UseVisualStyleBackColor = True
         '
         'frmAnularLibreta
         '
-        Me.AccessibleDescription = Nothing
-        Me.AccessibleName = Nothing
         resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Nothing
         Me.Controls.Add(Me.btnAnular)
-        Me.Controls.Add(Me.lblCliente)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Font = Nothing
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximizeBox = False
         Me.Name = "frmAnularLibreta"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents txtNumLibreta As System.Windows.Forms.TextBox
-    Friend WithEvents lblCliente As System.Windows.Forms.Label
     Friend WithEvents btnAnular As System.Windows.Forms.Button
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents txtSerieLibreta As System.Windows.Forms.TextBox

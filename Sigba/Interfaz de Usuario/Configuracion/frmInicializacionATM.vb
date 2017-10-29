@@ -31,7 +31,16 @@ Public Class frmInicializacionATM
         Dim dinero = Convert.ToDecimal(txtDineroUYU.Text) + ObtenerMontoNormalizado(txtDineroUSD.Text, "USD", "UYU")
 
         ' Buscar si existe un cajero con el número ingresado
-        Dim cx = ConexionBaseDatos.ObtenerActual
+        Dim usuario, clave
+        If ModoDesarrolloActivado() Then
+            usuario = "informix"
+            clave = "informix"
+        Else
+            usuario = "fcorrea"
+            clave = "50199908"
+        End If
+
+        Dim cx = ConexionBaseDatos.ObtenerActual(usuario, clave)
         Dim cm = New OdbcCommand(String.Format("UPDATE cajeroautomatico SET dinero={0} WHERE numcaj={1};", dinero, txtNumCajero.Text), cx)
 
         If (cm.ExecuteNonQuery > 0) Then

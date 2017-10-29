@@ -117,15 +117,601 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="cboTipoCheque.Items2" xml:space="preserve">
-    <value>Cruzado</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="Label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>386, 140</value>
+  <data name="Label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 52</value>
+  </data>
+  <data name="Label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 13</value>
+  </data>
+  <data name="Label1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="Label1.Text" xml:space="preserve">
+    <value>Tipo de cheque</value>
+  </data>
+  <data name="&gt;&gt;Label1.Name" xml:space="preserve">
+    <value>Label1</value>
+  </data>
+  <data name="&gt;&gt;Label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Label1.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Label1.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="cboTipoCheque.Items" xml:space="preserve">
+    <value>COM - Común</value>
+  </data>
+  <data name="cboTipoCheque.Items1" xml:space="preserve">
+    <value>DIF - Diferido</value>
+  </data>
+  <data name="cboTipoCheque.Items2" xml:space="preserve">
+    <value>CMC - Común Cruzado</value>
+  </data>
+  <data name="cboTipoCheque.Items3" xml:space="preserve">
+    <value>DFC - Diferido Cruzado</value>
+  </data>
+  <data name="cboTipoCheque.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 69</value>
+  </data>
+  <data name="cboTipoCheque.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="cboTipoCheque.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;cboTipoCheque.Name" xml:space="preserve">
+    <value>cboTipoCheque</value>
+  </data>
+  <data name="&gt;&gt;cboTipoCheque.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cboTipoCheque.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cboTipoCheque.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="cboTipoCobro.Items" xml:space="preserve">
+    <value>Cobro en efectivo</value>
+  </data>
+  <data name="cboTipoCobro.Items1" xml:space="preserve">
+    <value>Depósito en cuenta</value>
+  </data>
+  <data name="cboTipoCobro.Location" type="System.Drawing.Point, System.Drawing">
+    <value>143, 69</value>
+  </data>
+  <data name="cboTipoCobro.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="cboTipoCobro.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;cboTipoCobro.Name" xml:space="preserve">
+    <value>cboTipoCobro</value>
+  </data>
+  <data name="&gt;&gt;cboTipoCobro.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cboTipoCobro.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cboTipoCobro.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="Label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>140, 52</value>
+  </data>
+  <data name="Label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 13</value>
+  </data>
+  <data name="Label2.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="Label2.Text" xml:space="preserve">
+    <value>Tipo de cobro</value>
+  </data>
+  <data name="&gt;&gt;Label2.Name" xml:space="preserve">
+    <value>Label2</value>
+  </data>
+  <data name="&gt;&gt;Label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Label2.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="cboPaisDoc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 33</value>
+  </data>
+  <data name="cboPaisDoc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 21</value>
+  </data>
+  <data name="cboPaisDoc.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;cboPaisDoc.Name" xml:space="preserve">
+    <value>cboPaisDoc</value>
+  </data>
+  <data name="&gt;&gt;cboPaisDoc.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cboPaisDoc.Parent" xml:space="preserve">
+    <value>GroupBox2</value>
+  </data>
+  <data name="&gt;&gt;cboPaisDoc.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtNroDoc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>221, 34</value>
+  </data>
+  <data name="txtNroDoc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 20</value>
+  </data>
+  <data name="txtNroDoc.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;txtNroDoc.Name" xml:space="preserve">
+    <value>txtNroDoc</value>
+  </data>
+  <data name="&gt;&gt;txtNroDoc.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtNroDoc.Parent" xml:space="preserve">
+    <value>GroupBox2</value>
+  </data>
+  <data name="&gt;&gt;txtNroDoc.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="cboTipoDoc.Items" xml:space="preserve">
+    <value>CI</value>
+  </data>
+  <data name="cboTipoDoc.Items1" xml:space="preserve">
+    <value>Pasaporte</value>
+  </data>
+  <data name="cboTipoDoc.Items2" xml:space="preserve">
+    <value>Otros</value>
+  </data>
+  <data name="cboTipoDoc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>144, 33</value>
+  </data>
+  <data name="cboTipoDoc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 21</value>
+  </data>
+  <data name="cboTipoDoc.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;cboTipoDoc.Name" xml:space="preserve">
+    <value>cboTipoDoc</value>
+  </data>
+  <data name="&gt;&gt;cboTipoDoc.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cboTipoDoc.Parent" xml:space="preserve">
+    <value>GroupBox2</value>
+  </data>
+  <data name="&gt;&gt;cboTipoDoc.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="Label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="Label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 19</value>
+  </data>
+  <data name="Label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 13</value>
+  </data>
+  <data name="Label5.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="Label5.Text" xml:space="preserve">
+    <value>País</value>
+  </data>
+  <data name="&gt;&gt;Label5.Name" xml:space="preserve">
+    <value>Label5</value>
+  </data>
+  <data name="&gt;&gt;Label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label5.Parent" xml:space="preserve">
+    <value>GroupBox2</value>
+  </data>
+  <data name="&gt;&gt;Label5.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="Label6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="Label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>141, 19</value>
+  </data>
+  <data name="Label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 13</value>
+  </data>
+  <data name="Label6.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="Label6.Text" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+  <data name="&gt;&gt;Label6.Name" xml:space="preserve">
+    <value>Label6</value>
+  </data>
+  <data name="&gt;&gt;Label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label6.Parent" xml:space="preserve">
+    <value>GroupBox2</value>
+  </data>
+  <data name="&gt;&gt;Label6.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="Label7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="Label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>218, 19</value>
+  </data>
+  <data name="Label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 13</value>
+  </data>
+  <data name="Label7.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="Label7.Text" xml:space="preserve">
+    <value>Número</value>
+  </data>
+  <data name="&gt;&gt;Label7.Name" xml:space="preserve">
+    <value>Label7</value>
+  </data>
+  <data name="&gt;&gt;Label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label7.Parent" xml:space="preserve">
+    <value>GroupBox2</value>
+  </data>
+  <data name="&gt;&gt;Label7.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="GroupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>270, 52</value>
+  </data>
+  <data name="GroupBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>360, 79</value>
+  </data>
+  <data name="GroupBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>85</value>
+  </data>
+  <data name="GroupBox2.Text" xml:space="preserve">
+    <value>Documento cliente</value>
+  </data>
+  <data name="&gt;&gt;GroupBox2.Name" xml:space="preserve">
+    <value>GroupBox2</value>
+  </data>
+  <data name="&gt;&gt;GroupBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GroupBox2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;GroupBox2.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="txtFechaEmision.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 111</value>
+  </data>
+  <data name="txtFechaEmision.Mask" xml:space="preserve">
+    <value>99/99/9999</value>
+  </data>
+  <data name="txtFechaEmision.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 20</value>
+  </data>
+  <data name="txtFechaEmision.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;txtFechaEmision.Name" xml:space="preserve">
+    <value>txtFechaEmision</value>
+  </data>
+  <data name="&gt;&gt;txtFechaEmision.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtFechaEmision.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtFechaEmision.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="Label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 95</value>
+  </data>
+  <data name="Label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 13</value>
+  </data>
+  <data name="Label3.TabIndex" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <data name="Label3.Text" xml:space="preserve">
+    <value>Fecha de emisión</value>
+  </data>
+  <data name="&gt;&gt;Label3.Name" xml:space="preserve">
+    <value>Label3</value>
+  </data>
+  <data name="&gt;&gt;Label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Label3.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="Label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>140, 95</value>
+  </data>
+  <data name="Label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 13</value>
+  </data>
+  <data name="Label4.TabIndex" type="System.Int32, mscorlib">
+    <value>89</value>
+  </data>
+  <data name="Label4.Text" xml:space="preserve">
+    <value>Cobrar a partir de:</value>
+  </data>
+  <data name="&gt;&gt;Label4.Name" xml:space="preserve">
+    <value>Label4</value>
+  </data>
+  <data name="&gt;&gt;Label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Label4.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="txtFechaCobro.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtFechaCobro.Location" type="System.Drawing.Point, System.Drawing">
+    <value>143, 111</value>
+  </data>
+  <data name="txtFechaCobro.Mask" xml:space="preserve">
+    <value>99/99/9999</value>
+  </data>
+  <data name="txtFechaCobro.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 20</value>
+  </data>
+  <data name="txtFechaCobro.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;txtFechaCobro.Name" xml:space="preserve">
+    <value>txtFechaCobro</value>
+  </data>
+  <data name="&gt;&gt;txtFechaCobro.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtFechaCobro.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtFechaCobro.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="txtNumLibreta.Location" type="System.Drawing.Point, System.Drawing">
+    <value>273, 156</value>
+  </data>
+  <data name="txtNumLibreta.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 20</value>
+  </data>
+  <data name="txtNumLibreta.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;txtNumLibreta.Name" xml:space="preserve">
+    <value>txtNumLibreta</value>
+  </data>
+  <data name="&gt;&gt;txtNumLibreta.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtNumLibreta.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtNumLibreta.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="Label8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>270, 140</value>
+  </data>
+  <data name="Label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 13</value>
+  </data>
+  <data name="Label8.TabIndex" type="System.Int32, mscorlib">
+    <value>91</value>
+  </data>
+  <data name="Label8.Text" xml:space="preserve">
+    <value>Nº Libreta</value>
+  </data>
+  <data name="&gt;&gt;Label8.Name" xml:space="preserve">
+    <value>Label8</value>
+  </data>
+  <data name="&gt;&gt;Label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label8.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Label8.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="cboMontoMoneda.Items" xml:space="preserve">
+    <value>UYU - Pesos Uruguayos</value>
+  </data>
+  <data name="cboMontoMoneda.Items1" xml:space="preserve">
+    <value>USD - Dólares Americanos</value>
+  </data>
+  <data name="cboMontoMoneda.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 18</value>
+  </data>
+  <data name="cboMontoMoneda.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 21</value>
+  </data>
+  <data name="cboMontoMoneda.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;cboMontoMoneda.Name" xml:space="preserve">
+    <value>cboMontoMoneda</value>
+  </data>
+  <data name="&gt;&gt;cboMontoMoneda.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cboMontoMoneda.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;cboMontoMoneda.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtMontoCantidad.Location" type="System.Drawing.Point, System.Drawing">
+    <value>142, 19</value>
+  </data>
+  <data name="txtMontoCantidad.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="txtMontoCantidad.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;txtMontoCantidad.Name" xml:space="preserve">
+    <value>txtMontoCantidad</value>
+  </data>
+  <data name="&gt;&gt;txtMontoCantidad.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtMontoCantidad.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;txtMontoCantidad.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="GroupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 137</value>
+  </data>
+  <data name="GroupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>248, 47</value>
+  </data>
+  <data name="GroupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>92</value>
+  </data>
+  <data name="GroupBox1.Text" xml:space="preserve">
+    <value>Monto</value>
+  </data>
+  <data name="&gt;&gt;GroupBox1.Name" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;GroupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GroupBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;GroupBox1.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="Label9.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>386, 140</value>
+  </data>
+  <data name="Label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 13</value>
+  </data>
+  <data name="Label9.TabIndex" type="System.Int32, mscorlib">
+    <value>94</value>
+  </data>
+  <data name="Label9.Text" xml:space="preserve">
+    <value>Serie</value>
+  </data>
+  <data name="&gt;&gt;Label9.Name" xml:space="preserve">
+    <value>Label9</value>
+  </data>
+  <data name="&gt;&gt;Label9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label9.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Label9.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="txtNumSerie.Location" type="System.Drawing.Point, System.Drawing">
+    <value>389, 156</value>
+  </data>
+  <data name="txtNumSerie.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 20</value>
+  </data>
+  <data name="txtNumSerie.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;txtNumSerie.Name" xml:space="preserve">
+    <value>txtNumSerie</value>
+  </data>
+  <data name="&gt;&gt;txtNumSerie.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtNumSerie.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtNumSerie.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="Label10.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>466, 139</value>
+  </data>
+  <data name="Label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 13</value>
+  </data>
+  <data name="Label10.TabIndex" type="System.Int32, mscorlib">
+    <value>96</value>
+  </data>
+  <data name="Label10.Text" xml:space="preserve">
+    <value>Número de cheque</value>
+  </data>
+  <data name="&gt;&gt;Label10.Name" xml:space="preserve">
+    <value>Label10</value>
+  </data>
+  <data name="&gt;&gt;Label10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Label10.Parent" xml:space="preserve">
     <value>$this</value>
@@ -133,333 +719,116 @@
   <data name="&gt;&gt;Label10.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="Label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 13</value>
-  </data>
-  <data name="&gt;&gt;txtNroDoc.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="cboPaisDoc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 33</value>
-  </data>
-  <data name="cboMontoMoneda.Items" xml:space="preserve">
-    <value>UYU - Pesos Uruguayos</value>
-  </data>
-  <data name="Label11.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 15.75pt, style=Bold</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Label10.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="cboTipoDoc.Items2" xml:space="preserve">
-    <value>Otros</value>
-  </data>
-  <data name="txtNumLibreta.Location" type="System.Drawing.Point, System.Drawing">
-    <value>273, 156</value>
-  </data>
-  <data name="Label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>31, 13</value>
-  </data>
-  <data name="cboTipoDoc.Items1" xml:space="preserve">
-    <value>Pasaporte</value>
-  </data>
-  <data name="&gt;&gt;cboTipoCobro.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;Label2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;cboPaisDoc.Parent" xml:space="preserve">
-    <value>GroupBox2</value>
-  </data>
-  <data name="&gt;&gt;txtNumSerie.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cboTipoCheque.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;txtNumCheque.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Label5.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;Label11.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="txtFechaCobro.Location" type="System.Drawing.Point, System.Drawing">
-    <value>143, 111</value>
-  </data>
-  <data name="cboPaisDoc.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;Label9.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="txtNumSerie.Size" type="System.Drawing.Size, System.Drawing">
-    <value>74, 20</value>
-  </data>
-  <data name="Label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>218, 19</value>
-  </data>
-  <data name="Label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 95</value>
-  </data>
-  <data name="&gt;&gt;txtMontoCantidad.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;Label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Label4.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="Label5.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="cboTipoCobro.Items1" xml:space="preserve">
-    <value>Depósito en cuenta</value>
-  </data>
-  <data name="cboTipoCobro.Items" xml:space="preserve">
-    <value>Cobro en efectivo</value>
-  </data>
-  <data name="&gt;&gt;cboTipoCheque.Name" xml:space="preserve">
-    <value>cboTipoCheque</value>
-  </data>
-  <data name="&gt;&gt;txtNumLibreta.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="GroupBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>270, 52</value>
-  </data>
-  <data name="cboTipoDoc.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="Label5.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="Label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 13</value>
-  </data>
-  <data name="&gt;&gt;txtNumLibreta.Name" xml:space="preserve">
-    <value>txtNumLibreta</value>
-  </data>
-  <data name="GroupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>248, 47</value>
-  </data>
-  <data name="&gt;&gt;btnCancelar.Name" xml:space="preserve">
-    <value>btnCancelar</value>
-  </data>
-  <data name="&gt;&gt;Label6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Label11.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Label7.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="Label3.Text" xml:space="preserve">
-    <value>Fecha de emisión</value>
-  </data>
-  <data name="&gt;&gt;Label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Label8.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;Label3.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;GroupBox2.Name" xml:space="preserve">
-    <value>GroupBox2</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>frmCobrarCheque</value>
-  </data>
-  <data name="GroupBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>85</value>
-  </data>
-  <data name="GroupBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>360, 79</value>
-  </data>
-  <data name="Label3.TabIndex" type="System.Int32, mscorlib">
-    <value>87</value>
-  </data>
-  <data name="Label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>91, 13</value>
-  </data>
-  <data name="Label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>141, 19</value>
-  </data>
-  <data name="Label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>140, 52</value>
-  </data>
-  <data name="Label4.Text" xml:space="preserve">
-    <value>Cobrar a partir de:</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Cobrar cheque</value>
+  <data name="txtNumCheque.Location" type="System.Drawing.Point, System.Drawing">
+    <value>469, 155</value>
   </data>
   <data name="txtNumCheque.Size" type="System.Drawing.Size, System.Drawing">
     <value>161, 20</value>
   </data>
-  <data name="cboPaisDoc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 21</value>
+  <data name="txtNumCheque.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
   </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+  <data name="&gt;&gt;txtNumCheque.Name" xml:space="preserve">
+    <value>txtNumCheque</value>
   </data>
-  <data name="Label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 13</value>
-  </data>
-  <data name="&gt;&gt;Label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="txtFechaCobro.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 20</value>
-  </data>
-  <data name="&gt;&gt;btnProcesar.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;Label10.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cboTipoCobro.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtMontoCantidad.Type" xml:space="preserve">
+  <data name="&gt;&gt;txtNumCheque.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;cboMontoMoneda.Name" xml:space="preserve">
-    <value>cboMontoMoneda</value>
+  <data name="&gt;&gt;txtNumCheque.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="GroupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 137</value>
+  <data name="&gt;&gt;txtNumCheque.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
-  <data name="&gt;&gt;txtFechaCobro.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Label11.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label11.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 15.75pt, style=Bold</value>
+  </data>
+  <data name="Label11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 12</value>
+  </data>
+  <data name="Label11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 25</value>
+  </data>
+  <data name="Label11.TabIndex" type="System.Int32, mscorlib">
+    <value>97</value>
+  </data>
+  <data name="Label11.Text" xml:space="preserve">
+    <value>Cobro de cheques</value>
+  </data>
+  <data name="&gt;&gt;Label11.Name" xml:space="preserve">
+    <value>Label11</value>
+  </data>
+  <data name="&gt;&gt;Label11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label11.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Label11.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnProcesar.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="btnProcesar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>516, 182</value>
   </data>
   <data name="btnProcesar.Size" type="System.Drawing.Size, System.Drawing">
     <value>113, 24</value>
   </data>
-  <data name="txtNumLibreta.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 20</value>
+  <data name="btnProcesar.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
   </data>
-  <data name="Label4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="btnProcesar.Text" xml:space="preserve">
+    <value>Procesar cobro</value>
   </data>
-  <data name="&gt;&gt;txtNroDoc.Parent" xml:space="preserve">
-    <value>GroupBox2</value>
+  <data name="&gt;&gt;btnProcesar.Name" xml:space="preserve">
+    <value>btnProcesar</value>
   </data>
-  <data name="Label7.Text" xml:space="preserve">
-    <value>Número</value>
+  <data name="&gt;&gt;btnProcesar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="cboMontoMoneda.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 18</value>
+  <data name="&gt;&gt;btnProcesar.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="Label1.Text" xml:space="preserve">
-    <value>Tipo de cheque</value>
-  </data>
-  <data name="txtFechaEmision.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="btnCancelar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="&gt;&gt;txtMontoCantidad.Parent" xml:space="preserve">
-    <value>GroupBox1</value>
-  </data>
-  <data name="txtFechaCobro.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="Label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 13</value>
-  </data>
-  <data name="txtNumSerie.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;Label4.Name" xml:space="preserve">
-    <value>Label4</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;btnProcesar.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="btnCancelar.Location" type="System.Drawing.Point, System.Drawing">
     <value>435, 182</value>
   </data>
-  <data name="cboTipoCheque.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="btnCancelar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
   </data>
-  <data name="&gt;&gt;Label3.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="Label8.Text" xml:space="preserve">
-    <value>Nº Libreta</value>
-  </data>
-  <data name="&gt;&gt;Label9.Name" xml:space="preserve">
-    <value>Label9</value>
-  </data>
-  <data name="&gt;&gt;cboTipoDoc.Name" xml:space="preserve">
-    <value>cboTipoDoc</value>
-  </data>
-  <data name="cboTipoCheque.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 69</value>
-  </data>
-  <data name="txtNumLibreta.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;txtNroDoc.Name" xml:space="preserve">
-    <value>txtNroDoc</value>
-  </data>
-  <data name="&gt;&gt;Label5.Name" xml:space="preserve">
-    <value>Label5</value>
+  <data name="btnCancelar.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
   </data>
   <data name="btnCancelar.Text" xml:space="preserve">
     <value>Cancelar</value>
   </data>
-  <data name="&gt;&gt;GroupBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;btnCancelar.Name" xml:space="preserve">
+    <value>btnCancelar</value>
   </data>
-  <data name="cboTipoCobro.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+  <data name="&gt;&gt;btnCancelar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Label6.AutoSize" type="System.Boolean, mscorlib">
+  <data name="&gt;&gt;btnCancelar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnCancelar.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
   </data>
-  <data name="txtMontoCantidad.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 20</value>
-  </data>
-  <data name="txtFechaCobro.Mask" xml:space="preserve">
-    <value>99/99/9999</value>
-  </data>
-  <data name="&gt;&gt;Label1.Name" xml:space="preserve">
-    <value>Label1</value>
-  </data>
-  <data name="Label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;GroupBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="txtNroDoc.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;Label7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cboTipoCheque.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="cboTipoDoc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 21</value>
-  </data>
-  <data name="cboMontoMoneda.Items1" xml:space="preserve">
-    <value>USD - Dólares Americanos</value>
-  </data>
-  <data name="&gt;&gt;Label7.ZOrder" xml:space="preserve">
-    <value>5</value>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>642, 213</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -6633,379 +7002,13 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
 </value>
   </data>
-  <data name="&gt;&gt;txtFechaCobro.Name" xml:space="preserve">
-    <value>txtFechaCobro</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Cobrar cheque</value>
   </data>
-  <data name="Label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>270, 140</value>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>frmCobrarCheque</value>
   </data>
-  <data name="&gt;&gt;cboPaisDoc.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>140, 95</value>
-  </data>
-  <data name="btnProcesar.Text" xml:space="preserve">
-    <value>Procesar cobro</value>
-  </data>
-  <data name="Label7.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="Label11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 12</value>
-  </data>
-  <data name="Label11.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;txtNumCheque.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;txtNumSerie.Name" xml:space="preserve">
-    <value>txtNumSerie</value>
-  </data>
-  <data name="btnCancelar.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="cboTipoCobro.Location" type="System.Drawing.Point, System.Drawing">
-    <value>143, 69</value>
-  </data>
-  <data name="Label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 13</value>
-  </data>
-  <data name="txtMontoCantidad.Location" type="System.Drawing.Point, System.Drawing">
-    <value>142, 19</value>
-  </data>
-  <data name="&gt;&gt;txtFechaCobro.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="Label9.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;cboTipoCheque.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="txtFechaCobro.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;txtNumSerie.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="Label6.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
-  <data name="&gt;&gt;Label11.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;txtFechaEmision.Name" xml:space="preserve">
-    <value>txtFechaEmision</value>
-  </data>
-  <data name="Label11.TabIndex" type="System.Int32, mscorlib">
-    <value>97</value>
-  </data>
-  <data name="&gt;&gt;txtFechaEmision.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Label6.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;txtNumSerie.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="Label5.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="cboTipoCheque.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 21</value>
-  </data>
-  <data name="&gt;&gt;btnCancelar.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Label6.Name" xml:space="preserve">
-    <value>Label6</value>
-  </data>
-  <data name="&gt;&gt;Label7.Name" xml:space="preserve">
-    <value>Label7</value>
-  </data>
-  <data name="btnProcesar.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="Label10.Text" xml:space="preserve">
-    <value>Número de cheque</value>
-  </data>
-  <data name="cboTipoCheque.Items1" xml:space="preserve">
-    <value>Diferido</value>
-  </data>
-  <data name="Label11.Text" xml:space="preserve">
-    <value>Cobro de cheques</value>
-  </data>
-  <data name="cboMontoMoneda.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 21</value>
-  </data>
-  <data name="&gt;&gt;Label7.Parent" xml:space="preserve">
-    <value>GroupBox2</value>
-  </data>
-  <data name="&gt;&gt;Label3.Name" xml:space="preserve">
-    <value>Label3</value>
-  </data>
-  <data name="btnProcesar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>516, 182</value>
-  </data>
-  <data name="Label3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="cboTipoDoc.Items" xml:space="preserve">
-    <value>CI</value>
-  </data>
-  <data name="&gt;&gt;Label5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>28, 13</value>
-  </data>
-  <data name="&gt;&gt;Label11.Name" xml:space="preserve">
-    <value>Label11</value>
-  </data>
-  <data name="&gt;&gt;txtFechaCobro.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;cboMontoMoneda.Parent" xml:space="preserve">
-    <value>GroupBox1</value>
-  </data>
-  <data name="&gt;&gt;cboPaisDoc.Name" xml:space="preserve">
-    <value>cboPaisDoc</value>
-  </data>
-  <data name="Label7.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="Label10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>98, 13</value>
-  </data>
-  <data name="cboTipoCobro.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 21</value>
-  </data>
-  <data name="Label6.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="Label2.Text" xml:space="preserve">
-    <value>Tipo de cobro</value>
-  </data>
-  <data name="txtNroDoc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 20</value>
-  </data>
-  <data name="&gt;&gt;txtFechaEmision.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;txtNroDoc.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Label4.TabIndex" type="System.Int32, mscorlib">
-    <value>89</value>
-  </data>
-  <data name="&gt;&gt;btnProcesar.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="txtNumSerie.Location" type="System.Drawing.Point, System.Drawing">
-    <value>389, 156</value>
-  </data>
-  <data name="&gt;&gt;Label8.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnProcesar.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
-  </data>
-  <data name="&gt;&gt;Label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnProcesar.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Label9.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Label6.Parent" xml:space="preserve">
-    <value>GroupBox2</value>
-  </data>
-  <data name="Label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 19</value>
-  </data>
-  <data name="Label2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="cboTipoCheque.Items" xml:space="preserve">
-    <value>Común</value>
-  </data>
-  <data name="GroupBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>92</value>
-  </data>
-  <data name="&gt;&gt;txtFechaEmision.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="txtNumCheque.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;txtMontoCantidad.Name" xml:space="preserve">
-    <value>txtMontoCantidad</value>
-  </data>
-  <data name="Label5.Text" xml:space="preserve">
-    <value>País</value>
-  </data>
-  <data name="&gt;&gt;GroupBox2.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;btnCancelar.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="txtNumCheque.Location" type="System.Drawing.Point, System.Drawing">
-    <value>469, 155</value>
-  </data>
-  <data name="&gt;&gt;GroupBox1.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="txtFechaEmision.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 111</value>
-  </data>
-  <data name="&gt;&gt;txtNumLibreta.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Label8.Name" xml:space="preserve">
-    <value>Label8</value>
-  </data>
-  <data name="&gt;&gt;txtNumLibreta.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="Label6.Text" xml:space="preserve">
-    <value>Tipo</value>
-  </data>
-  <data name="&gt;&gt;Label1.ZOrder" xml:space="preserve">
-    <value>18</value>
-  </data>
-  <data name="&gt;&gt;txtNumCheque.Name" xml:space="preserve">
-    <value>txtNumCheque</value>
-  </data>
-  <data name="Label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>466, 139</value>
-  </data>
-  <data name="txtNroDoc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>221, 34</value>
-  </data>
-  <data name="&gt;&gt;cboMontoMoneda.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Label5.Parent" xml:space="preserve">
-    <value>GroupBox2</value>
-  </data>
-  <data name="Label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>29, 13</value>
-  </data>
-  <data name="&gt;&gt;Label2.Name" xml:space="preserve">
-    <value>Label2</value>
-  </data>
-  <data name="txtMontoCantidad.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;cboTipoCobro.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="Label10.TabIndex" type="System.Int32, mscorlib">
-    <value>96</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>642, 213</value>
-  </data>
-  <data name="&gt;&gt;GroupBox1.Name" xml:space="preserve">
-    <value>GroupBox1</value>
-  </data>
-  <data name="&gt;&gt;Label2.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;GroupBox2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;cboTipoDoc.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;btnProcesar.Name" xml:space="preserve">
-    <value>btnProcesar</value>
-  </data>
-  <data name="GroupBox1.Text" xml:space="preserve">
-    <value>Monto</value>
-  </data>
-  <data name="&gt;&gt;btnCancelar.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Label8.TabIndex" type="System.Int32, mscorlib">
-    <value>91</value>
-  </data>
-  <data name="Label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 52</value>
-  </data>
-  <data name="&gt;&gt;GroupBox1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="Label9.Text" xml:space="preserve">
-    <value>Serie</value>
-  </data>
-  <data name="&gt;&gt;cboTipoDoc.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtNumCheque.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;cboPaisDoc.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="txtFechaEmision.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 20</value>
-  </data>
-  <data name="cboMontoMoneda.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="Label2.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;Label9.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;cboMontoMoneda.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="Label11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>204, 25</value>
-  </data>
-  <data name="&gt;&gt;Label10.Name" xml:space="preserve">
-    <value>Label10</value>
-  </data>
-  <data name="cboTipoDoc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>144, 33</value>
-  </data>
-  <data name="&gt;&gt;Label4.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;cboTipoCobro.Name" xml:space="preserve">
-    <value>cboTipoCobro</value>
-  </data>
-  <data name="GroupBox2.Text" xml:space="preserve">
-    <value>Documento cliente</value>
-  </data>
-  <data name="Label1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="Label9.TabIndex" type="System.Int32, mscorlib">
-    <value>94</value>
-  </data>
-  <data name="txtFechaEmision.Mask" xml:space="preserve">
-    <value>99/99/9999</value>
-  </data>
-  <data name="&gt;&gt;cboTipoDoc.Parent" xml:space="preserve">
-    <value>GroupBox2</value>
-  </data>
-  <data name="Label8.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;Label8.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
 </root>
