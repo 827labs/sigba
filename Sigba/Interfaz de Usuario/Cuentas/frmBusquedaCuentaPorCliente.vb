@@ -88,7 +88,9 @@
             frmBaja.Show()
             frmBaja.SetearNroCuenta(nroCuenta)
         ElseIf Me.tipoBusqueda = TipoBusquedaCuenta.DebitoAutomatico Then
-            frmDebitoAutomatico.Show()
+            Dim form = New frmDebitoAutomatico()
+            form.Show()
+            form.SetearNroCuenta(nroCuenta)
         ElseIf Me.tipoBusqueda = TipoBusquedaCuenta.Notificable Then
             If Not (Me.notificable Is Nothing) Then
                 Me.notificable(nroCuenta)

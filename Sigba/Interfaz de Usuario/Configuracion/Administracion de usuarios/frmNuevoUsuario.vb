@@ -121,4 +121,17 @@ Public Class frmNuevoUsuario
         cm = New OdbcCommand(String.Format("insert into ejerce (numdocu, idcargo, asignado) values ({0}, {1}, '{2}');", txtCedula.Text, idcargo, Date.Today.ToString(FormatoFecha())), cx)
         cm.ExecuteNonQuery()
     End Sub
+
+    Private Sub btnLimpiar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnLimpiar.Click
+        txtApellidos.Clear()
+        txtNombres.Clear()
+
+        If txtCedula.Enabled Then
+            txtCedula.Clear()
+        End If
+
+        txtCorreo.Clear()
+        txtUsuario.Clear()
+        cboCargo.SelectedIndex = -1
+    End Sub
 End Class

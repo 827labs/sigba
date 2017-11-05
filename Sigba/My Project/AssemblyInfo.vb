@@ -15,7 +15,7 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyCompany("827Labs S.R.L.")> 
 <Assembly: AssemblyProduct("Sistema Informático de Gestión Bancaria")> 
 <Assembly: AssemblyCopyright("Copyright ©  2017")> 
-<Assembly: AssemblyTrademark("")> 
+<Assembly: AssemblyTrademark("827Labs")> 
 
 <Assembly: ComVisible(True)> 
 

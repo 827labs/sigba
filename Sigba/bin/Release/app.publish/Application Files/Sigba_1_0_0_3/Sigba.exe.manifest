@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly manifestVersion="1.0" xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">
+  <asmv1:assemblyIdentity version="1.0.0.3" name="Sigba.exe" publicKeyToken="82b2cc37a928f1c0" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="sigba.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Sigba" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Sigba.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+            If you want to change the Windows User Account Control level replace the 
+            requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            If you want to utilize File and Registry Virtualization for backward 
+            compatibility then delete the requestedExecutionLevel node.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Core" version="3.5.0.0" publicKeyToken="b77a5c561934e089" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="WindowsBase" version="3.0.0.0" publicKeyToken="31bf3856ad364e35" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Sigba.exe" size="13792768">
+      <assemblyIdentity name="Sigba" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>dJVI6AvmStGvO7hqRaa29MAM9X8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="af\Sigba.resources.dll" size="757760">
+      <assemblyIdentity name="Sigba.resources" version="1.0.0.0" language="af" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>XSgggIZVh12+fAVVH8CwDxcUVBw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="af-ZA\Sigba.resources.dll" size="385024">
+      <assemblyIdentity name="Sigba.resources" version="1.0.0.0" language="af-ZA" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>b12ZU/U0//xsKqjkQ33qMpT6Sos=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="en\Sigba.resources.dll" size="11812864">
+      <assemblyIdentity name="Sigba.resources" version="1.0.0.0" language="en" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>g90fl5M0AtOblNUJufi4XTQx7q4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="en-AU\Sigba.resources.dll" size="2072576">
+      <assemblyIdentity name="Sigba.resources" version="1.0.0.0" language="en-AU" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>1C3+X3gJhZW6ZjJ7VU1weVMkVfM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="en-US\Sigba.resources.dll" size="385024">
+      <assemblyIdentity name="Sigba.resources" version="1.0.0.0" language="en-US" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>g+SvhyVkBjtYuqiI4LFpQ6FEybo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="en-ZW\Sigba.resources.dll" size="385024">
+      <assemblyIdentity name="Sigba.resources" version="1.0.0.0" language="en-ZW" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>0q26vOZqS2v9tU2cudyx6lnXH78=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Sigba.exe.config" size="1415">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>+rR1IwVc5MGZvUz0CIttvVxHysA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="sigba.ico" size="370070">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>XDTp4AWqChAL+mz20e+CmicdEy4=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=FRANCOCORREA25A\franco" issuerKeyHash="f7b9d8eb0eb08337cce70537b32b3766bb7f486d" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>XmrWazhecBG8RXmzclQ5imQ+XPQ=</DigestValue></Reference></SignedInfo><SignatureValue>2XNCex56quXVzDLOlKyNgBkAW786TyMJAHv+AnfJwgbh3HLWGnLm8ST3Hb95cNTuYipZG1dTah3ytiLAdoLnPyApj/RYQjgaTIH9kDeZUVtW5Q75wmnwgDvTHDbpj/8x7SSsYHwYa3qCHgW/6exHF6pxUInL8Fcg+HybkkQ5VP8=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>9pvIhfmVApovGCnl2SayJvlO0dJHymHaalsA2T2re28FGgR3gBpUYndy9Z/jV4pIp5KyxGdWRxkOC6zPEeVFasxK8wDEHM7ojc499INpr2z7TvDyt8j7Dnx0DkdvW6ivMX4pN0D8EIFgmvN4Hs44H4o4LpIRRBCT9RCJn/RkWG8=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="f45c3e648a395472b37945bc11705e386bd66a5e" Description="" Url=""><as:assemblyIdentity version="1.0.0.3" name="Sigba.exe" publicKeyToken="82b2cc37a928f1c0" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=FRANCOCORREA25A\franco</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>yLuRP7z2au/2rMdrd4p/RJjdoQo=</DigestValue></Reference></SignedInfo><SignatureValue>Pz/62co26QIKPzX3UcC00dsyBmmDW8uPzMOELJsSPS/Kc425qhjZTFgq90IYbOLXdcdwzA4axqoyVh79LMY6BboDMbROrae+jElli9xz7XZwaArihK4BgIPjYgBD0pQnb4jl/OAwhb+eyhlBVDMKVgTrfebNAuXfgR8zUNXgVPA=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>9pvIhfmVApovGCnl2SayJvlO0dJHymHaalsA2T2re28FGgR3gBpUYndy9Z/jV4pIp5KyxGdWRxkOC6zPEeVFasxK8wDEHM7ojc499INpr2z7TvDyt8j7Dnx0DkdvW6ivMX4pN0D8EIFgmvN4Hs44H4o4LpIRRBCT9RCJn/RkWG8=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB8TCCAVqgAwIBAgIQZQV6YP8bH7tONGecVaP9IDANBgkqhkiG9w0BAQUFADA3MTUwMwYDVQQDHiwARgBSAEEATgBDAE8AQwBPAFIAUgBFAEEAMgA1AEEAXABmAHIAYQBuAGMAbzAeFw0xNzEwMjkxOTIyMzRaFw0xODEwMzAwMTIyMzRaMDcxNTAzBgNVBAMeLABGAFIAQQBOAEMATwBDAE8AUgBSAEUAQQAyADUAQQBcAGYAcgBhAG4AYwBvMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQD2m8iF+ZUCmi8YKeXZJrIm+U7R0kfKYdpqWwDZPat7bwUaBHeAGlRid3L1n+NXikinkrLEZ1ZHGQ4LrM8R5UVqzErzAMQczuiNzj30g2mvbPtO8PK3yPsOfHQOR29bqK8xfik3QPwQgWCa83gezjgfijgukhFEEJP1EImf9GRYbwIDAQABMA0GCSqGSIb3DQEBBQUAA4GBANd2yg5lSOK0WK6ulXK9JcOpU8h+I/jOJpPh+yuxvBNp2xwuUCk9LGpSj32Am8lVHyFoYpDtUKxH9YPEN3o0G+NeoDt7+WWJB86pomMjw07U7nldSmlEpj7k7K2oA4UyMrEZL1KxN3+8OMuHZOyN1ofXOk6HjJvLjm8Aa9zjvVfT</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

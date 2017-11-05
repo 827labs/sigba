@@ -24,6 +24,8 @@ Partial Class frmNuevoUsuario
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmNuevoUsuario))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox
+        Me.cboCargo = New System.Windows.Forms.ComboBox
+        Me.lblCargo = New System.Windows.Forms.Label
         Me.txtUsuario = New System.Windows.Forms.TextBox
         Me.Label6 = New System.Windows.Forms.Label
         Me.txtCorreo = New System.Windows.Forms.TextBox
@@ -38,8 +40,6 @@ Partial Class frmNuevoUsuario
         Me.btnLimpiar = New System.Windows.Forms.Button
         Me.lblTitulo = New System.Windows.Forms.Label
         Me.btnSuspender = New System.Windows.Forms.Button
-        Me.lblCargo = New System.Windows.Forms.Label
-        Me.cboCargo = New System.Windows.Forms.ComboBox
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -60,6 +60,18 @@ Partial Class frmNuevoUsuario
         resources.ApplyResources(Me.GroupBox1, "GroupBox1")
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.TabStop = False
+        '
+        'cboCargo
+        '
+        Me.cboCargo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboCargo.FormattingEnabled = True
+        resources.ApplyResources(Me.cboCargo, "cboCargo")
+        Me.cboCargo.Name = "cboCargo"
+        '
+        'lblCargo
+        '
+        resources.ApplyResources(Me.lblCargo, "lblCargo")
+        Me.lblCargo.Name = "lblCargo"
         '
         'txtUsuario
         '
@@ -133,18 +145,6 @@ Partial Class frmNuevoUsuario
         resources.ApplyResources(Me.btnSuspender, "btnSuspender")
         Me.btnSuspender.Name = "btnSuspender"
         Me.btnSuspender.UseVisualStyleBackColor = True
-        '
-        'lblCargo
-        '
-        resources.ApplyResources(Me.lblCargo, "lblCargo")
-        Me.lblCargo.Name = "lblCargo"
-        '
-        'cboCargo
-        '
-        Me.cboCargo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cboCargo.FormattingEnabled = True
-        resources.ApplyResources(Me.cboCargo, "cboCargo")
-        Me.cboCargo.Name = "cboCargo"
         '
         'frmNuevoUsuario
         '

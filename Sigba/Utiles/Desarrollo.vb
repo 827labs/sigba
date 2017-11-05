@@ -3,7 +3,7 @@
     ' el sistema podrá tener activadas ciertas
     ' caracteristicas que ayudan a lograr mayor
     ' productividad a la hora del desarrollo del mismo.
-    Dim modoDesarrollo As Boolean = True
+    Dim modoDesarrollo As Boolean = False
 
     Function ModoDesarrolloActivado() As Boolean
         Return modoDesarrollo

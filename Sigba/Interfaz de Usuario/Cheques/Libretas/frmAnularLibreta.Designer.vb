@@ -34,46 +34,72 @@ Partial Class frmAnularLibreta
         '
         'GroupBox1
         '
+        Me.GroupBox1.AccessibleDescription = Nothing
+        Me.GroupBox1.AccessibleName = Nothing
+        resources.ApplyResources(Me.GroupBox1, "GroupBox1")
+        Me.GroupBox1.BackgroundImage = Nothing
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.txtSerieLibreta)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.txtNumLibreta)
-        resources.ApplyResources(Me.GroupBox1, "GroupBox1")
+        Me.GroupBox1.Font = Nothing
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.TabStop = False
         '
         'Label2
         '
+        Me.Label2.AccessibleDescription = Nothing
+        Me.Label2.AccessibleName = Nothing
         resources.ApplyResources(Me.Label2, "Label2")
+        Me.Label2.Font = Nothing
         Me.Label2.Name = "Label2"
         '
         'txtSerieLibreta
         '
+        Me.txtSerieLibreta.AccessibleDescription = Nothing
+        Me.txtSerieLibreta.AccessibleName = Nothing
         resources.ApplyResources(Me.txtSerieLibreta, "txtSerieLibreta")
+        Me.txtSerieLibreta.BackgroundImage = Nothing
+        Me.txtSerieLibreta.Font = Nothing
         Me.txtSerieLibreta.Name = "txtSerieLibreta"
         '
         'Label1
         '
+        Me.Label1.AccessibleDescription = Nothing
+        Me.Label1.AccessibleName = Nothing
         resources.ApplyResources(Me.Label1, "Label1")
+        Me.Label1.Font = Nothing
         Me.Label1.Name = "Label1"
         '
         'txtNumLibreta
         '
+        Me.txtNumLibreta.AccessibleDescription = Nothing
+        Me.txtNumLibreta.AccessibleName = Nothing
         resources.ApplyResources(Me.txtNumLibreta, "txtNumLibreta")
+        Me.txtNumLibreta.BackgroundImage = Nothing
+        Me.txtNumLibreta.Font = Nothing
         Me.txtNumLibreta.Name = "txtNumLibreta"
         '
         'btnAnular
         '
+        Me.btnAnular.AccessibleDescription = Nothing
+        Me.btnAnular.AccessibleName = Nothing
         resources.ApplyResources(Me.btnAnular, "btnAnular")
+        Me.btnAnular.BackgroundImage = Nothing
+        Me.btnAnular.Font = Nothing
         Me.btnAnular.Name = "btnAnular"
         Me.btnAnular.UseVisualStyleBackColor = True
         '
         'frmAnularLibreta
         '
+        Me.AccessibleDescription = Nothing
+        Me.AccessibleName = Nothing
         resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = Nothing
         Me.Controls.Add(Me.btnAnular)
         Me.Controls.Add(Me.GroupBox1)
+        Me.Font = Nothing
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximizeBox = False
         Me.Name = "frmAnularLibreta"
